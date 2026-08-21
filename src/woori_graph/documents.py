@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
+import hashlib
 import re
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterator
+from typing import Any, Iterator
 
 from .ids import stable_id
 from .models import SemanticUnit, SourceRef
@@ -105,6 +107,54 @@ def segment_paths(input_path: Path) -> Iterator[SemanticUnit]:
         yield from segment_markdown(path, input_root=root)
 
 
+def build_source_manifest(
+    input_path: Path,
+    *,
+    collected_at: str | None = None,
+) -> list[dict[str, Any]]:
+    """Describe every source document used by a segmentation run."""
+
+    root = input_path if input_path.is_dir() else input_path.parent
+    timestamp = collected_at or datetime.now(timezone.utc).isoformat()
+    records: list[dict[str, Any]] = []
+    for path in discover_markdown(input_path):
+        raw_bytes = path.read_bytes()
+        relative_path = _relative_source_path(path, root)
+        records.append(
+            build_source_manifest_record(
+                raw_bytes,
+                source_path=relative_path,
+                fallback_title=path.stem,
+                collected_at=timestamp,
+            )
+        )
+    return records
+
+
+def build_source_manifest_record(
+    raw_bytes: bytes,
+    *,
+    source_path: str,
+    fallback_title: str,
+    collected_at: str,
+) -> dict[str, Any]:
+    """Build one source manifest record without filesystem dependencies."""
+
+    title, metadata, _body = _front_matter_and_body(
+        raw_bytes.decode("utf-8"),
+        fallback_title=fallback_title,
+    )
+    source_document_key = _document_identity(metadata, title, source_path)
+    return {
+        "source_document_key": source_document_key,
+        "document_id": stable_id("document", source_document_key),
+        "document_title": title,
+        "source_path": source_path,
+        "sha256": hashlib.sha256(raw_bytes).hexdigest(),
+        "collected_at": collected_at,
+    }
+
+
 def _front_matter_and_body(raw_text: str, *, fallback_title: str) -> tuple[str, dict[str, str], str]:
     lines = raw_text.splitlines()
     title = fallback_title
@@ -184,6 +234,7 @@ def _segment_article(
                     context_text="\n".join(base_context),
                     unit_text=introductory_text,
                     unit_kind="paragraph",
+                    governing_text="",
                 )
             )
 
@@ -237,6 +288,9 @@ def _segment_terminal_item(
                 context_text="\n".join(context_parts),
                 unit_text=item.text,
                 unit_kind="terminal_item",
+                governing_text="\n".join(
+                    part for part in (introductory_text, *ancestor_items) if part
+                ),
             )
         ]
 
@@ -271,6 +325,7 @@ def _make_unit(
     context_text: str,
     unit_text: str,
     unit_kind: str,
+    governing_text: str,
 ) -> SemanticUnit:
     unit_id = stable_id(
         "semantic_unit",
@@ -290,6 +345,7 @@ def _make_unit(
         context_text=context_text,
         unit_text=unit_text,
         unit_kind=unit_kind,
+        governing_text=governing_text,
     )
 
 

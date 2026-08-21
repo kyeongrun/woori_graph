@@ -5,6 +5,7 @@
 | 단계 | 구현 | 재사용 진입점 | 비고 |
 |---|---|---|---|
 | Markdown 의미 단위 분할 | 완료 | `documents.segment_paths`, `segment_text`, `DictionaryBuildPipeline.segment_*` | 파일·디렉터리와 향후 API 문자열 입력 모두 지원 |
+| 말단 호·목 문맥 완결화 | 구현·전수 실행 중 | `context_resolution`, `resolve-context`, `audit-context` | 원문과 governing/resolved text를 분리하고 일반 문단은 verbatim 복사 |
 | raw SVO 추출 | 완료 | `extraction.extract_units`, `DictionaryBuildPipeline.extract` | 운영 프롬프트는 `prompts/raw_svo_extract.ko.md`가 기준 |
 | entity/relation 후보 생성 | 완료 | `candidates.build_candidate_dictionaries`, `candidates` CLI | 원표현 전수 목록 생성 |
 | entity name 정규화 | 완료 | `entity_clustering`, `contextual_entities`, 관련 CLI | 결정적 규칙·LLM mapping·override를 단계별 재실행 가능 |

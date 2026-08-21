@@ -5,6 +5,8 @@
 - `raw_svo_extract.ko.md`: 사전 구축과 그래프 구축이 공통으로 사용하는 현재 원시 SVO 추출 프롬프트
 - `raw_svo_extract_unconstrained.ko.md`: endpoint 정제 없이 LLM 판단과 원문 표현을 보존하는 재추출용 프롬프트. `extract --preserve-llm-output`과 함께 사용한다.
 - `raw_svo_extract_core.ko.md`: 핵심 SVO 표현은 보존하고 SVO에 속하지 않는 기간·횟수·금액·비율 등의 부수 조건만 LLM 판단으로 제외하는 재추출용 프롬프트. `extract --preserve-llm-output`과 함께 사용한다.
+- `context_resolve.ko.md`: 상위 머리 문장과 말단 호·목을 결합해 원문을 보존한 독립 추출 문장을 생성하는 프롬프트
+- `raw_svo_extract_context_complete.ko.md`: `resolved_text`를 주된 입력으로 사용하는 문맥 완결형 raw SVO 추출 프롬프트. `extract --preserve-llm-output`과 함께 사용한다.
 - `entity_normalize.ko.md`: 사전 구축의 엔티티 canonical name/alias 정규화 프롬프트
 - `entity_contextual_normalize.ko.md`: aliases와 실제 원문을 함께 보는 2차 엔티티 대표명 통합 프롬프트
 - `entity_contextual_normalize_retry.ko.md`: 일반명사 과축약으로 거부된 canonical name의 LLM 재판정 피드백

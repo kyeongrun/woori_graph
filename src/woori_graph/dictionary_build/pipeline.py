@@ -9,6 +9,7 @@ from typing import Any
 
 from ..candidates import build_candidate_dictionaries
 from ..closed_relations import build_closed_relation_dictionary
+from ..context_resolution import resolve_units as resolve_context_units
 from ..documents import segment_paths, segment_text
 from ..entity_clustering import build_clustered_entity_dictionary
 from ..entity_typing import apply_entity_type_mapping
@@ -58,6 +59,21 @@ class DictionaryBuildPipeline:
             client,
             workers=workers,
             prompt_template=load_prompt(prompt_file),
+        )
+
+    def resolve_context(
+        self,
+        units: Sequence[SemanticUnit],
+        client: CompletionClient,
+        *,
+        workers: int = 4,
+        prompt_template: str,
+    ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+        return resolve_context_units(
+            units,
+            client,
+            workers=workers,
+            prompt_template=prompt_template,
         )
 
     def normalize(

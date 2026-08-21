@@ -34,6 +34,9 @@ class SemanticUnit:
     context_text: str
     unit_text: str
     unit_kind: str
+    governing_text: str = ""
+    resolved_text: str = ""
+    resolution_type: str = "UNRESOLVED"
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -45,6 +48,9 @@ class SemanticUnit:
             "context_text": self.context_text,
             "unit_text": self.unit_text,
             "unit_kind": self.unit_kind,
+            "governing_text": self.governing_text,
+            "resolved_text": self.resolved_text,
+            "resolution_type": self.resolution_type,
         }
 
     @classmethod
@@ -63,6 +69,9 @@ class SemanticUnit:
             context_text=value["context_text"],
             unit_text=value["unit_text"],
             unit_kind=value.get("unit_kind", "unknown"),
+            governing_text=value.get("governing_text", ""),
+            resolved_text=value.get("resolved_text", ""),
+            resolution_type=value.get("resolution_type", "UNRESOLVED"),
         )
 
 

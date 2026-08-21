@@ -174,7 +174,10 @@ def extract_raw_svo(
         "document_title": unit.document_title,
         "source_ref": unit.source_ref.to_dict(),
         "context_text": unit.context_text,
+        "governing_text": unit.governing_text,
         "unit_text": unit.unit_text,
+        "resolved_text": unit.resolved_text,
+        "extraction_text": unit.resolved_text or unit.unit_text,
     }
     response_text = client.complete(f"{prompt_template}\n\n입력:\n{json.dumps(payload, ensure_ascii=False)}")
     raw_relations = _parse_relations(response_text)

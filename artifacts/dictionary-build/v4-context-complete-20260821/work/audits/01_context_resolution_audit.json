@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "counts": {
+    "source_units": 23123,
+    "resolved_units": 23123,
+    "resolution_types": {
+      "COPIED": 8230,
+      "CONTEXT_INHERITED": 14893,
+      "INVALID": 0
+    },
+    "missing_units": 0,
+    "extra_units": 0
+  },
+  "checks": {
+    "source_semantic_unit_ids_unique": true,
+    "resolved_semantic_unit_ids_unique": true,
+    "coverage_exact": true,
+    "source_order_matches": true,
+    "source_fields_preserved": true,
+    "all_units_resolved": true,
+    "copied_units_are_verbatim": true
+  },
+  "details": {
+    "missing_semantic_unit_ids": [],
+    "extra_semantic_unit_ids": [],
+    "source_mismatch_ids": [],
+    "invalid_resolution_ids": [],
+    "copied_text_mismatch_ids": []
+  }
+}

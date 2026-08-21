@@ -1,4 +1,4 @@
-from woori_graph.documents import segment_text
+from woori_graph.documents import build_source_manifest_record, segment_text
 
 
 _SOURCE = """---
@@ -42,6 +42,9 @@ def test_nominal_terminal_item_is_one_svo_request_with_parent_predicate() -> Non
     assert len(units) == 1
     assert units[0].unit_kind == "terminal_item"
     assert units[0].unit_text == "신청서 접수"
+    assert units[0].governing_text == "위원회는 다음 각 호의 업무를 처리한다."
+    assert units[0].resolved_text == ""
+    assert units[0].resolution_type == "UNRESOLVED"
     assert "위원회는 다음 각 호의 업무를 처리한다." in units[0].context_text
     assert all(unit.unit_text != "위원회는 다음 각 호의 업무를 처리한다." for unit in units)
 
@@ -96,3 +99,17 @@ def test_source_document_key_keeps_document_id_stable_after_path_move() -> None:
 
     assert first[0].document_id == moved[0].document_id
     assert first[0].semantic_unit_id == moved[0].semantic_unit_id
+
+
+def test_source_manifest_records_hash_and_stable_source_key() -> None:
+    record = build_source_manifest_record(
+        _SOURCE.encode("utf-8"),
+        source_path="테스트법.md",
+        fallback_title="테스트법",
+        collected_at="2026-08-21T00:00:00+00:00",
+    )
+
+    assert record["source_document_key"] == "official:999999:테스트법"
+    assert record["source_path"] == "테스트법.md"
+    assert len(record["sha256"]) == 64
+    assert record["collected_at"] == "2026-08-21T00:00:00+00:00"

@@ -18,6 +18,12 @@ from .closed_relations import (
     propose_relation_taxonomy,
     sanitize_closed_relation_mapping,
 )
+from .context_resolution import (
+    DEFAULT_CONTEXT_RESOLUTION_PROMPT,
+    audit_context_resolution,
+    normalize_context_resolution_records,
+    resolve_units as resolve_context_units,
+)
 from .contextual_entities import (
     CONTEXTUAL_ENTITY_NORMALIZATION_PROMPT,
     audit_contextual_entity_dictionary,
@@ -30,7 +36,7 @@ from .contextual_entities import (
     sanitize_contextual_entity_mapping,
 )
 from .audit import audit_artifacts, audit_dictionary_release, audit_raw_svo
-from .documents import segment_paths
+from .documents import build_source_manifest, segment_paths
 from .embeddings import EmbeddingConfig, OpenAICompatEmbeddingClient
 from .environment import load_env_file
 from .dictionary_build import (
@@ -91,7 +97,48 @@ def build_parser() -> argparse.ArgumentParser:
     segment = subparsers.add_parser("segment", help="split law Markdown into semantic-units JSONL")
     segment.add_argument("--input", type=Path, required=True, help="Markdown file or directory")
     segment.add_argument("--output", type=Path, required=True, help="semantic-units JSONL path")
+    segment.add_argument(
+        "--source-manifest-output",
+        type=Path,
+        help="optional source document hash manifest JSONL path",
+    )
     segment.add_argument("--overwrite", action="store_true")
+
+    resolve_context = subparsers.add_parser(
+        "resolve-context",
+        help="turn segmented units into standalone extraction text through the LLM",
+    )
+    resolve_context.add_argument("--units", type=Path, required=True)
+    resolve_context.add_argument("--output", type=Path, required=True)
+    resolve_context.add_argument("--errors-output", type=Path)
+    resolve_context.add_argument("--prompt-file", type=Path)
+    resolve_context.add_argument("--workers", type=int, default=None)
+    resolve_context.add_argument("--offset", type=int, default=0)
+    resolve_context.add_argument("--limit", type=int)
+    resolve_context.add_argument("--batch-size", type=int, default=200)
+    resolve_context.add_argument("--resume", action="store_true")
+    resolve_context.add_argument("--allow-remote-llm", action="store_true")
+    resolve_context.add_argument("--env-file", type=Path)
+    resolve_context.add_argument("--overwrite", action="store_true")
+
+    audit_context = subparsers.add_parser(
+        "audit-context",
+        help="audit coverage and source preservation of context-resolved units",
+    )
+    audit_context.add_argument("--source-units", type=Path, required=True)
+    audit_context.add_argument("--resolved-units", type=Path, required=True)
+    audit_context.add_argument("--output", type=Path, required=True)
+    audit_context.add_argument("--offset", type=int, default=0)
+    audit_context.add_argument("--limit", type=int)
+    audit_context.add_argument("--overwrite", action="store_true")
+
+    normalize_context = subparsers.add_parser(
+        "normalize-context",
+        help="derive COPIED/CONTEXT_INHERITED from unit_text and resolved_text",
+    )
+    normalize_context.add_argument("--input", type=Path, required=True)
+    normalize_context.add_argument("--output", type=Path, required=True)
+    normalize_context.add_argument("--overwrite", action="store_true")
 
     extract = subparsers.add_parser("extract", help="extract raw SVO records through the local LLM")
     extract.add_argument("--units", type=Path, required=True, help="semantic-units JSONL path")
@@ -554,7 +601,116 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     if args.command == "segment":
         count = write_jsonl(args.output, (unit.to_dict() for unit in segment_paths(args.input)), overwrite=args.overwrite)
-        print(f"Wrote {count} semantic units to {args.output}")
+        manifest_count = 0
+        if args.source_manifest_output:
+            manifest_count = write_jsonl(
+                args.source_manifest_output,
+                build_source_manifest(args.input),
+                overwrite=args.overwrite,
+                leading_keys=("source_document_key", "document_id", "document_title"),
+            )
+        print(
+            f"Wrote {count} semantic units to {args.output}; "
+            f"{manifest_count} source manifest records"
+        )
+        return 0
+
+    if args.command == "resolve-context":
+        if args.env_file:
+            _load_env_file(args.env_file)
+        units = [SemanticUnit.from_dict(record) for record in read_jsonl(args.units)]
+        if args.offset < 0:
+            raise ValueError("--offset must be zero or greater")
+        units = units[args.offset :]
+        if args.limit is not None:
+            if args.limit < 1:
+                raise ValueError("--limit must be at least 1")
+            units = units[: args.limit]
+        if args.batch_size < 1:
+            raise ValueError("--batch-size must be at least 1")
+        completed_ids: set[str] = set()
+        if args.resume and args.output.exists():
+            completed_ids = {
+                record["semantic_unit_id"] for record in read_jsonl(args.output)
+            }
+            units = [
+                unit for unit in units if unit.semantic_unit_id not in completed_ids
+            ]
+        workers = args.workers or int(os.environ.get("VLLM_CONCURRENCY", "4"))
+        config = OpenAICompatConfig.from_env()
+        if args.allow_remote_llm:
+            config = replace(config, local_only=False)
+        client = OpenAICompatClient(config)
+        errors_output = args.errors_output or args.output.with_suffix(".errors.jsonl")
+        if not args.resume:
+            write_jsonl(args.output, [], overwrite=args.overwrite)
+            write_jsonl(errors_output, [], overwrite=args.overwrite)
+        elif not args.output.exists():
+            write_jsonl(args.output, [])
+            write_jsonl(errors_output, [], overwrite=errors_output.exists())
+        total_records = 0
+        total_errors = 0
+        prompt_template = (
+            args.prompt_file.read_text(encoding="utf-8")
+            if args.prompt_file
+            else DEFAULT_CONTEXT_RESOLUTION_PROMPT
+        )
+        try:
+            for start in range(0, len(units), args.batch_size):
+                batch = units[start : start + args.batch_size]
+                records, errors = resolve_context_units(
+                    batch,
+                    client,
+                    workers=workers,
+                    prompt_template=prompt_template,
+                )
+                append_jsonl(args.output, records)
+                append_jsonl(errors_output, errors)
+                total_records += len(records)
+                total_errors += len(errors)
+                print(
+                    f"Progress {min(start + len(batch), len(units))}/{len(units)}: "
+                    f"{total_records} records, {total_errors} failures",
+                    flush=True,
+                )
+        finally:
+            client.close()
+        print(
+            f"Wrote {total_records} context-resolved semantic units to {args.output}; "
+            f"{total_errors} failures to {errors_output}; "
+            f"skipped {len(completed_ids)} completed units"
+        )
+        return 0
+
+    if args.command == "audit-context":
+        if args.offset < 0:
+            raise ValueError("--offset must be zero or greater")
+        source_records = list(read_jsonl(args.source_units))[args.offset :]
+        if args.limit is not None:
+            if args.limit < 1:
+                raise ValueError("--limit must be at least 1")
+            source_records = source_records[: args.limit]
+        report = audit_context_resolution(
+            source_records,
+            list(read_jsonl(args.resolved_units)),
+        )
+        if args.output.exists() and not args.overwrite:
+            raise FileExistsError(f"Refusing to overwrite existing file: {args.output}")
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(
+            json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        print(
+            f"Wrote context resolution audit to {args.output}; "
+            f"passed={report['passed']}"
+        )
+        return 0 if report["passed"] else 1
+
+    if args.command == "normalize-context":
+        records = normalize_context_resolution_records(list(read_jsonl(args.input)))
+        write_jsonl(args.output, records, overwrite=args.overwrite)
+        print(f"Wrote {len(records)} normalized context records to {args.output}")
         return 0
 
     if args.command == "extract":

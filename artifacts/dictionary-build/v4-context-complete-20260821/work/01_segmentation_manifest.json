@@ -1,0 +1,60 @@
+{
+  "dictionary_version": "v4-context-complete-20260821",
+  "stage": "segment-and-resolve-context",
+  "status": "completed",
+  "generated_at": "2026-08-21T18:46:52.8072098+09:00",
+  "scope": {
+    "source_root": "data/raw",
+    "document_count": 60,
+    "include_current_body": true,
+    "exclude_supplements": true,
+    "exclude_appendices": true,
+    "exclude_amendment_history": true
+  },
+  "execution": {
+    "request_unit": "one semantic unit per LLM request",
+    "total_concurrency": 32,
+    "shards": 4,
+    "workers_per_shard": 8,
+    "batch_size": 200,
+    "llm_failure_count": 0,
+    "endpoint_scope": "user_approved_private_non_loopback",
+    "endpoint_url_recorded": false
+  },
+  "prompt": {
+    "path": "prompts/context_resolve.ko.md",
+    "sha256": "66dad444026f7cb2d1883901a7929efd138e10b638855ff877dc82e5eb3e3296"
+  },
+  "config": {
+    "path": "config/dictionary_build.context_complete.toml",
+    "sha256": "1208e2fde9c30707a00f713b7626777875800fe8361099ebc6180c2b19eb103f"
+  },
+  "program": {
+    "git_parent_commit": "ce70c80",
+    "source_hashes": {
+      "src/woori_graph/context_resolution.py": "e6223ed4cef06e25ebf7944dfec423beaa247288ac905636dd8d2f1da2149c09",
+      "src/woori_graph/documents.py": "6cdc6c4a14347a8148e224097cdef8ee4e97b50a138648ae96e9c2fdec8fb300",
+      "src/woori_graph/models.py": "8f51667a9c68fedc8800e70863f4f3c42223cbd31d1c128f5722f28418266f25",
+      "src/woori_graph/extraction.py": "dbb38cea3bed84c57e9d435c501e8c02bdeaf897ad222425caff79858bbc28cc"
+    }
+  },
+  "artifacts": {
+    "source_manifest": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/source_manifest.jsonl",
+      "sha256": "0fa50bad455d30138b1d39b48798b064754fc27b485caf8af8781276ad275d91",
+      "record_count": 60
+    },
+    "semantic_units": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/01_semantic_units.jsonl",
+      "sha256": "006459237617e5a50019522dd8f8dc24c5607a9060e80cd30aa753d6b9a78617",
+      "record_count": 23123,
+      "copied_count": 8230,
+      "context_inherited_count": 14893
+    },
+    "audit": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/audits/01_context_resolution_audit.json",
+      "sha256": "41d46eda6864d8bb7321ebbe3f012b49ef0b76a2aa0aa878e6e7c8d9776fbc91",
+      "passed": true
+    }
+  }
+}
