@@ -1,0 +1,73 @@
+{
+  "run_id": "pilot-financial-committee",
+  "created_at": "2026-08-20T12:58:57.495911+00:00",
+  "query": "금융위원회와 금융기관은 어떻게 연결되는가?",
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "dimension": 1536
+  },
+  "search": {
+    "max_hops": 3,
+    "entity_top_k": 8,
+    "relation_top_k": 20,
+    "max_neighbors_per_entity": 50,
+    "path_beam_width": 160,
+    "max_paths": 50,
+    "timeout_seconds": 180.0
+  },
+  "stats": {
+    "duration_seconds": 1.14,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths_considered": 5902,
+    "paths_returned": 50,
+    "adaptations": []
+  },
+  "config": {
+    "path": "config/search.example.toml",
+    "sha256": "f642c15e2bd85239e313d4bdc4bce4243c4b92a56350b73900559459c18b9c88"
+  },
+  "counts": {
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths": 50,
+    "nodes": 6,
+    "edges": 13
+  },
+  "files": [
+    {
+      "path": "final/answer.md",
+      "sha256": "aa39738891602d36f7839c4541bc272188f3bba2a6c8808fa15be81be056a602",
+      "bytes": 4653
+    },
+    {
+      "path": "final/graph.html",
+      "sha256": "f46b24344792119288152fe52ff5e9ae0ec1c35fe7dcb2b3be652af6e02cb533",
+      "bytes": 25804
+    },
+    {
+      "path": "final/graph.json",
+      "sha256": "e3f49880d7e684ad2698593a9be6e6c3a17014a7940260899f82af6ea54e207a",
+      "bytes": 24144
+    },
+    {
+      "path": "final/query_result.json",
+      "sha256": "b37e688097714e97ed0f22392d504868f7ee42979bf91d8d0398c8cb1f8919c8",
+      "bytes": 271194
+    },
+    {
+      "path": "work/01_candidates.json",
+      "sha256": "300ebc968b3fa8138aae4618517679ad334be79a6eb20fab57644de62aac56b1",
+      "bytes": 12186
+    },
+    {
+      "path": "work/02_ranked_paths.json",
+      "sha256": "72eddb093768c2ef780b88cc96d561d993a7d3e052beb199399755ef138349c9",
+      "bytes": 254403
+    }
+  ],
+  "passed": true
+}

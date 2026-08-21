@@ -1,0 +1,25 @@
+[run]
+id = "incoming-20260820-001"
+dictionary_version = "v3-llm-20260821"
+
+[paths]
+# All relative paths are resolved from this TOML file's directory.
+source = "../data/incoming"
+artifact_root = "../artifacts/document-ingest"
+entity_dictionary = "../artifacts/dictionary-build/v3-llm-20260821/final/entity_dictionary.jsonl"
+relation_dictionary = "../artifacts/dictionary-build/v3-llm-20260821/final/relation_dictionary.jsonl"
+prompt = "../prompts/raw_svo_extract.ko.md"
+env_file = "../.env"
+# Required only when storage.build_load_files is true.
+load_root = "../runtime/load"
+
+[execution]
+workers = 4
+batch_size = 200
+relation_workers = 4
+relation_batch_size = 40
+
+[storage]
+# Keep false for extraction/mapping-only runs in the internal API project.
+build_load_files = false
+age_graph_name = "svo"

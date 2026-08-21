@@ -1,0 +1,155 @@
+{
+  "run_id": "exploration-upgrade-check",
+  "created_at": "2026-08-21T06:15:51.487535+00:00",
+  "query": "공공감사에관한법률에서 감사기구의 장의 독립성 보장에 관한 규정은 무엇이며, 임용절차는 어떻게 되는가?",
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "dimension": 1536
+  },
+  "answer": {
+    "mode": "llm",
+    "status": "generated",
+    "model": "Qwen/Qwen3.8-27B",
+    "prompt_name": "grounded_answer.ko.md",
+    "prompt_sha256": "a685cb9ac0d0d56ad24bb24ba34612e243bcb18cf6a6ddc7cf9324d115426289",
+    "generated_at": "2026-08-21T06:15:51.417906+00:00",
+    "citation_map": [
+      {
+        "key": "E1",
+        "relation_mention_id": "86b699a1-3136-5a0d-abeb-d2243dff85cc"
+      },
+      {
+        "key": "E2",
+        "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7"
+      },
+      {
+        "key": "E3",
+        "relation_mention_id": "ce04b97a-8319-5ddf-b3d8-d616a8da5cb0"
+      },
+      {
+        "key": "E4",
+        "relation_mention_id": "cd910fd9-8fa9-5152-97e6-e9ea18049c59"
+      },
+      {
+        "key": "E5",
+        "relation_mention_id": "da466595-8554-5a2a-9434-96c1faf268fb"
+      },
+      {
+        "key": "E6",
+        "relation_mention_id": "5c8b515f-a2a2-5eda-913f-a3b0e8abf185"
+      },
+      {
+        "key": "E7",
+        "relation_mention_id": "21a93220-80a1-53fd-8d28-84df1c5a35bc"
+      },
+      {
+        "key": "E8",
+        "relation_mention_id": "e1943642-14b2-53c4-8398-7fb987d17417"
+      }
+    ],
+    "cited_keys": [
+      "E2",
+      "E1",
+      "E3"
+    ],
+    "fallback_reason": null
+  },
+  "search": {
+    "max_hops": 3,
+    "entity_top_k": 8,
+    "relation_top_k": 20,
+    "max_neighbors_per_entity": 50,
+    "path_beam_width": 160,
+    "max_paths": 50,
+    "timeout_seconds": 180.0
+  },
+  "stats": {
+    "duration_seconds": 8.547,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths_considered": 5341,
+    "paths_returned": 50,
+    "adaptations": [],
+    "hop_diagnostics": [
+      {
+        "hop": 1,
+        "frontier_entities": 30,
+        "fetched_edges": 407,
+        "query_edge_limit": 3000,
+        "neighbor_limit_per_entity": 50,
+        "generated_paths": 428,
+        "beam_width": 160,
+        "retained_paths": 160
+      },
+      {
+        "hop": 2,
+        "frontier_entities": 130,
+        "fetched_edges": 1959,
+        "query_edge_limit": 5000,
+        "neighbor_limit_per_entity": 50,
+        "generated_paths": 2601,
+        "beam_width": 160,
+        "retained_paths": 160
+      },
+      {
+        "hop": 3,
+        "frontier_entities": 93,
+        "fetched_edges": 1583,
+        "query_edge_limit": 5000,
+        "neighbor_limit_per_entity": 50,
+        "generated_paths": 2312,
+        "beam_width": 160,
+        "retained_paths": 160
+      }
+    ],
+    "deduplicated_paths": 5341,
+    "evidence_path_pool": 150
+  },
+  "config": {
+    "path": "config/search.example.toml",
+    "sha256": "7bc500b7743d5a41b602b142159dc2deb5c7b44d6fe5fa9cbca88764f72f4c24"
+  },
+  "counts": {
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths": 50,
+    "nodes": 47,
+    "edges": 37
+  },
+  "files": [
+    {
+      "path": "final/answer.md",
+      "sha256": "382dc625d24dff2016fcd70b63cceda8e857775a3e141f47ac52789643c69ad1",
+      "bytes": 817
+    },
+    {
+      "path": "final/graph.html",
+      "sha256": "48d764f826a23586c4a8967304789f997cfa2b06a86c327ad26ba1084996b382",
+      "bytes": 61072
+    },
+    {
+      "path": "final/graph.json",
+      "sha256": "d18961dd650e035c5d9ebddfaed5b3b1bf407e4cf1fe53cd8397d5d484d78d5b",
+      "bytes": 68396
+    },
+    {
+      "path": "final/query_result.json",
+      "sha256": "c72ee8c54c503eeed01c6e6f451a22bdc5339e95a8213085dd44455fb777213f",
+      "bytes": 256706
+    },
+    {
+      "path": "work/01_candidates.json",
+      "sha256": "cc652397c5a25b487220df1de2daa2445a4101b7d2f62bb40f967474cfd7b04a",
+      "bytes": 12736
+    },
+    {
+      "path": "work/02_ranked_paths.json",
+      "sha256": "a8172e74e334ad0f08ff9a470cad5779d9fe3cc0289803e1ff6b6e4f74b05869",
+      "bytes": 241958
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,914 @@
+﻿{
+    "package":  "woori_graph_search_20260820",
+    "created_at":  "2026-08-20T13:06:09.6673709Z",
+    "platform":  "Windows x86-64",
+    "python":  "3.12",
+    "file_count":  181,
+    "files":  [
+                  {
+                      "path":  ".env.example",
+                      "sha256":  "9756c23b0b6a46bea05b6122fed845ae3826d836f26de49a2623b6c524f7052a",
+                      "bytes":  1612
+                  },
+                  {
+                      "path":  ".gitignore",
+                      "sha256":  "9881d29ebe92fddf7e201aa543c9255562eb0b4d112cd78ed31fa30ce72f9915",
+                      "bytes":  258
+                  },
+                  {
+                      "path":  "AGENTS.md",
+                      "sha256":  "2c412e0fc5c0e3b2dfb9df699421399a02fc3412a9044ea4c273a8f04565a198",
+                      "bytes":  11790
+                  },
+                  {
+                      "path":  "config/document_ingest.example.toml",
+                      "sha256":  "425c7969bb95aca013e5f186aa63d472c63abb08a34e4ec4de8a0160db6039f0",
+                      "bytes":  771
+                  },
+                  {
+                      "path":  "config/entity_normalization_overrides.jsonl",
+                      "sha256":  "8208ec7bdd0f1450f30afe7cf0254ac9b70574d30bdca8fbab189af164bb461c",
+                      "bytes":  824
+                  },
+                  {
+                      "path":  "config/search.example.toml",
+                      "sha256":  "f642c15e2bd85239e313d4bdc4bce4243c4b92a56350b73900559459c18b9c88",
+                      "bytes":  682
+                  },
+                  {
+                      "path":  "data/raw/.gitkeep",
+                      "sha256":  "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+                      "bytes":  1
+                  },
+                  {
+                      "path":  "data/raw/감사원법/법률.md",
+                      "sha256":  "5ab5082df315e9d2fde6e6cf38bd66c0a0c2b2fcb3f95905f9b1b8ccc9a6de12",
+                      "bytes":  62759
+                  },
+                  {
+                      "path":  "data/raw/감사원심사규칙/감사원규칙.md",
+                      "sha256":  "4af59fc328ba4d349250f141c43d8098336f3add6bce559248a4830feb59e2bd",
+                      "bytes":  15149
+                  },
+                  {
+                      "path":  "data/raw/개인금융채권의관리및개인금융채무자의보호에관한법률/법률.md",
+                      "sha256":  "da20780e96d27a7a234b2505fd2ff5870f67807a0737673f2f72a9a9cadeccf3",
+                      "bytes":  66559
+                  },
+                  {
+                      "path":  "data/raw/개인금융채권의관리및개인금융채무자의보호에관한법률/시행령.md",
+                      "sha256":  "9acec71368922b5d52a2775c0b57391482d204354beb346b6009d8824832e2b9",
+                      "bytes":  53192
+                  },
+                  {
+                      "path":  "data/raw/공공감사기준/감사원규칙.md",
+                      "sha256":  "01b9a5bea07b860698f23bd9b1bc1f0bc867f4cac5d26aeca82ef5c5383d4e71",
+                      "bytes":  31359
+                  },
+                  {
+                      "path":  "data/raw/공공감사에관한법률/법률.md",
+                      "sha256":  "e561a0907ad4fc84eddb740c5411e3d578cf47f974cb4317837a18a8c776bb9c",
+                      "bytes":  40561
+                  },
+                  {
+                      "path":  "data/raw/공공감사에관한법률/시행령.md",
+                      "sha256":  "095cbb027bc5ec7dfd857fc133603b69b68114c5f1c9fa2ab16995564fb12742",
+                      "bytes":  33038
+                  },
+                  {
+                      "path":  "data/raw/공익신고자보호법/법률.md",
+                      "sha256":  "4caeb5945793a25d99c69e9a1b296594ecf9e1c1070d625a24f67d5d451dd937",
+                      "bytes":  77302
+                  },
+                  {
+                      "path":  "data/raw/공익신고자보호법/시행령.md",
+                      "sha256":  "e25671fd6867d778f53738031b721d3c42308c323ac4eb677be2a96467479c5c",
+                      "bytes":  53137
+                  },
+                  {
+                      "path":  "data/raw/공직자의이해충돌방지법/법률.md",
+                      "sha256":  "82645ac13c191898a71433deb2fe3196489c528029a6c9a6fb65285b1ece2d0c",
+                      "bytes":  49471
+                  },
+                  {
+                      "path":  "data/raw/공직자의이해충돌방지법/시행령.md",
+                      "sha256":  "46c9cb78155e0f25f5e6b1de0c24b39677a05523e8937f70829f98ef71a97acd",
+                      "bytes":  33165
+                  },
+                  {
+                      "path":  "data/raw/금융거래지표의관리에관한법률/법률.md",
+                      "sha256":  "4009b2e3d75a16b918831b2331bedb03394e2fbcfcc8a0e96c8f4d065f95e0bb",
+                      "bytes":  27822
+                  },
+                  {
+                      "path":  "data/raw/금융거래지표의관리에관한법률/시행령.md",
+                      "sha256":  "8a5631b00ed7d97145229e9aea0d8a0e4aea59f3e811a16f630297775383f376",
+                      "bytes":  29190
+                  },
+                  {
+                      "path":  "data/raw/금융복합기업집단의감독에관한법률/법률.md",
+                      "sha256":  "a9b394de0b0c0fa51a78f8797c2ecfef4d0286d1bda1a35f098afcca71545a13",
+                      "bytes":  43239
+                  },
+                  {
+                      "path":  "data/raw/금융복합기업집단의감독에관한법률/시행령.md",
+                      "sha256":  "cbdab04f7dcb90e0328879867f2d7ab9a809b0e22f6c1fbe1ee37e7d2eaaad76",
+                      "bytes":  29289
+                  },
+                  {
+                      "path":  "data/raw/금융소비자보호에관한법률/법률.md",
+                      "sha256":  "7ad345f424c953812f8824ddef46ac95838ac1463267b109adf027262f32dc0f",
+                      "bytes":  145559
+                  },
+                  {
+                      "path":  "data/raw/금융소비자보호에관한법률/시행령.md",
+                      "sha256":  "9cbed3773eef998b32cc39a06002cfa3338bf1d7e05af3c73802ddc9e0f23b72",
+                      "bytes":  132072
+                  },
+                  {
+                      "path":  "data/raw/금융실명거래및비밀보장에관한법률/법률.md",
+                      "sha256":  "3232a487c06bef751819b0e45a58725dfc09c53334aff43dd207b1a9ae6f802b",
+                      "bytes":  59148
+                  },
+                  {
+                      "path":  "data/raw/금융실명거래및비밀보장에관한법률/시행규칙.md",
+                      "sha256":  "e99bcf4294de3c36094e20ea390e0b792a4e4cddeaab7c37767f96b7a31cbc65",
+                      "bytes":  5305
+                  },
+                  {
+                      "path":  "data/raw/금융실명거래및비밀보장에관한법률/시행령.md",
+                      "sha256":  "5994650452c7eea149b92aa870632de3587645aa256a83e691085245584f8b69",
+                      "bytes":  47039
+                  },
+                  {
+                      "path":  "data/raw/금융지주회사법/법률.md",
+                      "sha256":  "21decbf365b324fb6a3b849aeace9d6c366656e70cdb165178e4ed3491daaa75",
+                      "bytes":  174069
+                  },
+                  {
+                      "path":  "data/raw/금융지주회사법/시행령.md",
+                      "sha256":  "97a4198609527a90c107ff205dd45c4a2387002da3d043b650a98c0b2bce2ae0",
+                      "bytes":  182928
+                  },
+                  {
+                      "path":  "data/raw/범죄수익은닉의규제및처벌등에관한법률/법률.md",
+                      "sha256":  "dc8d2b6ffe854eee522a4c1df74551a5d95ab4ce32ccc93446a0a067eceb991c",
+                      "bytes":  29917
+                  },
+                  {
+                      "path":  "data/raw/범죄수익은닉의규제및처벌등에관한법률/시행령.md",
+                      "sha256":  "305d78c0037896a5d7df43df56eed0e4bc599f5fd5dbaf231e9c6f78b7c4a380",
+                      "bytes":  8290
+                  },
+                  {
+                      "path":  "data/raw/보험업법/법률.md",
+                      "sha256":  "8103e0cea9093b4aa17a376ec338d5caf372df172b1ac5d18463210bf000c207",
+                      "bytes":  260724
+                  },
+                  {
+                      "path":  "data/raw/보험업법/시행규칙.md",
+                      "sha256":  "67306ae2ad124d9c916bd08ef7de4cb9c969378b807ec2299a1d15389ee35f85",
+                      "bytes":  62145
+                  },
+                  {
+                      "path":  "data/raw/보험업법/시행령.md",
+                      "sha256":  "b720219a6fc77492c81355400bbd5b8d53ba5200f0a759d573f4b5f7ddf6dad2",
+                      "bytes":  297889
+                  },
+                  {
+                      "path":  "data/raw/부정청탁및금품등수수의금지에관한법률/법률.md",
+                      "sha256":  "8cbfd9701e2b165c820ec69b14ae1d2196b288467a1a88ecd04bf80a10acdbea",
+                      "bytes":  44882
+                  },
+                  {
+                      "path":  "data/raw/부정청탁및금품등수수의금지에관한법률/시행령.md",
+                      "sha256":  "4bc38a793ffccf0d83a229bd60f317ad51d38b17ae6b2e2f6d09dc76a27cef50",
+                      "bytes":  42650
+                  },
+                  {
+                      "path":  "data/raw/부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+                      "sha256":  "3a039bd6cbe63d976b5d9b191d8d0dfeed3c4dab44179848fd1da4332a642d3c",
+                      "bytes":  112998
+                  },
+                  {
+                      "path":  "data/raw/부패방지및국민권익위원회의설치와운영에관한법률/시행령.md",
+                      "sha256":  "9bce77f083fd85483919ed3fbd8bdd07b758b58fa9304a6f33a1a31fef1bf0f0",
+                      "bytes":  100049
+                  },
+                  {
+                      "path":  "data/raw/상호저축은행법/법률.md",
+                      "sha256":  "fb412d3019d5b5814301691db777464a844195eb28c75059c6baa0847c69bf5e",
+                      "bytes":  146531
+                  },
+                  {
+                      "path":  "data/raw/상호저축은행법/시행규칙.md",
+                      "sha256":  "98bfaf9f5edcba44d44d2f2539e2f1b3a16dbfef252c6c048ef58de8f8c81f2e",
+                      "bytes":  4416
+                  },
+                  {
+                      "path":  "data/raw/상호저축은행법/시행령.md",
+                      "sha256":  "9e8af1375319030784919327820f78b3e9aceb8f2f2f2a8d98744fac1ff7cde4",
+                      "bytes":  143942
+                  },
+                  {
+                      "path":  "data/raw/신탁법/법률.md",
+                      "sha256":  "58370e8bd8391cfae1a2449910ac5d24954d563ece495d4d9b62091f49d3f2f0",
+                      "bytes":  109376
+                  },
+                  {
+                      "path":  "data/raw/신탁법/시행령.md",
+                      "sha256":  "8fcf30740536daf270445e75006f7d48e04a795d5f69a0e6179f321d94ea991d",
+                      "bytes":  16110
+                  },
+                  {
+                      "path":  "data/raw/은행법/법률.md",
+                      "sha256":  "c75db472a56ce7eec739e8403c3145bb03bc6d34208b264a11aa79243531f945",
+                      "bytes":  192252
+                  },
+                  {
+                      "path":  "data/raw/은행법/시행령.md",
+                      "sha256":  "a0a975630923d31af964c00df7360d3480107144f6359f2922ef6ce160e03b8b",
+                      "bytes":  184335
+                  },
+                  {
+                      "path":  "data/raw/자본시장과금융투자업에관한법률/법률.md",
+                      "sha256":  "165180a048528a85aa0baa3d28507ae41a68f1376edbb9c1fe379fcadcc7ea7e",
+                      "bytes":  1218940
+                  },
+                  {
+                      "path":  "data/raw/자본시장과금융투자업에관한법률/시행규칙.md",
+                      "sha256":  "db95d7a4184bd32d20fd8566bb298b32981f46ddead1a0f0e512d6d5dd1fc009",
+                      "bytes":  62225
+                  },
+                  {
+                      "path":  "data/raw/자본시장과금융투자업에관한법률/시행령.md",
+                      "sha256":  "ecb73dd8373b103e808281f185e6cae85dce343ba0b1fe0f81ec60e54800477c",
+                      "bytes":  1442543
+                  },
+                  {
+                      "path":  "data/raw/자체감사활동의심사에관한규칙/감사원규칙.md",
+                      "sha256":  "b4441090c3013324a250b0cf8ecdc9d755d4d31f1a64e4356cc153d63a70d5fe",
+                      "bytes":  14759
+                  },
+                  {
+                      "path":  "data/raw/자체감사활동의지원및대행ㆍ위탁감사에관한규칙/감사원규칙.md",
+                      "sha256":  "b90475a1c2fdc331ba5a0bd9108cb9f0633dc0d80cc3b78e6ca8eea6c3d8be5b",
+                      "bytes":  20512
+                  },
+                  {
+                      "path":  "data/raw/중소기업은행법/법률.md",
+                      "sha256":  "6e9846f4babc6ad987c39c6b6b1dd65796973ac3162a6e252421bd213ad16925",
+                      "bytes":  38588
+                  },
+                  {
+                      "path":  "data/raw/중소기업은행법/시행령.md",
+                      "sha256":  "c472ca186f418e07fd0b0cf0443c2487564d6fec47c6972179c4db2848fd21a9",
+                      "bytes":  24082
+                  },
+                  {
+                      "path":  "data/raw/중소기업은행법제54조제6항시행에관한규정/대통령령.md",
+                      "sha256":  "27c7bd60fe6e7d106db98bd7e7361eee9542f0982f44097af32dd968e09a8328",
+                      "bytes":  4506
+                  },
+                  {
+                      "path":  "data/raw/중소기업은행법제54조제6항시행에관한규정시행세칙/총리령.md",
+                      "sha256":  "e536ea2d18f8997f9f693c37719e979d590ad894c5a4a9a603391e4e13d2b6fc",
+                      "bytes":  5971
+                  },
+                  {
+                      "path":  "data/raw/중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+                      "sha256":  "b130b26bf942ddf80175687c97620870b62ff6987fe6fc59fd9744c304ef8be4",
+                      "bytes":  32112
+                  },
+                  {
+                      "path":  "data/raw/채권의공정한추심에관한법률/법률.md",
+                      "sha256":  "7aba20bd955d77da8420a9c5dd92f8ce6b46144f192583811fd9f69de3b2bc50",
+                      "bytes":  24794
+                  },
+                  {
+                      "path":  "data/raw/채권의공정한추심에관한법률/시행령.md",
+                      "sha256":  "bad317e251af0ea38a147fb0ab3ecd84ad746cbfbf5dc9fd81452c02e1881854",
+                      "bytes":  3484
+                  },
+                  {
+                      "path":  "data/raw/특정금융거래정보의보고및이용등에관한법률/법률.md",
+                      "sha256":  "b974935b10e0e23f59708827b59df20622a7fdb01b0b22ba390b7d5174e2fe1d",
+                      "bytes":  80311
+                  },
+                  {
+                      "path":  "data/raw/특정금융거래정보의보고및이용등에관한법률/시행령.md",
+                      "sha256":  "c311c0ce21dba71085c33df790c4a5ca1dcda7d1312733b6872c0504585fd570",
+                      "bytes":  85331
+                  },
+                  {
+                      "path":  "data/raw/한국산업은행법/법률.md",
+                      "sha256":  "7fc2d408707770f7bd80ffade071a63b16b51543f33068e4da47f8b2bd10cae3",
+                      "bytes":  60730
+                  },
+                  {
+                      "path":  "data/raw/한국산업은행법/시행령.md",
+                      "sha256":  "3b518f4e0a64d63a7d1bbcfb3db2eb534ee27625282a57ab9e04856d0859a3ab",
+                      "bytes":  58672
+                  },
+                  {
+                      "path":  "data/raw/한국수출입은행법/법률.md",
+                      "sha256":  "ecdb39732ae9b520e2f00dc86d5d605086e0642590d1aa5abe0efe73e0ff2a86",
+                      "bytes":  39692
+                  },
+                  {
+                      "path":  "data/raw/한국수출입은행법/시행령.md",
+                      "sha256":  "33585e2d7e2346e338011483199ac4698fb04752c3d700bfc6d1d7cbec0f0dc9",
+                      "bytes":  41228
+                  },
+                  {
+                      "path":  "data/raw/한국은행법/법률.md",
+                      "sha256":  "c518cfafc6b0a5126b9525a3c27976512c484fc4815e168e4548cbb1079d9eb6",
+                      "bytes":  61480
+                  },
+                  {
+                      "path":  "data/raw/한국은행법/시행령.md",
+                      "sha256":  "af94dfa2c536e7157b72ec9bef0feb024ce074eefe8f299b9913b2b08df18e30",
+                      "bytes":  23383
+                  },
+                  {
+                      "path":  "data/raw/한국은행정부유가증권취급규칙/재정경제부령.md",
+                      "sha256":  "8302cfec0ae2d20a240fbce30c2ef7b457f09daabbfcad29684e91ec4f1fabc6",
+                      "bytes":  24289
+                  },
+                  {
+                      "path":  "data/raw/한국은행통화안정증권법/법률.md",
+                      "sha256":  "8ad956f97279647d1683ae2e6c730d6c55f05a2733f01c7201b9fcb88b34499e",
+                      "bytes":  2802
+                  },
+                  {
+                      "path":  "data/taxonomy/README.md",
+                      "sha256":  "6021513366bd45695526371bbb3a4da03f9fd6046479671e27c18d1cc1fb735f",
+                      "bytes":  269
+                  },
+                  {
+                      "path":  "data/taxonomy/relation_taxonomy.closed-100.seed.jsonl",
+                      "sha256":  "962f3d317ecb330a81e4fbacafb29a8f3c98ae8ec8a5f452ce52c9f28cea6689",
+                      "bytes":  8871
+                  },
+                  {
+                      "path":  "deploy/local-storage/compose.yaml",
+                      "sha256":  "4326bd0e2b4171c3dfad5e217c1f2193f37fe06cfe4978d1e4847dccae6b0ade",
+                      "bytes":  1306
+                  },
+                  {
+                      "path":  "deploy/local-storage/load.ps1",
+                      "sha256":  "13748ae6b5c641d10f68df5abd59d50bf75aa4a92174218a76bc713176572807",
+                      "bytes":  14803
+                  },
+                  {
+                      "path":  "deploy/local-storage/README.ko.md",
+                      "sha256":  "5fdf0cbd57b93c8718e753998bf651cdb98a5deb0ed5d9568e0ab380d374f0fc",
+                      "bytes":  3760
+                  },
+                  {
+                      "path":  "docs/closed-network-source-structure.ko.md",
+                      "sha256":  "0130eaea2064cd40cb5b2aa26b4db9c9a2b8305d13058a68760cd3aaf3d280f4",
+                      "bytes":  4952
+                  },
+                  {
+                      "path":  "docs/handoff-v3-initial-normalization-2026-08-19.ko.md",
+                      "sha256":  "27faf21cfb2867977f2dcb174afafcf6109a166e81214861aa79fa6472dd2143",
+                      "bytes":  11039
+                  },
+                  {
+                      "path":  "docs/pipeline-implementation-status.ko.md",
+                      "sha256":  "9112b6afa042b046e6ce7001097bfae319b7469c098064315915454ad85e6536",
+                      "bytes":  3325
+                  },
+                  {
+                      "path":  "docs/search-pipeline.ko.md",
+                      "sha256":  "204ec48d4481cb8438dab668f3e5de9b4b5a0405cb3c858a15d5412816b1cb49",
+                      "bytes":  3772
+                  },
+                  {
+                      "path":  "docs/v3-svo-graph-design-instruction.ko.md",
+                      "sha256":  "9ac43e93e51c140683b281c855985defd645bc740181b906cfb37d761ec04abe",
+                      "bytes":  28637
+                  },
+                  {
+                      "path":  "docs/vector-search.ko.md",
+                      "sha256":  "14b030b8ba8b2bb1f47bc178016c780e3d50023c6a76feb159eba15e2072ae59",
+                      "bytes":  2812
+                  },
+                  {
+                      "path":  "examples/cross-document-qa-v1/final/qa_manifest.json",
+                      "sha256":  "fc2af3885bacc9a927d9acbbf71f065d20b86d450a3ea606f2b4c6881113c023",
+                      "bytes":  900
+                  },
+                  {
+                      "path":  "examples/cross-document-qa-v1/final/questions_answers.jsonl",
+                      "sha256":  "9e14d532b8abd6d24457dfdde558a5b7224f997db1547392688865b955133894",
+                      "bytes":  59654
+                  },
+                  {
+                      "path":  "examples/cross-document-qa-v1/final/questions_answers.md",
+                      "sha256":  "3d1c5b048db321ac9974d22472d58a9761df8523bd02a9401fce0c49b8a4483d",
+                      "bytes":  12689
+                  },
+                  {
+                      "path":  "INTERNAL_HANDOFF.md",
+                      "sha256":  "030d8f181a3d4ceab96bd63dbed65ccf651ae9ec95c7a5f50b501b38d7498a69",
+                      "bytes":  3161
+                  },
+                  {
+                      "path":  "prompts/entity_contextual_normalize.ko.md",
+                      "sha256":  "6a8c14669cf39492854fb3158ade7f0c7d46d25e5fa159b487cd29bad18e07e7",
+                      "bytes":  4222
+                  },
+                  {
+                      "path":  "prompts/entity_normalize.ko.md",
+                      "sha256":  "fde6a44499454ab3859340440f3c6e10eb5c203d15dfc94d1097d26edf5d3b53",
+                      "bytes":  2746
+                  },
+                  {
+                      "path":  "prompts/raw_svo_extract.ko.md",
+                      "sha256":  "347f829e95042c7fe6ed6a05877384d67d0d4b5efd94a99026ba482ba9181bac",
+                      "bytes":  8554
+                  },
+                  {
+                      "path":  "prompts/raw-svo-v3.ko.md",
+                      "sha256":  "286404c379daba13e1b165f8f068c5d9a441694fb67e42f113bad68364637fca",
+                      "bytes":  6860
+                  },
+                  {
+                      "path":  "prompts/raw-svo-v3-repair.ko.md",
+                      "sha256":  "1fee0878b6ea13b4688dea3f96392b78192e1e39c1b24e1f8d9ffbca1e6a3871",
+                      "bytes":  3430
+                  },
+                  {
+                      "path":  "prompts/README.md",
+                      "sha256":  "730c28e75f6ad524583b43c0393e7c55dae4bce81993ccfaecdf2fa3237eedc0",
+                      "bytes":  1376
+                  },
+                  {
+                      "path":  "prompts/relation_classify.ko.md",
+                      "sha256":  "888a7dbc52086130441b946d94c3f5ebd053c18815a19e58ebd529ddea95bae0",
+                      "bytes":  859
+                  },
+                  {
+                      "path":  "prompts/relation_closed_map.ko.md",
+                      "sha256":  "16f7fb28151843941ea1cd7885825174e53dea4e8758b1922c7b8bd53b36b5d0",
+                      "bytes":  837
+                  },
+                  {
+                      "path":  "prompts/relation_normalize.ko.md",
+                      "sha256":  "d933bfb6f7688f94a720b1519cc9aa41aaf413a6aa05d757fd1e1e0fd2b2d784",
+                      "bytes":  1804
+                  },
+                  {
+                      "path":  "prompts/relation_taxonomy.ko.md",
+                      "sha256":  "2076fcf270a6f2a1ddd22afeac7175dfc4041d991c13fd185234859b328f2c14",
+                      "bytes":  1272
+                  },
+                  {
+                      "path":  "pyproject.toml",
+                      "sha256":  "0c36b174cf2fa8ac475fc48395d85339970194abfc92a865c6a344104184e2f3",
+                      "bytes":  582
+                  },
+                  {
+                      "path":  "README.md",
+                      "sha256":  "836b7dfb463a3a973d374781442039c570c9001a9233e33b8f422fe8565ca7b3",
+                      "bytes":  8927
+                  },
+                  {
+                      "path":  "requirements-lock.txt",
+                      "sha256":  "96c05a56418f65ee44edc83218d875e3117d4ee359c5f3e4b7d801f9604aa711",
+                      "bytes":  583
+                  },
+                  {
+                      "path":  "runs/v3_scopefree_20260820/final/dictionary.audit.json",
+                      "sha256":  "63775979fc4aedb468c5b43953d27e686cf7895fd69b7cbdb9e101fd0e0d0b26",
+                      "bytes":  1163
+                  },
+                  {
+                      "path":  "runs/v3_scopefree_20260820/final/entity_dictionary.jsonl",
+                      "sha256":  "9da26ec93338bc020872a8c22b4164d28635cdeaab82646f4f34e2a433026ce7",
+                      "bytes":  10951234
+                  },
+                  {
+                      "path":  "runs/v3_scopefree_20260820/final/HANDOFF.md",
+                      "sha256":  "9dcf45f4ea1e0ed983ec2951bf392a12b00a5200684e103d6dfeb6024d6679de",
+                      "bytes":  4161
+                  },
+                  {
+                      "path":  "runs/v3_scopefree_20260820/final/manifest.json",
+                      "sha256":  "e19805dfbe185658456362e1755ca48cc57190496184358248dd51f2860ebb30",
+                      "bytes":  2141
+                  },
+                  {
+                      "path":  "runs/v3_scopefree_20260820/final/raw_svo.audit.json",
+                      "sha256":  "013b88d6f390488bec0d0218aa22920e9338f41f1933cf639978a23f944ff23a",
+                      "bytes":  11935
+                  },
+                  {
+                      "path":  "runs/v3_scopefree_20260820/final/raw_svo.jsonl",
+                      "sha256":  "ee0c168fd4d6e79ca39fdbf91db828b17a9f826d854850ee8d2fc9b7ff1acc54",
+                      "bytes":  23377376
+                  },
+                  {
+                      "path":  "runs/v3_scopefree_20260820/final/relation_dictionary.jsonl",
+                      "sha256":  "1553215de112a4b62539bcadf1bd2dddcd772cd1ef19d85155fa2d0c924eb000",
+                      "bytes":  2166443
+                  },
+                  {
+                      "path":  "runs/v3_scopefree_20260820/final/semantic_units.jsonl",
+                      "sha256":  "7cd25434111a8a2a61b08a1d53f65b439b1ca3cada6c7c6ea11fa30c8757381b",
+                      "bytes":  18201061
+                  },
+                  {
+                      "path":  "src/woori_graph/__init__.py",
+                      "sha256":  "daa7a882ed9971f8dfcc3d2a6717b368104a4932bb2f0a3a6dc99250b2b3dfa6",
+                      "bytes":  39
+                  },
+                  {
+                      "path":  "src/woori_graph/__main__.py",
+                      "sha256":  "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a",
+                      "bytes":  80
+                  },
+                  {
+                      "path":  "src/woori_graph/audit.py",
+                      "sha256":  "7ec4ada32673debb3041d32264fbaf823efd4228b58c72c5520db2b61d6171ce",
+                      "bytes":  16582
+                  },
+                  {
+                      "path":  "src/woori_graph/candidates.py",
+                      "sha256":  "eedc4611789a49a2ba05818e1d20fbf5e5c69f5f52ac87e8065d79746041e995",
+                      "bytes":  2666
+                  },
+                  {
+                      "path":  "src/woori_graph/cli.py",
+                      "sha256":  "aec77dafb6024e0e0043de7cad60d9f89abe878f108cfec84e0890ece5448e8b",
+                      "bytes":  49437
+                  },
+                  {
+                      "path":  "src/woori_graph/closed_relations.py",
+                      "sha256":  "74ac4219d5bfc9e27e5bb97b087e79b91536b03a74884828d29cc8d695e730da",
+                      "bytes":  19726
+                  },
+                  {
+                      "path":  "src/woori_graph/contextual_entities.py",
+                      "sha256":  "7feddac700be281bd8149fae48b30913dd9a059dc56cb807de4256b20631e2fe",
+                      "bytes":  17165
+                  },
+                  {
+                      "path":  "src/woori_graph/dictionary_build/__init__.py",
+                      "sha256":  "69367553f41beb8a04f35cf99d57ad604a92cd0bc530ea7d9f133d0d3457f3db",
+                      "bytes":  387
+                  },
+                  {
+                      "path":  "src/woori_graph/dictionary_build/pipeline.py",
+                      "sha256":  "3d8bdd027f53c6873858b9a161bb4868f515bb6cb5a93a54ee4887f9af5c8cc7",
+                      "bytes":  2876
+                  },
+                  {
+                      "path":  "src/woori_graph/dictionary_build/seeding.py",
+                      "sha256":  "820102e32835b28685bb6afa58f7bf35813554aec2bb9686b9997f1f63d6e177",
+                      "bytes":  5909
+                  },
+                  {
+                      "path":  "src/woori_graph/documents.py",
+                      "sha256":  "30b8d8d946c77491f04b29e04d4b33fd22f73d429221701aae897ea5de26c9e4",
+                      "bytes":  12134
+                  },
+                  {
+                      "path":  "src/woori_graph/embeddings.py",
+                      "sha256":  "74aa4ae74bee62cc5d9eaa12ddac4f0ae60618ddef54e5faf08cf150cfae13e2",
+                      "bytes":  9053
+                  },
+                  {
+                      "path":  "src/woori_graph/entity_clustering.py",
+                      "sha256":  "661f758d73d4e8a89fbb4ab3a280799c3f89d2302c3f6103fbfd06ba590c6893",
+                      "bytes":  13909
+                  },
+                  {
+                      "path":  "src/woori_graph/entity_resolution.py",
+                      "sha256":  "38dd2ac66ed70d7f69dca5af323d166c102909ae4f5cdfb861cc86d392738ff1",
+                      "bytes":  735
+                  },
+                  {
+                      "path":  "src/woori_graph/environment.py",
+                      "sha256":  "0e5861c676d30f4615718793418f3ff5d2f67fdf77bb2c4b4e9c7b831220818b",
+                      "bytes":  574
+                  },
+                  {
+                      "path":  "src/woori_graph/extraction.py",
+                      "sha256":  "7e9f6c2ee784db50d61b9c623c50cf9295d677b70d27847d9cc1f241093198ba",
+                      "bytes":  23871
+                  },
+                  {
+                      "path":  "src/woori_graph/graph_build/__init__.py",
+                      "sha256":  "860d94b65957382dee3fe5f41ed8c7e5a7541e457c81c0a19be275f8594dad70",
+                      "bytes":  468
+                  },
+                  {
+                      "path":  "src/woori_graph/graph_build/ingest.py",
+                      "sha256":  "c0e36538640cf89ca8c9d145fed3939ea8dc5d241cd5bbc5ea33d528b8fdbcbe",
+                      "bytes":  17304
+                  },
+                  {
+                      "path":  "src/woori_graph/graph_build/pipeline.py",
+                      "sha256":  "3d2f8373216385914af7ea550cc6e13bf40de577ab2ca40bc1e263fc6303ae19",
+                      "bytes":  2674
+                  },
+                  {
+                      "path":  "src/woori_graph/graph_build/relation_mapper.py",
+                      "sha256":  "8f90355d945b28a4b4d773e2799a68a36a0b20f3469521ea98b8aedb97ce5ff8",
+                      "bytes":  4385
+                  },
+                  {
+                      "path":  "src/woori_graph/graph_mapping.py",
+                      "sha256":  "9ead12e2b76b0a4c01fe6eb5f3a3ad23d735b864490c2058a9658eb7a49e2187",
+                      "bytes":  14317
+                  },
+                  {
+                      "path":  "src/woori_graph/ids.py",
+                      "sha256":  "60b49fe1cd5a9a9a1f91db14db463709dfb8cde01f897d31697e78ab24845b73",
+                      "bytes":  322
+                  },
+                  {
+                      "path":  "src/woori_graph/jsonl.py",
+                      "sha256":  "fee93c0aa7ef04863128b64ef4e8634bddadf1b05933bdd4b1719e6dd728a064",
+                      "bytes":  2538
+                  },
+                  {
+                      "path":  "src/woori_graph/models.py",
+                      "sha256":  "9522b236198b2d6e2de2220b5fbd96f97cd11d8c7dcf3ba8c1127d09e5fbe04d",
+                      "bytes":  2432
+                  },
+                  {
+                      "path":  "src/woori_graph/normalization.py",
+                      "sha256":  "ac69a7d80860fc8112e47f549fd7f2381c959d17a32a992a6846178b3373ccda",
+                      "bytes":  15810
+                  },
+                  {
+                      "path":  "src/woori_graph/prompting.py",
+                      "sha256":  "d87e387a263a86f25a8ff44e82f8c25912e77e5c49f5406024a0b549e6a50021",
+                      "bytes":  585
+                  },
+                  {
+                      "path":  "src/woori_graph/search/__init__.py",
+                      "sha256":  "96385e8d9a78c886f74bf6a235f802346c293a0614a73be01865aa6d6e43385e",
+                      "bytes":  562
+                  },
+                  {
+                      "path":  "src/woori_graph/search/application.py",
+                      "sha256":  "85caef1d31ee5b90a80fa2063bcc62b7159fe00fe49182c525bc54f0806455d9",
+                      "bytes":  2989
+                  },
+                  {
+                      "path":  "src/woori_graph/search/artifacts.py",
+                      "sha256":  "66ccfa02a2200921e821e89e9ab9b50df4e3bba931f8f35007f3319197a8d843",
+                      "bytes":  15982
+                  },
+                  {
+                      "path":  "src/woori_graph/search/config.py",
+                      "sha256":  "6dfa54a662628a1f7fb55413ebe78b0b868b30576b609e304dc519fcd5caf4f6",
+                      "bytes":  5885
+                  },
+                  {
+                      "path":  "src/woori_graph/search/cross_document.py",
+                      "sha256":  "463610e4c3b1678fe463e0e44c6377df765fec034f56621a93ac18884d44b737",
+                      "bytes":  11147
+                  },
+                  {
+                      "path":  "src/woori_graph/search/models.py",
+                      "sha256":  "b94de291e9231225df3328f9a3b4ce291010c92e21af5d51db7d3037fead122c",
+                      "bytes":  4687
+                  },
+                  {
+                      "path":  "src/woori_graph/search/pipeline.py",
+                      "sha256":  "07f6aa78a140f9d0fc1dec4e8158f3baba96b15b54102fdbcf54a4a512097c54",
+                      "bytes":  18825
+                  },
+                  {
+                      "path":  "src/woori_graph/search/repositories.py",
+                      "sha256":  "eb1f4e6fd4ca43e5d64dff6a6027f8877ea0c50516dc9ab171d80a2537b3c79a",
+                      "bytes":  17000
+                  },
+                  {
+                      "path":  "src/woori_graph/storage/__init__.py",
+                      "sha256":  "28806e428f93998e275e2224013a8ec6da521b062ed4920aad4bd225896b9fe6",
+                      "bytes":  233
+                  },
+                  {
+                      "path":  "src/woori_graph/storage/load_files.py",
+                      "sha256":  "16b464a4ef96fa64000f7528b29a572f6acb94b07052c767ea95221a1179c88f",
+                      "bytes":  34627
+                  },
+                  {
+                      "path":  "tests/test_audit.py",
+                      "sha256":  "7de47e30b03f09f19d12635f93cf60da060184d0880c3969ae21caa97367983e",
+                      "bytes":  2685
+                  },
+                  {
+                      "path":  "tests/test_candidates.py",
+                      "sha256":  "7fd28a1618d9b371890e011e86b11f4e0bbfee99df4fd42529087c28d758ed28",
+                      "bytes":  874
+                  },
+                  {
+                      "path":  "tests/test_closed_relations.py",
+                      "sha256":  "d46b624dc20adc46b55f787c9b984018d2369a3b3a91f58987cd6c9b696e8ef7",
+                      "bytes":  4857
+                  },
+                  {
+                      "path":  "tests/test_contextual_entities.py",
+                      "sha256":  "bf424705961708d34f2ec0e4f2299aa72c02f1db7a47f4b4494c121e8f13c55f",
+                      "bytes":  4379
+                  },
+                  {
+                      "path":  "tests/test_dictionary_seeding.py",
+                      "sha256":  "5ae94a097db84589b0e88672c93433935274cfd2ff52a1172a08e9ed7bb769a4",
+                      "bytes":  2281
+                  },
+                  {
+                      "path":  "tests/test_document_ingest.py",
+                      "sha256":  "8387e947d3a86844ad464cefb5adab6f7c1fbc68b24a40810e103a2963e34c53",
+                      "bytes":  4879
+                  },
+                  {
+                      "path":  "tests/test_documents.py",
+                      "sha256":  "308b074c776f44366f400a6f63643f146e613fbe8cea5ee483f46c0dca79548b",
+                      "bytes":  3119
+                  },
+                  {
+                      "path":  "tests/test_embeddings.py",
+                      "sha256":  "6c0cd6c4824d684e4dd89fcfbaf212f35e888287f81c22b8d0d41e91fd63d1fa",
+                      "bytes":  1567
+                  },
+                  {
+                      "path":  "tests/test_entity_clustering.py",
+                      "sha256":  "a878ee9eb3b17cb60fa31b32c43b566546b4a0f9da53513a751658fe7d28196d",
+                      "bytes":  3846
+                  },
+                  {
+                      "path":  "tests/test_extraction.py",
+                      "sha256":  "986d5dc834691c5b0174da53c6c98d495d8b01ac86921a5de7dbf97db9068d18",
+                      "bytes":  11862
+                  },
+                  {
+                      "path":  "tests/test_graph_build_pipeline.py",
+                      "sha256":  "a7d517f8e13a548f961099a22baa8118abc700ab7ad22ef5739c7f958c56cd29",
+                      "bytes":  1851
+                  },
+                  {
+                      "path":  "tests/test_graph_mapping.py",
+                      "sha256":  "814ac73286f5cb166315f0083e05e0deafd7ff6af2793a72d36055494f882261",
+                      "bytes":  5865
+                  },
+                  {
+                      "path":  "tests/test_jsonl.py",
+                      "sha256":  "99f1ab34f278a4f8e6355006f2252254736895e0f042761c13644591de07c671",
+                      "bytes":  632
+                  },
+                  {
+                      "path":  "tests/test_normalization.py",
+                      "sha256":  "df405c3243942b9db5df6e358f806949a3f6373d84ba26f97ed5e8dc5248258b",
+                      "bytes":  6465
+                  },
+                  {
+                      "path":  "tests/test_search_pipeline.py",
+                      "sha256":  "b89dee3f036f87e755dd9899d1832f76fcb7f4a16c772dc0b133cdb604361e67",
+                      "bytes":  8614
+                  },
+                  {
+                      "path":  "tests/test_storage_load_files.py",
+                      "sha256":  "eaaf6e1cc544b4dfb596b04545191d232a831d7111b757cdc4589f6b8c67ee8b",
+                      "bytes":  8363
+                  },
+                  {
+                      "path":  "wheelhouse/annotated_types-0.7.0-py3-none-any.whl",
+                      "sha256":  "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53",
+                      "bytes":  13643
+                  },
+                  {
+                      "path":  "wheelhouse/anyio-4.14.0-py3-none-any.whl",
+                      "sha256":  "dd9b7a2a9799ed6552fde617b2c5df02b7fdd7d88392fc48101e51bae46164d9",
+                      "bytes":  123506
+                  },
+                  {
+                      "path":  "wheelhouse/certifi-2026.6.17-py3-none-any.whl",
+                      "sha256":  "2227dcbaafe0d2f59279d1762ddddc37783ed4354594f194ffc31d20f41fc3db",
+                      "bytes":  133289
+                  },
+                  {
+                      "path":  "wheelhouse/colorama-0.4.6-py2.py3-none-any.whl",
+                      "sha256":  "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+                      "bytes":  25335
+                  },
+                  {
+                      "path":  "wheelhouse/distro-1.9.0-py3-none-any.whl",
+                      "sha256":  "7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2",
+                      "bytes":  20277
+                  },
+                  {
+                      "path":  "wheelhouse/h11-0.16.0-py3-none-any.whl",
+                      "sha256":  "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+                      "bytes":  37515
+                  },
+                  {
+                      "path":  "wheelhouse/httpcore-1.0.9-py3-none-any.whl",
+                      "sha256":  "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+                      "bytes":  78784
+                  },
+                  {
+                      "path":  "wheelhouse/httpx-0.28.1-py3-none-any.whl",
+                      "sha256":  "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+                      "bytes":  73517
+                  },
+                  {
+                      "path":  "wheelhouse/idna-3.18-py3-none-any.whl",
+                      "sha256":  "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2",
+                      "bytes":  65455
+                  },
+                  {
+                      "path":  "wheelhouse/iniconfig-2.3.0-py3-none-any.whl",
+                      "sha256":  "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12",
+                      "bytes":  7484
+                  },
+                  {
+                      "path":  "wheelhouse/jiter-0.16.0-cp312-cp312-win_amd64.whl",
+                      "sha256":  "1878349266f8ee36ecb1375cc5ba2f115f35fd9f0a1a4119e725e379126647f7",
+                      "bytes":  196905
+                  },
+                  {
+                      "path":  "wheelhouse/openai-2.54.0-py3-none-any.whl",
+                      "sha256":  "89089789197ccdb87f173a03145ed1598d00795220c93e96cf712b1cbf5e5f2b",
+                      "bytes":  1660351
+                  },
+                  {
+                      "path":  "wheelhouse/packaging-26.2-py3-none-any.whl",
+                      "sha256":  "5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e",
+                      "bytes":  100195
+                  },
+                  {
+                      "path":  "wheelhouse/pluggy-1.6.0-py3-none-any.whl",
+                      "sha256":  "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+                      "bytes":  20538
+                  },
+                  {
+                      "path":  "wheelhouse/psycopg_binary-3.3.4-cp312-cp312-win_amd64.whl",
+                      "sha256":  "494ca54901be8cf9eb7e02c25b731f2317c378efa44f43e8f9bd0e1184ae7be4",
+                      "bytes":  3560782
+                  },
+                  {
+                      "path":  "wheelhouse/psycopg-3.3.4-py3-none-any.whl",
+                      "sha256":  "b6bbc25ccf05c8fad3b061d9db2ef0909a555171b84b07f29458a447253d679a",
+                      "bytes":  213001
+                  },
+                  {
+                      "path":  "wheelhouse/pydantic_core-2.46.4-cp312-cp312-win_amd64.whl",
+                      "sha256":  "e9c26f834c65f5752f3f06cb08cb86a913ceb7274d0db6e267808a708b46bc89",
+                      "bytes":  2072919
+                  },
+                  {
+                      "path":  "wheelhouse/pydantic-2.13.4-py3-none-any.whl",
+                      "sha256":  "45a282cde31d808236fd7ea9d919b128653c8b38b393d1c4ab335c62924d9aba",
+                      "bytes":  472262
+                  },
+                  {
+                      "path":  "wheelhouse/pygments-2.20.0-py3-none-any.whl",
+                      "sha256":  "81a9e26dd42fd28a23a2d169d86d7ac03b46e2f8b59ed4698fb4785f946d0176",
+                      "bytes":  1231151
+                  },
+                  {
+                      "path":  "wheelhouse/pytest-8.4.2-py3-none-any.whl",
+                      "sha256":  "872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79",
+                      "bytes":  365750
+                  },
+                  {
+                      "path":  "wheelhouse/setuptools-81.0.0-py3-none-any.whl",
+                      "sha256":  "fdd925d5c5d9f62e4b74b30d6dd7828ce236fd6ed998a08d81de62ce5a6310d6",
+                      "bytes":  1062021
+                  },
+                  {
+                      "path":  "wheelhouse/sniffio-1.3.1-py3-none-any.whl",
+                      "sha256":  "2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2",
+                      "bytes":  10235
+                  },
+                  {
+                      "path":  "wheelhouse/tqdm-4.68.3-py3-none-any.whl",
+                      "sha256":  "39832cc2def2789a6f29df83f172db7416cea70052c0907a57801c5f2fdccb03",
+                      "bytes":  78337
+                  },
+                  {
+                      "path":  "wheelhouse/typing_extensions-4.15.0-py3-none-any.whl",
+                      "sha256":  "f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548",
+                      "bytes":  44614
+                  },
+                  {
+                      "path":  "wheelhouse/typing_inspection-0.4.2-py3-none-any.whl",
+                      "sha256":  "4ed1cacbdc298c220f1bd249ed5287caa16f34d44ef4e9c3d0cbad5b521545e7",
+                      "bytes":  14611
+                  },
+                  {
+                      "path":  "wheelhouse/tzdata-2026.2-py2.py3-none-any.whl",
+                      "sha256":  "bbe9af844f658da81a5f95019480da3a89415801f6cc966806612cc7169bffe7",
+                      "bytes":  349321
+                  }
+              ]
+}

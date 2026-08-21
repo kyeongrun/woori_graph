@@ -1,0 +1,13 @@
+[paths]
+artifact_root = "../output"
+env_file = "../.env"
+[services]
+opensearch_url = "http://localhost:9200"
+postgres_dsn_env = "TEST_POSTGRES_DSN"
+[search]
+max_hops = 3
+timeout_seconds = 180
+request_timeout_seconds = 30
+[answer]
+enabled = true
+prompt = "../prompts/grounded_answer.ko.md"

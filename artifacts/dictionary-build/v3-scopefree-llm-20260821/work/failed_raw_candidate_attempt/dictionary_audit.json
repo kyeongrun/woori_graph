@@ -1,0 +1,62 @@
+{
+  "passed": false,
+  "counts": {
+    "raw_entity_surface_names": 11317,
+    "raw_predicates": 4013,
+    "entities": 10824,
+    "entity_types": {
+      "CONCEPT": 7900,
+      "LEGAL_INSTRUMENT": 682,
+      "ORGANIZATION": 753,
+      "OTHER": 110,
+      "PERSON": 1379
+    },
+    "relation_types": 98,
+    "entity_aliases": 13144,
+    "relation_aliases": 6045
+  },
+  "checks": {
+    "entity_aliases_have_no_conflicts": true,
+    "relation_aliases_have_no_conflicts": true,
+    "entity_ids_unique": true,
+    "relation_type_ids_unique": true,
+    "entity_canonical_names_unique": true,
+    "relation_canonical_names_unique": true,
+    "entity_ids_are_stable_uuids": true,
+    "all_entity_types_present": true,
+    "all_entity_types_valid": true,
+    "relation_type_ids_are_stable_uuids": true,
+    "canonical_entity_alias_is_first": true,
+    "canonical_relation_alias_is_first": true,
+    "no_scope_fields": true,
+    "no_global_self_reference_aliases": false,
+    "no_pure_numeric_entities": true,
+    "all_raw_entities_mapped": false,
+    "all_raw_predicates_mapped": true,
+    "relation_type_count_is_expected": true,
+    "relation_type_count_at_most_100": true
+  },
+  "details": {
+    "entity_alias_conflict": null,
+    "relation_alias_conflict": null,
+    "missing_entity_names": [
+      "공공감사에 관한 법률",
+      "공익신고자 보호법",
+      "공직자의 이해충돌 방지법",
+      "금융거래지표의 관리에 관한 법률",
+      "범죄수익은닉의 규제 및 처벌 등에 관한 법률",
+      "부정청탁 및 금품등 수수의 금지에 관한 법률",
+      "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+      "중소기업은행법",
+      "특정 금융거래정보의 보고 및 이용 등에 관한 법률",
+      "한국산업은행법",
+      "한국수출입은행법"
+    ],
+    "missing_predicates": [],
+    "self_reference_aliases": [
+      "이 규칙",
+      "이 법"
+    ],
+    "pure_numeric_entities": []
+  }
+}

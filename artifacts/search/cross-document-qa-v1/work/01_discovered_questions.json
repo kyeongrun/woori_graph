@@ -1,0 +1,232 @@
+[
+  {
+    "question_id": "crossdoc-01-60fadcc395",
+    "question": "‘금융위원회’와 ‘통지를 받은 자’는 ‘과징금’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+    "start_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+    "start_name": "금융위원회",
+    "middle_entity_id": "6cdfdb6f-2547-5c43-ae55-e5d7d75f6335",
+    "middle_name": "과징금",
+    "end_entity_id": "02bfbddd-68b0-5730-893f-fc93044bc429",
+    "end_name": "통지를 받은 자",
+    "expected_relation_ids": [
+      "8ffc9730-1025-575d-9912-4daf759535b8",
+      "b4f8ad3d-a3e5-50e5-a3d6-eb4eb4e79dd7"
+    ],
+    "expected_document_ids": [
+      "d4243c50-40f8-5847-bb29-f0dc940432c0",
+      "181ee1f0-996f-5c2e-9e7e-fc5dd97829b1"
+    ],
+    "expected_document_titles": [
+      "은행법",
+      "금융지주회사법 시행령"
+    ],
+    "discovery_score": 8.31807605
+  },
+  {
+    "question_id": "crossdoc-02-e934efa3bf",
+    "question": "‘투자회사’와 ‘상호회사 사원총회’는 ‘상법’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+    "start_entity_id": "3456734b-96b6-56e3-9ac1-ef45afe338a5",
+    "start_name": "투자회사",
+    "middle_entity_id": "f09525f8-ca4c-5918-8215-e0988439258e",
+    "middle_name": "상법",
+    "end_entity_id": "ad773269-b094-5ab9-898e-f05744adc560",
+    "end_name": "상호회사 사원총회",
+    "expected_relation_ids": [
+      "86441724-f7f7-5fe9-8a13-dbec6d709bfc",
+      "659f7022-43d2-5489-a2a4-709e133abf27"
+    ],
+    "expected_document_ids": [
+      "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+      "d0e95f75-270b-5f97-b116-5bfd6f4c356e"
+    ],
+    "expected_document_titles": [
+      "자본시장과 금융투자업에 관한 법률",
+      "보험업법"
+    ],
+    "discovery_score": 8.26059699
+  },
+  {
+    "question_id": "crossdoc-03-2be86edfe3",
+    "question": "‘친족’와 ‘동거인’는 ‘구조금의 지급’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+    "start_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+    "start_name": "친족",
+    "middle_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+    "middle_name": "구조금의 지급",
+    "end_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+    "end_name": "동거인",
+    "expected_relation_ids": [
+      "db916f86-e25d-5baa-afce-526ae89b3bf6",
+      "e08bc1a5-6ffb-542e-8826-f9d592a377de"
+    ],
+    "expected_document_ids": [
+      "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+      "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+    ],
+    "expected_document_titles": [
+      "공익신고자 보호법",
+      "공직자의 이해충돌 방지법"
+    ],
+    "discovery_score": 7.10606625
+  },
+  {
+    "question_id": "crossdoc-04-ae54e7f450",
+    "question": "‘금융위원회’와 ‘금융감독원장’는 ‘자료의 제출’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+    "start_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+    "start_name": "금융위원회",
+    "middle_entity_id": "989d4200-f1db-54cd-8921-127d096f5ac3",
+    "middle_name": "자료의 제출",
+    "end_entity_id": "a930d826-ffc1-58d5-9f3c-42b00699d783",
+    "end_name": "금융감독원장",
+    "expected_relation_ids": [
+      "0bda229e-3b16-5e05-8f69-bd4ac5bf1add",
+      "fa58272f-a312-5717-a69b-fcec676a0058"
+    ],
+    "expected_document_ids": [
+      "d4243c50-40f8-5847-bb29-f0dc940432c0",
+      "adda80ee-63b3-5e3a-af96-8e0765774c3d"
+    ],
+    "expected_document_titles": [
+      "은행법",
+      "금융지주회사법"
+    ],
+    "discovery_score": 6.96508966
+  },
+  {
+    "question_id": "crossdoc-05-2c02a2d8a7",
+    "question": "‘금융위원회’와 ‘법원’는 ‘등록’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+    "start_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+    "start_name": "금융위원회",
+    "middle_entity_id": "626f9ec3-2ba8-5292-91f2-f21dc661632c",
+    "middle_name": "등록",
+    "end_entity_id": "7bfad492-7b76-5d84-9779-e85df08ede79",
+    "end_name": "법원",
+    "expected_relation_ids": [
+      "4e35c206-5862-59b8-be9e-c3dd9a09eead",
+      "37307158-54c1-5712-abaf-136e7893fd00"
+    ],
+    "expected_document_ids": [
+      "d0e95f75-270b-5f97-b116-5bfd6f4c356e",
+      "8b6c42d9-0041-53df-87c9-63d2596bd726"
+    ],
+    "expected_document_titles": [
+      "보험업법",
+      "신탁법"
+    ],
+    "discovery_score": 6.95426464
+  },
+  {
+    "question_id": "crossdoc-06-ad45d75da8",
+    "question": "‘금융위원회’와 ‘공직자’는 ‘사실’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+    "start_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+    "start_name": "금융위원회",
+    "middle_entity_id": "50412748-bada-56ed-9724-d4754e73e7c7",
+    "middle_name": "사실",
+    "end_entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+    "end_name": "공직자",
+    "expected_relation_ids": [
+      "c749b825-538e-5765-9587-355c7cfa7502",
+      "00919760-4cc4-58e2-9734-23c912257136"
+    ],
+    "expected_document_ids": [
+      "d0e95f75-270b-5f97-b116-5bfd6f4c356e",
+      "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+    ],
+    "expected_document_titles": [
+      "보험업법",
+      "공직자의 이해충돌 방지법"
+    ],
+    "discovery_score": 6.87339559
+  },
+  {
+    "question_id": "crossdoc-07-87a020f1e1",
+    "question": "‘공직자등’와 ‘공직자’는 ‘서면’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+    "start_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+    "start_name": "공직자등",
+    "middle_entity_id": "bd4f812c-fad6-507a-83f4-6f4c21f048e4",
+    "middle_name": "서면",
+    "end_entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+    "end_name": "공직자",
+    "expected_relation_ids": [
+      "7685ae0a-0239-5bfc-9a43-e0a12021c15a",
+      "da3106d4-356e-5b21-a439-3ed56d85cc82"
+    ],
+    "expected_document_ids": [
+      "2323b602-d871-544e-a26a-c4bfde12e1d3",
+      "4a5e1073-ef1f-5b89-a06c-4ec50a22670a"
+    ],
+    "expected_document_titles": [
+      "부정청탁 및 금품등 수수의 금지에 관한 법률 시행령",
+      "공직자의 이해충돌 방지법 시행령"
+    ],
+    "discovery_score": 6.8060844
+  },
+  {
+    "question_id": "crossdoc-08-52d2c441d3",
+    "question": "‘과태료’와 ‘금융위원회’는 ‘직무대행자’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+    "start_entity_id": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+    "start_name": "과태료",
+    "middle_entity_id": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+    "middle_name": "직무대행자",
+    "end_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+    "end_name": "금융위원회",
+    "expected_relation_ids": [
+      "d42f3c9a-63d1-5837-b7d6-fe0e37f6f0a8",
+      "2f2ab281-a646-578b-a30f-dba504974ffa"
+    ],
+    "expected_document_ids": [
+      "d0e95f75-270b-5f97-b116-5bfd6f4c356e",
+      "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c"
+    ],
+    "expected_document_titles": [
+      "보험업법",
+      "자본시장과 금융투자업에 관한 법률"
+    ],
+    "discovery_score": 6.74479298
+  },
+  {
+    "question_id": "crossdoc-09-b01b9ea1ab",
+    "question": "‘서류’와 ‘금융위원회’는 ‘등록신청서’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+    "start_entity_id": "4e6e6a78-7642-5de3-8bfe-8e3149b1f798",
+    "start_name": "서류",
+    "middle_entity_id": "d4e30e9b-cc47-59d8-9b04-2afd7ee6ed51",
+    "middle_name": "등록신청서",
+    "end_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+    "end_name": "금융위원회",
+    "expected_relation_ids": [
+      "b21fd333-b57b-5930-8297-b0d2e67e3859",
+      "4d77a119-0ff5-5b6e-8369-351c6692fdff"
+    ],
+    "expected_document_ids": [
+      "6ddc5902-1a95-5ae2-b7cf-f36391cf0cca",
+      "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c"
+    ],
+    "expected_document_titles": [
+      "자본시장과 금융투자업에 관한 법률 시행령",
+      "자본시장과 금융투자업에 관한 법률"
+    ],
+    "discovery_score": 6.74093631
+  },
+  {
+    "question_id": "crossdoc-10-987048c9b5",
+    "question": "‘금융위원회’와 ‘금융통화위원회’는 ‘조건’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+    "start_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+    "start_name": "금융위원회",
+    "middle_entity_id": "68e987cd-0e29-5765-acd3-7e63cce79269",
+    "middle_name": "조건",
+    "end_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+    "end_name": "금융통화위원회",
+    "expected_relation_ids": [
+      "8d53ed7e-e0b4-52b1-af94-f456ece3594c",
+      "5602f1b9-c928-5631-8267-679601c55b1d"
+    ],
+    "expected_document_ids": [
+      "d4243c50-40f8-5847-bb29-f0dc940432c0",
+      "ce48b361-d58e-57a6-8f6e-7e95b4633a31"
+    ],
+    "expected_document_titles": [
+      "은행법",
+      "한국은행법"
+    ],
+    "discovery_score": 6.67678167
+  }
+]

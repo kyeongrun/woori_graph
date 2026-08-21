@@ -1,0 +1,341 @@
+{
+  "query": "‘투자회사’와 ‘상호회사 사원총회’는 ‘상법’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "entities": [
+    {
+      "entity_id": "3456734b-96b6-56e3-9ac1-ef45afe338a5",
+      "canonical_name": "투자회사",
+      "entity_type": "OTHER",
+      "score": 0.031009615384615385,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "8ac38f9e-d8ba-5c58-a224-82e456d6fef2",
+      "canonical_name": "상호회사",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "0aba0e5f-d552-5014-ad85-3b51f0eb8dba",
+      "canonical_name": "투자회사 설립 위반 사항",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "0aafbdc2-5790-5551-a14b-680ce6d622ae",
+      "canonical_name": "사원총회",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "4e769b48-e24a-5885-9916-ffab64254a34",
+      "canonical_name": "투자회사의 법인이사",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "f09525f8-ca4c-5918-8215-e0988439258e",
+      "canonical_name": "상법",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "496ceb5c-ed10-5a72-ab64-618d93c0e033",
+      "canonical_name": "투자회사등",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "80c2b5f4-48ae-5bf6-85e0-31ab1b842f49",
+      "canonical_name": "투자합자회사",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "86441724-f7f7-5fe9-8a13-dbec6d709bfc",
+      "source_entity_id": "f09525f8-ca4c-5918-8215-e0988439258e",
+      "source_name": "상법",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "3456734b-96b6-56e3-9ac1-ef45afe338a5",
+      "target_name": "투자회사",
+      "score": 0.02803921568627451,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "8fec353a-ba30-5301-9d04-3949ae726c7a",
+      "source_entity_id": "8ac38f9e-d8ba-5c58-a224-82e456d6fef2",
+      "source_name": "상호회사",
+      "relation_type_id": "a801992e-d50d-595c-8890-b27e1755dd48",
+      "relation_type_name": "등록하다",
+      "target_entity_id": "8ac38f9e-d8ba-5c58-a224-82e456d6fef2",
+      "target_name": "상호회사",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "bd321a75-212a-5fd7-9882-f095845f2ee2",
+      "source_entity_id": "93923ffc-0a93-5931-92df-f140e1f5cf96",
+      "source_name": "「상법」 제218조",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "80c2b5f4-48ae-5bf6-85e0-31ab1b842f49",
+      "target_name": "투자합자회사",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "8fe9f0b3-34ae-5e11-9e8c-072e45ce54e0",
+      "source_entity_id": "ea8709b3-d69d-592d-a289-b7afeb4aadd7",
+      "source_name": "「상법」 제217조",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "80c2b5f4-48ae-5bf6-85e0-31ab1b842f49",
+      "target_name": "투자합자회사",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "e5bb9fbc-a7cc-5ce9-ad46-131813ba96e4",
+      "source_entity_id": "8ac38f9e-d8ba-5c58-a224-82e456d6fef2",
+      "source_name": "상호회사",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "f09525f8-ca4c-5918-8215-e0988439258e",
+      "target_name": "상법",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "03468f08-b27e-5800-b91a-3d7d016f4564",
+      "source_entity_id": "9a0c9d43-8ec8-5a8b-afaa-ea33d044699b",
+      "source_name": "합병 후 존속하는 보험회사",
+      "relation_type_id": "d8488859-80e1-5cf2-ba5e-b91f845b354d",
+      "relation_type_name": "해당하다",
+      "target_entity_id": "8ac38f9e-d8ba-5c58-a224-82e456d6fef2",
+      "target_name": "상호회사",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "2253c0d6-0383-50a6-aa84-1e55c64d1c42",
+      "source_entity_id": "513b575f-7260-51bf-ab5e-29fd098020e3",
+      "source_name": "「상법」 제219조",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "80c2b5f4-48ae-5bf6-85e0-31ab1b842f49",
+      "target_name": "투자합자회사",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "4cf1cf84-30bd-5a1c-b44e-88f055e6792b",
+      "source_entity_id": "56417639-54cd-538b-9857-ee7be71c36ff",
+      "source_name": "「상법」 제220조",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "80c2b5f4-48ae-5bf6-85e0-31ab1b842f49",
+      "target_name": "투자합자회사",
+      "score": 0.015625,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "655b98d4-38e9-5aaf-b166-f3fc1eaed32f",
+      "source_entity_id": "bdbd4ea0-deae-52ed-9d09-8a819fd2be6c",
+      "source_name": "보험계약자",
+      "relation_type_id": "d8488859-80e1-5cf2-ba5e-b91f845b354d",
+      "relation_type_name": "해당하다",
+      "target_entity_id": "8ac38f9e-d8ba-5c58-a224-82e456d6fef2",
+      "target_name": "상호회사",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "83259be6-6b3e-5db0-91e3-127009607338",
+      "source_entity_id": "3ecec0c0-4a48-549d-b614-a1335d371dd9",
+      "source_name": "합병으로 설립되는 보험회사",
+      "relation_type_id": "d8488859-80e1-5cf2-ba5e-b91f845b354d",
+      "relation_type_name": "해당하다",
+      "target_entity_id": "8ac38f9e-d8ba-5c58-a224-82e456d6fef2",
+      "target_name": "상호회사",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "d5a7a9c6-7e88-58e7-b955-0e7d24c1eb1c",
+      "source_entity_id": "3773ccf2-7716-5782-a0f5-8606ced22bdc",
+      "source_name": "「상법」 제341조의2부터 제341조의4까지",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "3456734b-96b6-56e3-9ac1-ef45afe338a5",
+      "target_name": "투자회사",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "4105d41f-72db-5e5f-9f83-29d8a8ae1460",
+      "source_entity_id": "fa6f8665-ab5a-59da-8ae3-2822b962142b",
+      "source_name": "「상법」 제410조부터 제412조까지",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "3456734b-96b6-56e3-9ac1-ef45afe338a5",
+      "target_name": "투자회사",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "8798bd32-aa1f-5e3a-9e8c-b2dcef05e7d2",
+      "source_entity_id": "3e941f31-7fc6-579f-9ab9-1f76ae393300",
+      "source_name": "보험업 허가 대상자",
+      "relation_type_id": "8096ece0-2186-50bb-9622-00c156ddfa46",
+      "relation_type_name": "제한하다",
+      "target_entity_id": "8ac38f9e-d8ba-5c58-a224-82e456d6fef2",
+      "target_name": "상호회사",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "3c80ab36-1131-509f-8f56-0c7bc54bbeb2",
+      "source_entity_id": "295a58d0-a971-5e75-b644-d917f8b33dfd",
+      "source_name": "「상법」 제335조의2부터 제335조의7까지",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "3456734b-96b6-56e3-9ac1-ef45afe338a5",
+      "target_name": "투자회사",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "9f9a6ed7-53a1-5687-8f1d-ca176eaa8d5b",
+      "source_entity_id": "33eb1330-bdab-5bc7-abaf-f26b30192a07",
+      "source_name": "주식회사",
+      "relation_type_id": "410303f3-ef70-5526-bd29-9a14eca8d6bb",
+      "relation_type_name": "변경하다",
+      "target_entity_id": "8ac38f9e-d8ba-5c58-a224-82e456d6fef2",
+      "target_name": "상호회사",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "d1920234-8078-561c-bfea-62ce77a7211f",
+      "source_entity_id": "6ac0999d-f688-52cc-9833-e0418048e3dd",
+      "source_name": "「상법」 제335조제1항 단서",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "3456734b-96b6-56e3-9ac1-ef45afe338a5",
+      "target_name": "투자회사",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "1764d09b-bf68-511a-8e12-8fb7d7368771",
+      "source_entity_id": "1c0eaca0-d9e4-5bdb-9c90-e96ae8eeedab",
+      "source_name": "「상법」 제345조부터 제351조까지",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "3456734b-96b6-56e3-9ac1-ef45afe338a5",
+      "target_name": "투자회사",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "98a1dd55-93bd-5a5c-a0a7-5d0acdb2f8c3",
+      "source_entity_id": "f09525f8-ca4c-5918-8215-e0988439258e",
+      "source_name": "상법",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "f09525f8-ca4c-5918-8215-e0988439258e",
+      "target_name": "상법",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "2882f086-155a-5a0a-a8e3-5e45c928ed98",
+      "source_entity_id": "6d02cc1e-d89e-5a64-b8e5-e01208ce658d",
+      "source_name": "「상법」 제412조의2부터 제412조의5까지",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "3456734b-96b6-56e3-9ac1-ef45afe338a5",
+      "target_name": "투자회사",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "e70ca628-1174-5e5e-ae8d-5acc4e4f2008",
+      "source_entity_id": "8ac38f9e-d8ba-5c58-a224-82e456d6fef2",
+      "source_name": "상호회사",
+      "relation_type_id": "d8488859-80e1-5cf2-ba5e-b91f845b354d",
+      "relation_type_name": "해당하다",
+      "target_entity_id": "243cc7e1-627c-5c8b-94fa-98330c838d5f",
+      "target_name": "상호회사 명칭",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "keyword"
+      ]
+    }
+  ]
+}

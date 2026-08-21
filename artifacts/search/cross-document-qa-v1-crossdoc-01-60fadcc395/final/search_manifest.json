@@ -1,0 +1,73 @@
+{
+  "run_id": "cross-document-qa-v1-crossdoc-01-60fadcc395",
+  "created_at": "2026-08-20T12:48:05.803753+00:00",
+  "query": "‘금융위원회’와 ‘통지를 받은 자’는 ‘과징금’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "dimension": 1536
+  },
+  "search": {
+    "max_hops": 3,
+    "entity_top_k": 8,
+    "relation_top_k": 20,
+    "max_neighbors_per_entity": 50,
+    "path_beam_width": 160,
+    "max_paths": 50,
+    "timeout_seconds": 180.0
+  },
+  "stats": {
+    "duration_seconds": 1.235,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths_considered": 5644,
+    "paths_returned": 50,
+    "adaptations": []
+  },
+  "config": {
+    "path": "D:\\woori_graph\\config\\search.example.toml",
+    "sha256": "f642c15e2bd85239e313d4bdc4bce4243c4b92a56350b73900559459c18b9c88"
+  },
+  "counts": {
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths": 50,
+    "nodes": 7,
+    "edges": 16
+  },
+  "files": [
+    {
+      "path": "final/answer.md",
+      "sha256": "1090b83042977607a8655a039ebb7b9a892887de33efc49ec1a06127905a7bd6",
+      "bytes": 4886
+    },
+    {
+      "path": "final/graph.html",
+      "sha256": "79354da6f9e099f94cf90164f17f6ad825c80089ad73d3abe3acf6e5639036cd",
+      "bytes": 31124
+    },
+    {
+      "path": "final/graph.json",
+      "sha256": "a09d77a2a7b98515d875f59024a14fb1751e75111488a2f157eb7876f9b788a5",
+      "bytes": 33887
+    },
+    {
+      "path": "final/query_result.json",
+      "sha256": "3c7ece2f0c4c0d97442d376e025059157ab0f82a74bb506b8f85704d4d6f731d",
+      "bytes": 340132
+    },
+    {
+      "path": "work/01_candidates.json",
+      "sha256": "428341b8c3eb3c4844e047bc5974785eaffcb74793c35927f3d944e1f5c7e518",
+      "bytes": 12181
+    },
+    {
+      "path": "work/02_ranked_paths.json",
+      "sha256": "3ef1218830a8a984f593778639250b2ba88803c6503d816d2845846dd7348354",
+      "bytes": 323201
+    }
+  ],
+  "passed": true
+}

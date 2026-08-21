@@ -1,0 +1,742 @@
+{
+  "query": "‘과태료’와 ‘금융위원회’는 ‘직무대행자’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "nodes": [
+    {
+      "id": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "name": "과태료",
+      "type": "OTHER",
+      "seed": true,
+      "candidate_score": 0.01639344,
+      "level": 0
+    },
+    {
+      "id": "45ce1896-d923-5033-884a-31c011281683",
+      "name": "금융위원회",
+      "type": "OTHER",
+      "seed": true,
+      "candidate_score": 0.01612903,
+      "level": 0
+    },
+    {
+      "id": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+      "name": "직무대행자",
+      "type": "OTHER",
+      "seed": true,
+      "candidate_score": 0.01587302,
+      "level": 0
+    },
+    {
+      "id": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "name": "위원회",
+      "type": "OTHER",
+      "seed": false,
+      "candidate_score": 0.0,
+      "level": 2
+    },
+    {
+      "id": "cc25b9aa-03be-5e1f-8b42-29b72e3895bf",
+      "name": "인가",
+      "type": "OTHER",
+      "seed": false,
+      "candidate_score": 0.0,
+      "level": 2
+    },
+    {
+      "id": "7d44145a-ea53-539a-a14b-99bc35b0bfae",
+      "name": "위원",
+      "type": "OTHER",
+      "seed": false,
+      "candidate_score": 0.0,
+      "level": 3
+    }
+  ],
+  "edges": [
+    {
+      "id": "1274a240-0a77-51ae-9983-7b30e550279b",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "cc25b9aa-03be-5e1f-8b42-29b72e3895bf",
+      "target_name": "인가",
+      "relation": "공개하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "상호저축은행법",
+        "은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "f0a3156d-f9ae-5f15-baec-cbe0c35a1207",
+          "relation_id": "1274a240-0a77-51ae-9983-7b30e550279b",
+          "semantic_unit_id": "ae87794c-14cc-5ad7-a4b4-a81acc3fba5c",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제12조",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "공고하고",
+          "raw_object": "인가"
+        },
+        {
+          "relation_mention_id": "8310b761-4d05-551c-8eb1-ea0b8a5ad5a3",
+          "relation_id": "1274a240-0a77-51ae-9983-7b30e550279b",
+          "semantic_unit_id": "04c1f5f8-0e67-519b-ae8b-d67f4e8e8d4e",
+          "document_id": "f2d85f3b-a3ba-5236-9a94-ef58195cf0b1",
+          "document_title": "상호저축은행법",
+          "source_path": "상호저축은행법/법률.md",
+          "source_ref": {
+            "article": "제6조의3",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "공고하고",
+          "raw_object": "인가"
+        }
+      ]
+    },
+    {
+      "id": "2f2ab281-a646-578b-a30f-dba504974ffa",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+      "target_name": "직무대행자",
+      "relation": "지정하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "자본시장과 금융투자업에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "42025d1d-2198-53fd-922c-11c40c44fe85",
+          "relation_id": "2f2ab281-a646-578b-a30f-dba504974ffa",
+          "semantic_unit_id": "99e94c1e-1687-5e2b-afd8-9b24d330daf6",
+          "document_id": "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+          "document_title": "자본시장과 금융투자업에 관한 법률",
+          "source_path": "자본시장과금융투자업에관한법률/법률.md",
+          "source_ref": {
+            "article": "제65조",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 4
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "지정하여야 한다",
+          "raw_object": "직무대행자"
+        }
+      ]
+    },
+    {
+      "id": "4f23d391-97b1-541b-a917-fe6b31d989bd",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "cc25b9aa-03be-5e1f-8b42-29b72e3895bf",
+      "target_name": "인가",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "금융지주회사법 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "656572a8-628f-5c45-81b1-6d6c2b6be960",
+          "relation_id": "4f23d391-97b1-541b-a917-fe6b31d989bd",
+          "semantic_unit_id": "f2be309a-2102-5403-8801-f3f51158b579",
+          "document_id": "181ee1f0-996f-5c2e-9e7e-fc5dd97829b1",
+          "document_title": "금융지주회사법 시행령",
+          "source_path": "금융지주회사법/시행령.md",
+          "source_ref": {
+            "article": "제33조의4",
+            "item_path": [
+              "15"
+            ],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "처리할 수 있다",
+          "raw_object": "인가 등에 관한 사무"
+        }
+      ]
+    },
+    {
+      "id": "5039a600-ea4e-5416-a204-21e45218f656",
+      "source": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "source_name": "위원회",
+      "target": "7d44145a-ea53-539a-a14b-99bc35b0bfae",
+      "target_name": "위원",
+      "relation": "임명하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "한국산업은행법 시행령",
+        "한국은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "d3b25ead-1286-5678-bdf3-0cfe47039609",
+          "relation_id": "5039a600-ea4e-5416-a204-21e45218f656",
+          "semantic_unit_id": "745936cb-b9dc-5054-84df-16100a412426",
+          "document_id": "ce48b361-d58e-57a6-8f6e-7e95b4633a31",
+          "document_title": "한국은행법",
+          "source_path": "한국은행법/법률.md",
+          "source_ref": {
+            "article": "제16조",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "위원회",
+          "raw_predicate": "임명한다",
+          "raw_object": "위원"
+        },
+        {
+          "relation_mention_id": "ae9d743e-3bbd-55bd-930e-3fea32146d00",
+          "relation_id": "5039a600-ea4e-5416-a204-21e45218f656",
+          "semantic_unit_id": "7f969cfb-a0eb-543d-ace4-1eda1ca90d32",
+          "document_id": "c86918e0-641d-5ae2-b5af-b6d6adf68439",
+          "document_title": "한국산업은행법 시행령",
+          "source_path": "한국산업은행법/시행령.md",
+          "source_ref": {
+            "article": "제27조",
+            "item_path": [],
+            "paragraph": 4
+          },
+          "raw_subject": "위원회",
+          "raw_predicate": "위촉한다",
+          "raw_object": "위원"
+        }
+      ]
+    },
+    {
+      "id": "69d1699b-e66c-5aeb-8687-f145a2794cb0",
+      "source": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "source_name": "위원회",
+      "target": "7d44145a-ea53-539a-a14b-99bc35b0bfae",
+      "target_name": "위원",
+      "relation": "설립하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 4,
+      "documents": [
+        "금융거래지표의 관리에 관한 법률 시행령",
+        "보험업법 시행령",
+        "자본시장과 금융투자업에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "63cf22db-a877-5bdd-bb21-5b837a09b1f8",
+          "relation_id": "69d1699b-e66c-5aeb-8687-f145a2794cb0",
+          "semantic_unit_id": "d69bcf9b-bcde-5450-a750-b88c00912462",
+          "document_id": "67b9c58e-5ed2-59a9-9698-c24106530775",
+          "document_title": "금융거래지표의 관리에 관한 법률 시행령",
+          "source_path": "금융거래지표의관리에관한법률/시행령.md",
+          "source_ref": {
+            "article": "제5조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "위원회",
+          "raw_predicate": "구성한다",
+          "raw_object": "위원"
+        },
+        {
+          "relation_mention_id": "6b431bc1-c1cb-586a-a5b0-c5f87724511d",
+          "relation_id": "69d1699b-e66c-5aeb-8687-f145a2794cb0",
+          "semantic_unit_id": "957fe032-1943-5d84-9969-6ce165f8119f",
+          "document_id": "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+          "document_title": "자본시장과 금융투자업에 관한 법률",
+          "source_path": "자본시장과금융투자업에관한법률/법률.md",
+          "source_ref": {
+            "article": "제288조의2",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "위원회",
+          "raw_predicate": "구성한다",
+          "raw_object": "위원"
+        },
+        {
+          "relation_mention_id": "698b6118-3548-59b2-bd3a-2f3c92f8c584",
+          "relation_id": "69d1699b-e66c-5aeb-8687-f145a2794cb0",
+          "semantic_unit_id": "a675427d-9809-51f6-b5f3-0dd199cc6864",
+          "document_id": "03d30d88-c93c-547c-bf15-0cfee47fe50a",
+          "document_title": "보험업법 시행령",
+          "source_path": "보험업법/시행령.md",
+          "source_ref": {
+            "article": "제68조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "위원회",
+          "raw_predicate": "구성한다",
+          "raw_object": "위원"
+        }
+      ]
+    },
+    {
+      "id": "6c7c9a2c-ffb2-5c16-b46d-31af3794af02",
+      "source": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+      "source_name": "직무대행자",
+      "target": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "relation": "사용하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "보험업법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "207b0068-5511-52c7-bb83-3ee4500af17d",
+          "relation_id": "6c7c9a2c-ffb2-5c16-b46d-31af3794af02",
+          "semantic_unit_id": "cef813ec-cf1a-5dbf-9f48-185085213715",
+          "document_id": "d0e95f75-270b-5f97-b116-5bfd6f4c356e",
+          "document_title": "보험업법",
+          "source_path": "보험업법/법률.md",
+          "source_ref": {
+            "article": "제209조",
+            "item_path": [
+              "20"
+            ],
+            "paragraph": 6
+          },
+          "raw_subject": "직무대행자",
+          "raw_predicate": "위반하여 자산운용을 한 경우",
+          "raw_object": "과태료"
+        }
+      ]
+    },
+    {
+      "id": "86461817-90b9-582e-8e2a-bfa1415891f3",
+      "source": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "source_name": "위원회",
+      "target": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "relation": "징수하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "공익신고자 보호법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "8d71e4c8-05d1-5662-88a7-6a33a15058e7",
+          "relation_id": "86461817-90b9-582e-8e2a-bfa1415891f3",
+          "semantic_unit_id": "fcabb55e-5703-5d6f-b5a6-526f4b31a8da",
+          "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+          "document_title": "공익신고자 보호법",
+          "source_path": "공익신고자보호법/법률.md",
+          "source_ref": {
+            "article": "제31조",
+            "item_path": [],
+            "paragraph": 3
+          },
+          "raw_subject": "위원회",
+          "raw_predicate": "징수한다",
+          "raw_object": "과태료"
+        },
+        {
+          "relation_mention_id": "7d4c5a18-2390-58af-b77a-ae4a18318c1e",
+          "relation_id": "86461817-90b9-582e-8e2a-bfa1415891f3",
+          "semantic_unit_id": "d99ad1f2-16bb-562c-9f7b-be8df492d5a8",
+          "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+          "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+          "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+          "source_ref": {
+            "article": "제91조",
+            "item_path": [],
+            "paragraph": 4
+          },
+          "raw_subject": "위원회",
+          "raw_predicate": "징수한다",
+          "raw_object": "과태료"
+        }
+      ]
+    },
+    {
+      "id": "8ace840d-84d3-58f6-82db-4d572028901a",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+      "target_name": "직무대행자",
+      "relation": "요구하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [],
+      "evidence": []
+    },
+    {
+      "id": "94028164-3a6a-5317-874a-0774e9b0d707",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "relation": "부과하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 21,
+      "documents": [
+        "금융지주회사법",
+        "보험업법",
+        "은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "98a287da-7ca5-5842-b286-609099efe6bc",
+          "relation_id": "94028164-3a6a-5317-874a-0774e9b0d707",
+          "semantic_unit_id": "8e211510-54a1-5d1d-b96b-6a9e2af42f9f",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제69조",
+            "item_path": [
+              "7"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "부과한다",
+          "raw_object": "과태료"
+        },
+        {
+          "relation_mention_id": "ceae6628-b9f6-5770-9c55-a57543cae40d",
+          "relation_id": "94028164-3a6a-5317-874a-0774e9b0d707",
+          "semantic_unit_id": "c8d6af50-5c0e-501a-b03a-4b4ab003aff9",
+          "document_id": "d0e95f75-270b-5f97-b116-5bfd6f4c356e",
+          "document_title": "보험업법",
+          "source_path": "보험업법/법률.md",
+          "source_ref": {
+            "article": "제209조",
+            "item_path": [],
+            "paragraph": 9
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "부과한다",
+          "raw_object": "과태료"
+        },
+        {
+          "relation_mention_id": "abb3642e-508c-5678-92d4-e45da47a4458",
+          "relation_id": "94028164-3a6a-5317-874a-0774e9b0d707",
+          "semantic_unit_id": "474a619f-a73c-5b6a-a100-bf0a951e46ef",
+          "document_id": "adda80ee-63b3-5e3a-af96-8e0765774c3d",
+          "document_title": "금융지주회사법",
+          "source_path": "금융지주회사법/법률.md",
+          "source_ref": {
+            "article": "제72조",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "부과한다",
+          "raw_object": "과태료"
+        }
+      ]
+    },
+    {
+      "id": "ca9f1685-9a6c-57af-b086-9c34d0947f5d",
+      "source": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "source_name": "위원회",
+      "target": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "relation": "부과하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "공익신고자 보호법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "3393eac0-74d8-525c-adfe-acbf06eac13e",
+          "relation_id": "ca9f1685-9a6c-57af-b086-9c34d0947f5d",
+          "semantic_unit_id": "fcabb55e-5703-5d6f-b5a6-526f4b31a8da",
+          "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+          "document_title": "공익신고자 보호법",
+          "source_path": "공익신고자보호법/법률.md",
+          "source_ref": {
+            "article": "제31조",
+            "item_path": [],
+            "paragraph": 3
+          },
+          "raw_subject": "위원회",
+          "raw_predicate": "부과한다",
+          "raw_object": "과태료"
+        },
+        {
+          "relation_mention_id": "c8217715-baa6-5672-867b-06877405e7c0",
+          "relation_id": "ca9f1685-9a6c-57af-b086-9c34d0947f5d",
+          "semantic_unit_id": "d99ad1f2-16bb-562c-9f7b-be8df492d5a8",
+          "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+          "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+          "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+          "source_ref": {
+            "article": "제91조",
+            "item_path": [],
+            "paragraph": 4
+          },
+          "raw_subject": "위원회",
+          "raw_predicate": "부과한다",
+          "raw_object": "과태료"
+        }
+      ]
+    },
+    {
+      "id": "d42f3c9a-63d1-5837-b7d6-fe0e37f6f0a8",
+      "source": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+      "source_name": "직무대행자",
+      "target": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "relation": "부과하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 34,
+      "documents": [
+        "보험업법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "1b471df6-2366-5a8f-bdd4-53fe666ddfa9",
+          "relation_id": "d42f3c9a-63d1-5837-b7d6-fe0e37f6f0a8",
+          "semantic_unit_id": "181831f9-bfb7-5a6e-8584-4f71d8adcfc7",
+          "document_id": "d0e95f75-270b-5f97-b116-5bfd6f4c356e",
+          "document_title": "보험업법",
+          "source_path": "보험업법/법률.md",
+          "source_ref": {
+            "article": "제209조",
+            "item_path": [
+              "10"
+            ],
+            "paragraph": 6
+          },
+          "raw_subject": "직무대행자",
+          "raw_predicate": "부과한다",
+          "raw_object": "과태료"
+        }
+      ]
+    },
+    {
+      "id": "df6da1ee-56f9-547f-849d-df1724ba018c",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "target_name": "위원회",
+      "relation": "임명하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 3,
+      "documents": [
+        "보험업법 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "b669c0f6-53cf-5c2d-807b-05b7c40b81c5",
+          "relation_id": "df6da1ee-56f9-547f-849d-df1724ba018c",
+          "semantic_unit_id": "77132008-3424-585f-8ae4-22f8aa56f1d1",
+          "document_id": "03d30d88-c93c-547c-bf15-0cfee47fe50a",
+          "document_title": "보험업법 시행령",
+          "source_path": "보험업법/시행령.md",
+          "source_ref": {
+            "article": "제76조의2",
+            "item_path": [
+              "3"
+            ],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "해임 또는 해촉할 수 있다",
+          "raw_object": "위원회"
+        }
+      ]
+    },
+    {
+      "id": "e64f7de9-0767-5bb0-aea9-8d72518c2736",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "cc25b9aa-03be-5e1f-8b42-29b72e3895bf",
+      "target_name": "인가",
+      "relation": "취소하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 46,
+      "documents": [
+        "금융지주회사법",
+        "은행법",
+        "자본시장과 금융투자업에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "a57d849d-15c2-5875-a501-e514eab98749",
+          "relation_id": "e64f7de9-0767-5bb0-aea9-8d72518c2736",
+          "semantic_unit_id": "4f33b436-7666-5baf-8b7f-345764881189",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제60조",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "취소할 수 있다",
+          "raw_object": "인가"
+        },
+        {
+          "relation_mention_id": "6e96eccb-14c0-5fd5-9728-71cd62dd140c",
+          "relation_id": "e64f7de9-0767-5bb0-aea9-8d72518c2736",
+          "semantic_unit_id": "bc01abe6-6776-5ecf-bf89-2e373d8cb530",
+          "document_id": "adda80ee-63b3-5e3a-af96-8e0765774c3d",
+          "document_title": "금융지주회사법",
+          "source_path": "금융지주회사법/법률.md",
+          "source_ref": {
+            "article": "제57조",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 2
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "취소할 수 있다",
+          "raw_object": "인가"
+        },
+        {
+          "relation_mention_id": "504626be-aec1-5378-8bef-0f37372daf65",
+          "relation_id": "e64f7de9-0767-5bb0-aea9-8d72518c2736",
+          "semantic_unit_id": "75690a46-19f0-5dc6-ad6e-aad4c2f07433",
+          "document_id": "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+          "document_title": "자본시장과 금융투자업에 관한 법률",
+          "source_path": "자본시장과금융투자업에관한법률/법률.md",
+          "source_ref": {
+            "article": "제323조의20",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "취소할 수 있다",
+          "raw_object": "인가"
+        }
+      ]
+    },
+    {
+      "id": "e73bc394-2b6e-552c-88cd-7afe300e25ba",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "cc25b9aa-03be-5e1f-8b42-29b72e3895bf",
+      "target_name": "인가",
+      "relation": "통지하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "상호저축은행법",
+        "은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "d7798fd5-bb22-502f-a345-6b0912b91db6",
+          "relation_id": "e73bc394-2b6e-552c-88cd-7afe300e25ba",
+          "semantic_unit_id": "ae87794c-14cc-5ad7-a4b4-a81acc3fba5c",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제12조",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "알려야 한다",
+          "raw_object": "인가"
+        },
+        {
+          "relation_mention_id": "23261e87-e9dc-5ec3-a909-d6c9173bd95c",
+          "relation_id": "e73bc394-2b6e-552c-88cd-7afe300e25ba",
+          "semantic_unit_id": "04c1f5f8-0e67-519b-ae8b-d67f4e8e8d4e",
+          "document_id": "f2d85f3b-a3ba-5236-9a94-ef58195cf0b1",
+          "document_title": "상호저축은행법",
+          "source_path": "상호저축은행법/법률.md",
+          "source_ref": {
+            "article": "제6조의3",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "알려야 한다",
+          "raw_object": "인가"
+        }
+      ]
+    },
+    {
+      "id": "f8f4ec6a-2878-5bee-a1c9-d562d49bb2f4",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "relation": "징수하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 12,
+      "documents": [
+        "금융지주회사법",
+        "보험업법",
+        "은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "24c7652b-9b78-5201-9e74-95275e6299cd",
+          "relation_id": "f8f4ec6a-2878-5bee-a1c9-d562d49bb2f4",
+          "semantic_unit_id": "81190c40-6af1-5923-b79a-d2ca28b3eb6c",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제69조",
+            "item_path": [],
+            "paragraph": 6
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "징수한다",
+          "raw_object": "과태료"
+        },
+        {
+          "relation_mention_id": "840c86ad-0387-5d5b-b5ab-f4193bd73ba6",
+          "relation_id": "f8f4ec6a-2878-5bee-a1c9-d562d49bb2f4",
+          "semantic_unit_id": "c8d6af50-5c0e-501a-b03a-4b4ab003aff9",
+          "document_id": "d0e95f75-270b-5f97-b116-5bfd6f4c356e",
+          "document_title": "보험업법",
+          "source_path": "보험업법/법률.md",
+          "source_ref": {
+            "article": "제209조",
+            "item_path": [],
+            "paragraph": 9
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "징수한다",
+          "raw_object": "과태료"
+        },
+        {
+          "relation_mention_id": "27be51b6-7cc3-534b-ae77-999df4842f2e",
+          "relation_id": "f8f4ec6a-2878-5bee-a1c9-d562d49bb2f4",
+          "semantic_unit_id": "323d5718-a709-5e18-af27-e925654ae037",
+          "document_id": "adda80ee-63b3-5e3a-af96-8e0765774c3d",
+          "document_title": "금융지주회사법",
+          "source_path": "금융지주회사법/법률.md",
+          "source_ref": {
+            "article": "제72조",
+            "item_path": [],
+            "paragraph": 3
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "징수한다",
+          "raw_object": "과태료"
+        }
+      ]
+    }
+  ]
+}

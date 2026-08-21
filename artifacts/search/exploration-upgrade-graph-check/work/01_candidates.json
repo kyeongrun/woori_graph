@@ -1,0 +1,362 @@
+{
+  "query": "중앙행정기관의 장과 감사기구의 장은 어떻게 연결되는가?",
+  "entities": [
+    {
+      "entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "canonical_name": "중앙행정기관의 감사기구의 장",
+      "entity_type": "PERSON",
+      "score": 0.03278688524590164,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+      "canonical_name": "중앙행정기관의 감사기구의 장의 임용권자",
+      "entity_type": "PERSON",
+      "score": 0.03200204813108039,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "95ef479f-6b16-51f0-97bb-0cca7fc2b6b8",
+      "canonical_name": "중앙행정기관등에 소속한 감사기구의 장",
+      "entity_type": "PERSON",
+      "score": 0.030834914611005692,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "f9f44208-9958-54c8-b610-9d9876dd0383",
+      "canonical_name": "중앙행정기관의 장",
+      "entity_type": "PERSON",
+      "score": 0.030776515151515152,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "f1ebc1b5-42e2-5108-974e-222ccb99d1d8",
+      "canonical_name": "중앙행정기관의 감사담당자",
+      "entity_type": "PERSON",
+      "score": 0.03055037313432836,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "683b83d0-5937-573d-a667-e1bb94fb78c2",
+      "canonical_name": "감사기구의 장을 임용하려는 중앙행정기관",
+      "entity_type": "ORGANIZATION",
+      "score": 0.029631255487269532,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "1fb6b1c5-77c3-5772-8baa-dbce7854cd33",
+      "canonical_name": "중앙행정기관의 자체평가",
+      "entity_type": "CONCEPT",
+      "score": 0.0288981288981289,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "c31dda23-415f-5ee6-948f-8407579d0c9c",
+      "canonical_name": "중앙행정기관의 자체감사 대상기관의 장",
+      "entity_type": "PERSON",
+      "score": 0.028665028665028666,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "771469ea-482f-5956-93a9-b28d83b50842",
+      "source_entity_id": "69b3c876-674a-55c7-9120-744c72425a68",
+      "source_name": "중앙행정기관",
+      "relation_type_id": "5babfb62-1ca1-53e5-8ce0-7f73ec99e797",
+      "relation_type_name": "해당하지않다",
+      "target_entity_id": "683b83d0-5937-573d-a667-e1bb94fb78c2",
+      "target_name": "감사기구의 장을 임용하려는 중앙행정기관",
+      "score": 0.03177805800756621,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "c657bb31-e128-59f1-9ebe-aa3852336b60",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "8aa66da9-436e-5041-bf55-d039d6f818ae",
+      "target_name": "결과",
+      "score": 0.030621785881252923,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "ab4fe396-ecb8-57e3-b841-b46f5035bdb8",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "8d1e00ac-ea54-5ddf-8674-7d34bee75f67",
+      "relation_type_name": "제공하다",
+      "target_entity_id": "b70e590c-609d-5d83-a2e7-c0f2a5438468",
+      "target_name": "직급",
+      "score": 0.03057889822595705,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "ee4d0b09-4170-5928-b820-57a87dfb47df",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "8a063b1c-c534-5b52-9993-987d80e5ee60",
+      "target_name": "소속",
+      "score": 0.029709507042253523,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "2743b1dc-2d1d-5732-ab4f-5c8256105f40",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "d8488859-80e1-5cf2-ba5e-b91f845b354d",
+      "relation_type_name": "해당하다",
+      "target_entity_id": "7d44145a-ea53-539a-a14b-99bc35b0bfae",
+      "target_name": "위원",
+      "score": 0.02938045560996381,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "996387f1-dc87-536c-ab3c-373c8e491952",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "479438d4-f962-5ff4-8481-31ab0452645f",
+      "relation_type_name": "사용하지않다",
+      "target_entity_id": "ca4c62cf-5c30-59a9-837b-c64ef6d44a30",
+      "target_name": "다른 직무",
+      "score": 0.028484848484848488,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "97f4049f-a75f-5d6c-bb97-3da61247d963",
+      "source_entity_id": "4624ccaf-1d1b-55e4-ab4c-4ad2df88318e",
+      "source_name": "사람",
+      "relation_type_id": "5babfb62-1ca1-53e5-8ce0-7f73ec99e797",
+      "relation_type_name": "해당하지않다",
+      "target_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "target_name": "중앙행정기관의 감사기구의 장",
+      "score": 0.028474711270410194,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "3b26b8f4-f35b-5dbe-a019-a8d3c0ebe5cb",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "410303f3-ef70-5526-bd29-9a14eca8d6bb",
+      "relation_type_name": "변경하다",
+      "target_entity_id": "4a9f8a6d-f1de-5488-809f-ba49dd7e1c69",
+      "target_name": "직",
+      "score": 0.026992753623188405,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "2186049c-b867-5cc7-9659-82d613e1d5f9",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "8fec2a58-5a82-586a-9138-2a6eae7f7b02",
+      "target_name": "자격",
+      "score": 0.02667140825035562,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "8a1d8118-65d2-5f39-a421-8b18cb488e9f",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "4db3ab63-5389-5ae9-93b7-b21338cef706",
+      "relation_type_name": "임명하다",
+      "target_entity_id": "4624ccaf-1d1b-55e4-ab4c-4ad2df88318e",
+      "target_name": "사람",
+      "score": 0.025693893735130847,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "2f015598-0947-5278-a5ac-87693c18e5fa",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "ec4c4ea0-aeba-5e68-966a-aa1a481c6932",
+      "relation_type_name": "취득하다",
+      "target_entity_id": "8f94536a-9e94-5c76-a03b-d8ebd0ce329f",
+      "target_name": "소관 자체감사 대상기관의 공무원의 직",
+      "score": 0.024868705591597158,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "837aa3cb-3365-5e88-8a35-f7cccbb36590",
+      "source_entity_id": "f9f44208-9958-54c8-b610-9d9876dd0383",
+      "source_name": "중앙행정기관의 장",
+      "relation_type_id": "4db3ab63-5389-5ae9-93b7-b21338cef706",
+      "relation_type_name": "임명하다",
+      "target_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "target_name": "감사기구의 장",
+      "score": 0.02411038489469862,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "319adfc5-2a7d-533f-bfa9-cc39a29c5384",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "4db3ab63-5389-5ae9-93b7-b21338cef706",
+      "relation_type_name": "임명하다",
+      "target_entity_id": "2001548e-d225-5418-91d6-3cdc13ce008f",
+      "target_name": "검사",
+      "score": 0.02341091602014428,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "3adbaeba-3adb-5bee-bd0e-a7b1cc2f7d4b",
+      "source_entity_id": "f9f44208-9958-54c8-b610-9d9876dd0383",
+      "source_name": "중앙행정기관의 장",
+      "relation_type_id": "e0b5dc0a-10e1-5ba2-81a8-f51ba75af3c8",
+      "relation_type_name": "수집하다",
+      "target_entity_id": "9c04ac9f-2913-5898-89d9-d64dd296dc38",
+      "target_name": "해당 감사기구의 장",
+      "score": 0.022504400301734978,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "991a86c5-3d6c-59f7-a5e2-1ebc32143ca3",
+      "source_entity_id": "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+      "source_name": "중앙행정기관의 감사기구의 장의 임용권자",
+      "relation_type_id": "179b940f-26ea-5d99-8448-7cb76282cf38",
+      "relation_type_name": "수행하지않다",
+      "target_entity_id": "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+      "target_name": "임용절차",
+      "score": 0.021865715983363045,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "87c84c2a-7b0f-597f-ad30-1b4d70d8d421",
+      "source_entity_id": "f43e6185-c57e-5efe-9db9-d163a706929d",
+      "source_name": "감사기구의 장으로 임용되려는 사람이 근무했던 법인",
+      "relation_type_id": "d8488859-80e1-5cf2-ba5e-b91f845b354d",
+      "relation_type_name": "해당하다",
+      "target_entity_id": "69b3c876-674a-55c7-9120-744c72425a68",
+      "target_name": "중앙행정기관",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "e00d5da0-56e9-506c-92da-f79be285f896",
+      "source_entity_id": "f132a563-a2c9-5fae-8b8e-2375c8b0b0d3",
+      "source_name": "자체감사기구",
+      "relation_type_id": "ade4bc48-69c3-5a2a-8663-633f99f645bd",
+      "relation_type_name": "설립하다",
+      "target_entity_id": "69b3c876-674a-55c7-9120-744c72425a68",
+      "target_name": "중앙행정기관",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "b7ad4bc5-e4ed-56f1-9008-a360c807ccd6",
+      "source_entity_id": "95ef479f-6b16-51f0-97bb-0cca7fc2b6b8",
+      "source_name": "중앙행정기관등에 소속한 감사기구의 장",
+      "relation_type_id": "5871c0ca-38d5-5d58-81c5-bb8477031bca",
+      "relation_type_name": "제출하다",
+      "target_entity_id": "a3b7b1cd-8ac3-5811-9e54-dfe582ed650a",
+      "target_name": "그 결과",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "a59c74be-800b-5777-a5ef-0d130868c8ce",
+      "source_entity_id": "b4a69bd4-b4b2-5680-909f-b4637bb7d4f4",
+      "source_name": "중앙행정기관의 감사기구의 장",
+      "relation_type_id": "2cf7e988-6362-5226-b947-3430c2d2005f",
+      "relation_type_name": "영위하지않다",
+      "target_entity_id": "d842a077-f45d-5a2c-aab9-f303de78f08f",
+      "target_name": "공무 외에 영리를 목적으로 하는 업무",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "aeab668f-7090-59e1-9c36-db56c371d07a",
+      "source_entity_id": "20eda4bf-8c5f-5566-91bb-19ee1db2d97a",
+      "source_name": "중앙행정기관등의 장",
+      "relation_type_id": "d8488859-80e1-5cf2-ba5e-b91f845b354d",
+      "relation_type_name": "해당하다",
+      "target_entity_id": "0178691c-c39e-5884-80b9-bb0786a06993",
+      "target_name": "중점 감사사항",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ]
+}

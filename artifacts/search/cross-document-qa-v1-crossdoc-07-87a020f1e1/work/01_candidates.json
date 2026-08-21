@@ -1,0 +1,345 @@
+{
+  "query": "‘공직자등’와 ‘공직자’는 ‘서면’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "entities": [
+    {
+      "entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "canonical_name": "공직자등",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "7b5550d5-60c4-5c75-90f0-a7ea5bcc6ea0",
+      "canonical_name": "공직자윤리법",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+      "canonical_name": "공직자",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "d0f1f722-cd44-5b0a-bef4-5a7eaace53e0",
+      "canonical_name": "관계 공직자",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "a188e564-1950-517f-aab5-4c36c150707b",
+      "canonical_name": "관계법령",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "bd4f812c-fad6-507a-83f4-6f4c21f048e4",
+      "canonical_name": "서면",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "18e297fe-cd33-5e59-aeea-bd8698584ceb",
+      "canonical_name": "관계 법률",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "c72e9eea-a452-5c85-a05e-5e40bef510b0",
+      "canonical_name": "근거",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "52b26373-ae0c-53d4-a91c-44193f4c110d",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "8bc85660-2267-5ad0-b956-45147bf6bc37",
+      "relation_type_name": "처벌하다",
+      "target_entity_id": "5945ba4f-2e65-5340-8470-1ad15c0abde8",
+      "target_name": "징역",
+      "score": 0.028612012987012988,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "0d44ef19-17da-5d79-8a8a-bd5b566c79c2",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "74517e71-b41a-5662-a853-de10661bde32",
+      "relation_type_name": "사용하다",
+      "target_entity_id": "ca67a724-9ef7-5485-af1c-91d6cd083849",
+      "target_name": "권한",
+      "score": 0.02813852813852814,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "61c049e7-fb5e-51d3-af77-1356c7fe0af8",
+      "source_entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+      "source_name": "공직자",
+      "relation_type_id": "7eabf963-b4b8-5fcd-a31a-4065b6d4fe8a",
+      "relation_type_name": "위반하다",
+      "target_entity_id": "a40ced7b-0955-54e5-a75f-a3a7db8d1e06",
+      "target_name": "공직자 행동강령",
+      "score": 0.02719970792259949,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "8f44292b-ae3a-5809-b46d-82200c6299b1",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "8256519e-3c6f-50fb-9d0d-f369f69ba73a",
+      "relation_type_name": "보고하다",
+      "target_entity_id": "bd4f812c-fad6-507a-83f4-6f4c21f048e4",
+      "target_name": "서면",
+      "score": 0.026655348047538198,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "7ef28fd7-d947-55ba-aaef-80ab9c8cade1",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "ea6209b2-cc65-55aa-a109-72d633e61e39",
+      "relation_type_name": "보호하지않다",
+      "target_entity_id": "8ea3a311-7f1f-5756-9603-f2b18bb8ce5a",
+      "target_name": "직무관련자",
+      "score": 0.025,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "33e33852-1d24-5b12-9875-b7734ba65ad9",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "3579f9c2-f916-5b78-8601-cabbabba7c72",
+      "relation_type_name": "제한하지않다",
+      "target_entity_id": "8ea3a311-7f1f-5756-9603-f2b18bb8ce5a",
+      "target_name": "직무관련자",
+      "score": 0.024266201685556526,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "7685ae0a-0239-5bfc-9a43-e0a12021c15a",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "5871c0ca-38d5-5d58-81c5-bb8477031bca",
+      "relation_type_name": "제출하다",
+      "target_entity_id": "bd4f812c-fad6-507a-83f4-6f4c21f048e4",
+      "target_name": "서면",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "d1244b11-0e66-59af-b4cd-0bafbc92bbaf",
+      "source_entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+      "source_name": "공직자",
+      "relation_type_id": "c008479c-5682-526d-84e3-d6e9cb6d772a",
+      "relation_type_name": "준수하다",
+      "target_entity_id": "f98ed0d6-5fee-5658-bb6a-55a71429db15",
+      "target_name": "법령",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "1ac08acf-a81a-5aea-89d6-4354aecad733",
+      "source_entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+      "source_name": "공직자",
+      "relation_type_id": "8256519e-3c6f-50fb-9d0d-f369f69ba73a",
+      "relation_type_name": "보고하다",
+      "target_entity_id": "bc0b73e7-8712-5fca-9039-396c0588767f",
+      "target_name": "사적이해관계자임을 안 경우",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "145a3226-f10a-5ffe-8469-d5f2ee24b746",
+      "source_entity_id": "f38c62ba-67e9-57df-a037-846a36befc75",
+      "source_name": "선출직 공직자",
+      "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+      "relation_type_name": "요구하다",
+      "target_entity_id": "f98ed0d6-5fee-5658-bb6a-55a71429db15",
+      "target_name": "법령",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "da3106d4-356e-5b21-a439-3ed56d85cc82",
+      "source_entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+      "source_name": "공직자",
+      "relation_type_id": "5871c0ca-38d5-5d58-81c5-bb8477031bca",
+      "relation_type_name": "제출하다",
+      "target_entity_id": "bd4f812c-fad6-507a-83f4-6f4c21f048e4",
+      "target_name": "서면",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "02c13f78-011c-5935-b6ce-78afef09473c",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "8256519e-3c6f-50fb-9d0d-f369f69ba73a",
+      "relation_type_name": "보고하다",
+      "target_entity_id": "e711c141-4524-5b3a-a5ed-ae041ff5edb9",
+      "target_name": "소속기관장",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "04910122-ae62-5a78-a6de-4cdeac1ae0b9",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "8d1e00ac-ea54-5ddf-8674-7d34bee75f67",
+      "relation_type_name": "제공하다",
+      "target_entity_id": "f0eb7a96-ac57-56ec-82a0-eaa02322052f",
+      "target_name": "수수 금지 금품등",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "52df13ad-0a69-59cc-98c5-8f1baacc09f9",
+      "source_entity_id": "7b5550d5-60c4-5c75-90f0-a7ea5bcc6ea0",
+      "source_name": "공직자윤리법",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "a56a86d6-5af3-589a-96c7-bf37ff6e3599",
+      "target_name": "업무와 영리사기업체 등 사이의 밀접한 관련성 범위",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "10e43713-3207-5722-8bb1-3bed311a9c20",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "8afc7773-e07c-5d9b-a085-f405e09d5b1b",
+      "relation_type_name": "공개하다",
+      "target_entity_id": "42583834-67d2-5c7f-b15e-3b8e7c2f8100",
+      "target_name": "거부의 의사",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "51fe35dd-cef5-5871-b129-0b1de62b145e",
+      "source_entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+      "source_name": "공직자",
+      "relation_type_id": "8bc85660-2267-5ad0-b956-45147bf6bc37",
+      "relation_type_name": "처벌하다",
+      "target_entity_id": "5945ba4f-2e65-5340-8470-1ad15c0abde8",
+      "target_name": "징역",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "11ed1207-d451-5aa1-9659-0afe25306f46",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "1ca1e921-571f-5695-a633-26f14d1cb825",
+      "relation_type_name": "부과하지않다",
+      "target_entity_id": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "58c968e7-bf37-5330-845d-f0d44047901d",
+      "source_entity_id": "a7ff464d-426a-5e63-8716-1f96bde06618",
+      "source_name": "관계인",
+      "relation_type_id": "8bc85660-2267-5ad0-b956-45147bf6bc37",
+      "relation_type_name": "처벌하다",
+      "target_entity_id": "5945ba4f-2e65-5340-8470-1ad15c0abde8",
+      "target_name": "징역",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "163d126b-27dd-571a-8809-2237d4e00651",
+      "source_entity_id": "b386e51e-e556-52d8-8a4f-f479069a6613",
+      "source_name": "공직자등",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "af8e8f25-9601-52af-a495-cb127676a43c",
+      "target_name": "신고",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "b917e197-1187-59da-aee9-a6e07bcb793d",
+      "source_entity_id": "4c802324-3c3f-546e-9627-c67c6585874d",
+      "source_name": "공직자의 이해충돌 방지법의 위반행위를 한 자",
+      "relation_type_id": "1039c5ff-02dc-5da3-a4ac-5ea3c0148e95",
+      "relation_type_name": "면제하다",
+      "target_entity_id": "67c29f81-4930-5105-9f70-34dcd75ff341",
+      "target_name": "행정처분",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ]
+}

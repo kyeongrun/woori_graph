@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Private source documents and generated execution artifacts
+data/company_raw/
+runs/
+
+# Editor / OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

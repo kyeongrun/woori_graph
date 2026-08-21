@@ -1,0 +1,580 @@
+{
+  "query": "기관 A와 위원회 연결",
+  "answer": "기관 A와 위원회는 연결됩니다. [E1]",
+  "entity_candidates": [
+    {
+      "entity_id": "a",
+      "canonical_name": "기관A",
+      "entity_type": "ORGANIZATION",
+      "score": 1.0,
+      "matched_by": [
+        "keyword"
+      ]
+    }
+  ],
+  "relation_candidates": [
+    {
+      "relation_id": "r1",
+      "source_entity_id": "a",
+      "source_name": "기관A",
+      "relation_type_id": "t1",
+      "relation_type_name": "감독하다",
+      "target_entity_id": "b",
+      "target_name": "업무B",
+      "score": 1.0,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "start_entity_id": "a",
+      "start_name": "기관A",
+      "end_entity_id": "c",
+      "end_name": "기관C",
+      "hops": 2,
+      "score": 1.20499418,
+      "document_ids": [
+        "document-법률A",
+        "document-법률B"
+      ],
+      "document_titles": [
+        "법률A",
+        "법률B"
+      ],
+      "traversed_entity_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "traversed_entity_names": [
+        "기관A",
+        "업무B",
+        "기관C"
+      ],
+      "edges": [
+        {
+          "relation_id": "r1",
+          "source_entity_id": "a",
+          "source_name": "기관A",
+          "relation_type_id": "type-r1",
+          "relation_type_name": "감독하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "b",
+          "target_name": "업무B",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "mention-r1",
+              "relation_id": "r1",
+              "semantic_unit_id": "unit-r1",
+              "document_id": "document-법률A",
+              "document_title": "법률A",
+              "source_path": "법률A.md",
+              "source_ref": {
+                "article": "제1조",
+                "paragraph": 1,
+                "item_path": []
+              },
+              "raw_subject": "기관A",
+              "raw_predicate": "감독하다",
+              "raw_object": "업무B",
+              "context_text": "법률A 제1조의 상위 문맥",
+              "unit_text": "기관A는 업무B을 감독하다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        },
+        {
+          "relation_id": "r2",
+          "source_entity_id": "b",
+          "source_name": "업무B",
+          "relation_type_id": "type-r2",
+          "relation_type_name": "연결하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "c",
+          "target_name": "기관C",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "mention-r2",
+              "relation_id": "r2",
+              "semantic_unit_id": "unit-r2",
+              "document_id": "document-법률B",
+              "document_title": "법률B",
+              "source_path": "법률B.md",
+              "source_ref": {
+                "article": "제1조",
+                "paragraph": 1,
+                "item_path": []
+              },
+              "raw_subject": "업무B",
+              "raw_predicate": "연결하다",
+              "raw_object": "기관C",
+              "context_text": "법률B 제1조의 상위 문맥",
+              "unit_text": "업무B는 기관C을 연결하다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "a",
+      "start_name": "기관A",
+      "end_entity_id": "b",
+      "end_name": "업무B",
+      "hops": 1,
+      "score": 1.19685727,
+      "document_ids": [
+        "document-법률A"
+      ],
+      "document_titles": [
+        "법률A"
+      ],
+      "traversed_entity_ids": [
+        "a",
+        "b"
+      ],
+      "traversed_entity_names": [
+        "기관A",
+        "업무B"
+      ],
+      "edges": [
+        {
+          "relation_id": "r1",
+          "source_entity_id": "a",
+          "source_name": "기관A",
+          "relation_type_id": "type-r1",
+          "relation_type_name": "감독하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "b",
+          "target_name": "업무B",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "mention-r1",
+              "relation_id": "r1",
+              "semantic_unit_id": "unit-r1",
+              "document_id": "document-법률A",
+              "document_title": "법률A",
+              "source_path": "법률A.md",
+              "source_ref": {
+                "article": "제1조",
+                "paragraph": 1,
+                "item_path": []
+              },
+              "raw_subject": "기관A",
+              "raw_predicate": "감독하다",
+              "raw_object": "업무B",
+              "context_text": "법률A 제1조의 상위 문맥",
+              "unit_text": "기관A는 업무B을 감독하다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "b",
+      "start_name": "업무B",
+      "end_entity_id": "a",
+      "end_name": "기관A",
+      "hops": 1,
+      "score": 1.07921021,
+      "document_ids": [
+        "document-법률A"
+      ],
+      "document_titles": [
+        "법률A"
+      ],
+      "traversed_entity_ids": [
+        "b",
+        "a"
+      ],
+      "traversed_entity_names": [
+        "업무B",
+        "기관A"
+      ],
+      "edges": [
+        {
+          "relation_id": "r1",
+          "source_entity_id": "a",
+          "source_name": "기관A",
+          "relation_type_id": "type-r1",
+          "relation_type_name": "감독하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "b",
+          "target_name": "업무B",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "mention-r1",
+              "relation_id": "r1",
+              "semantic_unit_id": "unit-r1",
+              "document_id": "document-법률A",
+              "document_title": "법률A",
+              "source_path": "법률A.md",
+              "source_ref": {
+                "article": "제1조",
+                "paragraph": 1,
+                "item_path": []
+              },
+              "raw_subject": "기관A",
+              "raw_predicate": "감독하다",
+              "raw_object": "업무B",
+              "context_text": "법률A 제1조의 상위 문맥",
+              "unit_text": "기관A는 업무B을 감독하다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "a",
+      "start_name": "기관A",
+      "end_entity_id": "d",
+      "end_name": "위원회D",
+      "hops": 3,
+      "score": 1.01565758,
+      "document_ids": [
+        "document-법률A",
+        "document-법률B",
+        "document-법률C"
+      ],
+      "document_titles": [
+        "법률A",
+        "법률B",
+        "법률C"
+      ],
+      "traversed_entity_ids": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "traversed_entity_names": [
+        "기관A",
+        "업무B",
+        "기관C",
+        "위원회D"
+      ],
+      "edges": [
+        {
+          "relation_id": "r1",
+          "source_entity_id": "a",
+          "source_name": "기관A",
+          "relation_type_id": "type-r1",
+          "relation_type_name": "감독하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "b",
+          "target_name": "업무B",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "mention-r1",
+              "relation_id": "r1",
+              "semantic_unit_id": "unit-r1",
+              "document_id": "document-법률A",
+              "document_title": "법률A",
+              "source_path": "법률A.md",
+              "source_ref": {
+                "article": "제1조",
+                "paragraph": 1,
+                "item_path": []
+              },
+              "raw_subject": "기관A",
+              "raw_predicate": "감독하다",
+              "raw_object": "업무B",
+              "context_text": "법률A 제1조의 상위 문맥",
+              "unit_text": "기관A는 업무B을 감독하다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        },
+        {
+          "relation_id": "r2",
+          "source_entity_id": "b",
+          "source_name": "업무B",
+          "relation_type_id": "type-r2",
+          "relation_type_name": "연결하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "c",
+          "target_name": "기관C",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "mention-r2",
+              "relation_id": "r2",
+              "semantic_unit_id": "unit-r2",
+              "document_id": "document-법률B",
+              "document_title": "법률B",
+              "source_path": "법률B.md",
+              "source_ref": {
+                "article": "제1조",
+                "paragraph": 1,
+                "item_path": []
+              },
+              "raw_subject": "업무B",
+              "raw_predicate": "연결하다",
+              "raw_object": "기관C",
+              "context_text": "법률B 제1조의 상위 문맥",
+              "unit_text": "업무B는 기관C을 연결하다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        },
+        {
+          "relation_id": "r3",
+          "source_entity_id": "c",
+          "source_name": "기관C",
+          "relation_type_id": "type-r3",
+          "relation_type_name": "보고하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d",
+          "target_name": "위원회D",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "mention-r3",
+              "relation_id": "r3",
+              "semantic_unit_id": "unit-r3",
+              "document_id": "document-법률C",
+              "document_title": "법률C",
+              "source_path": "법률C.md",
+              "source_ref": {
+                "article": "제1조",
+                "paragraph": 1,
+                "item_path": []
+              },
+              "raw_subject": "기관C",
+              "raw_predicate": "보고하다",
+              "raw_object": "위원회D",
+              "context_text": "법률C 제1조의 상위 문맥",
+              "unit_text": "기관C는 위원회D을 보고하다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "b",
+      "start_name": "업무B",
+      "end_entity_id": "d",
+      "end_name": "위원회D",
+      "hops": 2,
+      "score": 0.70499418,
+      "document_ids": [
+        "document-법률B",
+        "document-법률C"
+      ],
+      "document_titles": [
+        "법률B",
+        "법률C"
+      ],
+      "traversed_entity_ids": [
+        "b",
+        "c",
+        "d"
+      ],
+      "traversed_entity_names": [
+        "업무B",
+        "기관C",
+        "위원회D"
+      ],
+      "edges": [
+        {
+          "relation_id": "r2",
+          "source_entity_id": "b",
+          "source_name": "업무B",
+          "relation_type_id": "type-r2",
+          "relation_type_name": "연결하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "c",
+          "target_name": "기관C",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "mention-r2",
+              "relation_id": "r2",
+              "semantic_unit_id": "unit-r2",
+              "document_id": "document-법률B",
+              "document_title": "법률B",
+              "source_path": "법률B.md",
+              "source_ref": {
+                "article": "제1조",
+                "paragraph": 1,
+                "item_path": []
+              },
+              "raw_subject": "업무B",
+              "raw_predicate": "연결하다",
+              "raw_object": "기관C",
+              "context_text": "법률B 제1조의 상위 문맥",
+              "unit_text": "업무B는 기관C을 연결하다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        },
+        {
+          "relation_id": "r3",
+          "source_entity_id": "c",
+          "source_name": "기관C",
+          "relation_type_id": "type-r3",
+          "relation_type_name": "보고하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d",
+          "target_name": "위원회D",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "mention-r3",
+              "relation_id": "r3",
+              "semantic_unit_id": "unit-r3",
+              "document_id": "document-법률C",
+              "document_title": "법률C",
+              "source_path": "법률C.md",
+              "source_ref": {
+                "article": "제1조",
+                "paragraph": 1,
+                "item_path": []
+              },
+              "raw_subject": "기관C",
+              "raw_predicate": "보고하다",
+              "raw_object": "위원회D",
+              "context_text": "법률C 제1조의 상위 문맥",
+              "unit_text": "기관C는 위원회D을 보고하다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "b",
+      "start_name": "업무B",
+      "end_entity_id": "c",
+      "end_name": "기관C",
+      "hops": 1,
+      "score": 0.49097492,
+      "document_ids": [
+        "document-법률B"
+      ],
+      "document_titles": [
+        "법률B"
+      ],
+      "traversed_entity_ids": [
+        "b",
+        "c"
+      ],
+      "traversed_entity_names": [
+        "업무B",
+        "기관C"
+      ],
+      "edges": [
+        {
+          "relation_id": "r2",
+          "source_entity_id": "b",
+          "source_name": "업무B",
+          "relation_type_id": "type-r2",
+          "relation_type_name": "연결하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "c",
+          "target_name": "기관C",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "mention-r2",
+              "relation_id": "r2",
+              "semantic_unit_id": "unit-r2",
+              "document_id": "document-법률B",
+              "document_title": "법률B",
+              "source_path": "법률B.md",
+              "source_ref": {
+                "article": "제1조",
+                "paragraph": 1,
+                "item_path": []
+              },
+              "raw_subject": "업무B",
+              "raw_predicate": "연결하다",
+              "raw_object": "기관C",
+              "context_text": "법률B 제1조의 상위 문맥",
+              "unit_text": "업무B는 기관C을 연결하다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "duration_seconds": 0.016,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 1,
+    "relation_candidates": 1,
+    "paths_considered": 6,
+    "paths_returned": 6,
+    "adaptations": [],
+    "hop_diagnostics": [
+      {
+        "hop": 1,
+        "frontier_entities": 2,
+        "fetched_edges": 2,
+        "query_edge_limit": 40,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 3,
+        "beam_width": 20,
+        "retained_paths": 3
+      },
+      {
+        "hop": 2,
+        "frontier_entities": 3,
+        "fetched_edges": 3,
+        "query_edge_limit": 60,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 2,
+        "beam_width": 20,
+        "retained_paths": 2
+      },
+      {
+        "hop": 3,
+        "frontier_entities": 2,
+        "fetched_edges": 2,
+        "query_edge_limit": 40,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 1,
+        "beam_width": 20,
+        "retained_paths": 1
+      }
+    ],
+    "deduplicated_paths": 6,
+    "evidence_path_pool": 6
+  },
+  "answer_metadata": {
+    "mode": "llm",
+    "status": "generated",
+    "model": "fake-local-llm",
+    "prompt_name": "grounded_answer.ko.md",
+    "prompt_sha256": "cabb5d14c8f22ccc43ed71209c3c444b4d176d08341165792a999dec3b594ad2",
+    "generated_at": "2026-08-21T05:41:10.777498+00:00",
+    "citation_map": [
+      {
+        "key": "E1",
+        "relation_mention_id": "mention-r1"
+      },
+      {
+        "key": "E2",
+        "relation_mention_id": "mention-r2"
+      }
+    ],
+    "cited_keys": [
+      "E1"
+    ],
+    "fallback_reason": null
+  }
+}

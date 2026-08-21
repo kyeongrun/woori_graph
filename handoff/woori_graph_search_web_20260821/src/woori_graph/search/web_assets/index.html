@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>법령 관계 탐색</title>
+  <link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>법령 관계 탐색</h1>
+      <p>질문의 엔티티와 관계를 찾아 최대 3-hop의 법령 근거를 탐색합니다.</p>
+    </div>
+    <p class="legal-note">탐색 결과는 원문 근거와 함께 검토하세요.</p>
+  </header>
+
+  <main>
+    <form id="search-form" class="search-form" role="search">
+      <label class="sr-only" for="query">법령 관계 질문</label>
+      <span class="search-icon" aria-hidden="true"></span>
+      <input
+        id="query"
+        name="query"
+        type="search"
+        maxlength="500"
+        value="금융위원회와 금융기관은 어떻게 연결되는가?"
+        placeholder="법령 관계를 질문하세요"
+        autocomplete="off"
+        required
+      >
+      <button id="search-button" type="submit">탐색</button>
+    </form>
+
+    <div id="search-status" class="search-status" role="status" aria-live="polite">
+      질문을 입력하고 탐색을 시작하세요.
+    </div>
+
+    <section id="empty-state" class="empty-state">
+      <div class="empty-graph" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <h2>법령 사이의 연결을 질문해보세요</h2>
+      <p>키워드와 벡터 후보를 결합하고 관계 그래프를 최대 3-hop까지 탐색합니다.</p>
+    </section>
+
+    <section id="result" hidden>
+      <div class="workspace">
+        <section class="panel graph-panel" aria-labelledby="graph-title">
+          <header class="panel-header">
+            <div>
+              <h2 id="graph-title">관계 그래프</h2>
+              <p id="graph-summary">최대 3-hop</p>
+            </div>
+            <button id="reset-selection" class="secondary-button" type="button">선택 초기화</button>
+          </header>
+          <div class="graph-stage">
+            <svg id="network" role="img" aria-label="질문과 관련된 법령 관계 그래프"></svg>
+          </div>
+          <div id="selection-detail" class="selection-detail" aria-live="polite">
+            노드 또는 관계를 선택하면 연결 정보와 해당 근거를 확인할 수 있습니다.
+          </div>
+        </section>
+
+        <aside class="result-rail">
+          <section class="panel answer-panel" aria-labelledby="answer-title">
+            <header class="panel-header compact">
+              <h2 id="answer-title">근거 기반 답변</h2>
+            </header>
+            <pre id="answer"></pre>
+          </section>
+
+          <section class="panel evidence-panel" aria-labelledby="evidence-title">
+            <header class="panel-header compact">
+              <div>
+                <h2 id="evidence-title">근거 법령</h2>
+                <p id="evidence-summary"></p>
+              </div>
+            </header>
+            <ol id="evidence-list" class="evidence-list"></ol>
+          </section>
+        </aside>
+      </div>
+
+      <section class="diagnostics" aria-labelledby="diagnostics-title">
+        <header class="diagnostics-header">
+          <div>
+            <h2 id="diagnostics-title">탐색 상세</h2>
+            <p id="traversal-rule"></p>
+          </div>
+          <p id="adaptation-status" class="adaptation-status"></p>
+        </header>
+
+        <dl id="search-metrics" class="search-metrics"></dl>
+
+        <div class="table-wrap">
+          <table class="hop-table">
+            <caption class="sr-only">hop별 그래프 탐색 범위와 beam 잔존 수</caption>
+            <thead>
+              <tr>
+                <th scope="col">단계</th>
+                <th scope="col">frontier</th>
+                <th scope="col">조회 관계</th>
+                <th scope="col">엔티티별 한도</th>
+                <th scope="col">생성 경로</th>
+                <th scope="col">beam 잔존</th>
+              </tr>
+            </thead>
+            <tbody id="hop-table-body"></tbody>
+          </table>
+        </div>
+
+        <div class="candidate-grid">
+          <section aria-labelledby="entity-candidates-title">
+            <div class="candidate-heading">
+              <h3 id="entity-candidates-title">선정 엔티티</h3>
+              <span id="entity-candidate-count"></span>
+            </div>
+            <div class="candidate-table-wrap">
+              <table class="candidate-table">
+                <thead><tr><th>순위</th><th>Canonical Name</th><th>타입</th><th>점수</th><th>매칭</th></tr></thead>
+                <tbody id="entity-candidate-body"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section aria-labelledby="relation-candidates-title">
+            <div class="candidate-heading">
+              <h3 id="relation-candidates-title">선정 릴레이션</h3>
+              <span id="relation-candidate-count"></span>
+            </div>
+            <div class="candidate-table-wrap">
+              <table class="candidate-table relation-candidate-table">
+                <thead><tr><th>순위</th><th>출발 — 관계 → 도착</th><th>점수</th><th>매칭</th></tr></thead>
+                <tbody id="relation-candidate-body"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <div class="final-selection" id="final-selection"></div>
+      </section>
+
+      <footer class="result-footer">
+        <span id="duration"></span>
+        <span id="path-count"></span>
+        <span id="document-count"></span>
+      </footer>
+    </section>
+  </main>
+
+  <template id="loading-template">
+    <span class="spinner" aria-hidden="true"></span> 그래프를 탐색하고 있습니다.
+  </template>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

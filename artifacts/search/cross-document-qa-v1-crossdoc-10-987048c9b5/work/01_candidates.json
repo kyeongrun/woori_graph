@@ -1,0 +1,349 @@
+{
+  "query": "‘금융위원회’와 ‘금융통화위원회’는 ‘조건’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "entities": [
+    {
+      "entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "canonical_name": "금융통화위원회",
+      "entity_type": "OTHER",
+      "score": 0.031754032258064516,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "canonical_name": "금융위원회",
+      "entity_type": "OTHER",
+      "score": 0.03009207275993712,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "a8975d33-b332-5372-834c-8aa4d98a207d",
+      "canonical_name": "금융통화위원회의 권한으로 규정된 사항",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "eb455dcc-d24c-56f4-aad7-e3c2ee2f6aa8",
+      "canonical_name": "금융통화위원회가 하는 결정",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "c671b4e9-420f-541a-88e6-11b205ababfc",
+      "canonical_name": "금융통화위원회 의결서",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "68e987cd-0e29-5765-acd3-7e63cce79269",
+      "canonical_name": "조건",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "c72e9eea-a452-5c85-a05e-5e40bef510b0",
+      "canonical_name": "근거",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "a6c8a7b5-3210-5d62-a823-cdea19cd9bbe",
+      "canonical_name": "금융통화위원회가 하는 제한",
+      "entity_type": "OTHER",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "5602f1b9-c928-5631-8267-679601c55b1d",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "68e987cd-0e29-5765-acd3-7e63cce79269",
+      "target_name": "조건",
+      "score": 0.03278688524590164,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "f114dc16-573f-5a7d-b586-61bda0236efc",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "b87d399f-8f30-5ad1-9639-d961d85a2ff1",
+      "relation_type_name": "지정하다",
+      "target_entity_id": "68e987cd-0e29-5765-acd3-7e63cce79269",
+      "target_name": "조건",
+      "score": 0.0315136476426799,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "82398d77-0566-5761-91ab-ecb8d7fc5484",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "68e987cd-0e29-5765-acd3-7e63cce79269",
+      "target_name": "조건",
+      "score": 0.030621785881252923,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "b953f2fa-e2fa-53d5-8a1b-230a7f4d4d1a",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "c008479c-5682-526d-84e3-d6e9cb6d772a",
+      "relation_type_name": "준수하다",
+      "target_entity_id": "68e987cd-0e29-5765-acd3-7e63cce79269",
+      "target_name": "조건",
+      "score": 0.029513888888888888,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "44aed536-37e4-5c85-bfa2-d078280f7d29",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "372c5e0e-6345-5cad-83a7-bdbf2a605cbc",
+      "target_name": "상환조건",
+      "score": 0.029206349206349208,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "8d53ed7e-e0b4-52b1-af94-f456ece3594c",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "8f7bd35b-f079-5532-9deb-6b746e9250a4",
+      "relation_type_name": "작성하다",
+      "target_entity_id": "68e987cd-0e29-5765-acd3-7e63cce79269",
+      "target_name": "조건",
+      "score": 0.026399331662489554,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "f967eaca-0237-5fe3-9fc1-e50e3bcee9c8",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "f8e479c0-f7cb-58f6-854f-f9e9c58d65a8",
+      "relation_type_name": "결정하다",
+      "target_entity_id": "a8975d33-b332-5372-834c-8aa4d98a207d",
+      "target_name": "금융통화위원회의 권한으로 규정된 사항",
+      "score": 0.024687641125997292,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "6f1aaeda-f9f7-5048-91fc-c7597a167eff",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "f8e479c0-f7cb-58f6-854f-f9e9c58d65a8",
+      "relation_type_name": "결정하다",
+      "target_entity_id": "d16b8bd1-35b7-51c2-b6f9-d1d1ea2cdac5",
+      "target_name": "조건의 변경 여부",
+      "score": 0.02296750619861673,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "1ac1989a-2d2a-590c-96e1-fcd6b51da020",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "f488a541-7628-561f-8758-b1b4c1f3f10f",
+      "target_name": "이율",
+      "score": 0.015625,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "0fe59748-0842-5bb2-98ef-f074a0f6983a",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "target_name": "규정",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "8cff3fe9-1d6d-5d62-9186-5429351c8237",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "2c3c5114-724b-5ab4-8045-58a0841eecec",
+      "target_name": "법 제22조제1항 각 호 해당 여부 검토",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "d495e7a1-7dc8-570d-a0c6-c6aaf1c66549",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "d284a5d0-4650-5a98-95de-641120437a44",
+      "relation_type_name": "정지하다",
+      "target_entity_id": "3b8de6d2-b19b-512c-ad7a-08b840b767bf",
+      "target_name": "조치",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "0cd51d1d-7db9-5680-b9e2-d9ed7f474be5",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "26b428d8-3dd3-5763-b4bd-15976c9b8a42",
+      "target_name": "바",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "1722c230-8c4c-5ff5-8b66-32693dfb82ac",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "5871c0ca-38d5-5d58-81c5-bb8477031bca",
+      "relation_type_name": "제출하다",
+      "target_entity_id": "508e77c4-274a-5d05-908d-41f9242187f6",
+      "target_name": "금융통화위원회 의사록",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "1c7a9a1d-1366-5076-9bab-34ac59e953d7",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "4da2f836-8843-521b-b994-4824240073fc",
+      "target_name": "전환형 조건부자본증권 전환가격",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "cd987126-643b-58ed-bc6a-85326b7e119a",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "7d44145a-ea53-539a-a14b-99bc35b0bfae",
+      "target_name": "위원",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "1d652810-ef39-59c2-b173-1c067275b901",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "ebdcd739-2dcf-5338-8f83-56b17631dc19",
+      "relation_type_name": "명령하다",
+      "target_entity_id": "d9559f2c-470e-557c-b0b5-65033f2dec87",
+      "target_name": "상각형 조건부자본증권의 보유",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "22255e00-253d-50ff-96f1-b3fe7bde61ce",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "862087f1-c2b0-5036-9eff-07a8ce20e493",
+      "target_name": "금융지주회사주식 전환형 조건부자본증권 발행 세부사항",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "5abcc4e9-626f-5977-a255-d18e78897a53",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "778fe9ef-c09c-5b15-bca8-be5033110838",
+      "target_name": "사용",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "25d472bd-e3b7-52df-9262-ef7731f91129",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "f8e479c0-f7cb-58f6-854f-f9e9c58d65a8",
+      "relation_type_name": "결정하다",
+      "target_entity_id": "bc527d34-34d9-54e6-9d8c-d0d0b0cd3701",
+      "target_name": "조건의 취소",
+      "score": 0.014084507042253521,
+      "matched_by": [
+        "keyword"
+      ]
+    }
+  ]
+}

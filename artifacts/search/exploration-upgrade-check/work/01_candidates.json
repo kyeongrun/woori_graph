@@ -1,0 +1,350 @@
+{
+  "query": "공공감사에관한법률에서 감사기구의 장의 독립성 보장에 관한 규정은 무엇이며, 임용절차는 어떻게 되는가?",
+  "entities": [
+    {
+      "entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "canonical_name": "감사기구의 독립성 보장에 필요한 사항",
+      "entity_type": "CONCEPT",
+      "score": 0.03225806451612903,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "b10a3ff3-8b91-5db5-9e2c-39b86bf03845",
+      "canonical_name": "감사활동의 독립성 보장에 필요한 사항",
+      "entity_type": "CONCEPT",
+      "score": 0.03149801587301587,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "canonical_name": "감사기구의 장에 관한 규정",
+      "entity_type": "LEGAL_INSTRUMENT",
+      "score": 0.031009615384615385,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+      "canonical_name": "중앙행정기관의 감사기구의 장의 임용권자",
+      "entity_type": "PERSON",
+      "score": 0.029030910609857977,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "d0d71d81-ab81-5753-abf2-b99f59eea889",
+      "canonical_name": "감사업무 수행의 독립성",
+      "entity_type": "CONCEPT",
+      "score": 0.02786377708978328,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "f9624360-9599-5d14-8025-a0d0bd6daa49",
+      "canonical_name": "공공감사에 관한 법률",
+      "entity_type": "LEGAL_INSTRUMENT",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "a1b4acf2-fcd1-5ff0-be09-96d6213a0096",
+      "canonical_name": "독립성",
+      "entity_type": "CONCEPT",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "683b83d0-5937-573d-a667-e1bb94fb78c2",
+      "canonical_name": "감사기구의 장을 임용하려는 중앙행정기관",
+      "entity_type": "ORGANIZATION",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+      "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "target_name": "감사기구의 독립성 보장에 필요한 사항",
+      "score": 0.03177805800756621,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "6247a50a-5487-5a79-9981-797e5eaff9f3",
+      "source_entity_id": "bdb40c75-6bcd-5df3-a80b-bf3e6b364bff",
+      "source_name": "합의제감사기구 위원의 임용",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "target_name": "감사기구의 장에 관한 규정",
+      "score": 0.028083267871170464,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "3ae5b385-8e8a-5887-898d-76b3ad5475d7",
+      "source_entity_id": "8fec2a58-5a82-586a-9138-2a6eae7f7b02",
+      "source_name": "자격",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "target_name": "감사기구의 장에 관한 규정",
+      "score": 0.027777777777777776,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "6c733c4e-84bc-54b0-8047-8ee57f649bbc",
+      "source_entity_id": "bb8c1725-cfe6-5bdd-81d0-642314af10c6",
+      "source_name": "공공기관의 합의제감사기구의 위원",
+      "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+      "relation_type_name": "적용하지않다",
+      "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "target_name": "규정",
+      "score": 0.027692895339954164,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "ef7c9cad-b8ab-5373-b0da-7189cf6127e8",
+      "source_entity_id": "a780befa-63c4-52eb-bb9c-14d30a50b2d7",
+      "source_name": "결격사유",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "target_name": "감사기구의 장에 관한 규정",
+      "score": 0.027106227106227107,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "991a86c5-3d6c-59f7-a5e2-1ebc32143ca3",
+      "source_entity_id": "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+      "source_name": "중앙행정기관의 감사기구의 장의 임용권자",
+      "relation_type_id": "179b940f-26ea-5d99-8448-7cb76282cf38",
+      "relation_type_name": "수행하지않다",
+      "target_entity_id": "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+      "target_name": "임용절차",
+      "score": 0.027031963470319637,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "fdf018ce-1d4d-5ca4-87ba-2f8574581304",
+      "source_entity_id": "f9624360-9599-5d14-8025-a0d0bd6daa49",
+      "source_name": "공공감사에 관한 법률",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "7a355be0-d51d-5a23-ad4b-6fe7bbce2aa4",
+      "target_name": "감사활동체계",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "6b25abb7-0658-5976-8445-a6697152d225",
+      "source_entity_id": "15327da0-568e-531b-9e57-c718cf9137b8",
+      "source_name": "감사원규칙",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "29357e27-19f5-551d-8ea0-ebcb6824a45d",
+      "target_name": "운영절차",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "b2163a73-bb08-594b-830d-6149b2fb4a78",
+      "source_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "source_name": "규정",
+      "relation_type_id": "3953672c-0c65-5c31-9603-2a7cafc8cc51",
+      "relation_type_name": "취소하다",
+      "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "target_name": "규정",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "250aa613-95db-5bcc-bd3f-cd0b0e36cba0",
+      "source_entity_id": "f9624360-9599-5d14-8025-a0d0bd6daa49",
+      "source_name": "공공감사에 관한 법률",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "004ead7d-ab5b-5e94-a0c5-94a5d479c374",
+      "target_name": "자체감사활동",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "c28b0875-a871-5908-a061-5cdf587b33bf",
+      "source_entity_id": "2b7b0dd4-6b35-5fbf-9f78-c71039be5ee4",
+      "source_name": "감사인",
+      "relation_type_id": "12121a6a-a5b7-5ac1-ba97-050f9b917116",
+      "relation_type_name": "관리하다",
+      "target_entity_id": "a1b4acf2-fcd1-5ff0-be09-96d6213a0096",
+      "target_name": "독립성",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "08772b37-e6f7-543a-9636-aeff95117e21",
+      "source_entity_id": "52c43707-a90d-5fc5-859c-b5eb951db582",
+      "source_name": "감사기관",
+      "relation_type_id": "12121a6a-a5b7-5ac1-ba97-050f9b917116",
+      "relation_type_name": "관리하다",
+      "target_entity_id": "a1b4acf2-fcd1-5ff0-be09-96d6213a0096",
+      "target_name": "독립성",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "18520c2d-e291-5be8-a53e-34f8d4856447",
+      "source_entity_id": "b8144377-e2a9-5729-a5fd-6bf84b492b49",
+      "source_name": "지방자치단체 감사기구의 장 임용권자",
+      "relation_type_id": "179b940f-26ea-5d99-8448-7cb76282cf38",
+      "relation_type_name": "수행하지않다",
+      "target_entity_id": "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+      "target_name": "임용절차",
+      "score": 0.015625,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "11623327-c6e6-5f34-bb4a-2c40118e0de1",
+      "source_entity_id": "a29e2ec4-2204-57b1-9b2d-55f46d30dc3b",
+      "source_name": "외부기관",
+      "relation_type_id": "ec4c4ea0-aeba-5e68-966a-aa1a481c6932",
+      "relation_type_name": "취득하다",
+      "target_entity_id": "a1b4acf2-fcd1-5ff0-be09-96d6213a0096",
+      "target_name": "독립성",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "28fc92dc-97d0-50e7-b3f0-27a6da535c3b",
+      "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "relation_type_id": "c008479c-5682-526d-84e3-d6e9cb6d772a",
+      "relation_type_name": "준수하다",
+      "target_entity_id": "b10a3ff3-8b91-5db5-9e2c-39b86bf03845",
+      "target_name": "감사활동의 독립성 보장에 필요한 사항",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "dce55cea-5e02-5359-967f-4caef6675a13",
+      "source_entity_id": "f9624360-9599-5d14-8025-a0d0bd6daa49",
+      "source_name": "공공감사에 관한 법률",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "56554be3-2151-541f-b758-7b1f8bdb6985",
+      "target_name": "지방자치단체",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "e540dc9a-5b19-5237-b5ff-d99be2cd15da",
+      "source_entity_id": "f9624360-9599-5d14-8025-a0d0bd6daa49",
+      "source_name": "공공감사에 관한 법률",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "b2c88c82-04af-51b3-8dcd-6ebade879d54",
+      "target_name": "공공기관",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "cefebf67-559f-5e07-abce-2c9b7824495b",
+      "source_entity_id": "c22bb0f3-77e4-56a3-851c-408da018ba68",
+      "source_name": "보험안내자료",
+      "relation_type_id": "8f7bd35b-f079-5532-9deb-6b746e9250a4",
+      "relation_type_name": "작성하다",
+      "target_entity_id": "506e16d3-b646-5d5b-a440-ea5dd4f0b4a9",
+      "target_name": "보장에 관한 사항",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "880ccee0-5bf5-5d95-95f5-a3bd9092fcfa",
+      "source_entity_id": "e7b48f94-22b9-56e6-811d-1ff70a623313",
+      "source_name": "직무",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "target_name": "감사기구의 장에 관한 규정",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "9067a24f-80e9-5006-a0a8-e9925e096606",
+      "source_entity_id": "3506217c-1cad-5851-96a6-8592b6c4a98b",
+      "source_name": "지방자치단체 감사기구의 장",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "c8757de1-d2f8-5dbf-a2b6-dbdd460be6ff",
+      "target_name": "임용권자",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ]
+}

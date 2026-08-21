@@ -1,0 +1,5208 @@
+{
+  "query": "‘친족’와 ‘동거인’는 ‘구조금의 지급’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "stats": {
+    "duration_seconds": 1.0,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths_considered": 7413,
+    "paths_returned": 50,
+    "adaptations": []
+  },
+  "paths": [
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "end_name": "구조금",
+      "hops": 3,
+      "score": 2.78572273,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급",
+        "친족",
+        "구조금"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "38e96560-7615-5f09-a84b-551cf7b8d0a2",
+              "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "end_name": "동거인",
+      "hops": 3,
+      "score": 2.77612218,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "e98f43bd-5019-5800-886e-2303d004f554"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "친족",
+        "구조금의 지급",
+        "동거인"
+      ],
+      "edges": [
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "end_name": "친족",
+      "hops": 2,
+      "score": 2.74785612,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급",
+        "친족"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "end_name": "구조금의 지급",
+      "hops": 2,
+      "score": 2.72785836,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "친족",
+        "구조금의 지급"
+      ],
+      "edges": [
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "end_name": "구조금",
+      "hops": 2,
+      "score": 2.43360609,
+      "document_ids": [],
+      "document_titles": [],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "친족",
+        "구조금"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "end_name": "친족",
+      "hops": 3,
+      "score": 2.42359544,
+      "document_ids": [
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "동거인",
+        "구조금의 지급",
+        "친족"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        },
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "end_name": "구조금의 지급",
+      "hops": 3,
+      "score": 2.41261045,
+      "document_ids": [
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금",
+        "친족",
+        "구조금의 지급"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "start_name": "친족",
+      "end_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "end_name": "동거인",
+      "hops": 2,
+      "score": 2.40060061,
+      "document_ids": [],
+      "document_titles": [],
+      "traversed_entity_ids": [
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "e98f43bd-5019-5800-886e-2303d004f554"
+      ],
+      "traversed_entity_names": [
+        "친족",
+        "구조금의 지급",
+        "동거인"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "end_name": "구조금의 지급",
+      "hops": 2,
+      "score": 2.37462725,
+      "document_ids": [
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "동거인",
+        "구조금의 지급"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        },
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "end_name": "친족",
+      "hops": 2,
+      "score": 2.3604383,
+      "document_ids": [
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금",
+        "친족"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "end_name": "동거인",
+      "hops": 1,
+      "score": 2.26738857,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "e98f43bd-5019-5800-886e-2303d004f554"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "동거인"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "end_name": "구조금의 지급",
+      "hops": 1,
+      "score": 2.20076115,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "4624ccaf-1d1b-55e4-ab4c-4ad2df88318e",
+      "end_name": "사람",
+      "hops": 3,
+      "score": 2.13970704,
+      "document_ids": [
+        "008f7f89-97ff-5ce8-a923-6f1a3e8dc870",
+        "31a15836-7ba6-51e2-a610-f3d23f8e5b85"
+      ],
+      "document_titles": [
+        "공익신고자 보호법 시행령",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률 시행령"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "4624ccaf-1d1b-55e4-ab4c-4ad2df88318e"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "친족",
+        "구조금",
+        "사람"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "1d39deaa-5c9c-56d6-b4a3-f1b9359efaae",
+          "source_entity_id": "4624ccaf-1d1b-55e4-ab4c-4ad2df88318e",
+          "source_name": "사람",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "fcf5a368-a0d4-55ef-a8fc-548435d35658",
+              "relation_id": "1d39deaa-5c9c-56d6-b4a3-f1b9359efaae",
+              "semantic_unit_id": "3a14935c-d93a-530d-81d2-186bc70c91c1",
+              "document_id": "31a15836-7ba6-51e2-a610-f3d23f8e5b85",
+              "document_title": "공익신고자 보호법 시행령",
+              "source_path": "공익신고자보호법/시행령.md",
+              "source_ref": {
+                "article": "제26조",
+                "item_path": [],
+                "paragraph": 4
+              },
+              "raw_subject": "사람",
+              "raw_predicate": "지급하지 않을 수 있다",
+              "raw_object": "구조금"
+            },
+            {
+              "relation_mention_id": "6a349dab-1c44-577c-b239-173c00f62b23",
+              "relation_id": "1d39deaa-5c9c-56d6-b4a3-f1b9359efaae",
+              "semantic_unit_id": "51622dee-e60b-5598-9c2b-3ae6643839ad",
+              "document_id": "008f7f89-97ff-5ce8-a923-6f1a3e8dc870",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률 시행령",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제74조",
+                "item_path": [],
+                "paragraph": 4
+              },
+              "raw_subject": "사람",
+              "raw_predicate": "지급하지 않을 수 있다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "701ee6a5-af83-5345-b179-640096a7f2a7",
+      "end_name": "기관",
+      "hops": 3,
+      "score": 2.13079384,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "701ee6a5-af83-5345-b179-640096a7f2a7"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "친족",
+        "구조금",
+        "기관"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "da40ff93-2a93-55aa-b580-06bb61c33f23",
+          "source_entity_id": "701ee6a5-af83-5345-b179-640096a7f2a7",
+          "source_name": "기관",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "b53b6d0e-7de1-5333-92f8-87d3a61ff6cc",
+              "relation_id": "da40ff93-2a93-55aa-b580-06bb61c33f23",
+              "semantic_unit_id": "7e8b1302-e3aa-5eac-8e6d-893dc59733f0",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제28조",
+                "item_path": [],
+                "paragraph": 5
+              },
+              "raw_subject": "기관",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            },
+            {
+              "relation_mention_id": "bcdcea17-b766-5df9-8144-603b0876d027",
+              "relation_id": "da40ff93-2a93-55aa-b580-06bb61c33f23",
+              "semantic_unit_id": "bb4605f4-8dea-5b5c-839f-9236e7537a04",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제71조",
+                "item_path": [],
+                "paragraph": 5
+              },
+              "raw_subject": "기관",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "end_name": "규정",
+      "hops": 3,
+      "score": 2.10480559,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "d831b337-b6d7-5cf8-b253-c735369b7ccd"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급",
+        "친족",
+        "규정"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "b30d5882-0d5a-5c4e-b5c9-2a2426ab997c",
+              "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+              "semantic_unit_id": "d40e2ad1-0050-55a1-ae9b-2a33c23b3cde",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "준용한다",
+              "raw_object": "규정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "end_name": "위원회",
+      "hops": 3,
+      "score": 2.09886846,
+      "document_ids": [
+        "31a15836-7ba6-51e2-a610-f3d23f8e5b85",
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공익신고자 보호법 시행령",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "d1758567-055c-5b5b-9e03-7da44c434416"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "친족",
+        "구조금",
+        "위원회"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "10d62a43-f427-5244-ab46-cf43605773fe",
+          "source_entity_id": "d1758567-055c-5b5b-9e03-7da44c434416",
+          "source_name": "위원회",
+          "relation_type_id": "b9d7854b-f9dd-5326-930c-1a8ab2b55de0",
+          "relation_type_name": "지급하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 5,
+          "evidences": [
+            {
+              "relation_mention_id": "78f1c98e-6bee-5701-bd44-a6de91237765",
+              "relation_id": "10d62a43-f427-5244-ab46-cf43605773fe",
+              "semantic_unit_id": "1a068be4-740f-55a6-81b7-8f02df6cade0",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "위원회",
+              "raw_predicate": "지급할 수 있다",
+              "raw_object": "구조금"
+            },
+            {
+              "relation_mention_id": "9807eaa8-2302-56e9-a423-fb178bd57b07",
+              "relation_id": "10d62a43-f427-5244-ab46-cf43605773fe",
+              "semantic_unit_id": "8afe3f8c-1370-5123-9694-9834056087fb",
+              "document_id": "31a15836-7ba6-51e2-a610-f3d23f8e5b85",
+              "document_title": "공익신고자 보호법 시행령",
+              "source_path": "공익신고자보호법/시행령.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [],
+                "paragraph": 4
+              },
+              "raw_subject": "위원회",
+              "raw_predicate": "지급해야 한다",
+              "raw_object": "구조금"
+            },
+            {
+              "relation_mention_id": "648b1784-d0a7-5894-9fe9-2746b9d40076",
+              "relation_id": "10d62a43-f427-5244-ab46-cf43605773fe",
+              "semantic_unit_id": "62f400a1-53e0-519d-a301-0f485feff205",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 5
+              },
+              "raw_subject": "위원회",
+              "raw_predicate": "지급하여야 한다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "e3bff199-ae36-5a71-88a8-6612acf97f76",
+      "end_name": "위원장",
+      "hops": 3,
+      "score": 2.09236176,
+      "document_ids": [
+        "008f7f89-97ff-5ce8-a923-6f1a3e8dc870",
+        "31a15836-7ba6-51e2-a610-f3d23f8e5b85"
+      ],
+      "document_titles": [
+        "공익신고자 보호법 시행령",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률 시행령"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "e3bff199-ae36-5a71-88a8-6612acf97f76"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "친족",
+        "구조금",
+        "위원장"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "928b97ed-1f40-5e1f-bb8c-b5beece76717",
+          "source_entity_id": "e3bff199-ae36-5a71-88a8-6612acf97f76",
+          "source_name": "위원장",
+          "relation_type_id": "b9d7854b-f9dd-5326-930c-1a8ab2b55de0",
+          "relation_type_name": "지급하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "7f4b8ec1-db55-591b-9c7f-bec8f8d57dd2",
+              "relation_id": "928b97ed-1f40-5e1f-bb8c-b5beece76717",
+              "semantic_unit_id": "aaede1e6-75ea-5719-887f-3ca674797e41",
+              "document_id": "31a15836-7ba6-51e2-a610-f3d23f8e5b85",
+              "document_title": "공익신고자 보호법 시행령",
+              "source_path": "공익신고자보호법/시행령.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "위원장",
+              "raw_predicate": "우선 지급한",
+              "raw_object": "구조금"
+            },
+            {
+              "relation_mention_id": "310b4928-8f85-5fd7-9636-899526ec04d2",
+              "relation_id": "928b97ed-1f40-5e1f-bb8c-b5beece76717",
+              "semantic_unit_id": "ff4101de-9ce4-56fe-a43c-1643f36a41a9",
+              "document_id": "008f7f89-97ff-5ce8-a923-6f1a3e8dc870",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률 시행령",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제79조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "위원장",
+              "raw_predicate": "지급한다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "end_name": "규정",
+      "hops": 3,
+      "score": 2.07583695,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "d831b337-b6d7-5cf8-b253-c735369b7ccd"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금",
+        "친족",
+        "규정"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "b30d5882-0d5a-5c4e-b5c9-2a2426ab997c",
+              "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+              "semantic_unit_id": "d40e2ad1-0050-55a1-ae9b-2a33c23b3cde",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "준용한다",
+              "raw_object": "규정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "end_name": "친족",
+      "hops": 3,
+      "score": 2.05437916,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "동거인",
+        "규정",
+        "친족"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "3a8531d9-1a22-5e81-8f35-435e5bec95cc",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "b30d5882-0d5a-5c4e-b5c9-2a2426ab997c",
+              "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+              "semantic_unit_id": "d40e2ad1-0050-55a1-ae9b-2a33c23b3cde",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "준용한다",
+              "raw_object": "규정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "end_name": "규정",
+      "hops": 2,
+      "score": 2.05272198,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "d831b337-b6d7-5cf8-b253-c735369b7ccd"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "동거인",
+        "규정"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "3a8531d9-1a22-5e81-8f35-435e5bec95cc",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "f1eb6862-c043-5346-b3c6-3fe8010e6c46",
+      "end_name": "보상심의위원회",
+      "hops": 3,
+      "score": 2.04734178,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f1eb6862-c043-5346-b3c6-3fe8010e6c46"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "친족",
+        "구조금",
+        "보상심의위원회"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "c8b615b3-e919-59d8-b7d7-e77e4f6e418d",
+          "source_entity_id": "f1eb6862-c043-5346-b3c6-3fe8010e6c46",
+          "source_name": "보상심의위원회",
+          "relation_type_id": "437bb2c1-62bf-5891-a421-f9fb85015fc9",
+          "relation_type_name": "심사하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "relation_mention_id": "c7564e7d-9626-5253-9253-290e3047bea7",
+              "relation_id": "c8b615b3-e919-59d8-b7d7-e77e4f6e418d",
+              "semantic_unit_id": "1a068be4-740f-55a6-81b7-8f02df6cade0",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "보상심의위원회",
+              "raw_predicate": "심의ㆍ의결을 거쳐",
+              "raw_object": "구조금"
+            },
+            {
+              "relation_mention_id": "c1ac5739-8fc4-55d1-8a47-e97b61b21bd8",
+              "relation_id": "c8b615b3-e919-59d8-b7d7-e77e4f6e418d",
+              "semantic_unit_id": "62f400a1-53e0-519d-a301-0f485feff205",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 5
+              },
+              "raw_subject": "보상심의위원회",
+              "raw_predicate": "심의ㆍ의결을 한다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "22b67e5e-aabd-5b91-a8c1-6ee82d75ff2b",
+      "end_name": "위원회 위원장",
+      "hops": 3,
+      "score": 2.0457951,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "22b67e5e-aabd-5b91-a8c1-6ee82d75ff2b"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "친족",
+        "구조금",
+        "위원회 위원장"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "aaf13daa-6c7f-5ab3-8b8a-24f0ce26bf0b",
+          "source_entity_id": "22b67e5e-aabd-5b91-a8c1-6ee82d75ff2b",
+          "source_name": "위원회 위원장",
+          "relation_type_id": "b9d7854b-f9dd-5326-930c-1a8ab2b55de0",
+          "relation_type_name": "지급하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "5cd37fce-c41c-51a9-9f14-0416059c609f",
+              "relation_id": "aaf13daa-6c7f-5ab3-8b8a-24f0ce26bf0b",
+              "semantic_unit_id": "1a068be4-740f-55a6-81b7-8f02df6cade0",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "위원회 위원장",
+              "raw_predicate": "지급할 수 있다",
+              "raw_object": "구조금"
+            },
+            {
+              "relation_mention_id": "0ffd82d5-b12a-5a51-9c8a-a486ffbb5460",
+              "relation_id": "aaf13daa-6c7f-5ab3-8b8a-24f0ce26bf0b",
+              "semantic_unit_id": "62f400a1-53e0-519d-a301-0f485feff205",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 5
+              },
+              "raw_subject": "위원회 위원장",
+              "raw_predicate": "지급할 수 있다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "end_name": "위원회",
+      "hops": 3,
+      "score": 2.0457951,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "d1758567-055c-5b5b-9e03-7da44c434416"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "친족",
+        "구조금",
+        "위원회"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "d66c85c4-b728-5235-83d6-97a1ea304c5b",
+          "source_entity_id": "d1758567-055c-5b5b-9e03-7da44c434416",
+          "source_name": "위원회",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "b3760e4a-cf84-5f6f-a631-052efce0b5cd",
+              "relation_id": "d66c85c4-b728-5235-83d6-97a1ea304c5b",
+              "semantic_unit_id": "d4b1a580-c6d5-5227-89f3-ec74ab6f15d2",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제28조",
+                "item_path": [],
+                "paragraph": 3
+              },
+              "raw_subject": "위원회",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            },
+            {
+              "relation_mention_id": "a964ed5a-65b0-5434-a3e9-2cbf8b36d3cc",
+              "relation_id": "d66c85c4-b728-5235-83d6-97a1ea304c5b",
+              "semantic_unit_id": "819fe6f6-aed6-5587-98b2-f467ab4572b2",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제71조",
+                "item_path": [],
+                "paragraph": 3
+              },
+              "raw_subject": "위원회",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "7b8d0cdb-b720-513d-a7dd-847b6bc55e19",
+      "end_name": "손해배상",
+      "hops": 3,
+      "score": 2.01593778,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "7b8d0cdb-b720-513d-a7dd-847b6bc55e19"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급",
+        "친족",
+        "손해배상"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "664d4788-2375-5cd7-a193-a1df08d6a1a9",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "e0b5dc0a-10e1-5ba2-81a8-f51ba75af3c8",
+          "relation_type_name": "수집하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "7b8d0cdb-b720-513d-a7dd-847b6bc55e19",
+          "target_name": "손해배상",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "c908ac7f-9ec9-5b54-8782-3630d4bc30ad",
+              "relation_id": "664d4788-2375-5cd7-a193-a1df08d6a1a9",
+              "semantic_unit_id": "25e01520-2593-5ad1-843b-73844e9df05c",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [],
+                "paragraph": 4
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "받으면",
+              "raw_object": "손해배상"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "8b498540-0529-55bf-8e62-bec23e388a4c",
+      "end_name": "신고자등",
+      "hops": 3,
+      "score": 2.00636216,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "8b498540-0529-55bf-8e62-bec23e388a4c"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "친족",
+        "구조금의 지급",
+        "신고자등"
+      ],
+      "edges": [
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "bb937358-cac2-5093-85ab-70c457c88574",
+          "source_entity_id": "8b498540-0529-55bf-8e62-bec23e388a4c",
+          "source_name": "신고자등",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 5,
+          "evidences": [
+            {
+              "relation_mention_id": "4358424e-af97-5f0d-a5f6-b193f2238247",
+              "relation_id": "bb937358-cac2-5093-85ab-70c457c88574",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "신고자등",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "8f685324-7afd-51a2-8a69-b77a31409005",
+      "end_name": "공익신고자등",
+      "hops": 3,
+      "score": 2.00538194,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "8f685324-7afd-51a2-8a69-b77a31409005"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "친족",
+        "구조금의 지급",
+        "공익신고자등"
+      ],
+      "edges": [
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "43b681c9-7582-58ea-a04f-8bb200d41cff",
+          "source_entity_id": "8f685324-7afd-51a2-8a69-b77a31409005",
+          "source_name": "공익신고자등",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 4,
+          "evidences": [
+            {
+              "relation_mention_id": "74658790-778f-5f42-9256-6f782f432806",
+              "relation_id": "43b681c9-7582-58ea-a04f-8bb200d41cff",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "공익신고자등",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "5e955110-76c5-549f-be1d-06934fe3e5d9",
+      "end_name": "신고자",
+      "hops": 3,
+      "score": 2.00418224,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "5e955110-76c5-549f-be1d-06934fe3e5d9"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "친족",
+        "구조금의 지급",
+        "신고자"
+      ],
+      "edges": [
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "2a31502a-48ef-5e7a-b487-25e0e411cb86",
+          "source_entity_id": "5e955110-76c5-549f-be1d-06934fe3e5d9",
+          "source_name": "신고자",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "relation_mention_id": "28b18ed0-3539-5646-a0f8-73ea1f9fef43",
+              "relation_id": "2a31502a-48ef-5e7a-b487-25e0e411cb86",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "신고자",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "8b498540-0529-55bf-8e62-bec23e388a4c",
+      "end_name": "신고자등",
+      "hops": 3,
+      "score": 2.00386066,
+      "document_ids": [
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "8b498540-0529-55bf-8e62-bec23e388a4c"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "동거인",
+        "구조금의 지급",
+        "신고자등"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        },
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "bb937358-cac2-5093-85ab-70c457c88574",
+          "source_entity_id": "8b498540-0529-55bf-8e62-bec23e388a4c",
+          "source_name": "신고자등",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 5,
+          "evidences": [
+            {
+              "relation_mention_id": "4358424e-af97-5f0d-a5f6-b193f2238247",
+              "relation_id": "bb937358-cac2-5093-85ab-70c457c88574",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "신고자등",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "8f685324-7afd-51a2-8a69-b77a31409005",
+      "end_name": "공익신고자등",
+      "hops": 3,
+      "score": 2.00288044,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "8f685324-7afd-51a2-8a69-b77a31409005"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "동거인",
+        "구조금의 지급",
+        "공익신고자등"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        },
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "43b681c9-7582-58ea-a04f-8bb200d41cff",
+          "source_entity_id": "8f685324-7afd-51a2-8a69-b77a31409005",
+          "source_name": "공익신고자등",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 4,
+          "evidences": [
+            {
+              "relation_mention_id": "74658790-778f-5f42-9256-6f782f432806",
+              "relation_id": "43b681c9-7582-58ea-a04f-8bb200d41cff",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "공익신고자등",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "63ee701e-f3ba-555d-b626-02630baf0fbd",
+      "end_name": "협조자",
+      "hops": 3,
+      "score": 2.00263557,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "63ee701e-f3ba-555d-b626-02630baf0fbd"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "친족",
+        "구조금의 지급",
+        "협조자"
+      ],
+      "edges": [
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "471541da-5317-5169-bcd7-51115ce23a71",
+          "source_entity_id": "63ee701e-f3ba-555d-b626-02630baf0fbd",
+          "source_name": "협조자",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "ca3200d7-063e-5f73-abf8-833b2193e9a4",
+              "relation_id": "471541da-5317-5169-bcd7-51115ce23a71",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "협조자",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "60de28ac-d87c-5bba-a361-860ec1d63685",
+      "end_name": "제65조에 따른 협조자",
+      "hops": 3,
+      "score": 2.00045565,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "60de28ac-d87c-5bba-a361-860ec1d63685"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "친족",
+        "구조금의 지급",
+        "제65조에 따른 협조자"
+      ],
+      "edges": [
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "1da1084d-dc61-5b96-aea9-cedece0e5189",
+          "source_entity_id": "60de28ac-d87c-5bba-a361-860ec1d63685",
+          "source_name": "제65조에 따른 협조자",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "6ca9fa2f-f40b-5fc4-8f11-fb8e322f4e6f",
+              "relation_id": "1da1084d-dc61-5b96-aea9-cedece0e5189",
+              "semantic_unit_id": "499a70fc-6d73-56ce-9511-2d15533b75b7",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "4"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "제65조에 따른 협조자",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "end_name": "친족",
+      "hops": 3,
+      "score": 1.99982006,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "동거인",
+        "규정",
+        "친족"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        },
+        {
+          "relation_id": "3a8531d9-1a22-5e81-8f35-435e5bec95cc",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "b30d5882-0d5a-5c4e-b5c9-2a2426ab997c",
+              "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+              "semantic_unit_id": "d40e2ad1-0050-55a1-ae9b-2a33c23b3cde",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "준용한다",
+              "raw_object": "규정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "7b8d0cdb-b720-513d-a7dd-847b6bc55e19",
+      "end_name": "손해배상",
+      "hops": 3,
+      "score": 1.98696915,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "7b8d0cdb-b720-513d-a7dd-847b6bc55e19"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금",
+        "친족",
+        "손해배상"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "664d4788-2375-5cd7-a193-a1df08d6a1a9",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "e0b5dc0a-10e1-5ba2-81a8-f51ba75af3c8",
+          "relation_type_name": "수집하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "7b8d0cdb-b720-513d-a7dd-847b6bc55e19",
+          "target_name": "손해배상",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "c908ac7f-9ec9-5b54-8782-3630d4bc30ad",
+              "relation_id": "664d4788-2375-5cd7-a193-a1df08d6a1a9",
+              "semantic_unit_id": "25e01520-2593-5ad1-843b-73844e9df05c",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [],
+                "paragraph": 4
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "받으면",
+              "raw_object": "손해배상"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "start_name": "규정",
+      "end_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "end_name": "동거인",
+      "hops": 3,
+      "score": 1.94569818,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "e98f43bd-5019-5800-886e-2303d004f554"
+      ],
+      "traversed_entity_names": [
+        "규정",
+        "친족",
+        "구조금의 지급",
+        "동거인"
+      ],
+      "edges": [
+        {
+          "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "end_name": "친족",
+      "hops": 1,
+      "score": 1.91725055,
+      "document_ids": [],
+      "document_titles": [],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "친족"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "start_name": "친족",
+      "end_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "end_name": "구조금의 지급",
+      "hops": 1,
+      "score": 1.85456672,
+      "document_ids": [],
+      "document_titles": [],
+      "traversed_entity_ids": [
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22"
+      ],
+      "traversed_entity_names": [
+        "친족",
+        "구조금의 지급"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "end_name": "구조금",
+      "hops": 3,
+      "score": 1.85098215,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "5e955110-76c5-549f-be1d-06934fe3e5d9",
+        "82dc1abd-0287-51f6-9450-58d827ba2595"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급",
+        "신고자",
+        "구조금"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "2a31502a-48ef-5e7a-b487-25e0e411cb86",
+          "source_entity_id": "5e955110-76c5-549f-be1d-06934fe3e5d9",
+          "source_name": "신고자",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 3,
+          "evidences": []
+        },
+        {
+          "relation_id": "45b3d759-4f63-5cfc-92cc-4630fa5ba2df",
+          "source_entity_id": "5e955110-76c5-549f-be1d-06934fe3e5d9",
+          "source_name": "신고자",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9cac4941-1270-5b90-8f43-7d459022f324",
+              "relation_id": "45b3d759-4f63-5cfc-92cc-4630fa5ba2df",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "신고자",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "8b498540-0529-55bf-8e62-bec23e388a4c",
+      "end_name": "신고자등",
+      "hops": 2,
+      "score": 1.84711998,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "8b498540-0529-55bf-8e62-bec23e388a4c"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급",
+        "신고자등"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "bb937358-cac2-5093-85ab-70c457c88574",
+          "source_entity_id": "8b498540-0529-55bf-8e62-bec23e388a4c",
+          "source_name": "신고자등",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 5,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "8f685324-7afd-51a2-8a69-b77a31409005",
+      "end_name": "공익신고자등",
+      "hops": 2,
+      "score": 1.84522079,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "8f685324-7afd-51a2-8a69-b77a31409005"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급",
+        "공익신고자등"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "43b681c9-7582-58ea-a04f-8bb200d41cff",
+          "source_entity_id": "8f685324-7afd-51a2-8a69-b77a31409005",
+          "source_name": "공익신고자등",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 4,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "5e955110-76c5-549f-be1d-06934fe3e5d9",
+      "end_name": "신고자",
+      "hops": 2,
+      "score": 1.84289638,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "5e955110-76c5-549f-be1d-06934fe3e5d9"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급",
+        "신고자"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "2a31502a-48ef-5e7a-b487-25e0e411cb86",
+          "source_entity_id": "5e955110-76c5-549f-be1d-06934fe3e5d9",
+          "source_name": "신고자",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 3,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "63ee701e-f3ba-555d-b626-02630baf0fbd",
+      "end_name": "협조자",
+      "hops": 2,
+      "score": 1.83989969,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "63ee701e-f3ba-555d-b626-02630baf0fbd"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급",
+        "협조자"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "471541da-5317-5169-bcd7-51115ce23a71",
+          "source_entity_id": "63ee701e-f3ba-555d-b626-02630baf0fbd",
+          "source_name": "협조자",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 2,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "start_name": "규정",
+      "end_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "end_name": "구조금의 지급",
+      "hops": 2,
+      "score": 1.83897736,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22"
+      ],
+      "traversed_entity_names": [
+        "규정",
+        "친족",
+        "구조금의 지급"
+      ],
+      "edges": [
+        {
+          "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "551333da-5b6b-53a3-8762-0171f21a3336",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "dc906c4d-dc26-588c-bfcd-302630fb3c55",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "84d9fa36-4dad-5807-a86c-5c5b66d0c9bb",
+              "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "친족",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "60de28ac-d87c-5bba-a361-860ec1d63685",
+      "end_name": "제65조에 따른 협조자",
+      "hops": 2,
+      "score": 1.8356761,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "60de28ac-d87c-5bba-a361-860ec1d63685"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금의 지급",
+        "제65조에 따른 협조자"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "1da1084d-dc61-5b96-aea9-cedece0e5189",
+          "source_entity_id": "60de28ac-d87c-5bba-a361-860ec1d63685",
+          "source_name": "제65조에 따른 협조자",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 1,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "end_name": "친족",
+      "hops": 1,
+      "score": 1.82252902,
+      "document_ids": [],
+      "document_titles": [],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "친족"
+      ],
+      "edges": [
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "start_name": "친족",
+      "end_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "end_name": "구조금",
+      "hops": 1,
+      "score": 1.82252902,
+      "document_ids": [],
+      "document_titles": [],
+      "traversed_entity_ids": [
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595"
+      ],
+      "traversed_entity_names": [
+        "친족",
+        "구조금"
+      ],
+      "edges": [
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        }
+      ]
+    },
+    {
+      "start_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "start_name": "구조금",
+      "end_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "end_name": "동거인",
+      "hops": 1,
+      "score": 1.81789844,
+      "document_ids": [
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "e98f43bd-5019-5800-886e-2303d004f554"
+      ],
+      "traversed_entity_names": [
+        "구조금",
+        "동거인"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "start_name": "동거인",
+      "end_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "end_name": "구조금",
+      "hops": 1,
+      "score": 1.81395484,
+      "document_ids": [
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a"
+      ],
+      "document_titles": [
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "82dc1abd-0287-51f6-9450-58d827ba2595"
+      ],
+      "traversed_entity_names": [
+        "동거인",
+        "구조금"
+      ],
+      "edges": [
+        {
+          "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "2fc698b6-3b8f-5841-8ba4-1288848dbfe9",
+              "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+              "semantic_unit_id": "135d60f5-f53b-5dcd-8751-45756e426eb5",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [],
+                "paragraph": 8
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "지급하지 아니한다",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "1839c0a0-22b8-567a-83a6-d3f55cf48ec3",
+      "end_name": "구조금 신청인",
+      "hops": 3,
+      "score": 1.78128045,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e"
+      ],
+      "document_titles": [
+        "공익신고자 보호법"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "82dc1abd-0287-51f6-9450-58d827ba2595",
+        "1839c0a0-22b8-567a-83a6-d3f55cf48ec3"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "친족",
+        "구조금",
+        "구조금 신청인"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+          "relation_type_name": "지급하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "2ab8f8f1-86c5-5f79-95a0-8d3df8ec0e0a",
+          "source_entity_id": "1839c0a0-22b8-567a-83a6-d3f55cf48ec3",
+          "source_name": "구조금 신청인",
+          "relation_type_id": "b9d7854b-f9dd-5326-930c-1a8ab2b55de0",
+          "relation_type_name": "지급하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+          "target_name": "구조금",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "f53be6d8-9274-5ac9-9ded-c4cba34220bd",
+              "relation_id": "2ab8f8f1-86c5-5f79-95a0-8d3df8ec0e0a",
+              "semantic_unit_id": "85e1e8e1-7100-52f6-b39f-e4b8e1e059db",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제29조",
+                "item_path": [
+                  "2"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "구조금 신청인",
+              "raw_predicate": "지급받았으나",
+              "raw_object": "구조금"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "start_name": "구조금의 지급",
+      "end_entity_id": "c98287b0-bc2e-52fe-88a5-bdf962c4b248",
+      "end_name": "협회",
+      "hops": 3,
+      "score": 1.75817959,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+        "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+        "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+        "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6"
+      ],
+      "document_titles": [
+        "공익신고자 보호법",
+        "공직자의 이해충돌 방지법",
+        "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+        "자본시장과 금융투자업에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+        "c98287b0-bc2e-52fe-88a5-bdf962c4b248"
+      ],
+      "traversed_entity_names": [
+        "구조금의 지급",
+        "동거인",
+        "규정",
+        "협회"
+      ],
+      "edges": [
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "3ff03c6f-9b39-5d72-bb4e-f96cff9d15e3",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "d56ba599-e1d4-59af-920d-6a38bd593463",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "db0c475f-ce0c-5aa7-8b52-f82b26bcd4c6",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "2051d360-4aed-5983-8507-f466920ec2e7",
+              "document_id": "abe65de7-1e8e-5dfa-86f1-8f35b8e837e6",
+              "document_title": "공직자의 이해충돌 방지법",
+              "source_path": "공직자의이해충돌방지법/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            },
+            {
+              "relation_mention_id": "417992f2-4103-5b40-a1be-81d0a695c304",
+              "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+              "semantic_unit_id": "0157cfbc-15fc-5547-850a-9767962147ee",
+              "document_id": "693b614f-00b1-56e1-884c-7e6bc6ed6e3a",
+              "document_title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률",
+              "source_path": "부패방지및국민권익위원회의설치와운영에관한법률/법률.md",
+              "source_ref": {
+                "article": "제68조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 3
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "신청할 수 있다",
+              "raw_object": "구조금의 지급"
+            }
+          ]
+        },
+        {
+          "relation_id": "3a8531d9-1a22-5e81-8f35-435e5bec95cc",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": []
+        },
+        {
+          "relation_id": "c4263cc2-3772-5fed-8259-abb83a24bf7a",
+          "source_entity_id": "c98287b0-bc2e-52fe-88a5-bdf962c4b248",
+          "source_name": "협회",
+          "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+          "relation_type_name": "규정하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 4,
+          "evidences": [
+            {
+              "relation_mention_id": "d37a6fdf-5670-5a43-89c0-6a4c4990405a",
+              "relation_id": "c4263cc2-3772-5fed-8259-abb83a24bf7a",
+              "semantic_unit_id": "734828ff-37a8-5cea-bda4-a4a6510f7d93",
+              "document_id": "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+              "document_title": "자본시장과 금융투자업에 관한 법률",
+              "source_path": "자본시장과금융투자업에관한법률/법률.md",
+              "source_ref": {
+                "article": "제288조의2",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 7
+              },
+              "raw_subject": "협회",
+              "raw_predicate": "정하여야 한다",
+              "raw_object": "규정"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "start_name": "친족",
+      "end_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "end_name": "규정",
+      "hops": 3,
+      "score": 1.75572783,
+      "document_ids": [
+        "4ea69589-6eb9-5d23-866e-bceafd1c352e"
+      ],
+      "document_titles": [
+        "공익신고자 보호법"
+      ],
+      "traversed_entity_ids": [
+        "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+        "990e62f0-f36e-577a-8ab6-531bda68fd22",
+        "e98f43bd-5019-5800-886e-2303d004f554",
+        "d831b337-b6d7-5cf8-b253-c735369b7ccd"
+      ],
+      "traversed_entity_names": [
+        "친족",
+        "구조금의 지급",
+        "동거인",
+        "규정"
+      ],
+      "edges": [
+        {
+          "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+          "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+          "source_name": "친족",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+          "relation_type_name": "신청하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+          "target_name": "구조금의 지급",
+          "evidence_count": 12,
+          "evidences": []
+        },
+        {
+          "relation_id": "3a8531d9-1a22-5e81-8f35-435e5bec95cc",
+          "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+          "source_name": "동거인",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "0624d73c-e12e-522a-8f20-b5e5d04f7b49",
+              "relation_id": "3a8531d9-1a22-5e81-8f35-435e5bec95cc",
+              "semantic_unit_id": "d40e2ad1-0050-55a1-ae9b-2a33c23b3cde",
+              "document_id": "4ea69589-6eb9-5d23-866e-bceafd1c352e",
+              "document_title": "공익신고자 보호법",
+              "source_path": "공익신고자보호법/법률.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "동거인",
+              "raw_predicate": "준용한다",
+              "raw_object": "규정"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

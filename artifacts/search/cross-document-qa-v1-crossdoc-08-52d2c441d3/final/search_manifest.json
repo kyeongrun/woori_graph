@@ -1,0 +1,73 @@
+{
+  "run_id": "cross-document-qa-v1-crossdoc-08-52d2c441d3",
+  "created_at": "2026-08-20T12:48:13.701359+00:00",
+  "query": "‘과태료’와 ‘금융위원회’는 ‘직무대행자’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "dimension": 1536
+  },
+  "search": {
+    "max_hops": 3,
+    "entity_top_k": 8,
+    "relation_top_k": 20,
+    "max_neighbors_per_entity": 50,
+    "path_beam_width": 160,
+    "max_paths": 50,
+    "timeout_seconds": 180.0
+  },
+  "stats": {
+    "duration_seconds": 1.125,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths_considered": 6284,
+    "paths_returned": 50,
+    "adaptations": []
+  },
+  "config": {
+    "path": "D:\\woori_graph\\config\\search.example.toml",
+    "sha256": "f642c15e2bd85239e313d4bdc4bce4243c4b92a56350b73900559459c18b9c88"
+  },
+  "counts": {
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths": 50,
+    "nodes": 6,
+    "edges": 15
+  },
+  "files": [
+    {
+      "path": "final/answer.md",
+      "sha256": "3b6799ec660e317d64db14b5603a4b3974e59da75336558f987eb6eae7e152f0",
+      "bytes": 3669
+    },
+    {
+      "path": "final/graph.html",
+      "sha256": "d54b29e591e6066ff2a7a44ab215be29894f05a6e6ac8471d4d48dd2f58dd118",
+      "bytes": 26602
+    },
+    {
+      "path": "final/graph.json",
+      "sha256": "ad987ae8b5a1039ed7306db6227c0874ccff00090913b8bc3ba544766143ea80",
+      "bytes": 27490
+    },
+    {
+      "path": "final/query_result.json",
+      "sha256": "4b02f0f9672e2144c85cf96bfd1f53fc00454c2c3b66703305b236e48d7bdd8f",
+      "bytes": 279877
+    },
+    {
+      "path": "work/01_candidates.json",
+      "sha256": "7f34b3a1c0a5435c7ac6237d1d1807130fbfc012af34e7401a2939e15d6fb860",
+      "bytes": 12223
+    },
+    {
+      "path": "work/02_ranked_paths.json",
+      "sha256": "492c7e92266fc78cf70c3afc26663bb097d42d7eff31207a03786b03bc1be178",
+      "bytes": 264116
+    }
+  ],
+  "passed": true
+}

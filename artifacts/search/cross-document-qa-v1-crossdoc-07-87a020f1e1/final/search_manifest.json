@@ -1,0 +1,73 @@
+{
+  "run_id": "cross-document-qa-v1-crossdoc-07-87a020f1e1",
+  "created_at": "2026-08-20T12:48:12.376944+00:00",
+  "query": "‘공직자등’와 ‘공직자’는 ‘서면’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "dimension": 1536
+  },
+  "search": {
+    "max_hops": 3,
+    "entity_top_k": 8,
+    "relation_top_k": 20,
+    "max_neighbors_per_entity": 50,
+    "path_beam_width": 160,
+    "max_paths": 50,
+    "timeout_seconds": 180.0
+  },
+  "stats": {
+    "duration_seconds": 0.813,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths_considered": 7397,
+    "paths_returned": 50,
+    "adaptations": []
+  },
+  "config": {
+    "path": "D:\\woori_graph\\config\\search.example.toml",
+    "sha256": "f642c15e2bd85239e313d4bdc4bce4243c4b92a56350b73900559459c18b9c88"
+  },
+  "counts": {
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths": 50,
+    "nodes": 31,
+    "edges": 41
+  },
+  "files": [
+    {
+      "path": "final/answer.md",
+      "sha256": "26b1fa9d041d9968a2b890034731730135c9359bc59629df2a5e208efdddbbc8",
+      "bytes": 3171
+    },
+    {
+      "path": "final/graph.html",
+      "sha256": "737f88b716305ae27d3c441abe78c2134f86bb81b2537835c0596c652421dbe3",
+      "bytes": 46103
+    },
+    {
+      "path": "final/graph.json",
+      "sha256": "9bfabca13ccc1af162f3f4e0f1d59deff7d1baf03da51201c6b2142f87ea667f",
+      "bytes": 54980
+    },
+    {
+      "path": "final/query_result.json",
+      "sha256": "7451a6dea1a59b6a5188cbc560c1609bd198a5435001661f0df741a47501069d",
+      "bytes": 247526
+    },
+    {
+      "path": "work/01_candidates.json",
+      "sha256": "818f30ababce2994b014561b2f28d0c31148c4f69e8cdad5c4b4157b252a0f3d",
+      "bytes": 12005
+    },
+    {
+      "path": "work/02_ranked_paths.json",
+      "sha256": "e8f2fc6db08f8675c2ccdbb0dd91afad0120f7366d33b2a049e2a5d22b6023ab",
+      "bytes": 232469
+    }
+  ],
+  "passed": true
+}

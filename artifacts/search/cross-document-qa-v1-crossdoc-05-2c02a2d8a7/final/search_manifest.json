@@ -1,0 +1,73 @@
+{
+  "run_id": "cross-document-qa-v1-crossdoc-05-2c02a2d8a7",
+  "created_at": "2026-08-20T12:48:10.373015+00:00",
+  "query": "‘금융위원회’와 ‘법원’는 ‘등록’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "dimension": 1536
+  },
+  "search": {
+    "max_hops": 3,
+    "entity_top_k": 8,
+    "relation_top_k": 20,
+    "max_neighbors_per_entity": 50,
+    "path_beam_width": 160,
+    "max_paths": 50,
+    "timeout_seconds": 180.0
+  },
+  "stats": {
+    "duration_seconds": 0.906,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths_considered": 5486,
+    "paths_returned": 50,
+    "adaptations": []
+  },
+  "config": {
+    "path": "D:\\woori_graph\\config\\search.example.toml",
+    "sha256": "f642c15e2bd85239e313d4bdc4bce4243c4b92a56350b73900559459c18b9c88"
+  },
+  "counts": {
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths": 50,
+    "nodes": 7,
+    "edges": 19
+  },
+  "files": [
+    {
+      "path": "final/answer.md",
+      "sha256": "b611ab79ba588262475882d0419262f4ed8b9e0b3477b898e11d9683c90b3aab",
+      "bytes": 2940
+    },
+    {
+      "path": "final/graph.html",
+      "sha256": "0e197f226c7e53db4096c5269824fa3708fdc58fe46e9a2bd236bf94a3feb6ae",
+      "bytes": 31616
+    },
+    {
+      "path": "final/graph.json",
+      "sha256": "34afbbe991dc8f8b796f1ea9d651e465d85e0394d93472323eb3a55bc2f281cb",
+      "bytes": 34640
+    },
+    {
+      "path": "final/query_result.json",
+      "sha256": "43194187a1bfc612bf9ac2c1077c3463713a401f6ee1d65b98ff7f481f971216",
+      "bytes": 271299
+    },
+    {
+      "path": "work/01_candidates.json",
+      "sha256": "feca758cbbfb7536255f050e9de454ead564d7db4ec65102f3bb510a4a42c2dc",
+      "bytes": 12276
+    },
+    {
+      "path": "work/02_ranked_paths.json",
+      "sha256": "8176aea5339ae1e867b754677de6ff6b040d9e6197eff6c98e0fbfe6de135c01",
+      "bytes": 256202
+    }
+  ],
+  "passed": true
+}

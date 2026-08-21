@@ -1,0 +1,99 @@
+{
+  "dictionary_version": "v3-llm-20260821",
+  "created_at": "2026-08-21T12:18:37.6579302+09:00",
+  "source_dictionary_version": "v3-scopefree-20260820",
+  "program": {
+    "version": "0.1.0",
+    "git_commit": null
+  },
+  "llm": {
+    "model": "Qwen/Qwen3.8-27B",
+    "canonical_name_mode": "llm_all_strict",
+    "entity_type_mode": "llm_all_strict",
+    "canonical_name_assignment_methods": {
+      "llm_canonical_name_rekeyed": 11315,
+      "llm_canonical_name": 14
+    },
+    "entity_type_assignment_methods": {
+      "llm": 10835
+    },
+    "fallback_mappings": 0,
+    "canonical_name_errors": 0,
+    "entity_type_errors": 0,
+    "prompts": [
+      {
+        "path": "prompts/entity_contextual_normalize.ko.md",
+        "file_sha256": "9c229aef23d8c9bd573ee62e26f392ecc230737b449aa7fac7ed3fc7403880fa",
+        "applied_text_sha256": "81675fbe7b2895cba1240d2e6d75e80118fd80192a96755b2ccbb81dd09ce18f"
+      },
+      {
+        "path": "prompts/entity_contextual_normalize_retry.ko.md",
+        "file_sha256": "77f3ff07e146ad5b017ba683cc67ecb9050f4ac32e3227b2221d2baaa9ac5e4a",
+        "combined_applied_text_sha256": "171eb49705c130cd55aa916a104595e3217ff7d283477a96a3398ced24ae88ef"
+      },
+      {
+        "path": "prompts/entity_type_classify.ko.md",
+        "file_sha256": "ad9709e2326036edae820864eff0a52d6df97d6d063ed92f50c7858d0bb527a2",
+        "applied_text_sha256": "e8f84a6b31c01985e91f39cdbccb31b6f7a92968ba2f518fd825dcc1fa4be181"
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "path": "runs/v3_scopefree_20260820/work/02_raw_svo.jsonl",
+      "sha256": "ee0c168fd4d6e79ca39fdbf91db828b17a9f826d854850ee8d2fc9b7ff1acc54",
+      "bytes": 23377376,
+      "records": 23123
+    },
+    {
+      "path": "runs/v3_scopefree_20260820/work/05_entity_sources.jsonl",
+      "sha256": "ed3535c6f532f8516da056cd61856bc37cb291f51883e6bcc5e00861d5bd2828",
+      "bytes": 11319581,
+      "records": 11329
+    }
+  ],
+  "counts": {
+    "raw_entity_surface_names": 11317,
+    "resolved_source_entities": 11329,
+    "entities": 10835,
+    "entity_aliases": 13153,
+    "entity_types": {
+      "CONCEPT": 7900,
+      "LEGAL_INSTRUMENT": 693,
+      "ORGANIZATION": 753,
+      "OTHER": 110,
+      "PERSON": 1379
+    },
+    "raw_predicates": 4013,
+    "relation_types": 98,
+    "relation_aliases": 6045
+  },
+  "outputs": [
+    {
+      "path": "entity_dictionary.jsonl",
+      "sha256": "52400cf7e9f093973bbfdbe07258a79db0c56484127ec068da8a34ba53a91fec",
+      "bytes": 11403571,
+      "records": 10835
+    },
+    {
+      "path": "relation_dictionary.jsonl",
+      "sha256": "1553215de112a4b62539bcadf1bd2dddcd772cd1ef19d85155fa2d0c924eb000",
+      "bytes": 2166443,
+      "records": 98
+    },
+    {
+      "path": "dictionary_audit.json",
+      "sha256": "dd6e82852ba7d7484b7742946b3d2cd123a89819a6212ee87be06dad614f120a",
+      "bytes": 1388
+    }
+  ],
+  "checks": {
+    "all_canonical_names_selected_by_llm": true,
+    "all_entity_types_assigned_by_llm": true,
+    "no_fallback_mappings": true,
+    "no_global_self_reference_aliases": true,
+    "all_raw_entities_mapped": true,
+    "all_raw_predicates_mapped": true,
+    "dictionary_audit_passed": true
+  }
+}

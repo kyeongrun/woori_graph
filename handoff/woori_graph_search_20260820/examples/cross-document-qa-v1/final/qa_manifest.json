@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-08-20T12:59:05.659315+00:00",
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "dimension": 1536
+  },
+  "config": {
+    "path": "config/search.example.toml",
+    "sha256": "f642c15e2bd85239e313d4bdc4bce4243c4b92a56350b73900559459c18b9c88"
+  },
+  "question_count": 10,
+  "expected_path_found_count": 10,
+  "passed": true,
+  "files": [
+    {
+      "path": "final/questions_answers.jsonl",
+      "sha256": "9e14d532b8abd6d24457dfdde558a5b7224f997db1547392688865b955133894",
+      "bytes": 59654
+    },
+    {
+      "path": "final/questions_answers.md",
+      "sha256": "3d1c5b048db321ac9974d22472d58a9761df8523bd02a9401fce0c49b8a4483d",
+      "bytes": 12689
+    },
+    {
+      "path": "work/01_discovered_questions.json",
+      "sha256": "b433493b62aac9a3a0cb46191c28fc59936ba869d2597100dc7fbc0979312b11",
+      "bytes": 9379
+    }
+  ]
+}

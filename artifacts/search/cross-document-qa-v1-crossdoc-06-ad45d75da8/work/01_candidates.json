@@ -1,0 +1,346 @@
+{
+  "query": "‘금융위원회’와 ‘공직자’는 ‘사실’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "entities": [
+    {
+      "entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "canonical_name": "금융위원회",
+      "entity_type": "OTHER",
+      "score": 0.031754032258064516,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+      "canonical_name": "공직자",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "988d085a-098d-54ba-a310-e6041fd26cd7",
+      "canonical_name": "금융위원회가 정하는 사항",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "0b78f434-2b8c-5bf2-823e-72413d64cba8",
+      "canonical_name": "금융위원회의 설치 등에 관한 법률",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "8451602d-ee20-5973-99dd-8e3414a47022",
+      "canonical_name": "금융위원회가 지정하는 자",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "50412748-bada-56ed-9724-d4754e73e7c7",
+      "canonical_name": "사실",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "c72e9eea-a452-5c85-a05e-5e40bef510b0",
+      "canonical_name": "근거",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "c0050cf6-f217-5b42-b486-02e5e8e2e418",
+      "canonical_name": "금융위원회를 대행하여 하는 것",
+      "entity_type": "OTHER",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "23f8a407-75c4-5a83-af1b-a0f0a553f102",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "83507f55-c18c-5e18-9a88-8c9e5ff7e5c1",
+      "target_name": "사실을 확인하는 방법",
+      "score": 0.03131881575727918,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "333e4ed1-e761-5d65-811b-b31c91c2fd63",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "50412748-bada-56ed-9724-d4754e73e7c7",
+      "target_name": "사실",
+      "score": 0.029827662395050816,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "d4e6cb30-cb1f-5c8e-a8cf-883db665b441",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "63ecb1c6-60fb-533b-a451-f38811f1e390",
+      "relation_type_name": "통지하다",
+      "target_entity_id": "50412748-bada-56ed-9724-d4754e73e7c7",
+      "target_name": "사실",
+      "score": 0.02854251012145749,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "007adab3-3ac9-57ad-aef8-3b7e2a256616",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "88c630d2-6ad7-5107-b91f-22ec20baacbe",
+      "relation_type_name": "조사하다",
+      "target_entity_id": "4da89ede-2e65-5d18-86ef-c2f0a00ecff7",
+      "target_name": "이해관계자",
+      "score": 0.027252906976744186,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "80c46833-337c-56bb-8fd9-bb188939d0bf",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "28d9e5f5-b315-5880-98ea-eb4f9ed5760f",
+      "relation_type_name": "확인하다",
+      "target_entity_id": "50412748-bada-56ed-9724-d4754e73e7c7",
+      "target_name": "사실",
+      "score": 0.026625704045058884,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "d4d0b152-3e7c-5422-b701-5ef8fd19e6b9",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "8afc7773-e07c-5d9b-a085-f405e09d5b1b",
+      "relation_type_name": "공개하다",
+      "target_entity_id": "27c46ef2-294c-56bb-bb09-b9ffabaddb99",
+      "target_name": "조사실적",
+      "score": 0.02506265664160401,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "00919760-4cc4-58e2-9734-23c912257136",
+      "source_entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+      "source_name": "공직자",
+      "relation_type_id": "8256519e-3c6f-50fb-9d0d-f369f69ba73a",
+      "relation_type_name": "보고하다",
+      "target_entity_id": "50412748-bada-56ed-9724-d4754e73e7c7",
+      "target_name": "사실",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "3ef7f913-753e-5b9e-a9cf-394f8df56e04",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "7bc09bcb-47dd-5c54-b017-af114950648c",
+      "target_name": "법률",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "249d7752-0940-5f64-a35d-3f6350591358",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "d284a5d0-4650-5a98-95de-641120437a44",
+      "relation_type_name": "정지하다",
+      "target_entity_id": "16565f2f-48ae-547f-8679-020e8da74868",
+      "target_name": "공개매수자의 특별관계자",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "c749b825-538e-5765-9587-355c7cfa7502",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "8afc7773-e07c-5d9b-a085-f405e09d5b1b",
+      "relation_type_name": "공개하다",
+      "target_entity_id": "50412748-bada-56ed-9724-d4754e73e7c7",
+      "target_name": "사실",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "b7246a48-444b-5c94-8fae-460d48ff8926",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "ebdcd739-2dcf-5338-8f83-56b17631dc19",
+      "relation_type_name": "명령하다",
+      "target_entity_id": "16565f2f-48ae-547f-8679-020e8da74868",
+      "target_name": "공개매수자의 특별관계자",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "8cff3fe9-1d6d-5d62-9186-5429351c8237",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "2c3c5114-724b-5ab4-8045-58a0841eecec",
+      "target_name": "법 제22조제1항 각 호 해당 여부 검토",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "8d0e8c2b-6295-5c05-9d36-a6060ebb90e7",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "e2eef388-8f32-5090-b9a3-c148e6097515",
+      "target_name": "방법 관련 사항",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "23011a34-b0c9-5ba8-9b4f-e6ae3d4fc207",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "d284a5d0-4650-5a98-95de-641120437a44",
+      "relation_type_name": "정지하다",
+      "target_entity_id": "0ece7a8d-e364-514a-9073-063f7e9aae7e",
+      "target_name": "조치명령",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "3c0705fe-5826-5ac3-9327-e4e65f690173",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "8afc7773-e07c-5d9b-a085-f405e09d5b1b",
+      "relation_type_name": "공개하다",
+      "target_entity_id": "275555ba-7c8e-5455-9efe-f0ce1ec4fa3c",
+      "target_name": "영업보증금 반환신청 사실",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "5b5c3219-2440-5b04-ad28-a119a42a31b6",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "63ecb1c6-60fb-533b-a451-f38811f1e390",
+      "relation_type_name": "통지하다",
+      "target_entity_id": "5cba1d03-4a0d-5cb9-8c77-bd58117ac703",
+      "target_name": "인적사항",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "1dd87efd-d04b-55b8-8ccf-d0e71322c11e",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "88c630d2-6ad7-5107-b91f-22ec20baacbe",
+      "relation_type_name": "조사하다",
+      "target_entity_id": "9611c270-d536-5db5-92c1-89429f440aa3",
+      "target_name": "관계자",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "3e1ce436-67a0-559c-b93e-bc18c937f4c1",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "28d9e5f5-b315-5880-98ea-eb4f9ed5760f",
+      "relation_type_name": "확인하다",
+      "target_entity_id": "7c6050fc-2972-5094-a6ee-670727891891",
+      "target_name": "사실 여부",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "45d63ab8-d14f-5b17-b974-78b2569c9230",
+      "source_entity_id": "3416ed79-21d6-5d1f-919b-29a6e60e052d",
+      "source_name": "금융위원회의 위원",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "a98b6279-a6a9-5b33-99b2-6513c001c52a",
+      "target_name": "자본시장과 금융투자업에 관한 법률",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "61c049e7-fb5e-51d3-af77-1356c7fe0af8",
+      "source_entity_id": "4a950d45-bdb8-5740-a0ab-f509c0696ff4",
+      "source_name": "공직자",
+      "relation_type_id": "7eabf963-b4b8-5fcd-a31a-4065b6d4fe8a",
+      "relation_type_name": "위반하다",
+      "target_entity_id": "a40ced7b-0955-54e5-a75f-a3a7db8d1e06",
+      "target_name": "공직자 행동강령",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "keyword"
+      ]
+    }
+  ]
+}

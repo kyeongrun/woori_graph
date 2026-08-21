@@ -1,0 +1,30 @@
+{
+  "query": "기관 A와 위원회 연결",
+  "entities": [
+    {
+      "entity_id": "a",
+      "canonical_name": "기관A",
+      "entity_type": "ORGANIZATION",
+      "score": 1.0,
+      "matched_by": [
+        "keyword"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "r1",
+      "source_entity_id": "a",
+      "source_name": "기관A",
+      "relation_type_id": "t1",
+      "relation_type_name": "감독하다",
+      "target_entity_id": "b",
+      "target_name": "업무B",
+      "score": 1.0,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+# woori_graph
+
+## 신규 문서 재사용 실행
+
+동일한 소스를 내부 API 프로젝트로 옮긴 뒤에도 `document-ingest` 진입점을 그대로 호출할 수 있다. API 라우터는 포함하지 않으며, 설정 파일의 상대경로는 실행 위치가 아니라 설정 파일이 있는 디렉터리를 기준으로 해석한다.
+
+```powershell
+woori-graph document-ingest --config config/document_ingest.toml
+```
+
+설정 예시는 `config/document_ingest.example.toml`이다. 한 번의 실행에서 다음 표준 산출물을 생성한다.
+
+- `work/source_manifest.jsonl`: 원본 상대경로, SHA-256, 수집 시각
+- `work/01_semantic_units.jsonl`: 의미 단위 분할 결과
+- `work/02_raw_svo.jsonl`: 근거 위치와 원표현을 포함한 raw SVO
+- `work/03_entity_mapping_results.jsonl`: 확정 사전 alias 매핑과 신규 원문 엔티티
+- `work/04_relation_mapping_results.jsonl`: 폐쇄형 관계 사전 강제 매핑 결과
+- `final/documents.jsonl`, `entities.jsonl`, `relation_types.jsonl`, `relations.jsonl`
+- `final/unmapped_entity_candidates.jsonl`, `ingestion_manifest.json`, `load_audit.json`
+
+분할·추출·매핑 함수는 경로 입력뿐 아니라 향후 API 문자열 입력에도 재사용할 수 있도록 `DictionaryBuildPipeline`과 `GraphBuildPipeline`에 프레임워크 의존성 없이 구현되어 있다. 실제 API 라우터와 운영 DB 어댑터는 내부 통합 프로젝트에서 연결한다.
+
+단계별 구현 여부와 내부망 연결 경계는 [파이프라인 구현 현황](docs/pipeline-implementation-status.ko.md)에 정리되어 있다.
+
+OpenSearch 벡터 필드와 자동 임베딩 설정은 [OpenSearch 벡터 자동 적재](docs/vector-search.ko.md)를 따른다.
+
+로컬 AGE 적재와 직접 구현한 검색 웹의 실행 방법은 [로컬 AGE 적재](deploy/local-storage/README.ko.md)를 따른다.
+
+키워드·벡터 후보 검색, 최대 3-hop 탐색, 문서 근거 답변 및 HTML 그래프는 [그래프 탐색 파이프라인](docs/search-pipeline.ko.md)을 따른다.
+
+질문을 직접 입력하는 로컬 웹 화면은 다음 명령으로 실행한다.
+
+```powershell
+woori-graph search-web --config config/search.example.toml --port 8765 --allow-remote-embedding
+```
+
+`http://127.0.0.1:8765/`에서 답변, 3-hop 그래프, 근거 법령, hop별 탐색 수치와 선정된 엔티티·릴레이션 후보 목록을 함께 확인할 수 있다.
+
+법령과 회사 내부규정에서 근거가 재현되는 SVO를 추출하고, 엔티티·관계 사전으로 정규화해 그래프 탐색에 사용하는 프로젝트다.
+
+현재 기준 설계는 [v3 SVO 그래프 설계 지시서](docs/v3-svo-graph-design-instruction.ko.md)다. 이 저장소는 v2 구현을 복제하지 않는다.
+
+## 현재 포함 범위
+
+- 법령 원문 입력: `data/raw/`
+- Qwen/OpenAI 호환 LLM 환경 예시: `.env.example`
+- v3 설계 지시서: `docs/`
+- 저장소 전체에서 재사용할 안정 ID 유틸리티: `src/woori_graph/ids.py`
+
+## 두 파이프라인
+
+소스 책임은 두 업무로 구분한다.
+
+1. `woori_graph.dictionary_build`: 문서 분할 → raw SVO 추출 → entity name 정규화 → entity type 부여 → relation type 정규화 사전 생성
+2. `woori_graph.graph_build`: 신규 문서 분할 → raw SVO 추출 → 확정 사전 매핑·타입 상속 → 저장소 중립 적재 레코드 생성
+
+그래프 구축에서 엔티티가 사전에 매핑되면 확정 ID·canonical name·entity type을 사용하고 원표현을 aliases에 포함한다. 매핑되지 않으면 `_`를 붙이지 않고 원문 이름 그대로 안정 ID를 만들고 같은 타입 분류기를 적용하며, 미판정은 `OTHER`로 적재한다. 관계는 반드시 확정 관계 타입에 매핑하며 자유 형식 관계 fallback은 허용하지 않는다. 로컬 RDB·AGE·OpenSearch 적재와 대조는 구현되어 있고, 실제 API 라우터와 운영 DB 어댑터만 내부 통합 프로젝트에서 연결한다.
+
+세부 모듈과 내부 연결 지점은 [폐쇄망 이관용 소스 구조](docs/closed-network-source-structure.ko.md)에 정리했다.
+
+관계는 대표 행위의 긍정·부정으로만 정규화한다. 의무·허용·금지 등의 이전 규범 분류는 운영 관계 타입으로 사용하지 않는다.
+
+회사 내부규정은 `data/company_raw/`에만 두며 Git에 추가하거나 외부 LLM으로 전송하지 않는다.
+
+## 현재 구현: 사전 구축 JSONL
+
+개발 환경을 설치한 뒤 아래 순서로 실행한다. 추출기는 기본값으로 loopback vLLM만 허용한다.
+
+```powershell
+py -3 -m pip install -e ".[dev]"
+
+woori-graph segment `
+  --input data/raw `
+  --output data/build/semantic_units.jsonl
+
+woori-graph extract `
+  --units data/build/semantic_units.jsonl `
+  --output data/build/raw_svo.jsonl `
+  --env-file .env `
+  --batch-size 200
+
+woori-graph candidates `
+  --raw-svo data/build/raw_svo.jsonl `
+  --entities-output data/build/entity_candidates.jsonl `
+  --relations-output data/build/relation_candidates.jsonl
+
+woori-graph normalize `
+  --raw-svo data/build/raw_svo.jsonl `
+  --entities-output data/build/entity_dictionary.initial.jsonl `
+  --relations-output data/build/relation_dictionary.initial.jsonl `
+  --edges-output data/build/normalized_edges.initial.jsonl `
+  --relation-map-output data/build/relation_alias_map.initial.jsonl `
+  --errors-output data/build/relation_normalization.errors.jsonl `
+  --env-file .env
+
+woori-graph compress-relations `
+  --relations-input data/build/relation_dictionary.initial.jsonl `
+  --taxonomy-input data/taxonomy/relation_taxonomy.closed-100.seed.jsonl `
+  --taxonomy-output data/build/relation_taxonomy.jsonl `
+  --map-output data/build/relation_closed_map.jsonl `
+  --dictionary-output data/build/relation_dictionary.closed.jsonl `
+  --audit-output data/build/relation_closed.audit.json `
+  --errors-output data/build/relation_closed.errors.jsonl `
+  --env-file .env
+
+woori-graph renormalize-entities `
+  --entities-input data/build/entity_dictionary.initial.jsonl `
+  --raw-svo data/build/raw_svo.jsonl `
+  --map-output data/build/entity_contextual_map.jsonl `
+  --dictionary-output data/build/entity_dictionary.contextual.jsonl `
+  --audit-output data/build/entity_contextual.audit.json `
+  --errors-output data/build/entity_contextual.errors.jsonl `
+  --candidates-only `
+  --env-file .env
+
+woori-graph classify-entity-types `
+  --entities-input data/build/entity_dictionary.contextual.jsonl `
+  --dictionary-output data/build/entity_dictionary.typed.jsonl `
+  --map-output data/build/entity_type_map.jsonl `
+  --audit-output data/build/entity_type.audit.json `
+  --errors-output data/build/entity_type.errors.jsonl `
+  --env-file .env
+```
+
+기존 검토 JSONL을 덮어쓰려면 각 명령에 `--overwrite`를 명시해야 한다. 장시간 추출이 중단되면 같은 명령에 `--resume`을 추가해 이미 완료한 `semantic_unit_id`를 건너뛴다. 설정된 LLM이 loopback이 아니라 명시적으로 승인한 private endpoint라면 `--allow-remote-llm`도 지정한다.
+
+이미 생성했거나 사람이 수정한 관계 맵을 재사용할 때는 `normalize --relation-map-input <JSONL>`을 추가한다. 이 경우 LLM을 다시 호출하지 않고 그 맵으로 엔티티·관계·엣지를 재생성한다. `--retry-fallback`을 같이 주면 fallback 항목만 LLM에 재요청한다.
+
+최종 사전 재구축에는 다음 보조 명령도 사용한다.
+
+- `sanitize-svo --units <semantic_units.jsonl>`: 병렬 shard를 최신 조건·열거 규칙으로 다시 정제하고 원본 의미 단위 순서·전수 커버리지를 검증한다.
+- `seed-entity-map`: 이전 사전의 충돌 없는 alias만 1차 출발점으로 재사용하고, 새롭거나 모호한 이름은 fallback 상태로 남긴다.
+- `cluster-entities --retry-fallback`: fallback 이름만 이름 기반 1차 정규화한다.
+- `renormalize-entities`: aliases와 실제 원문을 함께 보는 2차 엔티티 정규화를 수행한다.
+- `classify-entity-types`: 이름 정규화가 끝난 모든 canonical entity를 LLM에 보내 다섯 타입 중 하나를 부여한다. 한 건이라도 LLM 응답이 빠지면 typed 사전 release를 만들지 않으며 `--resume`으로 실패 배치만 재실행한다. `--rules-only`는 운영 release가 아닌 진단용 호환 모드다.
+- `refresh-relations`: 모든 raw 술어를 기존 폐쇄형 관계 taxonomy에 강제 매핑한다.
+- `audit-dictionaries`: alias 충돌, canonical-first, 안정 UUID, scope 제거, 자기참조 alias, 순수 수치 엔티티, raw 전수 매핑과 98개 관계 타입을 검사한다.
+
+`extract`는 실패한 요청을 `<output>.errors.jsonl`에 별도 기록한다. `candidates`는 원시 문자열의 완전 일치만 묶고, `normalize`는 엔티티 원표현과 관계 원형/긍정·부정을 보수적으로 정리한다. `이 법`, `이 영`, `이 규칙`, `이 규정`은 LLM 정규화 전에 현재 문서명별 source entity로 분리하며 global alias로 등록하지 않는다. 그 밖에는 문서별 scope나 대명사 문맥 해소를 만들지 않는다. `renormalize-entities --require-all-llm`은 모든 source entity의 canonical name을 LLM이 선정하게 하며 fallback·결정적 이름 보정·override를 최종 결과에 섞지 않는다. 검증 실패 항목은 LLM에 재요청한다. `compress-relations`는 모든 원천 관계를 고정 taxonomy에 매핑한다.
+
+`config/entity_normalization_overrides.jsonl`은 기존 하이브리드 실행의 호환 자료로만 유지한다. `--require-all-llm` release에서는 override가 canonical name을 덮어쓰지 않으며, 필요한 통합 예시는 프롬프트에 반영해 LLM이 직접 판단한다.
+
+감사의 `passed: true`는 구조·커버리지·ID·mention 보존 통과를 뜻한다. 의미 품질 경고는 참고 정보이며 약간의 숫자 조건·열거·일반명사·법령 수식어 노이즈가 남아도 결과 생성을 막지 않는다. 승인·반려·사람 확정 상태나 이력은 만들지 않는다.

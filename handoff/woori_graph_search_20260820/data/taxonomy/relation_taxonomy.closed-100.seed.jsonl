@@ -1,0 +1,50 @@
+{"family_id":"R001","positive_name":"규정하다","negative_name":"규정하지않다","description":"기준·내용·방법·범위·요건을 정하거나 규칙으로 두는 행위"}
+{"family_id":"R002","positive_name":"결정하다","negative_name":"결정하지않다","description":"판단·의결·결의·재결 등을 통해 사안을 결정하는 행위"}
+{"family_id":"R003","positive_name":"승인하다","negative_name":"승인하지않다","description":"허가·인가·승인·동의로 행위를 가능하게 하는 행위"}
+{"family_id":"R004","positive_name":"지정하다","negative_name":"지정하지않다","description":"대상·기관·업무·구역 등을 특정하여 지정하는 행위"}
+{"family_id":"R005","positive_name":"임명하다","negative_name":"임명하지않다","description":"사람을 임명·선임·위촉·해임하는 인사 행위"}
+{"family_id":"R006","positive_name":"신청하다","negative_name":"신청하지않다","description":"허가·등록·심사·지급 등을 신청하거나 청구하는 행위"}
+{"family_id":"R007","positive_name":"요구하다","negative_name":"요구하지않다","description":"자료·행위·조치·답변 등을 요구·요청·촉구하는 행위"}
+{"family_id":"R008","positive_name":"제출하다","negative_name":"제출하지않다","description":"문서·자료·신고서 등을 상대 기관에 제출하는 행위"}
+{"family_id":"R009","positive_name":"보고하다","negative_name":"보고하지않다","description":"사실·현황·결과를 보고·신고하는 행위"}
+{"family_id":"R010","positive_name":"통지하다","negative_name":"통지하지않다","description":"상대방에게 사실·결정·내용을 통지·고지·알리는 행위"}
+{"family_id":"R011","positive_name":"공개하다","negative_name":"공개하지않다","description":"정보를 공시·공고·공표·게시·열람 가능하게 하는 행위"}
+{"family_id":"R012","positive_name":"작성하다","negative_name":"작성하지않다","description":"문서·장부·계획·기록을 작성·기재·기록·서명·첨부하는 행위"}
+{"family_id":"R013","positive_name":"제공하다","negative_name":"제공하지않다","description":"문서·정보·금품 등을 제공·교부·발급·송부·전달하는 행위"}
+{"family_id":"R014","positive_name":"수집하다","negative_name":"수집하지않다","description":"자료·정보·의견 등을 수집·접수·취합하는 행위"}
+{"family_id":"R015","positive_name":"보관하다","negative_name":"보관하지않다","description":"문서·자료·자산을 보관·보존·비치하는 행위"}
+{"family_id":"R016","positive_name":"관리하다","negative_name":"관리하지않다","description":"업무·재산·정보·조직을 관리·운영·유지하는 행위"}
+{"family_id":"R017","positive_name":"수행하다","negative_name":"수행하지않다","description":"실시·시행·처리·수행·행사 등 다른 군으로 특정하기 어려운 일반 실행 행위"}
+{"family_id":"R018","positive_name":"조사하다","negative_name":"조사하지않다","description":"사실·업무·재산을 조사·검사·감사·점검하는 행위"}
+{"family_id":"R019","positive_name":"심사하다","negative_name":"심사하지않다","description":"자격·적정성·가치·성과를 심사·평가·검토하는 행위"}
+{"family_id":"R020","positive_name":"확인하다","negative_name":"확인하지않다","description":"사실·신원·요건을 확인·인정·증명·검증하는 행위"}
+{"family_id":"R021","positive_name":"감독하다","negative_name":"감독하지않다","description":"기관·업무·행위를 감독·통제·감시하는 행위"}
+{"family_id":"R022","positive_name":"명령하다","negative_name":"명령하지않다","description":"행위·시정·중지 등을 명령·지시·권고하는 행위"}
+{"family_id":"R023","positive_name":"조치하다","negative_name":"조치하지않다","description":"문제 해결·보완·시정을 위한 조치를 취하거나 처리하는 행위"}
+{"family_id":"R024","positive_name":"부과하다","negative_name":"부과하지않다","description":"벌금·과태료·부담금·의무·조건을 부과하는 행위"}
+{"family_id":"R025","positive_name":"징수하다","negative_name":"징수하지않다","description":"세금·부담금·수수료·금액을 징수·수납하는 행위"}
+{"family_id":"R026","positive_name":"지급하다","negative_name":"지급하지않다","description":"금액·급여·배당·보상금을 지급·배상·보상하는 행위"}
+{"family_id":"R027","positive_name":"처벌하다","negative_name":"처벌하지않다","description":"징역·벌금 등 형벌에 처하거나 처벌하는 행위"}
+{"family_id":"R028","positive_name":"제재하다","negative_name":"제재하지않다","description":"징계·제재·행정처분·불이익 조치를 하는 행위"}
+{"family_id":"R029","positive_name":"취소하다","negative_name":"취소하지않다","description":"허가·등록·지정·결정 등의 효력을 취소·철회하는 행위"}
+{"family_id":"R030","positive_name":"정지하다","negative_name":"정지하지않다","description":"업무·자격·효력·절차를 정지·중단·유예하는 행위"}
+{"family_id":"R031","positive_name":"제한하다","negative_name":"제한하지않다","description":"행위·자격·권리·범위를 제한·금지·차단하는 행위"}
+{"family_id":"R032","positive_name":"면제하다","negative_name":"면제하지않다","description":"의무·책임·금액·제재를 면제·감면·완화하는 행위"}
+{"family_id":"R033","positive_name":"적용하다","negative_name":"적용하지않다","description":"법령·규정·기준을 적용·준용하거나 그에 따르게 하는 행위"}
+{"family_id":"R034","positive_name":"준수하다","negative_name":"준수하지않다","description":"법령·규정·기준·의무를 준수하거나 따르는 행위"}
+{"family_id":"R035","positive_name":"위반하다","negative_name":"위반하지않다","description":"법령·규정·명령·의무를 위반하는 행위"}
+{"family_id":"R036","positive_name":"계약하다","negative_name":"계약하지않다","description":"계약·협약·약정 등을 체결·갱신·해지하는 행위"}
+{"family_id":"R037","positive_name":"협의하다","negative_name":"협의하지않다","description":"기관·당사자가 협의·합의·조정·동의하는 행위"}
+{"family_id":"R038","positive_name":"설립하다","negative_name":"설립하지않다","description":"기관·조직·위원회 등을 설립·설치·구성하는 행위"}
+{"family_id":"R039","positive_name":"등록하다","negative_name":"등록하지않다","description":"대상·권리·정보를 등록·등기·신고하여 공적 장부에 올리는 행위"}
+{"family_id":"R040","positive_name":"취득하다","negative_name":"취득하지않다","description":"재산·권리·자격을 취득·소유·보유·점유하는 행위"}
+{"family_id":"R041","positive_name":"사용하다","negative_name":"사용하지않다","description":"재산·정보·권리·수단을 사용·이용·운용·행사하는 행위"}
+{"family_id":"R042","positive_name":"이전하다","negative_name":"이전하지않다","description":"재산·권리·업무를 양도·이전·매각·승계하는 행위"}
+{"family_id":"R043","positive_name":"투자하다","negative_name":"투자하지않다","description":"투자·출자·대여·차입·신용공여 등 자금을 제공하거나 조달하는 행위"}
+{"family_id":"R044","positive_name":"변경하다","negative_name":"변경하지않다","description":"내용·기간·계획·조직을 변경·개선·갱신·연장·조정하는 행위"}
+{"family_id":"R045","positive_name":"종료하다","negative_name":"종료하지않다","description":"업무·절차·관계·효력을 종료·종결·폐지·소멸시키는 행위"}
+{"family_id":"R046","positive_name":"발행하다","negative_name":"발행하지않다","description":"증권·채권·증명서·문서 등을 발행하는 행위"}
+{"family_id":"R047","positive_name":"영위하다","negative_name":"영위하지않다","description":"사업·업무·영업을 영위하거나 종사하는 행위"}
+{"family_id":"R048","positive_name":"해당하다","negative_name":"해당하지않다","description":"대상이 범주에 포함·해당·속하거나 법적으로 간주되는 상태 관계"}
+{"family_id":"R049","positive_name":"반환하다","negative_name":"반환하지않다","description":"금전·재산·자료를 반환·환급·상환·회수하는 행위"}
+{"family_id":"R050","positive_name":"보호하다","negative_name":"보호하지않다","description":"사람·권리·정보·재산을 보호·보장·지원하는 행위"}

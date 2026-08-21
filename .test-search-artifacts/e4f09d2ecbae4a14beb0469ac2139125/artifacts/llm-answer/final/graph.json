@@ -1,0 +1,165 @@
+{
+  "query": "기관 A와 위원회 연결",
+  "path_limit": 20,
+  "nodes": [
+    {
+      "id": "a",
+      "name": "기관A",
+      "type": "ORGANIZATION",
+      "seed": true,
+      "candidate": true,
+      "candidate_rank": 1,
+      "candidate_score": 1.0,
+      "selected": true,
+      "level": 0
+    },
+    {
+      "id": "c",
+      "name": "기관C",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 1
+    },
+    {
+      "id": "b",
+      "name": "업무B",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 0
+    },
+    {
+      "id": "d",
+      "name": "위원회D",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    }
+  ],
+  "edges": [
+    {
+      "id": "r1",
+      "source": "a",
+      "source_name": "기관A",
+      "target": "b",
+      "target_name": "업무B",
+      "relation": "감독하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "법률A"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "mention-r1",
+          "relation_id": "r1",
+          "semantic_unit_id": "unit-r1",
+          "document_id": "document-법률A",
+          "document_title": "법률A",
+          "source_path": "법률A.md",
+          "source_ref": {
+            "article": "제1조",
+            "paragraph": 1,
+            "item_path": []
+          },
+          "raw_subject": "기관A",
+          "raw_predicate": "감독하다",
+          "raw_object": "업무B"
+        }
+      ],
+      "candidate": true,
+      "candidate_rank": 1,
+      "candidate_score": 1.0,
+      "selected": true
+    },
+    {
+      "id": "r2",
+      "source": "b",
+      "source_name": "업무B",
+      "target": "c",
+      "target_name": "기관C",
+      "relation": "연결하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "법률B"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "mention-r2",
+          "relation_id": "r2",
+          "semantic_unit_id": "unit-r2",
+          "document_id": "document-법률B",
+          "document_title": "법률B",
+          "source_path": "법률B.md",
+          "source_ref": {
+            "article": "제1조",
+            "paragraph": 1,
+            "item_path": []
+          },
+          "raw_subject": "업무B",
+          "raw_predicate": "연결하다",
+          "raw_object": "기관C"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "r3",
+      "source": "c",
+      "source_name": "기관C",
+      "target": "d",
+      "target_name": "위원회D",
+      "relation": "보고하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "법률C"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "mention-r3",
+          "relation_id": "r3",
+          "semantic_unit_id": "unit-r3",
+          "document_id": "document-법률C",
+          "document_title": "법률C",
+          "source_path": "법률C.md",
+          "source_ref": {
+            "article": "제1조",
+            "paragraph": 1,
+            "item_path": []
+          },
+          "raw_subject": "기관C",
+          "raw_predicate": "보고하다",
+          "raw_object": "위원회D"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    }
+  ],
+  "selected_counts": {
+    "nodes": 4,
+    "edges": 3
+  },
+  "context_counts": {
+    "nodes": 0,
+    "edges": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "counts": {
+    "entities": 10392,
+    "mapping_records": 10392,
+    "entity_types": {
+      "CONCEPT": 4506,
+      "LEGAL_INSTRUMENT": 291,
+      "ORGANIZATION": 631,
+      "OTHER": 3630,
+      "PERSON": 1334
+    },
+    "assignment_methods": {
+      "alias_rule": 232,
+      "canonical_rule": 6530,
+      "fallback_other": 3630
+    }
+  },
+  "checks": {
+    "all_entities_mapped": true,
+    "mapping_ids_unique": true,
+    "all_entity_types_valid": true
+  },
+  "llm_errors": 0,
+  "prompt": {
+    "path": "D:\\woori_graph\\prompts\\entity_type_classify.ko.md",
+    "sha256": "61ca05fa5baff4818e9d9b61890f830b7be6bb6dcd99e91697ecdd1ec9f07f1a"
+  }
+}

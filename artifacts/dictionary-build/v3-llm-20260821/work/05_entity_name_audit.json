@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "counts": {
+    "source_entities": 11329,
+    "source_entities_for_mapping": 11329,
+    "mapped_source_entities": 11329,
+    "output_entities": 10835,
+    "reduction": 494,
+    "changed_names": 2320,
+    "fallback_mappings": 0,
+    "guarded_mappings": 0,
+    "llm_mappings": 11329,
+    "source_mentions": 58224,
+    "output_mentions": 58224
+  },
+  "checks": {
+    "all_source_entities_mapped": true,
+    "mapping_is_one_to_one_per_source_entity": true,
+    "mention_count_preserved": true,
+    "output_entity_ids_unique": true,
+    "output_not_larger_than_source": true,
+    "no_generic_only_name_introduced": true,
+    "all_canonical_names_selected_by_llm": true
+  },
+  "llm_errors": 0,
+  "mode": "llm_all_strict",
+  "llm_model": "Qwen/Qwen3.8-27B",
+  "prompt": {
+    "path": "D:\\woori_graph\\prompts\\entity_contextual_normalize.ko.md",
+    "supplemental_path": null,
+    "sha256": "81675fbe7b2895cba1240d2e6d75e80118fd80192a96755b2ccbb81dd09ce18f"
+  }
+}

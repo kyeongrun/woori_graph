@@ -1,0 +1,341 @@
+{
+  "query": "금융위원회와 금융기관은 어떻게 연결되는가?",
+  "entities": [
+    {
+      "entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "canonical_name": "금융위원회",
+      "entity_type": "OTHER",
+      "score": 0.03225806451612903,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "db645dc3-ee79-547d-808a-ce2dabcfdda4",
+      "canonical_name": "금융기관",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "c0050cf6-f217-5b42-b486-02e5e8e2e418",
+      "canonical_name": "금융위원회를 대행하여 하는 것",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "b28a222a-8fb2-5500-809d-8003597846e8",
+      "canonical_name": "국내 금융기관에 대한 예금",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "988d085a-098d-54ba-a310-e6041fd26cd7",
+      "canonical_name": "금융위원회가 정하는 사항",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "dcee67c3-b912-551c-91f6-6c425afab312",
+      "canonical_name": "금융감독원에 대한 금융기관 검사",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "canonical_name": "금융통화위원회",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "405cbf65-631f-5e97-89b2-73f94544c978",
+      "canonical_name": "금융기관 긴급여신",
+      "entity_type": "OTHER",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "keyword"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "927829ea-e9bd-50fe-86df-bce5ae8338ba",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "db645dc3-ee79-547d-808a-ce2dabcfdda4",
+      "target_name": "금융기관",
+      "score": 0.029051670471052088,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "0cefa38c-ad76-53a8-93aa-ade148647a7a",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+      "relation_type_name": "요구하다",
+      "target_entity_id": "0f19be45-e0aa-5900-866f-359715336062",
+      "target_name": "관계 기관",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "20e65be3-6ad9-5c15-bbe2-26f7a8a61671",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "0dbdd7f6-de79-537e-824d-96f1295e1511",
+      "target_name": "관계 행정기관의 장",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "e4a1b1bd-d0fb-5a8d-af62-7590732a6f0a",
+      "source_entity_id": "db645dc3-ee79-547d-808a-ce2dabcfdda4",
+      "source_name": "금융기관",
+      "relation_type_id": "d8488859-80e1-5cf2-ba5e-b91f845b354d",
+      "relation_type_name": "해당하다",
+      "target_entity_id": "db645dc3-ee79-547d-808a-ce2dabcfdda4",
+      "target_name": "금융기관",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "15d2e90e-b76c-5a8a-9bb1-2ec3a585d452",
+      "source_entity_id": "53541de7-3f53-5733-b4c2-d9c4ff6a6eb8",
+      "source_name": "대통령령으로 정하는 금융기관",
+      "relation_type_id": "d8488859-80e1-5cf2-ba5e-b91f845b354d",
+      "relation_type_name": "해당하다",
+      "target_entity_id": "db645dc3-ee79-547d-808a-ce2dabcfdda4",
+      "target_name": "금융기관",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "90b9d0e0-663d-56b0-8e39-2f5f99712768",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "8d1e00ac-ea54-5ddf-8674-7d34bee75f67",
+      "relation_type_name": "제공하다",
+      "target_entity_id": "35533567-cf8d-5744-b9cf-2aa4b2a5f684",
+      "target_name": "이해관계인",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "16601b39-12fd-50d3-85f0-7c0bbafccf4d",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "410303f3-ef70-5526-bd29-9a14eca8d6bb",
+      "relation_type_name": "변경하다",
+      "target_entity_id": "19a28ec5-6914-5038-a4cc-a18129120dc1",
+      "target_name": "금융기관보험대리점등의 영업기준",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "ab3f39fa-c083-5dc8-a60a-28682434ed98",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+      "relation_type_name": "요구하다",
+      "target_entity_id": "0dbdd7f6-de79-537e-824d-96f1295e1511",
+      "target_name": "관계 행정기관의 장",
+      "score": 0.015625,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "16f8f7ba-f236-5a28-b0ef-59ad006209e0",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "ebdcd739-2dcf-5338-8f83-56b17631dc19",
+      "relation_type_name": "명령하다",
+      "target_entity_id": "0b5d1ab6-36e7-5be7-b4e7-9d3e209b4ee9",
+      "target_name": "금융기관 주식 처분",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "dd57d8f9-9abe-5bc8-b687-ade50384b273",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "63ecb1c6-60fb-533b-a451-f38811f1e390",
+      "relation_type_name": "통지하다",
+      "target_entity_id": "248b28dc-37dc-5995-81e8-bc632b680e45",
+      "target_name": "금융투자업관계기관",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "42e591ed-ccfc-5017-aa71-892ba83ae6d7",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "701ee6a5-af83-5345-b179-640096a7f2a7",
+      "target_name": "기관",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "759fb0d8-3961-5915-b6b5-f65bb3dd5ce5",
+      "source_entity_id": "8bae3297-a869-50e9-b099-8c2a68f02d10",
+      "source_name": "금융위원회의 업무를 위탁받은 자",
+      "relation_type_id": "8256519e-3c6f-50fb-9d0d-f369f69ba73a",
+      "relation_type_name": "보고하다",
+      "target_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "target_name": "금융위원회",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "837db99c-b81c-5e51-88be-c0176d24c554",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+      "relation_type_name": "요구하다",
+      "target_entity_id": "701ee6a5-af83-5345-b179-640096a7f2a7",
+      "target_name": "기관",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "cebcbe89-fe20-5bb2-94e6-b28b6c5fc4c9",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "28d9e5f5-b315-5880-98ea-eb4f9ed5760f",
+      "relation_type_name": "확인하다",
+      "target_entity_id": "cc818fb3-1e22-5b4b-9389-65b9a3b41918",
+      "target_name": "외국 금융기관",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "c28fd111-0ca1-5ce1-8be6-8f931df54422",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "b87d399f-8f30-5ad1-9639-d961d85a2ff1",
+      "relation_type_name": "지정하다",
+      "target_entity_id": "701ee6a5-af83-5345-b179-640096a7f2a7",
+      "target_name": "기관",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "fff7e9a4-35ed-516b-ade6-436cf9434c10",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "ebdcd739-2dcf-5338-8f83-56b17631dc19",
+      "relation_type_name": "명령하다",
+      "target_entity_id": "5763ed81-091b-5a99-b9dd-fc3a4a35259e",
+      "target_name": "금융기관 주식",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "002861fd-a69c-5632-8601-9584bd0021c7",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "437bb2c1-62bf-5891-a421-f9fb85015fc9",
+      "relation_type_name": "심사하다",
+      "target_entity_id": "391aa9b5-cc1a-5301-be0b-50e088e79a66",
+      "target_name": "내국인 근무 직원에 대한 퇴직금 지급 등의 조치계획",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "3fca8554-f800-5d10-b3b9-6ab76413f408",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "433be467-4f76-5c9b-986f-082f73691562",
+      "target_name": "금융교육 관련 기관",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "00325e40-3e48-5b80-b207-36d13430d844",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+      "relation_type_name": "요구하다",
+      "target_entity_id": "a06b86df-692a-55d8-bbe2-afd0900575d3",
+      "target_name": "외국금융투자감독기관",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "433665c1-365b-527b-b052-a66c729c0d15",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "63ecb1c6-60fb-533b-a451-f38811f1e390",
+      "relation_type_name": "통지하다",
+      "target_entity_id": "db645dc3-ee79-547d-808a-ce2dabcfdda4",
+      "target_name": "금융기관",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ]
+}

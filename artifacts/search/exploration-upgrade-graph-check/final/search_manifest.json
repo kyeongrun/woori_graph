@@ -1,0 +1,118 @@
+{
+  "run_id": "exploration-upgrade-graph-check",
+  "created_at": "2026-08-21T06:16:44.264816+00:00",
+  "query": "중앙행정기관의 장과 감사기구의 장은 어떻게 연결되는가?",
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "dimension": 1536
+  },
+  "answer": {
+    "mode": "llm",
+    "status": "fallback",
+    "model": null,
+    "prompt_name": null,
+    "prompt_sha256": null,
+    "generated_at": null,
+    "citation_map": [],
+    "cited_keys": [],
+    "fallback_reason": "llm_endpoint_not_permitted"
+  },
+  "search": {
+    "max_hops": 3,
+    "entity_top_k": 8,
+    "relation_top_k": 20,
+    "max_neighbors_per_entity": 50,
+    "path_beam_width": 160,
+    "max_paths": 50,
+    "timeout_seconds": 180.0
+  },
+  "stats": {
+    "duration_seconds": 1.125,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths_considered": 5890,
+    "paths_returned": 50,
+    "adaptations": [],
+    "hop_diagnostics": [
+      {
+        "hop": 1,
+        "frontier_entities": 28,
+        "fetched_edges": 379,
+        "query_edge_limit": 2800,
+        "neighbor_limit_per_entity": 50,
+        "generated_paths": 400,
+        "beam_width": 160,
+        "retained_paths": 160
+      },
+      {
+        "hop": 2,
+        "frontier_entities": 116,
+        "fetched_edges": 1384,
+        "query_edge_limit": 5000,
+        "neighbor_limit_per_entity": 50,
+        "generated_paths": 2636,
+        "beam_width": 160,
+        "retained_paths": 160
+      },
+      {
+        "hop": 3,
+        "frontier_entities": 78,
+        "fetched_edges": 937,
+        "query_edge_limit": 5000,
+        "neighbor_limit_per_entity": 50,
+        "generated_paths": 2854,
+        "beam_width": 160,
+        "retained_paths": 160
+      }
+    ],
+    "deduplicated_paths": 5890,
+    "evidence_path_pool": 150
+  },
+  "config": {
+    "path": "config/search.example.toml",
+    "sha256": "7bc500b7743d5a41b602b142159dc2deb5c7b44d6fe5fa9cbca88764f72f4c24"
+  },
+  "counts": {
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths": 50,
+    "nodes": 45,
+    "edges": 38
+  },
+  "files": [
+    {
+      "path": "final/answer.md",
+      "sha256": "75c55684921d241b19efd6280f399f6c79bd5e9e34fab9bf42f497a06f02b736",
+      "bytes": 2670
+    },
+    {
+      "path": "final/graph.html",
+      "sha256": "b48b3175104a8e9265dbd54116027e30c72ad3d5f08f414f8bf3b19723dbed92",
+      "bytes": 58666
+    },
+    {
+      "path": "final/graph.json",
+      "sha256": "428c72cfe48a2f657fca842ce00253875cc9fc4a987651efc7e71d8157f269f0",
+      "bytes": 65154
+    },
+    {
+      "path": "final/query_result.json",
+      "sha256": "fed5a52eaae40f29ae2d7e9e36e44a0d11e2f816c554d4db867a817eebfe8a8d",
+      "bytes": 252319
+    },
+    {
+      "path": "work/01_candidates.json",
+      "sha256": "373cb19f71ae3408356fbc2e8552ab16d41675956a726f44410dbbec60252fa3",
+      "bytes": 13165
+    },
+    {
+      "path": "work/02_ranked_paths.json",
+      "sha256": "27d9907714288065c48c1dcca05a70c4063d6bd11cae05015d6ea0a6c18e09ef",
+      "bytes": 236270
+    }
+  ],
+  "passed": true
+}

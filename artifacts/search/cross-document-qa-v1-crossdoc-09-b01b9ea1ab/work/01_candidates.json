@@ -1,0 +1,359 @@
+{
+  "query": "‘서류’와 ‘금융위원회’는 ‘등록신청서’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "entities": [
+    {
+      "entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "canonical_name": "금융위원회",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "9b46a2f1-ba81-5d34-93bf-c09fa03e7421",
+      "canonical_name": "금융위원회가 정하는 서류",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "a9701e2b-3831-5af5-88ea-53b4894d4d96",
+      "canonical_name": "관계 서류의 제출",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "d4e30e9b-cc47-59d8-9b04-2afd7ee6ed51",
+      "canonical_name": "등록신청서",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "85f6b391-7055-5571-97ec-cd2b5455064e",
+      "canonical_name": "관계 서류",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "4e6e6a78-7642-5de3-8bfe-8e3149b1f798",
+      "canonical_name": "서류",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "bdfdb28e-3c6a-5122-b8ff-f7e1fd63e58d",
+      "canonical_name": "관계서류 등의 등본",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "c72e9eea-a452-5c85-a05e-5e40bef510b0",
+      "canonical_name": "근거",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "eacf56eb-0173-5a13-938c-1dfa7878e1d3",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+      "relation_type_name": "요구하다",
+      "target_entity_id": "4e6e6a78-7642-5de3-8bfe-8e3149b1f798",
+      "target_name": "서류",
+      "score": 0.03028233151183971,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "c9e82d38-6764-5c20-8351-f69f38feaf09",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "5871c0ca-38d5-5d58-81c5-bb8477031bca",
+      "relation_type_name": "제출하다",
+      "target_entity_id": "4e6e6a78-7642-5de3-8bfe-8e3149b1f798",
+      "target_name": "서류",
+      "score": 0.03021353930031804,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "94ecc32b-db54-5014-9cbf-3e280a95a424",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "5871c0ca-38d5-5d58-81c5-bb8477031bca",
+      "relation_type_name": "제출하다",
+      "target_entity_id": "d4e30e9b-cc47-59d8-9b04-2afd7ee6ed51",
+      "target_name": "등록신청서",
+      "score": 0.029850746268656716,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "c1056940-591f-5f3c-9b02-6024091258b5",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "4e6e6a78-7642-5de3-8bfe-8e3149b1f798",
+      "target_name": "서류",
+      "score": 0.02919863597612958,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "fa837f43-9c40-5f1b-9fc8-e954d2deb22e",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "28d9e5f5-b315-5880-98ea-eb4f9ed5760f",
+      "relation_type_name": "확인하다",
+      "target_entity_id": "4e6e6a78-7642-5de3-8bfe-8e3149b1f798",
+      "target_name": "서류",
+      "score": 0.029083245521601686,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "4d77a119-0ff5-5b6e-8369-351c6692fdff",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "e0b5dc0a-10e1-5ba2-81a8-f51ba75af3c8",
+      "relation_type_name": "수집하다",
+      "target_entity_id": "d4e30e9b-cc47-59d8-9b04-2afd7ee6ed51",
+      "target_name": "등록신청서",
+      "score": 0.029030910609857977,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "2265fe07-29c4-5fe5-82ab-a3f5d8280159",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "f0786398-425f-5522-862f-555f6755d1b3",
+      "target_name": "등록신청서의 서식과 작성방법 등에 관하여 필요한 사항",
+      "score": 0.028531243721117136,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "5a8fc63d-0bf6-5560-9333-f0f0c0017d6d",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "d4e30e9b-cc47-59d8-9b04-2afd7ee6ed51",
+      "target_name": "등록신청서",
+      "score": 0.02844551282051282,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "12eaf2e2-8e21-510e-ba74-9edbab7c41f1",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "e0b5dc0a-10e1-5ba2-81a8-f51ba75af3c8",
+      "relation_type_name": "수집하다",
+      "target_entity_id": "4885e92d-421c-5d9a-a51e-2909ebc6a629",
+      "target_name": "첨부서류",
+      "score": 0.02813852813852814,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "c42e0409-c878-546a-809d-da5027e65587",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "4e6e6a78-7642-5de3-8bfe-8e3149b1f798",
+      "target_name": "서류",
+      "score": 0.027799227799227798,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "18aa8137-cd58-55eb-8312-399476e50118",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "88c630d2-6ad7-5107-b91f-22ec20baacbe",
+      "relation_type_name": "조사하다",
+      "target_entity_id": "4e6e6a78-7642-5de3-8bfe-8e3149b1f798",
+      "target_name": "서류",
+      "score": 0.026881720430107527,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "4f051ad9-9efc-5bc4-abb1-b989a8f5db92",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "c41f17de-20f2-54f2-88ab-f367f35ba222",
+      "target_name": "인가신청서류",
+      "score": 0.026736111111111113,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "893a4632-fd41-5ea6-beb4-161c5de1b30c",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "4f7e57c0-ff77-51d0-b46c-03937a29a539",
+      "relation_type_name": "보관하다",
+      "target_entity_id": "4e6e6a78-7642-5de3-8bfe-8e3149b1f798",
+      "target_name": "서류",
+      "score": 0.026387470207694927,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "419a4585-e6f5-55b0-93e3-932772a959fa",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "5932c60c-8073-579a-aaf4-25c505588786",
+      "target_name": "일괄신고추가서류 서식 및 작성방법",
+      "score": 0.026120660599932594,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "6d181da0-804d-597a-9361-c5821ac9e14d",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "8f7bd35b-f079-5532-9deb-6b746e9250a4",
+      "relation_type_name": "작성하다",
+      "target_entity_id": "4e6e6a78-7642-5de3-8bfe-8e3149b1f798",
+      "target_name": "서류",
+      "score": 0.026022913256955812,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "43c47589-5116-5306-b040-af83dd24fc7a",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "5871c0ca-38d5-5d58-81c5-bb8477031bca",
+      "relation_type_name": "제출하다",
+      "target_entity_id": "e65657c1-06d6-54a4-b049-7efd2de41d94",
+      "target_name": "재무에 관한 서류",
+      "score": 0.025383141762452106,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "0f85b325-8d7c-53e5-8a93-d6c933df8cac",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "1ae0fe40-7df5-589a-93e4-39a2aa1acd73",
+      "target_name": "결산서류의 기재사항",
+      "score": 0.024922600619195046,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "3efbabcb-40da-59ab-9d15-a252196ce324",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "b61121f0-43e2-53ef-b507-e89836ee9701",
+      "target_name": "신청서류",
+      "score": 0.02475171886936593,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "091632b1-e5bf-55b5-9134-7def68057f59",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "4885e92d-421c-5d9a-a51e-2909ebc6a629",
+      "target_name": "첨부서류",
+      "score": 0.024696969696969696,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "1fc6f280-bf32-56e4-b8f0-e3816125f29c",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "afa2f968-b492-5e7b-a8f7-64df43c8a346",
+      "target_name": "사업장에 대한 출입을 통한 서류 조사",
+      "score": 0.02393162393162393,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>기관 A와 위원회 연결 - graph search</title>
+<style>
+:root { color-scheme: light dark; --bg:#f7f8fa; --surface:#fff; --text:#18202b; --muted:#667085; --line:#98a2b3; --accent:#175cd3; --seed:#d1e9ff; --node:#eef2f6; --border:#d0d5dd; }
+@media (prefers-color-scheme:dark) { :root { --bg:#101828; --surface:#1d2939; --text:#f2f4f7; --muted:#98a2b3; --line:#667085; --accent:#84adff; --seed:#194185; --node:#344054; --border:#475467; } }
+* { box-sizing:border-box; }
+body { margin:0; padding:20px; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif; }
+main { max-width:1400px; margin:auto; }
+h1 { margin:0 0 8px; font-size:22px; font-weight:600; }
+.summary { margin:0 0 16px; color:var(--muted); }
+.layout { display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:16px; align-items:start; }
+.graph { background:var(--surface); border:1px solid var(--border); border-radius:10px; overflow:hidden; }
+svg { display:block; width:100%; min-height:680px; }
+.side { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px; min-height:180px; }
+.side h2 { margin:0 0 10px; font-size:16px; }
+.side p,.side li { font-size:14px; line-height:1.5; overflow-wrap:anywhere; }
+.side ul { padding-left:18px; }
+.node rect { fill:#b6c0cf; stroke:#94a3b8; stroke-width:1.2; }
+.node.selected rect { fill:#e7f8f6; stroke:#0f9fa7; stroke-width:2.4; }
+.node.seed rect { stroke:#2563eb; }
+.node text { fill:var(--text); font-size:12px; pointer-events:none; }
+.node:not(.selected) text { display:none; }
+.node { cursor:pointer; }
+.edge { fill:none; marker-end:url(#arrow); }
+.edge.candidate { stroke:#c5ceda; stroke-width:1.1; opacity:.82; }
+.edge.selected { stroke:#2563eb; stroke-width:2.6; }
+.edge-hit { stroke:transparent; stroke-width:14; fill:none; cursor:pointer; pointer-events:stroke; }
+.edge-label { fill:var(--muted); font-size:11px; text-anchor:middle; paint-order:stroke; stroke:var(--surface); stroke-width:4px; stroke-linejoin:round; pointer-events:none; }
+.edge-label.candidate { display:none; }
+.dim { opacity:.14; }
+.active rect { stroke:var(--accent); stroke-width:3; }
+@media (max-width:850px) { body { padding:10px; } .layout { grid-template-columns:1fr; } svg { min-height:560px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>기관 A와 위원회 연결</h1>
+  <p class="summary">최대 3-hop · 노드 4개 · 관계 3개</p>
+  <div class="layout">
+    <div class="graph"><svg id="network" role="img" aria-label="질문 관련 법령 관계 그래프"></svg></div>
+    <aside class="side" id="detail"><h2>그래프 탐색</h2><p>노드 또는 관계를 선택하면 연결과 근거 문서를 확인할 수 있습니다.</p></aside>
+  </div>
+</main>
+<script id="graph-data" type="application/json">{"query":"기관 A와 위원회 연결","path_limit":20,"nodes":[{"id":"a","name":"기관A","type":"ORGANIZATION","seed":true,"candidate":true,"candidate_rank":1,"candidate_score":1.0,"selected":true,"level":0},{"id":"c","name":"기관C","type":"OTHER","seed":false,"candidate":false,"candidate_rank":null,"candidate_score":0.0,"selected":true,"level":1},{"id":"b","name":"업무B","type":"OTHER","seed":false,"candidate":true,"candidate_rank":null,"candidate_score":0.0,"selected":true,"level":0},{"id":"d","name":"위원회D","type":"OTHER","seed":false,"candidate":false,"candidate_rank":null,"candidate_score":0.0,"selected":true,"level":2}],"edges":[{"id":"r1","source":"a","source_name":"기관A","target":"b","target_name":"업무B","relation":"감독하다","polarity":"POSITIVE","evidence_count":1,"documents":["법률A"],"evidence":[{"relation_mention_id":"mention-r1","relation_id":"r1","semantic_unit_id":"unit-r1","document_id":"document-법률A","document_title":"법률A","source_path":"법률A.md","source_ref":{"article":"제1조","paragraph":1,"item_path":[]},"raw_subject":"기관A","raw_predicate":"감독하다","raw_object":"업무B","context_text":"법률A 제1조의 상위 문맥","unit_text":"기관A는 업무B을 감독하다.","unit_kind":"paragraph"}],"candidate":true,"candidate_rank":1,"candidate_score":1.0,"selected":true},{"id":"r2","source":"b","source_name":"업무B","target":"c","target_name":"기관C","relation":"연결하다","polarity":"POSITIVE","evidence_count":1,"documents":["법률B"],"evidence":[{"relation_mention_id":"mention-r2","relation_id":"r2","semantic_unit_id":"unit-r2","document_id":"document-법률B","document_title":"법률B","source_path":"법률B.md","source_ref":{"article":"제1조","paragraph":1,"item_path":[]},"raw_subject":"업무B","raw_predicate":"연결하다","raw_object":"기관C","context_text":"법률B 제1조의 상위 문맥","unit_text":"업무B는 기관C을 연결하다.","unit_kind":"paragraph"}],"candidate":false,"candidate_rank":null,"candidate_score":0.0,"selected":true},{"id":"r3","source":"c","source_name":"기관C","target":"d","target_name":"위원회D","relation":"보고하다","polarity":"POSITIVE","evidence_count":1,"documents":["법률C"],"evidence":[{"relation_mention_id":"mention-r3","relation_id":"r3","semantic_unit_id":"unit-r3","document_id":"document-법률C","document_title":"법률C","source_path":"법률C.md","source_ref":{"article":"제1조","paragraph":1,"item_path":[]},"raw_subject":"기관C","raw_predicate":"보고하다","raw_object":"위원회D","context_text":"법률C 제1조의 상위 문맥","unit_text":"기관C는 위원회D을 보고하다.","unit_kind":"paragraph"}],"candidate":false,"candidate_rank":null,"candidate_score":0.0,"selected":true}],"selected_counts":{"nodes":4,"edges":3},"context_counts":{"nodes":0,"edges":0}}</script>
+<script>
+(() => {
+  const data=JSON.parse(document.getElementById('graph-data').textContent);
+  const svg=document.getElementById('network');
+  const detail=document.getElementById('detail');
+  const ns='http://www.w3.org/2000/svg';
+  const compact=window.innerWidth<700, width=compact?360:1100, height=compact?620:720, margin=36;
+  const positions=new Map();
+  const seededUnit=(value,offset=0)=>{ let hash=2166136261+offset; for(let i=0;i<value.length;i+=1){ hash^=value.charCodeAt(i); hash=Math.imul(hash,16777619); } return ((hash>>>0)%10000)/10000; };
+  for(const node of data.nodes){ positions.set(node.id,{ x:margin+seededUnit(node.id,11)*(width-margin*2), y:margin+seededUnit(node.id,97)*(height-margin*2), vx:0, vy:0 }); }
+  for(let iteration=0;iteration<180;iteration+=1){
+    const force=new Map(data.nodes.map(node=>[node.id,{x:0,y:0}]));
+    for(let left=0;left<data.nodes.length;left+=1){ for(let right=left+1;right<data.nodes.length;right+=1){ const a=positions.get(data.nodes[left].id), b=positions.get(data.nodes[right].id), dx=b.x-a.x, dy=b.y-a.y, distance=Math.max(1,Math.hypot(dx,dy)), magnitude=5200/(distance*distance), x=dx/distance*magnitude, y=dy/distance*magnitude; force.get(data.nodes[left].id).x-=x; force.get(data.nodes[left].id).y-=y; force.get(data.nodes[right].id).x+=x; force.get(data.nodes[right].id).y+=y; } }
+    for(const edge of data.edges){ const a=positions.get(edge.source), b=positions.get(edge.target); if(!a||!b)continue; const dx=b.x-a.x, dy=b.y-a.y, distance=Math.max(1,Math.hypot(dx,dy)), magnitude=(distance-(edge.selected?128:96))*.032, x=dx/distance*magnitude, y=dy/distance*magnitude; force.get(edge.source).x+=x; force.get(edge.source).y+=y; force.get(edge.target).x-=x; force.get(edge.target).y-=y; }
+    for(const node of data.nodes){ const point=positions.get(node.id), applied=force.get(node.id); point.vx=(point.vx+applied.x)*.76; point.vy=(point.vy+applied.y)*.76; point.x=Math.max(margin,Math.min(width-margin,point.x+point.vx)); point.y=Math.max(margin,Math.min(height-margin,point.y+point.vy)); }
+  }
+  svg.setAttribute('viewBox',`0 0 ${width} ${height}`);
+  svg.style.height=compact?`${height}px`:`${Math.max(680,Math.round(svg.parentElement.clientWidth*height/width))}px`;
+  const defs=document.createElementNS(ns,'defs');
+  defs.innerHTML='<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>';
+  svg.appendChild(defs);
+  const edgeLayer=document.createElementNS(ns,'g'), labelLayer=document.createElementNS(ns,'g'), nodeLayer=document.createElementNS(ns,'g');
+  svg.append(edgeLayer,labelLayer,nodeLayer);
+  const edgeElements=new Map(), nodeElements=new Map();
+  const parallelGroups=new Map();
+  for(const edge of data.edges){ const key=[edge.source,edge.target].sort().join('|'); if(!parallelGroups.has(key))parallelGroups.set(key,[]); parallelGroups.get(key).push(edge.id); }
+  for(const edge of data.edges){
+    const a=positions.get(edge.source), b=positions.get(edge.target); if(!a||!b)continue;
+    const key=[edge.source,edge.target].sort().join('|'), group=parallelGroups.get(key), parallelIndex=group.indexOf(edge.id), offset=(parallelIndex-(group.length-1)/2)*18;
+    const line=document.createElementNS(ns,'path');
+    const dx=b.x-a.x, dy=b.y-a.y, distance=Math.max(1,Math.hypot(dx,dy)), normalX=-dy/distance, normalY=dx/distance, startX=a.x+dx/distance*12, startY=a.y+dy/distance*12, endX=b.x-dx/distance*12, endY=b.y-dy/distance*12, controlX=(a.x+b.x)/2+normalX*offset, controlY=(a.y+b.y)/2+normalY*offset;
+    const pathData=`M ${startX} ${startY} Q ${controlX} ${controlY} ${endX} ${endY}`;
+    const hit=document.createElementNS(ns,'path'); hit.setAttribute('d',pathData); hit.setAttribute('class','edge-hit'); hit.addEventListener('click',()=>showEdge(edge)); edgeLayer.appendChild(hit);
+    line.setAttribute('d',pathData);
+    line.setAttribute('class',`edge${edge.selected?' selected':' candidate'}`); line.dataset.id=edge.id; edgeLayer.appendChild(line); edgeElements.set(edge.id,line);
+    const label=document.createElementNS(ns,'text'); label.setAttribute('class',`edge-label${edge.selected?' selected':' candidate'}`); label.setAttribute('x',controlX); label.setAttribute('y',controlY-8); label.textContent=edge.relation; labelLayer.appendChild(label);
+  }
+  for(const node of data.nodes){
+    const p=positions.get(node.id); const group=document.createElementNS(ns,'g'); group.setAttribute('class',`node${node.seed?' seed':''}${node.candidate?' candidate':''}${node.selected?' selected':''}`); group.setAttribute('transform',`translate(${p.x},${p.y})`); group.dataset.id=node.id;
+    const rect=document.createElementNS(ns,'rect'); rect.setAttribute('x','-7'); rect.setAttribute('y','-7'); rect.setAttribute('width','14'); rect.setAttribute('height','14'); rect.setAttribute('rx','7');
+    const text=document.createElementNS(ns,'text'); text.setAttribute('text-anchor','middle'); text.setAttribute('y','4'); text.textContent=node.name.length>22?node.name.slice(0,21)+'…':node.name;
+    group.append(rect,text); group.addEventListener('click',()=>showNode(node)); nodeLayer.appendChild(group); nodeElements.set(node.id,group);
+  }
+  function reset(){ for(const el of nodeElements.values())el.classList.remove('dim','active'); for(const el of edgeElements.values())el.classList.remove('dim'); }
+  function showNode(node){ reset(); const incident=data.edges.filter(e=>e.source===node.id||e.target===node.id); const related=new Set([node.id]); for(const e of incident){related.add(e.source);related.add(e.target);} for(const [id,el] of nodeElements){if(!related.has(id))el.classList.add('dim');} for(const [id,el] of edgeElements){if(!incident.some(e=>e.id===id))el.classList.add('dim');} nodeElements.get(node.id).classList.add('active'); detail.innerHTML=`<h2>${escapeHtml(node.name)}</h2><p>타입: ${escapeHtml(node.type)} · 직접 연결 ${incident.length}개</p><ul>${incident.slice(0,12).map(e=>`<li>${escapeHtml(e.source_name)} — ${escapeHtml(e.relation)} → ${escapeHtml(e.target_name)}</li>`).join('')}</ul>`; }
+  function showEdge(edge){ reset(); nodeElements.get(edge.source)?.classList.add('active'); nodeElements.get(edge.target)?.classList.add('active'); for(const [id,el] of edgeElements){if(id!==edge.id)el.classList.add('dim');} const docs=edge.documents.length?edge.documents.map(d=>`<li>${escapeHtml(d)}</li>`).join(''):'<li>표시할 근거 없음</li>'; detail.innerHTML=`<h2>${escapeHtml(edge.relation)}</h2><p>${escapeHtml(edge.source_name)} → ${escapeHtml(edge.target_name)}</p><p>근거 ${edge.evidence_count}건</p><ul>${docs}</ul>`; }
+  function escapeHtml(value){ return String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch])); }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+{
+  "run_id": "test-search",
+  "created_at": "2026-08-21T01:39:36.298926+00:00",
+  "query": "기관A와 위원회D",
+  "embedding": {
+    "model": "fake-search-embedding",
+    "dimension": 3
+  },
+  "search": {
+    "max_hops": 3,
+    "entity_top_k": 8,
+    "relation_top_k": 20,
+    "max_neighbors_per_entity": 10,
+    "path_beam_width": 20,
+    "max_paths": 20,
+    "timeout_seconds": 180
+  },
+  "stats": {
+    "duration_seconds": 0.016,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 1,
+    "relation_candidates": 1,
+    "paths_considered": 6,
+    "paths_returned": 6,
+    "adaptations": [],
+    "hop_diagnostics": [
+      {
+        "hop": 1,
+        "frontier_entities": 2,
+        "fetched_edges": 2,
+        "query_edge_limit": 40,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 3,
+        "beam_width": 20,
+        "retained_paths": 3
+      },
+      {
+        "hop": 2,
+        "frontier_entities": 3,
+        "fetched_edges": 3,
+        "query_edge_limit": 60,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 2,
+        "beam_width": 20,
+        "retained_paths": 2
+      },
+      {
+        "hop": 3,
+        "frontier_entities": 2,
+        "fetched_edges": 2,
+        "query_edge_limit": 40,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 1,
+        "beam_width": 20,
+        "retained_paths": 1
+      }
+    ],
+    "deduplicated_paths": 6,
+    "evidence_path_pool": 6
+  },
+  "config": {
+    "path": "search.toml",
+    "sha256": "daf69a6ecbf49ba8903ec16adc26296229cedece3d776cdd3287fe28d393c925"
+  },
+  "counts": {
+    "entity_candidates": 1,
+    "relation_candidates": 1,
+    "paths": 6,
+    "nodes": 4,
+    "edges": 3
+  },
+  "files": [
+    {
+      "path": "final/answer.md",
+      "sha256": "d4dbbf2cc727766b30d58ef0da8a2eecf54fdce08259d8fe9d381080104f8ff4",
+      "bytes": 1409
+    },
+    {
+      "path": "final/graph.html",
+      "sha256": "3c078c8b2c081fe015e192c7abe42550c98c372f0f7cf52f3411cad5efe75712",
+      "bytes": 10609
+    },
+    {
+      "path": "final/graph.json",
+      "sha256": "5f3a93ef77d5c5d3d6db1bc894b05731bda5a1ca4e80e983de12dd17707845d0",
+      "bytes": 3249
+    },
+    {
+      "path": "final/query_result.json",
+      "sha256": "37a009c00005eff49356e4fba924799ea0feed5ee14d5362eed471e8bb283c68",
+      "bytes": 16301
+    },
+    {
+      "path": "work/01_candidates.json",
+      "sha256": "5ef58b89a417007888351ee142f02f8bdf32fc41617d1cee7d7e2182481c445c",
+      "bytes": 615
+    },
+    {
+      "path": "work/02_ranked_paths.json",
+      "sha256": "cb55759530f5842d043e347769a451b5420dce30da46a2c9882f762eddb6484d",
+      "bytes": 14285
+    }
+  ],
+  "passed": true
+}

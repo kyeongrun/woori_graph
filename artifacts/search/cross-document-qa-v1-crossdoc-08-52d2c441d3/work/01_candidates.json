@@ -1,0 +1,347 @@
+{
+  "query": "‘과태료’와 ‘금융위원회’는 ‘직무대행자’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "entities": [
+    {
+      "entity_id": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "canonical_name": "과태료",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "b01b86ee-bb36-553e-95c3-cda2d4f652a6",
+      "canonical_name": "과태료 관할 법원",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "canonical_name": "금융위원회",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "988d085a-098d-54ba-a310-e6041fd26cd7",
+      "canonical_name": "금융위원회가 정하는 사항",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "f611d8bb-6acd-5384-a02b-30771a990920",
+      "canonical_name": "과태료 재판 관할법원",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+      "canonical_name": "직무대행자",
+      "entity_type": "OTHER",
+      "score": 0.015873015873015872,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "c72e9eea-a452-5c85-a05e-5e40bef510b0",
+      "canonical_name": "근거",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "a8975d33-b332-5372-834c-8aa4d98a207d",
+      "canonical_name": "금융통화위원회의 권한으로 규정된 사항",
+      "entity_type": "OTHER",
+      "score": 0.015625,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "2f2ab281-a646-578b-a30f-dba504974ffa",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "b87d399f-8f30-5ad1-9639-d961d85a2ff1",
+      "relation_type_name": "지정하다",
+      "target_entity_id": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+      "target_name": "직무대행자",
+      "score": 0.03278688524590164,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "8ace840d-84d3-58f6-82db-4d572028901a",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+      "relation_type_name": "요구하다",
+      "target_entity_id": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+      "target_name": "직무대행자",
+      "score": 0.03200204813108039,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "94028164-3a6a-5317-874a-0774e9b0d707",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "43294f5a-a921-50d7-86e7-1dc465aeaa25",
+      "relation_type_name": "부과하다",
+      "target_entity_id": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "score": 0.03125,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "f8f4ec6a-2878-5bee-a1c9-d562d49bb2f4",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "70b34146-1620-5fc8-b3c0-e0d5d3954ad3",
+      "relation_type_name": "징수하다",
+      "target_entity_id": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "score": 0.030798389007344232,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "40d63655-aeb4-55d5-b638-44afac127f08",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "a66557d8-855d-55aa-8e6b-e56d88c5d102",
+      "target_name": "과태료 징수",
+      "score": 0.02964426877470356,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "c27ee1b3-b50a-5f17-9606-4df5f700d73d",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+      "relation_type_name": "요구하다",
+      "target_entity_id": "5ce1d6d4-0b1b-52c2-ac0c-2982101d3109",
+      "target_name": "과태료 부과",
+      "score": 0.02638888888888889,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "7b8af4b9-de4a-58b4-be30-3928105c2a5e",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "5ce1d6d4-0b1b-52c2-ac0c-2982101d3109",
+      "target_name": "과태료 부과",
+      "score": 0.025849212924606464,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "007adab3-3ac9-57ad-aef8-3b7e2a256616",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "88c630d2-6ad7-5107-b91f-22ec20baacbe",
+      "relation_type_name": "조사하다",
+      "target_entity_id": "4da89ede-2e65-5d18-86ef-c2f0a00ecff7",
+      "target_name": "이해관계자",
+      "score": 0.024691358024691357,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "6c7c9a2c-ffb2-5c16-b46d-31af3794af02",
+      "source_entity_id": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+      "source_name": "직무대행자",
+      "relation_type_id": "74517e71-b41a-5662-a853-de10661bde32",
+      "relation_type_name": "사용하다",
+      "target_entity_id": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "5f4e877a-a8a8-5c6b-ae3d-b9c6d98ea69f",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "3fcfcf95-ad01-5b7d-a4dd-53cccc4e9721",
+      "target_name": "관계자의 사무소",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "d42f3c9a-63d1-5837-b7d6-fe0e37f6f0a8",
+      "source_entity_id": "f3a9bc56-3807-567b-8569-57826a5dcaec",
+      "source_name": "직무대행자",
+      "relation_type_id": "43294f5a-a921-50d7-86e7-1dc465aeaa25",
+      "relation_type_name": "부과하다",
+      "target_entity_id": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "score": 0.015384615384615385,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "f5adbfcb-9189-54c4-b08b-5f1b021e43c8",
+      "source_entity_id": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "source_name": "과태료",
+      "relation_type_id": "1ca1e921-571f-5695-a633-26f14d1cb825",
+      "relation_type_name": "부과하지않다",
+      "target_entity_id": "aba14816-30e3-5ee9-961d-d9ef0aeb1f43",
+      "target_name": "과태료",
+      "score": 0.015151515151515152,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "20e65be3-6ad9-5c15-bbe2-26f7a8a61671",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "0dbdd7f6-de79-537e-824d-96f1295e1511",
+      "target_name": "관계 행정기관의 장",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "8cff3fe9-1d6d-5d62-9186-5429351c8237",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "2c3c5114-724b-5ab4-8045-58a0841eecec",
+      "target_name": "법 제22조제1항 각 호 해당 여부 검토",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "f114dc16-573f-5a7d-b586-61bda0236efc",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "b87d399f-8f30-5ad1-9639-d961d85a2ff1",
+      "relation_type_name": "지정하다",
+      "target_entity_id": "68e987cd-0e29-5765-acd3-7e63cce79269",
+      "target_name": "조건",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "eef9c5e2-dd4e-5d0a-a8ab-cfca7fdef1be",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "ebdcd739-2dcf-5338-8f83-56b17631dc19",
+      "relation_type_name": "명령하다",
+      "target_entity_id": "98204320-6d18-5521-b719-4c8bc6784a58",
+      "target_name": "그 밖의 관계인",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "54921eca-3bad-5728-a9f5-1af67b613e27",
+      "source_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "relation_type_id": "8d1e00ac-ea54-5ddf-8674-7d34bee75f67",
+      "relation_type_name": "제공하다",
+      "target_entity_id": "91235d22-158e-5f7c-b665-a29d33b47cdb",
+      "target_name": "조사자료",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "759fb0d8-3961-5915-b6b5-f65bb3dd5ce5",
+      "source_entity_id": "8bae3297-a869-50e9-b099-8c2a68f02d10",
+      "source_name": "금융위원회의 업무를 위탁받은 자",
+      "relation_type_id": "8256519e-3c6f-50fb-9d0d-f369f69ba73a",
+      "relation_type_name": "보고하다",
+      "target_entity_id": "45ce1896-d923-5033-884a-31c011281683",
+      "target_name": "금융위원회",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "8474a128-362f-531f-9666-4aac9cb1e0fc",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+      "relation_type_name": "수행하다",
+      "target_entity_id": "d1edd114-7c95-5c43-95bd-d08e49888f4c",
+      "target_name": "관계 전문가",
+      "score": 0.014084507042253521,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "5602f1b9-c928-5631-8267-679601c55b1d",
+      "source_entity_id": "15a2194f-f2e5-5675-9273-590bdea56083",
+      "source_name": "금융통화위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "68e987cd-0e29-5765-acd3-7e63cce79269",
+      "target_name": "조건",
+      "score": 0.013888888888888888,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ]
+}

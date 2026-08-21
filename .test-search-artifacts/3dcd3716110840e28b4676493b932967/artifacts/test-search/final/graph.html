@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>기관A와 위원회D - graph search</title>
+<style>
+:root { color-scheme: light dark; --bg:#f7f8fa; --surface:#fff; --text:#18202b; --muted:#667085; --line:#98a2b3; --accent:#175cd3; --seed:#d1e9ff; --node:#eef2f6; --border:#d0d5dd; }
+@media (prefers-color-scheme:dark) { :root { --bg:#101828; --surface:#1d2939; --text:#f2f4f7; --muted:#98a2b3; --line:#667085; --accent:#84adff; --seed:#194185; --node:#344054; --border:#475467; } }
+* { box-sizing:border-box; }
+body { margin:0; padding:20px; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif; }
+main { max-width:1400px; margin:auto; }
+h1 { margin:0 0 8px; font-size:22px; font-weight:600; }
+.summary { margin:0 0 16px; color:var(--muted); }
+.layout { display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:16px; align-items:start; }
+.graph { background:var(--surface); border:1px solid var(--border); border-radius:10px; overflow:hidden; }
+svg { display:block; width:100%; min-height:680px; }
+.side { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px; min-height:180px; }
+.side h2 { margin:0 0 10px; font-size:16px; }
+.side p,.side li { font-size:14px; line-height:1.5; overflow-wrap:anywhere; }
+.side ul { padding-left:18px; }
+.node rect { fill:var(--node); stroke:var(--border); stroke-width:1.2; }
+.node.seed rect { fill:var(--seed); stroke:var(--accent); }
+.node text { fill:var(--text); font-size:12px; pointer-events:none; }
+.node { cursor:pointer; }
+.edge { stroke:var(--line); stroke-width:1.4; fill:none; marker-end:url(#arrow); }
+.edge-label { fill:var(--muted); font-size:11px; text-anchor:middle; paint-order:stroke; stroke:var(--surface); stroke-width:4px; stroke-linejoin:round; }
+.dim { opacity:.14; }
+.active rect { stroke:var(--accent); stroke-width:2.5; }
+@media (max-width:850px) { body { padding:10px; } .layout { grid-template-columns:1fr; } svg { min-height:560px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>기관A와 위원회D</h1>
+  <p class="summary">최대 3-hop · 노드 4개 · 관계 3개</p>
+  <div class="layout">
+    <div class="graph"><svg id="network" role="img" aria-label="질문 관련 법령 관계 그래프"></svg></div>
+    <aside class="side" id="detail"><h2>그래프 탐색</h2><p>노드 또는 관계를 선택하면 연결과 근거 문서를 확인할 수 있습니다.</p></aside>
+  </div>
+</main>
+<script id="graph-data" type="application/json">{"query":"기관A와 위원회D","nodes":[{"id":"a","name":"기관A","type":"ORGANIZATION","seed":true,"candidate_score":1.0,"level":0},{"id":"b","name":"업무B","type":"OTHER","seed":false,"candidate_score":0.0,"level":0},{"id":"c","name":"기관C","type":"OTHER","seed":false,"candidate_score":0.0,"level":1},{"id":"d","name":"위원회D","type":"OTHER","seed":false,"candidate_score":0.0,"level":2}],"edges":[{"id":"r1","source":"a","source_name":"기관A","target":"b","target_name":"업무B","relation":"감독하다","polarity":"POSITIVE","evidence_count":1,"documents":["법률A"],"evidence":[{"relation_mention_id":"mention-r1","relation_id":"r1","semantic_unit_id":"unit-r1","document_id":"document-법률A","document_title":"법률A","source_path":"법률A.md","source_ref":{"article":"제1조","paragraph":1,"item_path":[]},"raw_subject":"기관A","raw_predicate":"감독하다","raw_object":"업무B"}]},{"id":"r2","source":"b","source_name":"업무B","target":"c","target_name":"기관C","relation":"연결하다","polarity":"POSITIVE","evidence_count":1,"documents":["법률B"],"evidence":[{"relation_mention_id":"mention-r2","relation_id":"r2","semantic_unit_id":"unit-r2","document_id":"document-법률B","document_title":"법률B","source_path":"법률B.md","source_ref":{"article":"제1조","paragraph":1,"item_path":[]},"raw_subject":"업무B","raw_predicate":"연결하다","raw_object":"기관C"}]},{"id":"r3","source":"c","source_name":"기관C","target":"d","target_name":"위원회D","relation":"보고하다","polarity":"POSITIVE","evidence_count":1,"documents":["법률C"],"evidence":[{"relation_mention_id":"mention-r3","relation_id":"r3","semantic_unit_id":"unit-r3","document_id":"document-법률C","document_title":"법률C","source_path":"법률C.md","source_ref":{"article":"제1조","paragraph":1,"item_path":[]},"raw_subject":"기관C","raw_predicate":"보고하다","raw_object":"위원회D"}]}]}</script>
+<script>
+(() => {
+  const data=JSON.parse(document.getElementById('graph-data').textContent);
+  const svg=document.getElementById('network');
+  const detail=document.getElementById('detail');
+  const ns='http://www.w3.org/2000/svg';
+  const width=1100, height=Math.max(680,data.nodes.length*34);
+  svg.setAttribute('viewBox',`0 0 ${width} ${height}`);
+  const defs=document.createElementNS(ns,'defs');
+  defs.innerHTML='<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>';
+  svg.appendChild(defs);
+  const byLevel=new Map();
+  for(const node of data.nodes){ const level=Math.min(3,node.level||0); if(!byLevel.has(level))byLevel.set(level,[]); byLevel.get(level).push(node); }
+  const positions=new Map();
+  for(const [level,nodes] of byLevel){ nodes.sort((a,b)=>a.name.localeCompare(b.name,'ko')); const x=120+level*285; nodes.forEach((node,i)=>positions.set(node.id,{x,y:(i+1)*height/(nodes.length+1)})); }
+  const edgeLayer=document.createElementNS(ns,'g'), labelLayer=document.createElementNS(ns,'g'), nodeLayer=document.createElementNS(ns,'g');
+  svg.append(edgeLayer,labelLayer,nodeLayer);
+  const edgeElements=new Map(), nodeElements=new Map();
+  for(const edge of data.edges){
+    const a=positions.get(edge.source), b=positions.get(edge.target); if(!a||!b)continue;
+    const line=document.createElementNS(ns,'path');
+    const dx=b.x-a.x, bend=Math.min(70,Math.abs(b.y-a.y)*.16);
+    line.setAttribute('d',`M ${a.x+82} ${a.y} C ${a.x+82+dx*.35} ${a.y-bend}, ${b.x-82-dx*.2} ${b.y-bend}, ${b.x-82} ${b.y}`);
+    line.setAttribute('class','edge'); line.dataset.id=edge.id; edgeLayer.appendChild(line); edgeElements.set(edge.id,line);
+    const label=document.createElementNS(ns,'text'); label.setAttribute('class','edge-label'); label.setAttribute('x',(a.x+b.x)/2); label.setAttribute('y',(a.y+b.y)/2-8); label.textContent=edge.relation; label.style.cursor='pointer'; label.addEventListener('click',()=>showEdge(edge)); labelLayer.appendChild(label);
+  }
+  for(const node of data.nodes){
+    const p=positions.get(node.id); const group=document.createElementNS(ns,'g'); group.setAttribute('class',`node${node.seed?' seed':''}`); group.setAttribute('transform',`translate(${p.x},${p.y})`); group.dataset.id=node.id;
+    const rect=document.createElementNS(ns,'rect'); rect.setAttribute('x','-82'); rect.setAttribute('y','-21'); rect.setAttribute('width','164'); rect.setAttribute('height','42'); rect.setAttribute('rx','8');
+    const text=document.createElementNS(ns,'text'); text.setAttribute('text-anchor','middle'); text.setAttribute('y','4'); text.textContent=node.name.length>22?node.name.slice(0,21)+'…':node.name;
+    group.append(rect,text); group.addEventListener('click',()=>showNode(node)); nodeLayer.appendChild(group); nodeElements.set(node.id,group);
+  }
+  function reset(){ for(const el of nodeElements.values())el.classList.remove('dim','active'); for(const el of edgeElements.values())el.classList.remove('dim'); }
+  function showNode(node){ reset(); const incident=data.edges.filter(e=>e.source===node.id||e.target===node.id); const related=new Set([node.id]); for(const e of incident){related.add(e.source);related.add(e.target);} for(const [id,el] of nodeElements){if(!related.has(id))el.classList.add('dim');} for(const [id,el] of edgeElements){if(!incident.some(e=>e.id===id))el.classList.add('dim');} nodeElements.get(node.id).classList.add('active'); detail.innerHTML=`<h2>${escapeHtml(node.name)}</h2><p>타입: ${escapeHtml(node.type)} · 직접 연결 ${incident.length}개</p><ul>${incident.slice(0,12).map(e=>`<li>${escapeHtml(e.source_name)} — ${escapeHtml(e.relation)} → ${escapeHtml(e.target_name)}</li>`).join('')}</ul>`; }
+  function showEdge(edge){ reset(); nodeElements.get(edge.source)?.classList.add('active'); nodeElements.get(edge.target)?.classList.add('active'); for(const [id,el] of edgeElements){if(id!==edge.id)el.classList.add('dim');} const docs=edge.documents.length?edge.documents.map(d=>`<li>${escapeHtml(d)}</li>`).join(''):'<li>표시할 근거 없음</li>'; detail.innerHTML=`<h2>${escapeHtml(edge.relation)}</h2><p>${escapeHtml(edge.source_name)} → ${escapeHtml(edge.target_name)}</p><p>근거 ${edge.evidence_count}건</p><ul>${docs}</ul>`; }
+  function escapeHtml(value){ return String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch])); }
+})();
+</script>
+</body>
+</html>

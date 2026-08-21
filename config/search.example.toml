@@ -1,0 +1,33 @@
+[paths]
+# All relative paths are resolved from this TOML file's directory.
+artifact_root = "../artifacts/search"
+env_file = "../.env"
+
+[services]
+opensearch_url = "http://127.0.0.1:19200"
+entity_index = "entities"
+relation_index = "relations"
+postgres_dsn_env = "GRAPH_POSTGRES_DSN"
+# For authenticated OpenSearch, set both names and put their values in .env.
+# opensearch_username_env = "OPENSEARCH_USERNAME"
+# opensearch_password_env = "OPENSEARCH_PASSWORD"
+verify_tls = true
+
+[search]
+max_hops = 3
+entity_top_k = 8
+relation_top_k = 20
+max_neighbors_per_entity = 50
+path_beam_width = 160
+max_paths = 50
+evidence_per_relation = 3
+timeout_seconds = 180
+request_timeout_seconds = 30
+
+[answer]
+# Send only the ranked paths' attached evidence to the loopback LLM.
+enabled = true
+prompt = "../prompts/grounded_answer.ko.md"
+max_paths = 5
+max_evidence_items = 15
+timeout_seconds = 45

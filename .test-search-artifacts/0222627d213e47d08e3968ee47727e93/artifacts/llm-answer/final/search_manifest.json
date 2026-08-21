@@ -1,0 +1,129 @@
+{
+  "run_id": "llm-answer",
+  "created_at": "2026-08-21T05:17:15.142658+00:00",
+  "query": "기관 A와 위원회 연결",
+  "embedding": {
+    "model": "fake-search-embedding",
+    "dimension": 3
+  },
+  "answer": {
+    "mode": "llm",
+    "status": "generated",
+    "model": "fake-local-llm",
+    "prompt_name": "grounded_answer.ko.md",
+    "prompt_sha256": "cabb5d14c8f22ccc43ed71209c3c444b4d176d08341165792a999dec3b594ad2",
+    "generated_at": "2026-08-21T05:17:15.117519+00:00",
+    "citation_map": [
+      {
+        "key": "E1",
+        "relation_mention_id": "mention-r1"
+      },
+      {
+        "key": "E2",
+        "relation_mention_id": "mention-r2"
+      }
+    ],
+    "cited_keys": [
+      "E1"
+    ],
+    "fallback_reason": null
+  },
+  "search": {
+    "max_hops": 3,
+    "entity_top_k": 8,
+    "relation_top_k": 20,
+    "max_neighbors_per_entity": 10,
+    "path_beam_width": 20,
+    "max_paths": 20,
+    "timeout_seconds": 180
+  },
+  "stats": {
+    "duration_seconds": 0.0,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 1,
+    "relation_candidates": 1,
+    "paths_considered": 6,
+    "paths_returned": 6,
+    "adaptations": [],
+    "hop_diagnostics": [
+      {
+        "hop": 1,
+        "frontier_entities": 2,
+        "fetched_edges": 2,
+        "query_edge_limit": 40,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 3,
+        "beam_width": 20,
+        "retained_paths": 3
+      },
+      {
+        "hop": 2,
+        "frontier_entities": 3,
+        "fetched_edges": 3,
+        "query_edge_limit": 60,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 2,
+        "beam_width": 20,
+        "retained_paths": 2
+      },
+      {
+        "hop": 3,
+        "frontier_entities": 2,
+        "fetched_edges": 2,
+        "query_edge_limit": 40,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 1,
+        "beam_width": 20,
+        "retained_paths": 1
+      }
+    ],
+    "deduplicated_paths": 6,
+    "evidence_path_pool": 6
+  },
+  "config": {
+    "path": "search.toml",
+    "sha256": "daf69a6ecbf49ba8903ec16adc26296229cedece3d776cdd3287fe28d393c925"
+  },
+  "counts": {
+    "entity_candidates": 1,
+    "relation_candidates": 1,
+    "paths": 6,
+    "nodes": 4,
+    "edges": 3
+  },
+  "files": [
+    {
+      "path": "final/answer.md",
+      "sha256": "b37eb30e135761d1f2050d6668e18d13cffe7b0fb71f408d696f0a7c188d01f2",
+      "bytes": 48
+    },
+    {
+      "path": "final/graph.html",
+      "sha256": "a5fd7f9ff726d261487a26c0f0c8b82d40cff68c84e1097dfd3cf71006498d97",
+      "bytes": 12420
+    },
+    {
+      "path": "final/graph.json",
+      "sha256": "b60723aa72aa25c79e3426ea4ab284faf36b495c8f2f3e03f6fd40aa3c271dcc",
+      "bytes": 4046
+    },
+    {
+      "path": "final/query_result.json",
+      "sha256": "a6d1a896c43c1fffed2eb7326af99bf994a3a8e33e5c1d8644bf4e6248c7416c",
+      "bytes": 15520
+    },
+    {
+      "path": "work/01_candidates.json",
+      "sha256": "4c931176d2e5e1d7c33c7f60c1413c8edb8260a2733c65c577296f55e172af19",
+      "bytes": 622
+    },
+    {
+      "path": "work/02_ranked_paths.json",
+      "sha256": "3b1b4c5808c286891954fb035ad890cd7fce2ac9b451e580308b322895bdb79f",
+      "bytes": 14291
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,28 @@
+# Python 3.12 / Windows x86-64 closed-network handoff lock.
+# Regenerate when pyproject dependencies change; do not edit release contents in place.
+annotated-types==0.7.0
+anyio==4.14.0
+certifi==2026.6.17
+colorama==0.4.6
+distro==1.9.0
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.18
+iniconfig==2.3.0
+jiter==0.16.0
+openai==2.54.0
+packaging==26.2
+pluggy==1.6.0
+psycopg==3.3.4
+psycopg-binary==3.3.4
+pydantic==2.13.4
+pydantic_core==2.46.4
+Pygments==2.20.0
+pytest==8.4.2
+setuptools==81.0.0
+sniffio==1.3.1
+tqdm==4.68.3
+typing_extensions==4.15.0
+typing-inspection==0.4.2
+tzdata==2026.2

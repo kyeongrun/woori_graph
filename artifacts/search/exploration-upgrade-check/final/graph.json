@@ -1,0 +1,1759 @@
+{
+  "query": "공공감사에관한법률에서 감사기구의 장의 독립성 보장에 관한 규정은 무엇이며, 임용절차는 어떻게 되는가?",
+  "path_limit": 20,
+  "nodes": [
+    {
+      "id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "name": "감사기구의 독립성 보장에 필요한 사항",
+      "type": "CONCEPT",
+      "seed": true,
+      "candidate": true,
+      "candidate_rank": 1,
+      "candidate_score": 0.03225806,
+      "selected": true,
+      "level": 0
+    },
+    {
+      "id": "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+      "name": "중앙행정기관의 감사기구의 장의 임용권자",
+      "type": "PERSON",
+      "seed": true,
+      "candidate": true,
+      "candidate_rank": 4,
+      "candidate_score": 0.02903091,
+      "selected": true,
+      "level": 0
+    },
+    {
+      "id": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+      "name": "감사",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "f0338c76-2562-5c23-8918-5f9a90611880",
+      "name": "감사계획",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "name": "감사기구의 장",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 0
+    },
+    {
+      "id": "9d58db54-4358-5ded-8d99-b2c708382904",
+      "name": "감사담당자",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7",
+      "name": "감사원",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 3
+    },
+    {
+      "id": "3acf72ca-bd61-5a2e-96ef-5625af853d95",
+      "name": "감사정보시스템",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "2497c501-9e57-5fe2-a7a8-37d0a35dce03",
+      "name": "감사활동정보",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "bb8c1725-cfe6-5bdd-81d0-642314af10c6",
+      "name": "공공기관의 합의제감사기구의 위원",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 0
+    },
+    {
+      "id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "name": "규정",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 0
+    },
+    {
+      "id": "1f0194c8-bf29-5315-be43-333475a9dc8c",
+      "name": "소속 공무원",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "f63e4236-7262-5cd6-a6fc-fbfacee7a05e",
+      "name": "소속 직원",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "82b57eda-6945-5330-bbcd-02f958b51e09",
+      "name": "수당",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "fafaa2f2-759d-5628-9491-35d5cabe73dd",
+      "name": "업무의 적법성",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "d1a8f2f5-893e-5ab8-89cb-08349b8f7a1a",
+      "name": "외부 전문기관",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "5804e454-4044-5c44-8e98-24191b542f96",
+      "name": "외부전문가",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+      "name": "임용절차",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 0
+    },
+    {
+      "id": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "name": "자료",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "1badcec2-e872-5a85-9b4b-cbfe3344624f",
+      "name": "자체감사 대상기관",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "2d708735-7b8c-597f-b95b-5054bbc459f9",
+      "name": "전산정보시스템에 입력된 자료의 조사",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "7cc50b1f-70ff-5f6b-bd30-fe533294fd9d",
+      "name": "제33조",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 3
+    },
+    {
+      "id": "b8144377-e2a9-5729-a5fd-6bf84b492b49",
+      "name": "지방자치단체 감사기구의 장 임용권자",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 0
+    },
+    {
+      "id": "c226f7d0-7080-5057-9eba-1c0ab94814e0",
+      "name": "협조",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true,
+      "level": 2
+    },
+    {
+      "id": "b10a3ff3-8b91-5db5-9e2c-39b86bf03845",
+      "name": "감사활동의 독립성 보장에 필요한 사항",
+      "type": "CONCEPT",
+      "seed": true,
+      "candidate": true,
+      "candidate_rank": 2,
+      "candidate_score": 0.03149802,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "name": "감사기구의 장에 관한 규정",
+      "type": "LEGAL_INSTRUMENT",
+      "seed": true,
+      "candidate": true,
+      "candidate_rank": 3,
+      "candidate_score": 0.03100962,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "d0d71d81-ab81-5753-abf2-b99f59eea889",
+      "name": "감사업무 수행의 독립성",
+      "type": "CONCEPT",
+      "seed": true,
+      "candidate": true,
+      "candidate_rank": 5,
+      "candidate_score": 0.02786378,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "f9624360-9599-5d14-8025-a0d0bd6daa49",
+      "name": "공공감사에 관한 법률",
+      "type": "LEGAL_INSTRUMENT",
+      "seed": true,
+      "candidate": true,
+      "candidate_rank": 6,
+      "candidate_score": 0.01639344,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "a1b4acf2-fcd1-5ff0-be09-96d6213a0096",
+      "name": "독립성",
+      "type": "CONCEPT",
+      "seed": true,
+      "candidate": true,
+      "candidate_rank": 7,
+      "candidate_score": 0.01639344,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "683b83d0-5937-573d-a667-e1bb94fb78c2",
+      "name": "감사기구의 장을 임용하려는 중앙행정기관",
+      "type": "ORGANIZATION",
+      "seed": true,
+      "candidate": true,
+      "candidate_rank": 8,
+      "candidate_score": 0.01538462,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "52c43707-a90d-5fc5-859c-b5eb951db582",
+      "name": "감사기관",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "15327da0-568e-531b-9e57-c718cf9137b8",
+      "name": "감사원규칙",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "2b7b0dd4-6b35-5fbf-9f78-c71039be5ee4",
+      "name": "감사인",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "7a355be0-d51d-5a23-ad4b-6fe7bbce2aa4",
+      "name": "감사활동체계",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "a780befa-63c4-52eb-bb9c-14d30a50b2d7",
+      "name": "결격사유",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "b2c88c82-04af-51b3-8dcd-6ebade879d54",
+      "name": "공공기관",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "506e16d3-b646-5d5b-a440-ea5dd4f0b4a9",
+      "name": "보장에 관한 사항",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "c22bb0f3-77e4-56a3-851c-408da018ba68",
+      "name": "보험안내자료",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "a29e2ec4-2204-57b1-9b2d-55f46d30dc3b",
+      "name": "외부기관",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "29357e27-19f5-551d-8ea0-ebcb6824a45d",
+      "name": "운영절차",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "c8757de1-d2f8-5dbf-a2b6-dbdd460be6ff",
+      "name": "임용권자",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "8fec2a58-5a82-586a-9138-2a6eae7f7b02",
+      "name": "자격",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "004ead7d-ab5b-5e94-a0c5-94a5d479c374",
+      "name": "자체감사활동",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "56554be3-2151-541f-b758-7b1f8bdb6985",
+      "name": "지방자치단체",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "3506217c-1cad-5851-96a6-8592b6c4a98b",
+      "name": "지방자치단체 감사기구의 장",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "e7b48f94-22b9-56e6-811d-1ff70a623313",
+      "name": "직무",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    },
+    {
+      "id": "bdb40c75-6bcd-5df3-a80b-bf3e6b364bff",
+      "name": "합의제감사기구 위원의 임용",
+      "type": "OTHER",
+      "seed": false,
+      "candidate": true,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": false,
+      "level": 0
+    }
+  ],
+  "edges": [
+    {
+      "id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "target_name": "감사기구의 독립성 보장에 필요한 사항",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+          "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+          "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+          "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+          "source_ref": {
+            "article": "제5조",
+            "item_path": [
+              "5"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "노력을 하여야 한다",
+          "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+          "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+          "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+          "unit_kind": "terminal_item"
+        }
+      ],
+      "candidate": true,
+      "candidate_rank": 1,
+      "candidate_score": 0.03177806,
+      "selected": true
+    },
+    {
+      "id": "6c733c4e-84bc-54b0-8047-8ee57f649bbc",
+      "source": "bb8c1725-cfe6-5bdd-81d0-642314af10c6",
+      "source_name": "공공기관의 합의제감사기구의 위원",
+      "target": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "target_name": "규정",
+      "relation": "적용하지않다",
+      "polarity": "NEGATIVE",
+      "evidence_count": 1,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "4e8e947b-71d8-5ca4-a971-8fe2c6ccd478",
+          "relation_id": "6c733c4e-84bc-54b0-8047-8ee57f649bbc",
+          "semantic_unit_id": "35a3d29c-fd83-5e3b-b40e-cc2d4c96841d",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제6조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "공공기관의 합의제감사기구의 위원",
+          "raw_predicate": "준용하지 아니한다",
+          "raw_object": "규정",
+          "context_text": "##### 제6조 (합의제감사기구의 운영)\n제6조 제2항",
+          "unit_text": "합의제감사기구 위원의 임용, 임기, 자격, 직급, 결격사유 및 직무 등에 관한 사항은 제8조부터 제15조까지, 제20조, 제28조제2항, 제29조, 제38조제3항 및 제39조제5항의 감사기구의 장에 관한 규정을 준용한다. 다만, 공공기관의 합의제감사기구의 위원에 대하여는 제8조부터 제11조까지 및 제13조부터 제15조까지의 규정을 준용하지 아니한다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": true,
+      "candidate_rank": 4,
+      "candidate_score": 0.0276929,
+      "selected": true
+    },
+    {
+      "id": "991a86c5-3d6c-59f7-a5e2-1ebc32143ca3",
+      "source": "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+      "source_name": "중앙행정기관의 감사기구의 장의 임용권자",
+      "target": "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+      "target_name": "임용절차",
+      "relation": "수행하지않다",
+      "polarity": "NEGATIVE",
+      "evidence_count": 1,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "86b699a1-3136-5a0d-abeb-d2243dff85cc",
+          "relation_id": "991a86c5-3d6c-59f7-a5e2-1ebc32143ca3",
+          "semantic_unit_id": "7504d167-1c57-5deb-b702-c26b9ff4b0ea",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제9조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "중앙행정기관의 감사기구의 장의 임용권자",
+          "raw_predicate": "거치지 아니할 수 있다",
+          "raw_object": "임용절차",
+          "context_text": "##### 제9조 (감사기구의 장의 임기)\n제9조 제2항",
+          "unit_text": "중앙행정기관 및 지방자치단체의 감사기구의 장의 임용권자는 개방형직위에 임용된 감사기구의 장에 대하여 제39조제1항에 따른 심사결과 및 직무수행 실적을 고려하여 계속 근무하게 하여야 할 필요가 있는 경우에는 총임용기간이 5년을 넘지 아니하는 범위에서 제1항에 따른 임용기간을 연장할 수 있다. 이 경우 제8조제1항 후단 및 제2항에 따른 임용절차를 거치지 아니할 수 있다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": true,
+      "candidate_rank": 6,
+      "candidate_score": 0.02703196,
+      "selected": true
+    },
+    {
+      "id": "18520c2d-e291-5be8-a53e-34f8d4856447",
+      "source": "b8144377-e2a9-5729-a5fd-6bf84b492b49",
+      "source_name": "지방자치단체 감사기구의 장 임용권자",
+      "target": "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+      "target_name": "임용절차",
+      "relation": "수행하지않다",
+      "polarity": "NEGATIVE",
+      "evidence_count": 1,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "ce04b97a-8319-5ddf-b3d8-d616a8da5cb0",
+          "relation_id": "18520c2d-e291-5be8-a53e-34f8d4856447",
+          "semantic_unit_id": "7504d167-1c57-5deb-b702-c26b9ff4b0ea",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제9조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "지방자치단체의 감사기구의 장의 임용권자",
+          "raw_predicate": "거치지 아니할 수 있다",
+          "raw_object": "임용절차",
+          "context_text": "##### 제9조 (감사기구의 장의 임기)\n제9조 제2항",
+          "unit_text": "중앙행정기관 및 지방자치단체의 감사기구의 장의 임용권자는 개방형직위에 임용된 감사기구의 장에 대하여 제39조제1항에 따른 심사결과 및 직무수행 실적을 고려하여 계속 근무하게 하여야 할 필요가 있는 경우에는 총임용기간이 5년을 넘지 아니하는 범위에서 제1항에 따른 임용기간을 연장할 수 있다. 이 경우 제8조제1항 후단 및 제2항에 따른 임용절차를 거치지 아니할 수 있다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": true,
+      "candidate_rank": 13,
+      "candidate_score": 0.015625,
+      "selected": true
+    },
+    {
+      "id": "01731f47-d88d-5c87-8e60-2f745b13010f",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "2d708735-7b8c-597f-b95b-5054bbc459f9",
+      "target_name": "전산정보시스템에 입력된 자료의 조사",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "0841d09c-217e-54e1-93ee-8dafbb2358d1",
+          "relation_id": "01731f47-d88d-5c87-8e60-2f745b13010f",
+          "semantic_unit_id": "479799be-9c66-5398-87cf-cec27b3e617e",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제20조",
+            "item_path": [
+              "3"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "할 수 있다",
+          "raw_object": "전산정보시스템에 입력된 자료의 조사",
+          "context_text": "##### 제20조 (자료 제출 요구)\n제20조 제1항\n감사기구의 장은 자체감사를 위하여 필요할 때에는 자체감사 대상기관 또는 그 소속 공무원이나 직원에 대하여 다음 각 호의 조치를 할 수 있다.",
+          "unit_text": "전산정보시스템에 입력된 자료의 조사",
+          "unit_kind": "terminal_item"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "07438cbe-6a78-54ee-b9c6-0be58e67794c",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "3acf72ca-bd61-5a2e-96ef-5625af853d95",
+      "target_name": "감사정보시스템",
+      "relation": "작성하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "e828acd0-b34b-5bd8-b815-14f131d240af",
+          "relation_id": "07438cbe-6a78-54ee-b9c6-0be58e67794c",
+          "semantic_unit_id": "86c2a6ec-47cc-53eb-a631-e86e0f0cac53",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제36조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "입력ㆍ관리하여야 한다",
+          "raw_object": "감사정보시스템",
+          "context_text": "##### 제36조 (감사정보시스템)\n제36조 제2항",
+          "unit_text": "감사기구의 장은 감사계획, 감사결과, 이행결과 등 대통령령으로 정하는 감사활동정보를 감사정보시스템에 입력ㆍ관리하여야 하고, 감사원은 그 정보의 공동활용방안을 마련하여야 한다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "07ab8849-301f-59c1-ba0a-36dc51bffd2b",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "d1a8f2f5-893e-5ab8-89cb-08349b8f7a1a",
+      "target_name": "외부 전문기관",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "2f63ff7d-1599-59d1-a699-fa441de27e62",
+          "relation_id": "07ab8849-301f-59c1-ba0a-36dc51bffd2b",
+          "semantic_unit_id": "5cc5bc96-8994-5b26-9f0b-32a852c41ee4",
+          "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+          "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+          "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+          "source_ref": {
+            "article": "제7조",
+            "item_path": [],
+            "paragraph": 4
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "참여시킬 수 있다",
+          "raw_object": "외부 전문기관",
+          "context_text": "##### 제7조 (전문성)\n제7조 제4항",
+          "unit_text": "감사기구의 장은 전문지식이나 실무경험 등이 요구되는 분야를 감사할 때에는 외부 전문기관 또는 외부 전문가의 자문을 받거나 필요한 경우 감사에 참여시킬 수 있다.",
+          "unit_kind": "paragraph"
+        },
+        {
+          "relation_mention_id": "bec6a2cc-6abc-5183-ab3a-5bc7a37eb8fc",
+          "relation_id": "07ab8849-301f-59c1-ba0a-36dc51bffd2b",
+          "semantic_unit_id": "a5859edb-0f3c-5ae4-babf-070b85bfff46",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제27조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "참여시킬 수 있다",
+          "raw_object": "외부 전문기관",
+          "context_text": "##### 제27조 (외부전문가 등의 참여)\n제27조 제1항",
+          "unit_text": "감사기구의 장은 회계ㆍ보건ㆍ환경ㆍ건설 등 전문지식이나 실무경험 등이 요구되는 분야를 감사하는 경우 외부 전문기관 또는 외부전문가를 감사에 참여시킬 수 있다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "08455c82-1356-50c0-86b6-76ea5b60d8fa",
+      "source": "7cc50b1f-70ff-5f6b-bd30-fe533294fd9d",
+      "source_name": "제33조",
+      "target": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+      "target_name": "감사",
+      "relation": "적용하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "234ddeee-cad2-5963-be7a-3beb6b89078e",
+          "relation_id": "08455c82-1356-50c0-86b6-76ea5b60d8fa",
+          "semantic_unit_id": "274342d1-61fc-5701-aa61-f513bb3397a8",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제3조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "제33조",
+          "raw_predicate": "적용한다",
+          "raw_object": "감사",
+          "context_text": "##### 제3조 (적용 범위)\n제3조 제2항",
+          "unit_text": "제33조, 제34조 및 제36조제2항은 「지방자치법」 제185조에 따른 위임사무의 감사, 같은 법 제190조에 따른 자치사무의 감사 및 「물품관리법」 제7조제3항제1호에 따른 감사에 대하여 적용한다. 이 경우 제33조 및 제36조제2항 중 \"감사기구의 장\"은 \"중앙행정기관등의 장\"으로 본다. <개정 2021.1.12>",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "169909c2-58be-5fe6-8d23-8578c237dc9c",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "target_name": "자료",
+      "relation": "사용하지않다",
+      "polarity": "NEGATIVE",
+      "evidence_count": 1,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "67628408-e82e-5525-a18a-c57e0eede456",
+          "relation_id": "169909c2-58be-5fe6-8d23-8578c237dc9c",
+          "semantic_unit_id": "26c82d69-8745-5c9f-b5cb-f0390292f170",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제20조",
+            "item_path": [],
+            "paragraph": 5
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "이용할 수 없다",
+          "raw_object": "자료",
+          "context_text": "##### 제20조 (자료 제출 요구)\n제20조 제5항",
+          "unit_text": "감사기구의 장 및 감사담당자는 감사를 위하여 제출받은 정보 또는 자료를 감사 목적 외의 용도로 이용할 수 없다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "1b9529d6-904f-5619-867d-12d234f46da2",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "fafaa2f2-759d-5628-9491-35d5cabe73dd",
+      "target_name": "업무의 적법성",
+      "relation": "심사하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "592c3188-88ca-59f7-a951-5d221f8a8380",
+          "relation_id": "1b9529d6-904f-5619-867d-12d234f46da2",
+          "semantic_unit_id": "d3160811-edb0-53a8-a409-7ce6e05aa478",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제22조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "일상감사를 하여야 한다",
+          "raw_object": "업무의 적법성",
+          "context_text": "##### 제22조 (일상감사)\n제22조 제1항",
+          "unit_text": "감사기구의 장은 자체감사기구가 소속된 기관의 주요 업무 집행에 앞서 그 업무의 적법성ㆍ타당성 등을 점검ㆍ심사하는 일상감사를 하여야 한다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "24f93bed-08fa-5433-968a-4e1caaf16ac3",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "c226f7d0-7080-5057-9eba-1c0ab94814e0",
+      "target_name": "협조",
+      "relation": "요구하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "f4eb3264-92cb-56b9-9e94-0508f929f004",
+          "relation_id": "24f93bed-08fa-5433-968a-4e1caaf16ac3",
+          "semantic_unit_id": "1191e859-2513-587e-957b-78e717c8e4fb",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제30조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "요청할 수 있다",
+          "raw_object": "협조",
+          "context_text": "##### 제30조 (자체감사기구 간의 협조)\n제30조 제1항",
+          "unit_text": "감사기구의 장은 감사활동에 필요한 경우 다른 중앙행정기관등의 감사기구의 장에게 협조를 요청할 수 있다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "411f473a-78e2-5e60-957e-535a7b59b2b0",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "1badcec2-e872-5a85-9b4b-cbfe3344624f",
+      "target_name": "자체감사 대상기관",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "a9b7d612-27ea-5b0e-8506-f9e0c58ad5ff",
+          "relation_id": "411f473a-78e2-5e60-957e-535a7b59b2b0",
+          "semantic_unit_id": "72ac9cc7-8767-52f4-857c-66951ce3bcbd",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제20조",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "할 수 있다",
+          "raw_object": "자체감사 대상기관",
+          "context_text": "##### 제20조 (자료 제출 요구)\n제20조 제1항\n감사기구의 장은 자체감사를 위하여 필요할 때에는 자체감사 대상기관 또는 그 소속 공무원이나 직원에 대하여 다음 각 호의 조치를 할 수 있다.",
+          "unit_text": "출석ㆍ답변의 요구(「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 따른 정보통신망을 이용한 요구를 포함한다)",
+          "unit_kind": "terminal_item"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "4bef6be6-513f-5611-9b0d-23d62832a7a1",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "82b57eda-6945-5330-bbcd-02f958b51e09",
+      "target_name": "수당",
+      "relation": "지급하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "공공감사에 관한 법률",
+        "공공감사에 관한 법률 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "21a93220-80a1-53fd-8d28-84df1c5a35bc",
+          "relation_id": "4bef6be6-513f-5611-9b0d-23d62832a7a1",
+          "semantic_unit_id": "234ecbaf-fe18-5c63-a890-26c7ebab2385",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제28조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "지급할 수 있다",
+          "raw_object": "수당",
+          "context_text": "##### 제28조 (감사활동에 필요한 예산 편성)\n제28조 제2항",
+          "unit_text": "감사기구의 장 및 감사담당자에게는 대통령령으로 정하는 바에 따라 예산의 범위에서 수당과 그 밖에 자체감사에 필요한 경비를 지급할 수 있다.",
+          "unit_kind": "paragraph"
+        },
+        {
+          "relation_mention_id": "e1943642-14b2-53c4-8398-7fb987d17417",
+          "relation_id": "4bef6be6-513f-5611-9b0d-23d62832a7a1",
+          "semantic_unit_id": "e7cf32d8-209a-5008-a3cc-703fe88b3ade",
+          "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+          "document_title": "공공감사에 관한 법률 시행령",
+          "source_path": "공공감사에관한법률/시행령.md",
+          "source_ref": {
+            "article": "제16조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "지급할 수 있다",
+          "raw_object": "수당",
+          "context_text": "##### 제16조 (감사담당자 등에 대한 수당 등)\n제16조 제1항",
+          "unit_text": "법 제28조제2항에 따라 감사기구의 장 및 감사담당자에게는 예산의 범위에서 「공무원 수당 등에 관한 규정」, 「지방공무원 수당 등에 관한 규정」 또는 정관 등에서 정하는 바에 따라 수당을 지급할 수 있다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "78f63ab8-9210-59d2-9f41-c951fea61d0f",
+      "source": "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7",
+      "source_name": "감사원",
+      "target": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+      "target_name": "감사",
+      "relation": "수행하지않다",
+      "polarity": "NEGATIVE",
+      "evidence_count": 2,
+      "documents": [
+        "감사원법",
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "67681466-b104-5c51-abc7-1d438ee506e2",
+          "relation_id": "78f63ab8-9210-59d2-9f41-c951fea61d0f",
+          "semantic_unit_id": "cae98f84-43f2-5cc1-ae6b-a1d509f372fb",
+          "document_id": "7f170328-73fd-56ad-ac68-edbbdd715a11",
+          "document_title": "감사원법",
+          "source_path": "감사원법/법률.md",
+          "source_ref": {
+            "article": "제28조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "감사원",
+          "raw_predicate": "하지 아니할 수 있다",
+          "raw_object": "감사",
+          "context_text": "##### 제28조 (감사의 생략)\n제28조 제1항",
+          "unit_text": "감사원은 각 중앙관서ㆍ지방자치단체 및 「공공기관의 운영에 관한 법률」 제4조에 따른 공공기관(이하 \"공공기관\"이라 한다)의 장이 실시한 자체감사(自體監査)의 결과를 심사하여 자체감사가 적정하게 수행되고 있다고 인정하면 결산 확인 등에 지장이 없는 범위에서 일부 기관에 대한 감사의 일부 또는 전부를 하지 아니할 수 있다. <개정 2020.10.20>",
+          "unit_kind": "paragraph"
+        },
+        {
+          "relation_mention_id": "c6fc02c0-9bd7-5c18-bcfc-32a2de207dc6",
+          "relation_id": "78f63ab8-9210-59d2-9f41-c951fea61d0f",
+          "semantic_unit_id": "ef667045-161d-592f-8632-a7e476324d1d",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제35조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "감사원",
+          "raw_predicate": "하지 아니할 수 있다",
+          "raw_object": "감사",
+          "context_text": "##### 제35조 (감사원 감사의 대행)\n제35조 제2항",
+          "unit_text": "제1항에 따라 감사를 받은 기관에 대하여는 감사원 감사의 전부 또는 일부를 하지 아니할 수 있다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "7a3a521a-f4f4-54b7-96f1-1110703985e7",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "5804e454-4044-5c44-8e98-24191b542f96",
+      "target_name": "외부전문가",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "04fc93b1-4f61-59cb-ba50-324cbe157c29",
+          "relation_id": "7a3a521a-f4f4-54b7-96f1-1110703985e7",
+          "semantic_unit_id": "f943a862-16fc-5f9f-8661-d91b6ec4aa84",
+          "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+          "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+          "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+          "source_ref": {
+            "article": "제12조",
+            "item_path": [],
+            "paragraph": 3
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "구할 수 있다",
+          "raw_object": "외부전문가",
+          "context_text": "##### 제12조 (감사의 사전준비)\n제12조 제3항",
+          "unit_text": "감사기구의 장은 감사의 사전 준비를 위하여 법 제38조에 따라 감사원에 감사계획 또는 감사방법에 대한 자문 또는 인력지원을 요청하거나 외부전문가의 자문을 구할 수 있다.",
+          "unit_kind": "paragraph"
+        },
+        {
+          "relation_mention_id": "43777461-942f-5bc2-b226-215223037c4c",
+          "relation_id": "7a3a521a-f4f4-54b7-96f1-1110703985e7",
+          "semantic_unit_id": "a5859edb-0f3c-5ae4-babf-070b85bfff46",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제27조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "참여시킬 수 있다",
+          "raw_object": "외부전문가",
+          "context_text": "##### 제27조 (외부전문가 등의 참여)\n제27조 제1항",
+          "unit_text": "감사기구의 장은 회계ㆍ보건ㆍ환경ㆍ건설 등 전문지식이나 실무경험 등이 요구되는 분야를 감사하는 경우 외부 전문기관 또는 외부전문가를 감사에 참여시킬 수 있다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "f0338c76-2562-5c23-8918-5f9a90611880",
+      "target_name": "감사계획",
+      "relation": "작성하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 6,
+      "documents": [
+        "공공감사에 관한 법률",
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "cd910fd9-8fa9-5152-97e6-e9ea18049c59",
+          "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+          "semantic_unit_id": "83d5743f-a4a0-5b9a-bfd6-f2b03436b98f",
+          "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+          "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+          "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+          "source_ref": {
+            "article": "제13조",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "수립하여야 한다",
+          "raw_object": "감사계획",
+          "context_text": "##### 제13조 (감사계획의 수립 등)\n제13조 제1항\n감사기구의 장은 감사를 실시하기 전에 다음 각 호의 사항이 포함된 감사계획을 수립하여야 한다.",
+          "unit_text": "영 제11조제1항제1호부터 제5호까지의 사항",
+          "unit_kind": "terminal_item"
+        },
+        {
+          "relation_mention_id": "da466595-8554-5a2a-9434-96c1faf268fb",
+          "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+          "semantic_unit_id": "ab934def-de21-56c3-acaf-ddd00b0d59d3",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제19조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "수립하여",
+          "raw_object": "감사계획",
+          "context_text": "##### 제19조 (자체감사계획의 수립ㆍ실시)\n제19조 제1항",
+          "unit_text": "감사기구의 장은 자체감사 대상기관에 대한 감사계획을 수립하여 자체감사를 하여야 한다.",
+          "unit_kind": "paragraph"
+        },
+        {
+          "relation_mention_id": "5c8b515f-a2a2-5eda-913f-a3b0e8abf185",
+          "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+          "semantic_unit_id": "8ce937a1-57e4-51d2-a610-aecb82fb0440",
+          "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+          "document_title": "공공감사에 관한 법률 시행령",
+          "source_path": "공공감사에관한법률/시행령.md",
+          "source_ref": {
+            "article": "제11조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "수립하여야 한다",
+          "raw_object": "감사계획",
+          "context_text": "##### 제11조 (감사계획의 수립)\n제11조 제2항",
+          "unit_text": "감사기구의 장이 제1항에 따른 연간 감사계획에 포함되지 않은 자체감사를 하는 경우에는 제1항제1호부터 제6호까지의 사항이 포함된 감사계획을 별도로 수립하여야 한다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "92513c18-5482-5ce1-ad89-becf48b27fee",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "1f0194c8-bf29-5315-be43-333475a9dc8c",
+      "target_name": "소속 공무원",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "4fa279ec-60fb-5c0f-b548-98117b825bc8",
+          "relation_id": "92513c18-5482-5ce1-ad89-becf48b27fee",
+          "semantic_unit_id": "72ac9cc7-8767-52f4-857c-66951ce3bcbd",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제20조",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "할 수 있다",
+          "raw_object": "소속 공무원",
+          "context_text": "##### 제20조 (자료 제출 요구)\n제20조 제1항\n감사기구의 장은 자체감사를 위하여 필요할 때에는 자체감사 대상기관 또는 그 소속 공무원이나 직원에 대하여 다음 각 호의 조치를 할 수 있다.",
+          "unit_text": "출석ㆍ답변의 요구(「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 따른 정보통신망을 이용한 요구를 포함한다)",
+          "unit_kind": "terminal_item"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "cd680822-9626-5bc2-83d3-3b3889495edc",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+      "target_name": "감사",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "c675c011-6d9b-5775-81d7-ee619d737dea",
+          "relation_id": "cd680822-9626-5bc2-83d3-3b3889495edc",
+          "semantic_unit_id": "1868920b-6499-58b5-add7-ace920bc6cb0",
+          "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+          "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+          "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+          "source_ref": {
+            "article": "제16조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "실시하고",
+          "raw_object": "감사",
+          "context_text": "##### 제16조 (실지감사의 실시)\n제16조 제2항",
+          "unit_text": "감사기구의 장은 제13조제1항에 따른 감사계획에 따라 감사를 실시하고, 불가피한 사유가 있어 이를 변경하고자 할 때에는 지체 없이 감사대상기관 또는 부서에 이를 통보하여야 한다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "d32e372a-3348-5f48-aaf2-bc3242c1584c",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "f63e4236-7262-5cd6-a6fc-fbfacee7a05e",
+      "target_name": "소속 직원",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "공공감사에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "9c7a187b-55cc-5069-8732-2ecca7c97b04",
+          "relation_id": "d32e372a-3348-5f48-aaf2-bc3242c1584c",
+          "semantic_unit_id": "72ac9cc7-8767-52f4-857c-66951ce3bcbd",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제20조",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "할 수 있다",
+          "raw_object": "소속 직원",
+          "context_text": "##### 제20조 (자료 제출 요구)\n제20조 제1항\n감사기구의 장은 자체감사를 위하여 필요할 때에는 자체감사 대상기관 또는 그 소속 공무원이나 직원에 대하여 다음 각 호의 조치를 할 수 있다.",
+          "unit_text": "출석ㆍ답변의 요구(「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 따른 정보통신망을 이용한 요구를 포함한다)",
+          "unit_kind": "terminal_item"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "ec4ba28e-8746-5548-a337-44db53647f95",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "2497c501-9e57-5fe2-a7a8-37d0a35dce03",
+      "target_name": "감사활동정보",
+      "relation": "작성하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "공공감사에 관한 법률",
+        "공공감사에 관한 법률 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "e5591b8f-b442-5e11-a632-b3c661bfb18e",
+          "relation_id": "ec4ba28e-8746-5548-a337-44db53647f95",
+          "semantic_unit_id": "86c2a6ec-47cc-53eb-a631-e86e0f0cac53",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제36조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "입력ㆍ관리하여야 한다",
+          "raw_object": "감사활동정보",
+          "context_text": "##### 제36조 (감사정보시스템)\n제36조 제2항",
+          "unit_text": "감사기구의 장은 감사계획, 감사결과, 이행결과 등 대통령령으로 정하는 감사활동정보를 감사정보시스템에 입력ㆍ관리하여야 하고, 감사원은 그 정보의 공동활용방안을 마련하여야 한다.",
+          "unit_kind": "paragraph"
+        },
+        {
+          "relation_mention_id": "01ce2f88-7013-5806-b995-07615547afff",
+          "relation_id": "ec4ba28e-8746-5548-a337-44db53647f95",
+          "semantic_unit_id": "fce749dd-7ffe-51c9-973b-68f3178b96cc",
+          "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+          "document_title": "공공감사에 관한 법률 시행령",
+          "source_path": "공공감사에관한법률/시행령.md",
+          "source_ref": {
+            "article": "제20조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "입력하여야 한다",
+          "raw_object": "감사활동정보",
+          "context_text": "##### 제20조 (감사정보시스템의 구축ㆍ운영 등)\n제20조 제2항",
+          "unit_text": "감사기구의 장은 제19조에 따른 감사활동정보를 별표에 따른 시기에 맞추어 정보시스템에 입력하여야 한다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "fea918dc-2e72-512d-a502-687a7f5a7494",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "9d58db54-4358-5ded-8d99-b2c708382904",
+      "target_name": "감사담당자",
+      "relation": "제공하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "공공감사에 관한 법률",
+        "공공감사에 관한 법률 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "610a702e-b723-532c-96d0-d2512abe096c",
+          "relation_id": "fea918dc-2e72-512d-a502-687a7f5a7494",
+          "semantic_unit_id": "d05d6331-0b8c-5f06-966a-890e97b2705c",
+          "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+          "document_title": "공공감사에 관한 법률",
+          "source_path": "공공감사에관한법률/법률.md",
+          "source_ref": {
+            "article": "제21조",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "보내",
+          "raw_object": "감사담당자",
+          "context_text": "##### 제21조 (실지감사)",
+          "unit_text": "감사기구의 장은 자체감사 대상기관에 감사담당자를 보내 실지감사를 할 수 있다.",
+          "unit_kind": "paragraph"
+        },
+        {
+          "relation_mention_id": "703bc492-218a-58ed-bf6b-a905341c651d",
+          "relation_id": "fea918dc-2e72-512d-a502-687a7f5a7494",
+          "semantic_unit_id": "f412d40f-becf-53ec-bf19-4fe27bde7fbc",
+          "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+          "document_title": "공공감사에 관한 법률 시행령",
+          "source_path": "공공감사에관한법률/시행령.md",
+          "source_ref": {
+            "article": "제13조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "감사기구의 장",
+          "raw_predicate": "보내",
+          "raw_object": "감사담당자",
+          "context_text": "##### 제13조 (일상감사)\n제13조 제1항",
+          "unit_text": "법 제22조제1항에 따른 일상감사(이하 \"일상감사\"라 한다)는 제2항에 따른 집행부서의 장이 제출한 서류 등에 의하여 실시한다. 다만, 감사기구의 장이 필요하다고 인정할 때에는 감사담당자 등을 현지에 보내 실지감사를 할 수 있다.",
+          "unit_kind": "paragraph"
+        }
+      ],
+      "candidate": false,
+      "candidate_rank": null,
+      "candidate_score": 0.0,
+      "selected": true
+    },
+    {
+      "id": "6247a50a-5487-5a79-9981-797e5eaff9f3",
+      "source": "bdb40c75-6bcd-5df3-a80b-bf3e6b364bff",
+      "source_name": "합의제감사기구 위원의 임용",
+      "target": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "target_name": "감사기구의 장에 관한 규정",
+      "relation": "적용하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 2,
+      "candidate_score": 0.02808327,
+      "selected": false
+    },
+    {
+      "id": "3ae5b385-8e8a-5887-898d-76b3ad5475d7",
+      "source": "8fec2a58-5a82-586a-9138-2a6eae7f7b02",
+      "source_name": "자격",
+      "target": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "target_name": "감사기구의 장에 관한 규정",
+      "relation": "적용하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 3,
+      "candidate_score": 0.02777778,
+      "selected": false
+    },
+    {
+      "id": "ef7c9cad-b8ab-5373-b0da-7189cf6127e8",
+      "source": "a780befa-63c4-52eb-bb9c-14d30a50b2d7",
+      "source_name": "결격사유",
+      "target": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "target_name": "감사기구의 장에 관한 규정",
+      "relation": "적용하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 5,
+      "candidate_score": 0.02710623,
+      "selected": false
+    },
+    {
+      "id": "fdf018ce-1d4d-5ca4-87ba-2f8574581304",
+      "source": "f9624360-9599-5d14-8025-a0d0bd6daa49",
+      "source_name": "공공감사에 관한 법률",
+      "target": "7a355be0-d51d-5a23-ad4b-6fe7bbce2aa4",
+      "target_name": "감사활동체계",
+      "relation": "적용하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 7,
+      "candidate_score": 0.01639344,
+      "selected": false
+    },
+    {
+      "id": "6b25abb7-0658-5976-8445-a6697152d225",
+      "source": "15327da0-568e-531b-9e57-c718cf9137b8",
+      "source_name": "감사원규칙",
+      "target": "29357e27-19f5-551d-8ea0-ebcb6824a45d",
+      "target_name": "운영절차",
+      "relation": "규정하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 8,
+      "candidate_score": 0.01612903,
+      "selected": false
+    },
+    {
+      "id": "b2163a73-bb08-594b-830d-6149b2fb4a78",
+      "source": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "source_name": "규정",
+      "target": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "target_name": "규정",
+      "relation": "취소하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 9,
+      "candidate_score": 0.01612903,
+      "selected": false
+    },
+    {
+      "id": "250aa613-95db-5bcc-bd3f-cd0b0e36cba0",
+      "source": "f9624360-9599-5d14-8025-a0d0bd6daa49",
+      "source_name": "공공감사에 관한 법률",
+      "target": "004ead7d-ab5b-5e94-a0c5-94a5d479c374",
+      "target_name": "자체감사활동",
+      "relation": "적용하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 10,
+      "candidate_score": 0.01587302,
+      "selected": false
+    },
+    {
+      "id": "c28b0875-a871-5908-a061-5cdf587b33bf",
+      "source": "2b7b0dd4-6b35-5fbf-9f78-c71039be5ee4",
+      "source_name": "감사인",
+      "target": "a1b4acf2-fcd1-5ff0-be09-96d6213a0096",
+      "target_name": "독립성",
+      "relation": "관리하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 11,
+      "candidate_score": 0.01587302,
+      "selected": false
+    },
+    {
+      "id": "08772b37-e6f7-543a-9636-aeff95117e21",
+      "source": "52c43707-a90d-5fc5-859c-b5eb951db582",
+      "source_name": "감사기관",
+      "target": "a1b4acf2-fcd1-5ff0-be09-96d6213a0096",
+      "target_name": "독립성",
+      "relation": "관리하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 12,
+      "candidate_score": 0.015625,
+      "selected": false
+    },
+    {
+      "id": "11623327-c6e6-5f34-bb4a-2c40118e0de1",
+      "source": "a29e2ec4-2204-57b1-9b2d-55f46d30dc3b",
+      "source_name": "외부기관",
+      "target": "a1b4acf2-fcd1-5ff0-be09-96d6213a0096",
+      "target_name": "독립성",
+      "relation": "취득하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 14,
+      "candidate_score": 0.01538462,
+      "selected": false
+    },
+    {
+      "id": "28fc92dc-97d0-50e7-b3f0-27a6da535c3b",
+      "source": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "source_name": "감사기구의 장",
+      "target": "b10a3ff3-8b91-5db5-9e2c-39b86bf03845",
+      "target_name": "감사활동의 독립성 보장에 필요한 사항",
+      "relation": "준수하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 15,
+      "candidate_score": 0.01515152,
+      "selected": false
+    },
+    {
+      "id": "dce55cea-5e02-5359-967f-4caef6675a13",
+      "source": "f9624360-9599-5d14-8025-a0d0bd6daa49",
+      "source_name": "공공감사에 관한 법률",
+      "target": "56554be3-2151-541f-b758-7b1f8bdb6985",
+      "target_name": "지방자치단체",
+      "relation": "적용하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 16,
+      "candidate_score": 0.01515152,
+      "selected": false
+    },
+    {
+      "id": "e540dc9a-5b19-5237-b5ff-d99be2cd15da",
+      "source": "f9624360-9599-5d14-8025-a0d0bd6daa49",
+      "source_name": "공공감사에 관한 법률",
+      "target": "b2c88c82-04af-51b3-8dcd-6ebade879d54",
+      "target_name": "공공기관",
+      "relation": "적용하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 17,
+      "candidate_score": 0.01492537,
+      "selected": false
+    },
+    {
+      "id": "cefebf67-559f-5e07-abce-2c9b7824495b",
+      "source": "c22bb0f3-77e4-56a3-851c-408da018ba68",
+      "source_name": "보험안내자료",
+      "target": "506e16d3-b646-5d5b-a440-ea5dd4f0b4a9",
+      "target_name": "보장에 관한 사항",
+      "relation": "작성하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 18,
+      "candidate_score": 0.01470588,
+      "selected": false
+    },
+    {
+      "id": "880ccee0-5bf5-5d95-95f5-a3bd9092fcfa",
+      "source": "e7b48f94-22b9-56e6-811d-1ff70a623313",
+      "source_name": "직무",
+      "target": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "target_name": "감사기구의 장에 관한 규정",
+      "relation": "적용하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 19,
+      "candidate_score": 0.01449275,
+      "selected": false
+    },
+    {
+      "id": "9067a24f-80e9-5006-a0a8-e9925e096606",
+      "source": "3506217c-1cad-5851-96a6-8592b6c4a98b",
+      "source_name": "지방자치단체 감사기구의 장",
+      "target": "c8757de1-d2f8-5dbf-a2b6-dbdd460be6ff",
+      "target_name": "임용권자",
+      "relation": "규정하다",
+      "polarity": null,
+      "evidence_count": 0,
+      "documents": [],
+      "evidence": [],
+      "candidate": true,
+      "candidate_rank": 20,
+      "candidate_score": 0.01449275,
+      "selected": false
+    }
+  ],
+  "selected_counts": {
+    "nodes": 24,
+    "edges": 21
+  },
+  "context_counts": {
+    "nodes": 23,
+    "edges": 16
+  }
+}

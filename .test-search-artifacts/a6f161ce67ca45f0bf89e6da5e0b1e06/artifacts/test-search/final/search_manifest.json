@@ -1,0 +1,118 @@
+{
+  "run_id": "test-search",
+  "created_at": "2026-08-21T05:10:49.958899+00:00",
+  "query": "기관A와 위원회D",
+  "embedding": {
+    "model": "fake-search-embedding",
+    "dimension": 3
+  },
+  "answer": {
+    "mode": "deterministic",
+    "status": "not_configured",
+    "model": null,
+    "prompt_name": null,
+    "prompt_sha256": null,
+    "generated_at": null,
+    "citation_map": [],
+    "cited_keys": [],
+    "fallback_reason": null
+  },
+  "search": {
+    "max_hops": 3,
+    "entity_top_k": 8,
+    "relation_top_k": 20,
+    "max_neighbors_per_entity": 10,
+    "path_beam_width": 20,
+    "max_paths": 20,
+    "timeout_seconds": 180
+  },
+  "stats": {
+    "duration_seconds": 0.0,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 1,
+    "relation_candidates": 1,
+    "paths_considered": 6,
+    "paths_returned": 6,
+    "adaptations": [],
+    "hop_diagnostics": [
+      {
+        "hop": 1,
+        "frontier_entities": 2,
+        "fetched_edges": 2,
+        "query_edge_limit": 40,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 3,
+        "beam_width": 20,
+        "retained_paths": 3
+      },
+      {
+        "hop": 2,
+        "frontier_entities": 3,
+        "fetched_edges": 3,
+        "query_edge_limit": 60,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 2,
+        "beam_width": 20,
+        "retained_paths": 2
+      },
+      {
+        "hop": 3,
+        "frontier_entities": 2,
+        "fetched_edges": 2,
+        "query_edge_limit": 40,
+        "neighbor_limit_per_entity": 10,
+        "generated_paths": 1,
+        "beam_width": 20,
+        "retained_paths": 1
+      }
+    ],
+    "deduplicated_paths": 6,
+    "evidence_path_pool": 6
+  },
+  "config": {
+    "path": "search.toml",
+    "sha256": "daf69a6ecbf49ba8903ec16adc26296229cedece3d776cdd3287fe28d393c925"
+  },
+  "counts": {
+    "entity_candidates": 1,
+    "relation_candidates": 1,
+    "paths": 6,
+    "nodes": 4,
+    "edges": 3
+  },
+  "files": [
+    {
+      "path": "final/answer.md",
+      "sha256": "d4dbbf2cc727766b30d58ef0da8a2eecf54fdce08259d8fe9d381080104f8ff4",
+      "bytes": 1409
+    },
+    {
+      "path": "final/graph.html",
+      "sha256": "9a1e7718aa6038ed1e4d3fd8abdd58f94e1c9de8dc7a37fadf6ea1bedf081674",
+      "bytes": 12399
+    },
+    {
+      "path": "final/graph.json",
+      "sha256": "f72a7a2c1574e4ef5ce81c48f5815e88e7c3433109c4a708d38d06b0c662a0f2",
+      "bytes": 4039
+    },
+    {
+      "path": "final/query_result.json",
+      "sha256": "aff645d70bc3d69e0c292eb959560819f220d83b7b763e87a2df6b20f6ebc0f2",
+      "bytes": 16570
+    },
+    {
+      "path": "work/01_candidates.json",
+      "sha256": "5ef58b89a417007888351ee142f02f8bdf32fc41617d1cee7d7e2182481c445c",
+      "bytes": 615
+    },
+    {
+      "path": "work/02_ranked_paths.json",
+      "sha256": "94a1a06a96c5e2c99f24956441526fd19976a4d326e590ab159e1a7532b13228",
+      "bytes": 14283
+    }
+  ],
+  "passed": true
+}

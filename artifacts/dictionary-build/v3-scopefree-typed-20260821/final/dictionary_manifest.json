@@ -1,0 +1,102 @@
+﻿{
+    "dictionary_version":  "v3-scopefree-typed-20260821",
+    "created_at":  "2026-08-21T10:36:35.6339052+09:00",
+    "source_dictionary_version":  "v3-scopefree-20260820",
+    "type_assignment":  {
+                            "order":  "canonical_name_normalization_then_entity_type",
+                            "taxonomy":  [
+                                             "ORGANIZATION",
+                                             "PERSON",
+                                             "LEGAL_INSTRUMENT",
+                                             "CONCEPT",
+                                             "OTHER"
+                                         ],
+                            "mode":  "deterministic_rules_only",
+                            "prompt":  {
+                                           "path":  "prompts/entity_type_classify.ko.md",
+                                           "sha256":  "5752c7f62eff0ccd359d5998b235365732cff09b2de21dda14f4cf444af22edb",
+                                           "bytes":  1616,
+                                           "records":  null
+                                       }
+                        },
+    "inputs":  [
+                   {
+                       "path":  "runs/v3_scopefree_20260820/final/entity_dictionary.jsonl",
+                       "sha256":  "9da26ec93338bc020872a8c22b4164d28635cdeaab82646f4f34e2a433026ce7",
+                       "bytes":  10951234,
+                       "records":  10392
+                   },
+                   {
+                       "path":  "runs/v3_scopefree_20260820/final/relation_dictionary.jsonl",
+                       "sha256":  "1553215de112a4b62539bcadf1bd2dddcd772cd1ef19d85155fa2d0c924eb000",
+                       "bytes":  2166443,
+                       "records":  98
+                   },
+                   {
+                       "path":  "runs/v3_scopefree_20260820/work/02_raw_svo.jsonl",
+                       "sha256":  "ee0c168fd4d6e79ca39fdbf91db828b17a9f826d854850ee8d2fc9b7ff1acc54",
+                       "bytes":  23377376,
+                       "records":  23123
+                   }
+               ],
+    "program":  {
+                    "version":  "0.1.0",
+                    "git_commit":  null
+                },
+    "counts":  {
+                   "raw_entity_surface_names":  11317,
+                   "raw_predicates":  4013,
+                   "entities":  10392,
+                   "entity_types":  {
+                                        "CONCEPT":  4506,
+                                        "LEGAL_INSTRUMENT":  291,
+                                        "ORGANIZATION":  631,
+                                        "OTHER":  3630,
+                                        "PERSON":  1334
+                                    },
+                   "relation_types":  98,
+                   "entity_aliases":  13894,
+                   "relation_aliases":  6045
+               },
+    "checks":  {
+                   "entity_aliases_have_no_conflicts":  true,
+                   "relation_aliases_have_no_conflicts":  true,
+                   "entity_ids_unique":  true,
+                   "relation_type_ids_unique":  true,
+                   "entity_canonical_names_unique":  true,
+                   "relation_canonical_names_unique":  true,
+                   "entity_ids_are_stable_uuids":  true,
+                   "all_entity_types_present":  true,
+                   "all_entity_types_valid":  true,
+                   "relation_type_ids_are_stable_uuids":  true,
+                   "canonical_entity_alias_is_first":  true,
+                   "canonical_relation_alias_is_first":  true,
+                   "no_scope_fields":  true,
+                   "no_global_self_reference_aliases":  true,
+                   "no_pure_numeric_entities":  true,
+                   "all_raw_entities_mapped":  true,
+                   "all_raw_predicates_mapped":  true,
+                   "relation_type_count_is_expected":  true,
+                   "relation_type_count_at_most_100":  true
+               },
+    "outputs":  [
+                    {
+                        "path":  "artifacts/dictionary-build/v3-scopefree-typed-20260821/final/entity_dictionary.jsonl",
+                        "sha256":  "0c174e8ed7c8cbf6f008e1bade844b95c22d11e2e4f7d57e74e70ec72d572ca3",
+                        "bytes":  11218606,
+                        "records":  10392
+                    },
+                    {
+                        "path":  "artifacts/dictionary-build/v3-scopefree-typed-20260821/final/relation_dictionary.jsonl",
+                        "sha256":  "1553215de112a4b62539bcadf1bd2dddcd772cd1ef19d85155fa2d0c924eb000",
+                        "bytes":  2166443,
+                        "records":  98
+                    },
+                    {
+                        "path":  "artifacts/dictionary-build/v3-scopefree-typed-20260821/final/dictionary_audit.json",
+                        "sha256":  "16cba99d947c2037cda7dcfbb55b26fff68838e2af6190444393c243a8304c57",
+                        "bytes":  1389,
+                        "records":  null
+                    }
+                ]
+}

@@ -1,0 +1,354 @@
+{
+  "query": "‘친족’와 ‘동거인’는 ‘구조금의 지급’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "entities": [
+    {
+      "entity_id": "5f7bd83b-d6ef-5596-8eed-a5e2b4951d15",
+      "canonical_name": "구조금의 지급방법",
+      "entity_type": "OTHER",
+      "score": 0.03055037313432836,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "canonical_name": "구조금의 지급",
+      "entity_type": "OTHER",
+      "score": 0.029273504273504274,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "c64dd8a3-e2fd-51a7-a7a6-604bbd387e2c",
+      "canonical_name": "제공의 법적 근거",
+      "entity_type": "OTHER",
+      "score": 0.028850145288501453,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "b1610daa-629f-506f-a28d-7b00de53f4cb",
+      "canonical_name": "구조금 지급요건 사항",
+      "entity_type": "OTHER",
+      "score": 0.028594771241830064,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "18e297fe-cd33-5e59-aeea-bd8698584ceb",
+      "canonical_name": "관계 법률",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "canonical_name": "구조금",
+      "entity_type": "OTHER",
+      "score": 0.01639344262295082,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "canonical_name": "동거인",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "entity_id": "82fb92bf-c443-57c0-b719-14adece2c3f2",
+      "canonical_name": "부동산 관련 권리",
+      "entity_type": "OTHER",
+      "score": 0.016129032258064516,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "271c73c5-8e00-5e68-9ee8-e9aec8a108d1",
+      "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "source_name": "친족",
+      "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+      "relation_type_name": "지급하지않다",
+      "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "target_name": "구조금",
+      "score": 0.03252247488101534,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "f8066dc9-de30-5086-bf4f-dffae6caf190",
+      "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "source_name": "동거인",
+      "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+      "relation_type_name": "지급하지않다",
+      "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "target_name": "구조금",
+      "score": 0.032266458495966696,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "e08bc1a5-6ffb-542e-8826-f9d592a377de",
+      "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "source_name": "동거인",
+      "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+      "relation_type_name": "신청하다",
+      "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "target_name": "구조금의 지급",
+      "score": 0.03125763125763126,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "db916f86-e25d-5baa-afce-526ae89b3bf6",
+      "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "source_name": "친족",
+      "relation_type_id": "0d3e7dee-6f42-56c2-b732-bff395707c0e",
+      "relation_type_name": "신청하다",
+      "target_entity_id": "990e62f0-f36e-577a-8ab6-531bda68fd22",
+      "target_name": "구조금의 지급",
+      "score": 0.03125,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "7207b5b1-9e61-5d68-bb28-e614a88cd183",
+      "source_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "source_name": "구조금",
+      "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+      "relation_type_name": "지급하지않다",
+      "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "target_name": "구조금",
+      "score": 0.0304147465437788,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "1d39deaa-5c9c-56d6-b4a3-f1b9359efaae",
+      "source_entity_id": "4624ccaf-1d1b-55e4-ab4c-4ad2df88318e",
+      "source_name": "사람",
+      "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+      "relation_type_name": "지급하지않다",
+      "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "target_name": "구조금",
+      "score": 0.028404512489927477,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "0a75521d-5d76-5b7d-a062-f02a1b07c99a",
+      "source_entity_id": "f28e7fb7-9e2f-56e5-b37a-bea2ca3ca8d2",
+      "source_name": "친족",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "target_name": "규정",
+      "score": 0.026878868258178604,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "2ab8f8f1-86c5-5f79-95a0-8d3df8ec0e0a",
+      "source_entity_id": "1839c0a0-22b8-567a-83a6-d3f55cf48ec3",
+      "source_name": "구조금 신청인",
+      "relation_type_id": "b9d7854b-f9dd-5326-930c-1a8ab2b55de0",
+      "relation_type_name": "지급하다",
+      "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "target_name": "구조금",
+      "score": 0.026515151515151516,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "3a8531d9-1a22-5e81-8f35-435e5bec95cc",
+      "source_entity_id": "e98f43bd-5019-5800-886e-2303d004f554",
+      "source_name": "동거인",
+      "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+      "relation_type_name": "적용하다",
+      "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "target_name": "규정",
+      "score": 0.026515151515151516,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "da40ff93-2a93-55aa-b580-06bb61c33f23",
+      "source_entity_id": "701ee6a5-af83-5345-b179-640096a7f2a7",
+      "source_name": "기관",
+      "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+      "relation_type_name": "지급하지않다",
+      "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "target_name": "구조금",
+      "score": 0.025708635464733027,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "78e69b97-4893-5fbb-92c4-16c73fbc5e12",
+      "source_entity_id": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "source_name": "위원회",
+      "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+      "relation_type_name": "규정하다",
+      "target_entity_id": "5f7bd83b-d6ef-5596-8eed-a5e2b4951d15",
+      "target_name": "구조금의 지급방법",
+      "score": 0.02399425287356322,
+      "matched_by": [
+        "keyword",
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "10d62a43-f427-5244-ab46-cf43605773fe",
+      "source_entity_id": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "source_name": "위원회",
+      "relation_type_id": "b9d7854b-f9dd-5326-930c-1a8ab2b55de0",
+      "relation_type_name": "지급하다",
+      "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "target_name": "구조금",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "6b298511-8b39-5a15-9fa5-bc7ef6313156",
+      "source_entity_id": "a7ff464d-426a-5e63-8716-1f96bde06618",
+      "source_name": "관계인",
+      "relation_type_id": "8bc85660-2267-5ad0-b956-45147bf6bc37",
+      "relation_type_name": "처벌하다",
+      "target_entity_id": "8aedb767-b6bb-5824-9c1b-fbf84b552089",
+      "target_name": "벌금",
+      "score": 0.014925373134328358,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "e3b46f99-adc3-5d6c-90bb-3592cb548906",
+      "source_entity_id": "6bb8955a-e2e1-53cf-93af-f877404c2583",
+      "source_name": "특수관계인",
+      "relation_type_id": "8bc85660-2267-5ad0-b956-45147bf6bc37",
+      "relation_type_name": "처벌하다",
+      "target_entity_id": "8aedb767-b6bb-5824-9c1b-fbf84b552089",
+      "target_name": "벌금",
+      "score": 0.014705882352941176,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "45b3d759-4f63-5cfc-92cc-4630fa5ba2df",
+      "source_entity_id": "5e955110-76c5-549f-be1d-06934fe3e5d9",
+      "source_name": "신고자",
+      "relation_type_id": "f00ec97d-58e5-5508-ab9a-208244d5799c",
+      "relation_type_name": "지급하지않다",
+      "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "target_name": "구조금",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "58c968e7-bf37-5330-845d-f0d44047901d",
+      "source_entity_id": "a7ff464d-426a-5e63-8716-1f96bde06618",
+      "source_name": "관계인",
+      "relation_type_id": "8bc85660-2267-5ad0-b956-45147bf6bc37",
+      "relation_type_name": "처벌하다",
+      "target_entity_id": "5945ba4f-2e65-5340-8470-1ad15c0abde8",
+      "target_name": "징역",
+      "score": 0.014492753623188406,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "7039c78d-7ce9-5893-812a-a4d5b86272bc",
+      "source_entity_id": "0d26c636-c42e-5721-8cc7-cd0fc295c10b",
+      "source_name": "국민권익위원회",
+      "relation_type_id": "b9d7854b-f9dd-5326-930c-1a8ab2b55de0",
+      "relation_type_name": "지급하다",
+      "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "target_name": "구조금",
+      "score": 0.014285714285714285,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "2aa51b35-81d0-5de6-a977-0322eac1fd14",
+      "source_entity_id": "6bb8955a-e2e1-53cf-93af-f877404c2583",
+      "source_name": "특수관계인",
+      "relation_type_id": "8bc85660-2267-5ad0-b956-45147bf6bc37",
+      "relation_type_name": "처벌하다",
+      "target_entity_id": "5945ba4f-2e65-5340-8470-1ad15c0abde8",
+      "target_name": "징역",
+      "score": 0.014084507042253521,
+      "matched_by": [
+        "vector"
+      ]
+    },
+    {
+      "relation_id": "928b97ed-1f40-5e1f-bb8c-b5beece76717",
+      "source_entity_id": "e3bff199-ae36-5a71-88a8-6612acf97f76",
+      "source_name": "위원장",
+      "relation_type_id": "b9d7854b-f9dd-5326-930c-1a8ab2b55de0",
+      "relation_type_name": "지급하다",
+      "target_entity_id": "82dc1abd-0287-51f6-9450-58d827ba2595",
+      "target_name": "구조금",
+      "score": 0.014084507042253521,
+      "matched_by": [
+        "keyword"
+      ]
+    },
+    {
+      "relation_id": "504df030-e7e4-5d51-8d60-bfa1248c3f58",
+      "source_entity_id": "0bf2b3f6-3ba1-522f-842e-99c03bb47f9a",
+      "source_name": "대주주의 특수관계인",
+      "relation_type_id": "8bc85660-2267-5ad0-b956-45147bf6bc37",
+      "relation_type_name": "처벌하다",
+      "target_entity_id": "8aedb767-b6bb-5824-9c1b-fbf84b552089",
+      "target_name": "벌금",
+      "score": 0.013888888888888888,
+      "matched_by": [
+        "vector"
+      ]
+    }
+  ]
+}

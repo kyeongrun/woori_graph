@@ -1,0 +1,4885 @@
+{
+  "query": "공공감사에관한법률에서 감사기구의 장의 독립성 보장에 관한 규정은 무엇이며, 임용절차는 어떻게 되는가?",
+  "stats": {
+    "duration_seconds": 8.547,
+    "timed_out": false,
+    "max_hops_requested": 3,
+    "max_hops_reached": 3,
+    "entity_candidates": 8,
+    "relation_candidates": 20,
+    "paths_considered": 5341,
+    "paths_returned": 50,
+    "adaptations": [],
+    "hop_diagnostics": [
+      {
+        "hop": 1,
+        "frontier_entities": 30,
+        "fetched_edges": 407,
+        "query_edge_limit": 3000,
+        "neighbor_limit_per_entity": 50,
+        "generated_paths": 428,
+        "beam_width": 160,
+        "retained_paths": 160
+      },
+      {
+        "hop": 2,
+        "frontier_entities": 130,
+        "fetched_edges": 1959,
+        "query_edge_limit": 5000,
+        "neighbor_limit_per_entity": 50,
+        "generated_paths": 2601,
+        "beam_width": 160,
+        "retained_paths": 160
+      },
+      {
+        "hop": 3,
+        "frontier_entities": 93,
+        "fetched_edges": 1583,
+        "query_edge_limit": 5000,
+        "neighbor_limit_per_entity": 50,
+        "generated_paths": 2312,
+        "beam_width": 160,
+        "retained_paths": 160
+      }
+    ],
+    "deduplicated_paths": 5341,
+    "evidence_path_pool": 150
+  },
+  "paths": [
+    {
+      "start_entity_id": "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+      "start_name": "중앙행정기관의 감사기구의 장의 임용권자",
+      "end_entity_id": "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+      "end_name": "임용절차",
+      "hops": 1,
+      "score": 1.91914225,
+      "document_ids": [
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+        "1981ea28-5d45-53a0-99ac-d3e1cb75fe21"
+      ],
+      "traversed_entity_names": [
+        "중앙행정기관의 감사기구의 장의 임용권자",
+        "임용절차"
+      ],
+      "edges": [
+        {
+          "relation_id": "991a86c5-3d6c-59f7-a5e2-1ebc32143ca3",
+          "source_entity_id": "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+          "source_name": "중앙행정기관의 감사기구의 장의 임용권자",
+          "relation_type_id": "179b940f-26ea-5d99-8448-7cb76282cf38",
+          "relation_type_name": "수행하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+          "target_name": "임용절차",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "86b699a1-3136-5a0d-abeb-d2243dff85cc",
+              "relation_id": "991a86c5-3d6c-59f7-a5e2-1ebc32143ca3",
+              "semantic_unit_id": "7504d167-1c57-5deb-b702-c26b9ff4b0ea",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제9조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "중앙행정기관의 감사기구의 장의 임용권자",
+              "raw_predicate": "거치지 아니할 수 있다",
+              "raw_object": "임용절차",
+              "context_text": "##### 제9조 (감사기구의 장의 임기)\n제9조 제2항",
+              "unit_text": "중앙행정기관 및 지방자치단체의 감사기구의 장의 임용권자는 개방형직위에 임용된 감사기구의 장에 대하여 제39조제1항에 따른 심사결과 및 직무수행 실적을 고려하여 계속 근무하게 하여야 할 필요가 있는 경우에는 총임용기간이 5년을 넘지 아니하는 범위에서 제1항에 따른 임용기간을 연장할 수 있다. 이 경우 제8조제1항 후단 및 제2항에 따른 임용절차를 거치지 아니할 수 있다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+      "end_name": "감사기구의 장",
+      "hops": 1,
+      "score": 1.73610097,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+      "start_name": "중앙행정기관의 감사기구의 장의 임용권자",
+      "end_entity_id": "b8144377-e2a9-5729-a5fd-6bf84b492b49",
+      "end_name": "지방자치단체 감사기구의 장 임용권자",
+      "hops": 2,
+      "score": 1.72623423,
+      "document_ids": [
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+        "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+        "b8144377-e2a9-5729-a5fd-6bf84b492b49"
+      ],
+      "traversed_entity_names": [
+        "중앙행정기관의 감사기구의 장의 임용권자",
+        "임용절차",
+        "지방자치단체 감사기구의 장 임용권자"
+      ],
+      "edges": [
+        {
+          "relation_id": "991a86c5-3d6c-59f7-a5e2-1ebc32143ca3",
+          "source_entity_id": "2f3ed0cd-98a4-5400-9a82-f901c38bd8a3",
+          "source_name": "중앙행정기관의 감사기구의 장의 임용권자",
+          "relation_type_id": "179b940f-26ea-5d99-8448-7cb76282cf38",
+          "relation_type_name": "수행하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+          "target_name": "임용절차",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "86b699a1-3136-5a0d-abeb-d2243dff85cc",
+              "relation_id": "991a86c5-3d6c-59f7-a5e2-1ebc32143ca3",
+              "semantic_unit_id": "7504d167-1c57-5deb-b702-c26b9ff4b0ea",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제9조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "중앙행정기관의 감사기구의 장의 임용권자",
+              "raw_predicate": "거치지 아니할 수 있다",
+              "raw_object": "임용절차",
+              "context_text": "##### 제9조 (감사기구의 장의 임기)\n제9조 제2항",
+              "unit_text": "중앙행정기관 및 지방자치단체의 감사기구의 장의 임용권자는 개방형직위에 임용된 감사기구의 장에 대하여 제39조제1항에 따른 심사결과 및 직무수행 실적을 고려하여 계속 근무하게 하여야 할 필요가 있는 경우에는 총임용기간이 5년을 넘지 아니하는 범위에서 제1항에 따른 임용기간을 연장할 수 있다. 이 경우 제8조제1항 후단 및 제2항에 따른 임용절차를 거치지 아니할 수 있다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        },
+        {
+          "relation_id": "18520c2d-e291-5be8-a53e-34f8d4856447",
+          "source_entity_id": "b8144377-e2a9-5729-a5fd-6bf84b492b49",
+          "source_name": "지방자치단체 감사기구의 장 임용권자",
+          "relation_type_id": "179b940f-26ea-5d99-8448-7cb76282cf38",
+          "relation_type_name": "수행하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "1981ea28-5d45-53a0-99ac-d3e1cb75fe21",
+          "target_name": "임용절차",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "ce04b97a-8319-5ddf-b3d8-d616a8da5cb0",
+              "relation_id": "18520c2d-e291-5be8-a53e-34f8d4856447",
+              "semantic_unit_id": "7504d167-1c57-5deb-b702-c26b9ff4b0ea",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제9조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "지방자치단체의 감사기구의 장의 임용권자",
+              "raw_predicate": "거치지 아니할 수 있다",
+              "raw_object": "임용절차",
+              "context_text": "##### 제9조 (감사기구의 장의 임기)\n제9조 제2항",
+              "unit_text": "중앙행정기관 및 지방자치단체의 감사기구의 장의 임용권자는 개방형직위에 임용된 감사기구의 장에 대하여 제39조제1항에 따른 심사결과 및 직무수행 실적을 고려하여 계속 근무하게 하여야 할 필요가 있는 경우에는 총임용기간이 5년을 넘지 아니하는 범위에서 제1항에 따른 임용기간을 연장할 수 있다. 이 경우 제8조제1항 후단 및 제2항에 따른 임용절차를 거치지 아니할 수 있다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "f0338c76-2562-5c23-8918-5f9a90611880",
+      "end_name": "감사계획",
+      "hops": 2,
+      "score": 1.68417475,
+      "document_ids": [
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "f0338c76-2562-5c23-8918-5f9a90611880"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사계획"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "8f7bd35b-f079-5532-9deb-6b746e9250a4",
+          "relation_type_name": "작성하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "f0338c76-2562-5c23-8918-5f9a90611880",
+          "target_name": "감사계획",
+          "evidence_count": 6,
+          "evidences": [
+            {
+              "relation_mention_id": "cd910fd9-8fa9-5152-97e6-e9ea18049c59",
+              "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+              "semantic_unit_id": "83d5743f-a4a0-5b9a-bfd6-f2b03436b98f",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제13조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "수립하여야 한다",
+              "raw_object": "감사계획",
+              "context_text": "##### 제13조 (감사계획의 수립 등)\n제13조 제1항\n감사기구의 장은 감사를 실시하기 전에 다음 각 호의 사항이 포함된 감사계획을 수립하여야 한다.",
+              "unit_text": "영 제11조제1항제1호부터 제5호까지의 사항",
+              "unit_kind": "terminal_item"
+            },
+            {
+              "relation_mention_id": "da466595-8554-5a2a-9434-96c1faf268fb",
+              "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+              "semantic_unit_id": "ab934def-de21-56c3-acaf-ddd00b0d59d3",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제19조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "수립하여",
+              "raw_object": "감사계획",
+              "context_text": "##### 제19조 (자체감사계획의 수립ㆍ실시)\n제19조 제1항",
+              "unit_text": "감사기구의 장은 자체감사 대상기관에 대한 감사계획을 수립하여 자체감사를 하여야 한다.",
+              "unit_kind": "paragraph"
+            },
+            {
+              "relation_mention_id": "5c8b515f-a2a2-5eda-913f-a3b0e8abf185",
+              "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+              "semantic_unit_id": "8ce937a1-57e4-51d2-a610-aecb82fb0440",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "수립하여야 한다",
+              "raw_object": "감사계획",
+              "context_text": "##### 제11조 (감사계획의 수립)\n제11조 제2항",
+              "unit_text": "감사기구의 장이 제1항에 따른 연간 감사계획에 포함되지 않은 자체감사를 하는 경우에는 제1항제1호부터 제6호까지의 사항이 포함된 감사계획을 별도로 수립하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "82b57eda-6945-5330-bbcd-02f958b51e09",
+      "end_name": "수당",
+      "hops": 2,
+      "score": 1.67534873,
+      "document_ids": [
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "82b57eda-6945-5330-bbcd-02f958b51e09"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "수당"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "4bef6be6-513f-5611-9b0d-23d62832a7a1",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "b9d7854b-f9dd-5326-930c-1a8ab2b55de0",
+          "relation_type_name": "지급하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "82b57eda-6945-5330-bbcd-02f958b51e09",
+          "target_name": "수당",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "21a93220-80a1-53fd-8d28-84df1c5a35bc",
+              "relation_id": "4bef6be6-513f-5611-9b0d-23d62832a7a1",
+              "semantic_unit_id": "234ecbaf-fe18-5c63-a890-26c7ebab2385",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제28조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "지급할 수 있다",
+              "raw_object": "수당",
+              "context_text": "##### 제28조 (감사활동에 필요한 예산 편성)\n제28조 제2항",
+              "unit_text": "감사기구의 장 및 감사담당자에게는 대통령령으로 정하는 바에 따라 예산의 범위에서 수당과 그 밖에 자체감사에 필요한 경비를 지급할 수 있다.",
+              "unit_kind": "paragraph"
+            },
+            {
+              "relation_mention_id": "e1943642-14b2-53c4-8398-7fb987d17417",
+              "relation_id": "4bef6be6-513f-5611-9b0d-23d62832a7a1",
+              "semantic_unit_id": "e7cf32d8-209a-5008-a3cc-703fe88b3ade",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제16조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "지급할 수 있다",
+              "raw_object": "수당",
+              "context_text": "##### 제16조 (감사담당자 등에 대한 수당 등)\n제16조 제1항",
+              "unit_text": "법 제28조제2항에 따라 감사기구의 장 및 감사담당자에게는 예산의 범위에서 「공무원 수당 등에 관한 규정」, 「지방공무원 수당 등에 관한 규정」 또는 정관 등에서 정하는 바에 따라 수당을 지급할 수 있다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "2497c501-9e57-5fe2-a7a8-37d0a35dce03",
+      "end_name": "감사활동정보",
+      "hops": 2,
+      "score": 1.67534873,
+      "document_ids": [
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "2497c501-9e57-5fe2-a7a8-37d0a35dce03"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사활동정보"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "ec4ba28e-8746-5548-a337-44db53647f95",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "8f7bd35b-f079-5532-9deb-6b746e9250a4",
+          "relation_type_name": "작성하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "2497c501-9e57-5fe2-a7a8-37d0a35dce03",
+          "target_name": "감사활동정보",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "e5591b8f-b442-5e11-a632-b3c661bfb18e",
+              "relation_id": "ec4ba28e-8746-5548-a337-44db53647f95",
+              "semantic_unit_id": "86c2a6ec-47cc-53eb-a631-e86e0f0cac53",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제36조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "입력ㆍ관리하여야 한다",
+              "raw_object": "감사활동정보",
+              "context_text": "##### 제36조 (감사정보시스템)\n제36조 제2항",
+              "unit_text": "감사기구의 장은 감사계획, 감사결과, 이행결과 등 대통령령으로 정하는 감사활동정보를 감사정보시스템에 입력ㆍ관리하여야 하고, 감사원은 그 정보의 공동활용방안을 마련하여야 한다.",
+              "unit_kind": "paragraph"
+            },
+            {
+              "relation_mention_id": "01ce2f88-7013-5806-b995-07615547afff",
+              "relation_id": "ec4ba28e-8746-5548-a337-44db53647f95",
+              "semantic_unit_id": "fce749dd-7ffe-51c9-973b-68f3178b96cc",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "입력하여야 한다",
+              "raw_object": "감사활동정보",
+              "context_text": "##### 제20조 (감사정보시스템의 구축ㆍ운영 등)\n제20조 제2항",
+              "unit_text": "감사기구의 장은 제19조에 따른 감사활동정보를 별표에 따른 시기에 맞추어 정보시스템에 입력하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "9d58db54-4358-5ded-8d99-b2c708382904",
+      "end_name": "감사담당자",
+      "hops": 2,
+      "score": 1.67534873,
+      "document_ids": [
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "9d58db54-4358-5ded-8d99-b2c708382904"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사담당자"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "fea918dc-2e72-512d-a502-687a7f5a7494",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "8d1e00ac-ea54-5ddf-8674-7d34bee75f67",
+          "relation_type_name": "제공하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "9d58db54-4358-5ded-8d99-b2c708382904",
+          "target_name": "감사담당자",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "610a702e-b723-532c-96d0-d2512abe096c",
+              "relation_id": "fea918dc-2e72-512d-a502-687a7f5a7494",
+              "semantic_unit_id": "d05d6331-0b8c-5f06-966a-890e97b2705c",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제21조",
+                "item_path": [],
+                "paragraph": null
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "보내",
+              "raw_object": "감사담당자",
+              "context_text": "##### 제21조 (실지감사)",
+              "unit_text": "감사기구의 장은 자체감사 대상기관에 감사담당자를 보내 실지감사를 할 수 있다.",
+              "unit_kind": "paragraph"
+            },
+            {
+              "relation_mention_id": "703bc492-218a-58ed-bf6b-a905341c651d",
+              "relation_id": "fea918dc-2e72-512d-a502-687a7f5a7494",
+              "semantic_unit_id": "f412d40f-becf-53ec-bf19-4fe27bde7fbc",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제13조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "보내",
+              "raw_object": "감사담당자",
+              "context_text": "##### 제13조 (일상감사)\n제13조 제1항",
+              "unit_text": "법 제22조제1항에 따른 일상감사(이하 \"일상감사\"라 한다)는 제2항에 따른 집행부서의 장이 제출한 서류 등에 의하여 실시한다. 다만, 감사기구의 장이 필요하다고 인정할 때에는 감사담당자 등을 현지에 보내 실지감사를 할 수 있다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "d1a8f2f5-893e-5ab8-89cb-08349b8f7a1a",
+      "end_name": "외부 전문기관",
+      "hops": 2,
+      "score": 1.67534873,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "d1a8f2f5-893e-5ab8-89cb-08349b8f7a1a"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "외부 전문기관"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "07ab8849-301f-59c1-ba0a-36dc51bffd2b",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "d1a8f2f5-893e-5ab8-89cb-08349b8f7a1a",
+          "target_name": "외부 전문기관",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "2f63ff7d-1599-59d1-a699-fa441de27e62",
+              "relation_id": "07ab8849-301f-59c1-ba0a-36dc51bffd2b",
+              "semantic_unit_id": "5cc5bc96-8994-5b26-9f0b-32a852c41ee4",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제7조",
+                "item_path": [],
+                "paragraph": 4
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "참여시킬 수 있다",
+              "raw_object": "외부 전문기관",
+              "context_text": "##### 제7조 (전문성)\n제7조 제4항",
+              "unit_text": "감사기구의 장은 전문지식이나 실무경험 등이 요구되는 분야를 감사할 때에는 외부 전문기관 또는 외부 전문가의 자문을 받거나 필요한 경우 감사에 참여시킬 수 있다.",
+              "unit_kind": "paragraph"
+            },
+            {
+              "relation_mention_id": "bec6a2cc-6abc-5183-ab3a-5bc7a37eb8fc",
+              "relation_id": "07ab8849-301f-59c1-ba0a-36dc51bffd2b",
+              "semantic_unit_id": "a5859edb-0f3c-5ae4-babf-070b85bfff46",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "참여시킬 수 있다",
+              "raw_object": "외부 전문기관",
+              "context_text": "##### 제27조 (외부전문가 등의 참여)\n제27조 제1항",
+              "unit_text": "감사기구의 장은 회계ㆍ보건ㆍ환경ㆍ건설 등 전문지식이나 실무경험 등이 요구되는 분야를 감사하는 경우 외부 전문기관 또는 외부전문가를 감사에 참여시킬 수 있다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "1badcec2-e872-5a85-9b4b-cbfe3344624f",
+      "end_name": "자체감사 대상기관",
+      "hops": 2,
+      "score": 1.67534873,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "1badcec2-e872-5a85-9b4b-cbfe3344624f"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "자체감사 대상기관"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "411f473a-78e2-5e60-957e-535a7b59b2b0",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "1badcec2-e872-5a85-9b4b-cbfe3344624f",
+          "target_name": "자체감사 대상기관",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "a9b7d612-27ea-5b0e-8506-f9e0c58ad5ff",
+              "relation_id": "411f473a-78e2-5e60-957e-535a7b59b2b0",
+              "semantic_unit_id": "72ac9cc7-8767-52f4-857c-66951ce3bcbd",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "할 수 있다",
+              "raw_object": "자체감사 대상기관",
+              "context_text": "##### 제20조 (자료 제출 요구)\n제20조 제1항\n감사기구의 장은 자체감사를 위하여 필요할 때에는 자체감사 대상기관 또는 그 소속 공무원이나 직원에 대하여 다음 각 호의 조치를 할 수 있다.",
+              "unit_text": "출석ㆍ답변의 요구(「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 따른 정보통신망을 이용한 요구를 포함한다)",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "5804e454-4044-5c44-8e98-24191b542f96",
+      "end_name": "외부전문가",
+      "hops": 2,
+      "score": 1.67534873,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "5804e454-4044-5c44-8e98-24191b542f96"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "외부전문가"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "7a3a521a-f4f4-54b7-96f1-1110703985e7",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "5804e454-4044-5c44-8e98-24191b542f96",
+          "target_name": "외부전문가",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "04fc93b1-4f61-59cb-ba50-324cbe157c29",
+              "relation_id": "7a3a521a-f4f4-54b7-96f1-1110703985e7",
+              "semantic_unit_id": "f943a862-16fc-5f9f-8661-d91b6ec4aa84",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제12조",
+                "item_path": [],
+                "paragraph": 3
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "구할 수 있다",
+              "raw_object": "외부전문가",
+              "context_text": "##### 제12조 (감사의 사전준비)\n제12조 제3항",
+              "unit_text": "감사기구의 장은 감사의 사전 준비를 위하여 법 제38조에 따라 감사원에 감사계획 또는 감사방법에 대한 자문 또는 인력지원을 요청하거나 외부전문가의 자문을 구할 수 있다.",
+              "unit_kind": "paragraph"
+            },
+            {
+              "relation_mention_id": "43777461-942f-5bc2-b226-215223037c4c",
+              "relation_id": "7a3a521a-f4f4-54b7-96f1-1110703985e7",
+              "semantic_unit_id": "a5859edb-0f3c-5ae4-babf-070b85bfff46",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제27조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "참여시킬 수 있다",
+              "raw_object": "외부전문가",
+              "context_text": "##### 제27조 (외부전문가 등의 참여)\n제27조 제1항",
+              "unit_text": "감사기구의 장은 회계ㆍ보건ㆍ환경ㆍ건설 등 전문지식이나 실무경험 등이 요구되는 분야를 감사하는 경우 외부 전문기관 또는 외부전문가를 감사에 참여시킬 수 있다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "1f0194c8-bf29-5315-be43-333475a9dc8c",
+      "end_name": "소속 공무원",
+      "hops": 2,
+      "score": 1.67534873,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "1f0194c8-bf29-5315-be43-333475a9dc8c"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "소속 공무원"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "92513c18-5482-5ce1-ad89-becf48b27fee",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "1f0194c8-bf29-5315-be43-333475a9dc8c",
+          "target_name": "소속 공무원",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "4fa279ec-60fb-5c0f-b548-98117b825bc8",
+              "relation_id": "92513c18-5482-5ce1-ad89-becf48b27fee",
+              "semantic_unit_id": "72ac9cc7-8767-52f4-857c-66951ce3bcbd",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "할 수 있다",
+              "raw_object": "소속 공무원",
+              "context_text": "##### 제20조 (자료 제출 요구)\n제20조 제1항\n감사기구의 장은 자체감사를 위하여 필요할 때에는 자체감사 대상기관 또는 그 소속 공무원이나 직원에 대하여 다음 각 호의 조치를 할 수 있다.",
+              "unit_text": "출석ㆍ답변의 요구(「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 따른 정보통신망을 이용한 요구를 포함한다)",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "f63e4236-7262-5cd6-a6fc-fbfacee7a05e",
+      "end_name": "소속 직원",
+      "hops": 2,
+      "score": 1.67534873,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "f63e4236-7262-5cd6-a6fc-fbfacee7a05e"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "소속 직원"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "d32e372a-3348-5f48-aaf2-bc3242c1584c",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "f63e4236-7262-5cd6-a6fc-fbfacee7a05e",
+          "target_name": "소속 직원",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "9c7a187b-55cc-5069-8732-2ecca7c97b04",
+              "relation_id": "d32e372a-3348-5f48-aaf2-bc3242c1584c",
+              "semantic_unit_id": "72ac9cc7-8767-52f4-857c-66951ce3bcbd",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "할 수 있다",
+              "raw_object": "소속 직원",
+              "context_text": "##### 제20조 (자료 제출 요구)\n제20조 제1항\n감사기구의 장은 자체감사를 위하여 필요할 때에는 자체감사 대상기관 또는 그 소속 공무원이나 직원에 대하여 다음 각 호의 조치를 할 수 있다.",
+              "unit_text": "출석ㆍ답변의 요구(「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 따른 정보통신망을 이용한 요구를 포함한다)",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "2d708735-7b8c-597f-b95b-5054bbc459f9",
+      "end_name": "전산정보시스템에 입력된 자료의 조사",
+      "hops": 2,
+      "score": 1.67112514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "2d708735-7b8c-597f-b95b-5054bbc459f9"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "전산정보시스템에 입력된 자료의 조사"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "01731f47-d88d-5c87-8e60-2f745b13010f",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "2d708735-7b8c-597f-b95b-5054bbc459f9",
+          "target_name": "전산정보시스템에 입력된 자료의 조사",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "0841d09c-217e-54e1-93ee-8dafbb2358d1",
+              "relation_id": "01731f47-d88d-5c87-8e60-2f745b13010f",
+              "semantic_unit_id": "479799be-9c66-5398-87cf-cec27b3e617e",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [
+                  "3"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "할 수 있다",
+              "raw_object": "전산정보시스템에 입력된 자료의 조사",
+              "context_text": "##### 제20조 (자료 제출 요구)\n제20조 제1항\n감사기구의 장은 자체감사를 위하여 필요할 때에는 자체감사 대상기관 또는 그 소속 공무원이나 직원에 대하여 다음 각 호의 조치를 할 수 있다.",
+              "unit_text": "전산정보시스템에 입력된 자료의 조사",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "3acf72ca-bd61-5a2e-96ef-5625af853d95",
+      "end_name": "감사정보시스템",
+      "hops": 2,
+      "score": 1.67112514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "3acf72ca-bd61-5a2e-96ef-5625af853d95"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사정보시스템"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "07438cbe-6a78-54ee-b9c6-0be58e67794c",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "8f7bd35b-f079-5532-9deb-6b746e9250a4",
+          "relation_type_name": "작성하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "3acf72ca-bd61-5a2e-96ef-5625af853d95",
+          "target_name": "감사정보시스템",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "e828acd0-b34b-5bd8-b815-14f131d240af",
+              "relation_id": "07438cbe-6a78-54ee-b9c6-0be58e67794c",
+              "semantic_unit_id": "86c2a6ec-47cc-53eb-a631-e86e0f0cac53",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제36조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "입력ㆍ관리하여야 한다",
+              "raw_object": "감사정보시스템",
+              "context_text": "##### 제36조 (감사정보시스템)\n제36조 제2항",
+              "unit_text": "감사기구의 장은 감사계획, 감사결과, 이행결과 등 대통령령으로 정하는 감사활동정보를 감사정보시스템에 입력ㆍ관리하여야 하고, 감사원은 그 정보의 공동활용방안을 마련하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "end_name": "자료",
+      "hops": 2,
+      "score": 1.67112514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "66f93fdd-1b93-54c0-a71b-084830e55f3d"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "자료"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "169909c2-58be-5fe6-8d23-8578c237dc9c",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "479438d4-f962-5ff4-8481-31ab0452645f",
+          "relation_type_name": "사용하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+          "target_name": "자료",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "67628408-e82e-5525-a18a-c57e0eede456",
+              "relation_id": "169909c2-58be-5fe6-8d23-8578c237dc9c",
+              "semantic_unit_id": "26c82d69-8745-5c9f-b5cb-f0390292f170",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제20조",
+                "item_path": [],
+                "paragraph": 5
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "이용할 수 없다",
+              "raw_object": "자료",
+              "context_text": "##### 제20조 (자료 제출 요구)\n제20조 제5항",
+              "unit_text": "감사기구의 장 및 감사담당자는 감사를 위하여 제출받은 정보 또는 자료를 감사 목적 외의 용도로 이용할 수 없다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "fafaa2f2-759d-5628-9491-35d5cabe73dd",
+      "end_name": "업무의 적법성",
+      "hops": 2,
+      "score": 1.67112514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "fafaa2f2-759d-5628-9491-35d5cabe73dd"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "업무의 적법성"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "1b9529d6-904f-5619-867d-12d234f46da2",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "437bb2c1-62bf-5891-a421-f9fb85015fc9",
+          "relation_type_name": "심사하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "fafaa2f2-759d-5628-9491-35d5cabe73dd",
+          "target_name": "업무의 적법성",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "592c3188-88ca-59f7-a951-5d221f8a8380",
+              "relation_id": "1b9529d6-904f-5619-867d-12d234f46da2",
+              "semantic_unit_id": "d3160811-edb0-53a8-a409-7ce6e05aa478",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제22조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "일상감사를 하여야 한다",
+              "raw_object": "업무의 적법성",
+              "context_text": "##### 제22조 (일상감사)\n제22조 제1항",
+              "unit_text": "감사기구의 장은 자체감사기구가 소속된 기관의 주요 업무 집행에 앞서 그 업무의 적법성ㆍ타당성 등을 점검ㆍ심사하는 일상감사를 하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "c226f7d0-7080-5057-9eba-1c0ab94814e0",
+      "end_name": "협조",
+      "hops": 2,
+      "score": 1.67112514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "c226f7d0-7080-5057-9eba-1c0ab94814e0"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "협조"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "24f93bed-08fa-5433-968a-4e1caaf16ac3",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+          "relation_type_name": "요구하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "c226f7d0-7080-5057-9eba-1c0ab94814e0",
+          "target_name": "협조",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "f4eb3264-92cb-56b9-9e94-0508f929f004",
+              "relation_id": "24f93bed-08fa-5433-968a-4e1caaf16ac3",
+              "semantic_unit_id": "1191e859-2513-587e-957b-78e717c8e4fb",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제30조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "요청할 수 있다",
+              "raw_object": "협조",
+              "context_text": "##### 제30조 (자체감사기구 간의 협조)\n제30조 제1항",
+              "unit_text": "감사기구의 장은 감사활동에 필요한 경우 다른 중앙행정기관등의 감사기구의 장에게 협조를 요청할 수 있다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7",
+      "end_name": "감사원",
+      "hops": 3,
+      "score": 1.64328029,
+      "document_ids": [
+        "7f170328-73fd-56ad-ac68-edbbdd715a11",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "감사원법",
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+        "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사",
+        "감사원"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "cd680822-9626-5bc2-83d3-3b3889495edc",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+          "target_name": "감사",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "c675c011-6d9b-5775-81d7-ee619d737dea",
+              "relation_id": "cd680822-9626-5bc2-83d3-3b3889495edc",
+              "semantic_unit_id": "1868920b-6499-58b5-add7-ace920bc6cb0",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제16조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "실시하고",
+              "raw_object": "감사",
+              "context_text": "##### 제16조 (실지감사의 실시)\n제16조 제2항",
+              "unit_text": "감사기구의 장은 제13조제1항에 따른 감사계획에 따라 감사를 실시하고, 불가피한 사유가 있어 이를 변경하고자 할 때에는 지체 없이 감사대상기관 또는 부서에 이를 통보하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        },
+        {
+          "relation_id": "78f63ab8-9210-59d2-9f41-c951fea61d0f",
+          "source_entity_id": "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7",
+          "source_name": "감사원",
+          "relation_type_id": "179b940f-26ea-5d99-8448-7cb76282cf38",
+          "relation_type_name": "수행하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+          "target_name": "감사",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "67681466-b104-5c51-abc7-1d438ee506e2",
+              "relation_id": "78f63ab8-9210-59d2-9f41-c951fea61d0f",
+              "semantic_unit_id": "cae98f84-43f2-5cc1-ae6b-a1d509f372fb",
+              "document_id": "7f170328-73fd-56ad-ac68-edbbdd715a11",
+              "document_title": "감사원법",
+              "source_path": "감사원법/법률.md",
+              "source_ref": {
+                "article": "제28조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "감사원",
+              "raw_predicate": "하지 아니할 수 있다",
+              "raw_object": "감사",
+              "context_text": "##### 제28조 (감사의 생략)\n제28조 제1항",
+              "unit_text": "감사원은 각 중앙관서ㆍ지방자치단체 및 「공공기관의 운영에 관한 법률」 제4조에 따른 공공기관(이하 \"공공기관\"이라 한다)의 장이 실시한 자체감사(自體監査)의 결과를 심사하여 자체감사가 적정하게 수행되고 있다고 인정하면 결산 확인 등에 지장이 없는 범위에서 일부 기관에 대한 감사의 일부 또는 전부를 하지 아니할 수 있다. <개정 2020.10.20>",
+              "unit_kind": "paragraph"
+            },
+            {
+              "relation_mention_id": "c6fc02c0-9bd7-5c18-bcfc-32a2de207dc6",
+              "relation_id": "78f63ab8-9210-59d2-9f41-c951fea61d0f",
+              "semantic_unit_id": "ef667045-161d-592f-8632-a7e476324d1d",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제35조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사원",
+              "raw_predicate": "하지 아니할 수 있다",
+              "raw_object": "감사",
+              "context_text": "##### 제35조 (감사원 감사의 대행)\n제35조 제2항",
+              "unit_text": "제1항에 따라 감사를 받은 기관에 대하여는 감사원 감사의 전부 또는 일부를 하지 아니할 수 있다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "7cc50b1f-70ff-5f6b-bd30-fe533294fd9d",
+      "end_name": "제33조",
+      "hops": 3,
+      "score": 1.64110037,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+        "7cc50b1f-70ff-5f6b-bd30-fe533294fd9d"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사",
+        "제33조"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "cd680822-9626-5bc2-83d3-3b3889495edc",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+          "target_name": "감사",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "c675c011-6d9b-5775-81d7-ee619d737dea",
+              "relation_id": "cd680822-9626-5bc2-83d3-3b3889495edc",
+              "semantic_unit_id": "1868920b-6499-58b5-add7-ace920bc6cb0",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제16조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "실시하고",
+              "raw_object": "감사",
+              "context_text": "##### 제16조 (실지감사의 실시)\n제16조 제2항",
+              "unit_text": "감사기구의 장은 제13조제1항에 따른 감사계획에 따라 감사를 실시하고, 불가피한 사유가 있어 이를 변경하고자 할 때에는 지체 없이 감사대상기관 또는 부서에 이를 통보하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        },
+        {
+          "relation_id": "08455c82-1356-50c0-86b6-76ea5b60d8fa",
+          "source_entity_id": "7cc50b1f-70ff-5f6b-bd30-fe533294fd9d",
+          "source_name": "제33조",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+          "target_name": "감사",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "234ddeee-cad2-5963-be7a-3beb6b89078e",
+              "relation_id": "08455c82-1356-50c0-86b6-76ea5b60d8fa",
+              "semantic_unit_id": "274342d1-61fc-5701-aa61-f513bb3397a8",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제3조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "제33조",
+              "raw_predicate": "적용한다",
+              "raw_object": "감사",
+              "context_text": "##### 제3조 (적용 범위)\n제3조 제2항",
+              "unit_text": "제33조, 제34조 및 제36조제2항은 「지방자치법」 제185조에 따른 위임사무의 감사, 같은 법 제190조에 따른 자치사무의 감사 및 「물품관리법」 제7조제3항제1호에 따른 감사에 대하여 적용한다. 이 경우 제33조 및 제36조제2항 중 \"감사기구의 장\"은 \"중앙행정기관등의 장\"으로 본다. <개정 2021.1.12>",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "bb8c1725-cfe6-5bdd-81d0-642314af10c6",
+      "start_name": "공공기관의 합의제감사기구의 위원",
+      "end_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+      "end_name": "규정",
+      "hops": 1,
+      "score": 1.6303124,
+      "document_ids": [
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "bb8c1725-cfe6-5bdd-81d0-642314af10c6",
+        "d831b337-b6d7-5cf8-b253-c735369b7ccd"
+      ],
+      "traversed_entity_names": [
+        "공공기관의 합의제감사기구의 위원",
+        "규정"
+      ],
+      "edges": [
+        {
+          "relation_id": "6c733c4e-84bc-54b0-8047-8ee57f649bbc",
+          "source_entity_id": "bb8c1725-cfe6-5bdd-81d0-642314af10c6",
+          "source_name": "공공기관의 합의제감사기구의 위원",
+          "relation_type_id": "c49a514a-e805-5f41-858b-0cf99792e566",
+          "relation_type_name": "적용하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "d831b337-b6d7-5cf8-b253-c735369b7ccd",
+          "target_name": "규정",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "4e8e947b-71d8-5ca4-a971-8fe2c6ccd478",
+              "relation_id": "6c733c4e-84bc-54b0-8047-8ee57f649bbc",
+              "semantic_unit_id": "35a3d29c-fd83-5e3b-b40e-cc2d4c96841d",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제6조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "공공기관의 합의제감사기구의 위원",
+              "raw_predicate": "준용하지 아니한다",
+              "raw_object": "규정",
+              "context_text": "##### 제6조 (합의제감사기구의 운영)\n제6조 제2항",
+              "unit_text": "합의제감사기구 위원의 임용, 임기, 자격, 직급, 결격사유 및 직무 등에 관한 사항은 제8조부터 제15조까지, 제20조, 제28조제2항, 제29조, 제38조제3항 및 제39조제5항의 감사기구의 장에 관한 규정을 준용한다. 다만, 공공기관의 합의제감사기구의 위원에 대하여는 제8조부터 제11조까지 및 제13조부터 제15조까지의 규정을 준용하지 아니한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+      "end_name": "감사",
+      "hops": 3,
+      "score": 1.62855178,
+      "document_ids": [
+        "7f170328-73fd-56ad-ac68-edbbdd715a11",
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "감사원법",
+        "공공감사에 관한 법률",
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7",
+        "45ce5022-28ee-5e2e-81ec-9f17d1d9b309"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사원",
+        "감사"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "11a9a81f-b16e-520e-bcf6-a900ce87d814",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "63ecb1c6-60fb-533b-a451-f38811f1e390",
+          "relation_type_name": "통지하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7",
+          "target_name": "감사원",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "28fe8165-6117-5f00-891f-5029bb83f8bf",
+              "relation_id": "11a9a81f-b16e-520e-bcf6-a900ce87d814",
+              "semantic_unit_id": "5d4dbcf4-b7f4-5402-942f-ccad58323cdc",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제13조의4",
+                "item_path": [],
+                "paragraph": 5
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "알려야 한다",
+              "raw_object": "감사원",
+              "context_text": "##### 제13조의4 (적극행정에 대한 면책의 운영절차)\n제13조의4 제5항",
+              "unit_text": "감사기구의 장은 제2항 또는 제3항에 따라 면책결정을 한 때에는 매 분기 종료 후 10일 내에 이를 감사원에 알려야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        },
+        {
+          "relation_id": "78f63ab8-9210-59d2-9f41-c951fea61d0f",
+          "source_entity_id": "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7",
+          "source_name": "감사원",
+          "relation_type_id": "179b940f-26ea-5d99-8448-7cb76282cf38",
+          "relation_type_name": "수행하지않다",
+          "polarity": "NEGATIVE",
+          "target_entity_id": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+          "target_name": "감사",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "67681466-b104-5c51-abc7-1d438ee506e2",
+              "relation_id": "78f63ab8-9210-59d2-9f41-c951fea61d0f",
+              "semantic_unit_id": "cae98f84-43f2-5cc1-ae6b-a1d509f372fb",
+              "document_id": "7f170328-73fd-56ad-ac68-edbbdd715a11",
+              "document_title": "감사원법",
+              "source_path": "감사원법/법률.md",
+              "source_ref": {
+                "article": "제28조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "감사원",
+              "raw_predicate": "하지 아니할 수 있다",
+              "raw_object": "감사",
+              "context_text": "##### 제28조 (감사의 생략)\n제28조 제1항",
+              "unit_text": "감사원은 각 중앙관서ㆍ지방자치단체 및 「공공기관의 운영에 관한 법률」 제4조에 따른 공공기관(이하 \"공공기관\"이라 한다)의 장이 실시한 자체감사(自體監査)의 결과를 심사하여 자체감사가 적정하게 수행되고 있다고 인정하면 결산 확인 등에 지장이 없는 범위에서 일부 기관에 대한 감사의 일부 또는 전부를 하지 아니할 수 있다. <개정 2020.10.20>",
+              "unit_kind": "paragraph"
+            },
+            {
+              "relation_mention_id": "c6fc02c0-9bd7-5c18-bcfc-32a2de207dc6",
+              "relation_id": "78f63ab8-9210-59d2-9f41-c951fea61d0f",
+              "semantic_unit_id": "ef667045-161d-592f-8632-a7e476324d1d",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제35조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사원",
+              "raw_predicate": "하지 아니할 수 있다",
+              "raw_object": "감사",
+              "context_text": "##### 제35조 (감사원 감사의 대행)\n제35조 제2항",
+              "unit_text": "제1항에 따라 감사를 받은 기관에 대하여는 감사원 감사의 전부 또는 일부를 하지 아니할 수 있다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+      "end_name": "감사",
+      "hops": 2,
+      "score": 1.55493206,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "45ce5022-28ee-5e2e-81ec-9f17d1d9b309"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "cd680822-9626-5bc2-83d3-3b3889495edc",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "45ce5022-28ee-5e2e-81ec-9f17d1d9b309",
+          "target_name": "감사",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "c675c011-6d9b-5775-81d7-ee619d737dea",
+              "relation_id": "cd680822-9626-5bc2-83d3-3b3889495edc",
+              "semantic_unit_id": "1868920b-6499-58b5-add7-ace920bc6cb0",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제16조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "실시하고",
+              "raw_object": "감사",
+              "context_text": "##### 제16조 (실지감사의 실시)\n제16조 제2항",
+              "unit_text": "감사기구의 장은 제13조제1항에 따른 감사계획에 따라 감사를 실시하고, 불가피한 사유가 있어 이를 변경하고자 할 때에는 지체 없이 감사대상기관 또는 부서에 이를 통보하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "start_name": "감사기구의 장에 관한 규정",
+      "end_entity_id": "bdb40c75-6bcd-5df3-a80b-bf3e6b364bff",
+      "end_name": "합의제감사기구 위원의 임용",
+      "hops": 1,
+      "score": 1.51928677,
+      "document_ids": [
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "50b2328f-b56d-502c-bf00-1d64301cb344",
+        "bdb40c75-6bcd-5df3-a80b-bf3e6b364bff"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 장에 관한 규정",
+        "합의제감사기구 위원의 임용"
+      ],
+      "edges": [
+        {
+          "relation_id": "6247a50a-5487-5a79-9981-797e5eaff9f3",
+          "source_entity_id": "bdb40c75-6bcd-5df3-a80b-bf3e6b364bff",
+          "source_name": "합의제감사기구 위원의 임용",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+          "target_name": "감사기구의 장에 관한 규정",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "5a418532-007c-5ba9-b378-44ff77907090",
+              "relation_id": "6247a50a-5487-5a79-9981-797e5eaff9f3",
+              "semantic_unit_id": "35a3d29c-fd83-5e3b-b40e-cc2d4c96841d",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제6조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "합의제감사기구 위원의 임용",
+              "raw_predicate": "준용한다",
+              "raw_object": "감사기구의 장에 관한 규정",
+              "context_text": "##### 제6조 (합의제감사기구의 운영)\n제6조 제2항",
+              "unit_text": "합의제감사기구 위원의 임용, 임기, 자격, 직급, 결격사유 및 직무 등에 관한 사항은 제8조부터 제15조까지, 제20조, 제28조제2항, 제29조, 제38조제3항 및 제39조제5항의 감사기구의 장에 관한 규정을 준용한다. 다만, 공공기관의 합의제감사기구의 위원에 대하여는 제8조부터 제11조까지 및 제13조부터 제15조까지의 규정을 준용하지 아니한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "start_name": "감사기구의 장에 관한 규정",
+      "end_entity_id": "8fec2a58-5a82-586a-9138-2a6eae7f7b02",
+      "end_name": "자격",
+      "hops": 1,
+      "score": 1.51363192,
+      "document_ids": [
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "50b2328f-b56d-502c-bf00-1d64301cb344",
+        "8fec2a58-5a82-586a-9138-2a6eae7f7b02"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 장에 관한 규정",
+        "자격"
+      ],
+      "edges": [
+        {
+          "relation_id": "3ae5b385-8e8a-5887-898d-76b3ad5475d7",
+          "source_entity_id": "8fec2a58-5a82-586a-9138-2a6eae7f7b02",
+          "source_name": "자격",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+          "target_name": "감사기구의 장에 관한 규정",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "a2b5b34e-3d16-5f16-b27d-4d3de1f28564",
+              "relation_id": "3ae5b385-8e8a-5887-898d-76b3ad5475d7",
+              "semantic_unit_id": "35a3d29c-fd83-5e3b-b40e-cc2d4c96841d",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제6조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "자격",
+              "raw_predicate": "준용한다",
+              "raw_object": "감사기구의 장에 관한 규정",
+              "context_text": "##### 제6조 (합의제감사기구의 운영)\n제6조 제2항",
+              "unit_text": "합의제감사기구 위원의 임용, 임기, 자격, 직급, 결격사유 및 직무 등에 관한 사항은 제8조부터 제15조까지, 제20조, 제28조제2항, 제29조, 제38조제3항 및 제39조제5항의 감사기구의 장에 관한 규정을 준용한다. 다만, 공공기관의 합의제감사기구의 위원에 대하여는 제8조부터 제11조까지 및 제13조부터 제15조까지의 규정을 준용하지 아니한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+      "start_name": "감사기구의 장에 관한 규정",
+      "end_entity_id": "a780befa-63c4-52eb-bb9c-14d30a50b2d7",
+      "end_name": "결격사유",
+      "hops": 1,
+      "score": 1.50120102,
+      "document_ids": [
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률"
+      ],
+      "traversed_entity_ids": [
+        "50b2328f-b56d-502c-bf00-1d64301cb344",
+        "a780befa-63c4-52eb-bb9c-14d30a50b2d7"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 장에 관한 규정",
+        "결격사유"
+      ],
+      "edges": [
+        {
+          "relation_id": "ef7c9cad-b8ab-5373-b0da-7189cf6127e8",
+          "source_entity_id": "a780befa-63c4-52eb-bb9c-14d30a50b2d7",
+          "source_name": "결격사유",
+          "relation_type_id": "a06efc63-7ac4-5eab-a148-a40744c2f300",
+          "relation_type_name": "적용하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "50b2328f-b56d-502c-bf00-1d64301cb344",
+          "target_name": "감사기구의 장에 관한 규정",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "6a664df0-6924-5248-b715-8df90cb30382",
+              "relation_id": "ef7c9cad-b8ab-5373-b0da-7189cf6127e8",
+              "semantic_unit_id": "35a3d29c-fd83-5e3b-b40e-cc2d4c96841d",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제6조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "결격사유",
+              "raw_predicate": "준용한다",
+              "raw_object": "감사기구의 장에 관한 규정",
+              "context_text": "##### 제6조 (합의제감사기구의 운영)\n제6조 제2항",
+              "unit_text": "합의제감사기구 위원의 임용, 임기, 자격, 직급, 결격사유 및 직무 등에 관한 사항은 제8조부터 제15조까지, 제20조, 제28조제2항, 제29조, 제38조제3항 및 제39조제5항의 감사기구의 장에 관한 규정을 준용한다. 다만, 공공기관의 합의제감사기구의 위원에 대하여는 제8조부터 제11조까지 및 제13조부터 제15조까지의 규정을 준용하지 아니한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "2b7b0dd4-6b35-5fbf-9f78-c71039be5ee4",
+      "end_name": "감사인",
+      "hops": 3,
+      "score": 1.4669023,
+      "document_ids": [
+        "70edae1d-803c-5718-a3cd-cf366c5b4d68",
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82",
+        "ec308a84-3ca8-5e4b-8490-8e06a18536e2"
+      ],
+      "document_titles": [
+        "공공감사기준",
+        "공공감사에 관한 법률",
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "f0338c76-2562-5c23-8918-5f9a90611880",
+        "2b7b0dd4-6b35-5fbf-9f78-c71039be5ee4"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사계획",
+        "감사인"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "8f7bd35b-f079-5532-9deb-6b746e9250a4",
+          "relation_type_name": "작성하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "f0338c76-2562-5c23-8918-5f9a90611880",
+          "target_name": "감사계획",
+          "evidence_count": 6,
+          "evidences": [
+            {
+              "relation_mention_id": "cd910fd9-8fa9-5152-97e6-e9ea18049c59",
+              "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+              "semantic_unit_id": "83d5743f-a4a0-5b9a-bfd6-f2b03436b98f",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제13조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "수립하여야 한다",
+              "raw_object": "감사계획",
+              "context_text": "##### 제13조 (감사계획의 수립 등)\n제13조 제1항\n감사기구의 장은 감사를 실시하기 전에 다음 각 호의 사항이 포함된 감사계획을 수립하여야 한다.",
+              "unit_text": "영 제11조제1항제1호부터 제5호까지의 사항",
+              "unit_kind": "terminal_item"
+            },
+            {
+              "relation_mention_id": "da466595-8554-5a2a-9434-96c1faf268fb",
+              "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+              "semantic_unit_id": "ab934def-de21-56c3-acaf-ddd00b0d59d3",
+              "document_id": "ec308a84-3ca8-5e4b-8490-8e06a18536e2",
+              "document_title": "공공감사에 관한 법률",
+              "source_path": "공공감사에관한법률/법률.md",
+              "source_ref": {
+                "article": "제19조",
+                "item_path": [],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "수립하여",
+              "raw_object": "감사계획",
+              "context_text": "##### 제19조 (자체감사계획의 수립ㆍ실시)\n제19조 제1항",
+              "unit_text": "감사기구의 장은 자체감사 대상기관에 대한 감사계획을 수립하여 자체감사를 하여야 한다.",
+              "unit_kind": "paragraph"
+            },
+            {
+              "relation_mention_id": "5c8b515f-a2a2-5eda-913f-a3b0e8abf185",
+              "relation_id": "81a5dc7d-8248-5a99-aba2-c84abd272191",
+              "semantic_unit_id": "8ce937a1-57e4-51d2-a610-aecb82fb0440",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "수립하여야 한다",
+              "raw_object": "감사계획",
+              "context_text": "##### 제11조 (감사계획의 수립)\n제11조 제2항",
+              "unit_text": "감사기구의 장이 제1항에 따른 연간 감사계획에 포함되지 않은 자체감사를 하는 경우에는 제1항제1호부터 제6호까지의 사항이 포함된 감사계획을 별도로 수립하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        },
+        {
+          "relation_id": "c51da375-ef89-5565-a411-5f509f488d3e",
+          "source_entity_id": "2b7b0dd4-6b35-5fbf-9f78-c71039be5ee4",
+          "source_name": "감사인",
+          "relation_type_id": "8f7bd35b-f079-5532-9deb-6b746e9250a4",
+          "relation_type_name": "작성하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "f0338c76-2562-5c23-8918-5f9a90611880",
+          "target_name": "감사계획",
+          "evidence_count": 12,
+          "evidences": [
+            {
+              "relation_mention_id": "bace60c9-8adf-54d9-9364-cb5e57b3943c",
+              "relation_id": "c51da375-ef89-5565-a411-5f509f488d3e",
+              "semantic_unit_id": "d8567c18-0c58-5bd8-911f-acb9e063cf57",
+              "document_id": "70edae1d-803c-5718-a3cd-cf366c5b4d68",
+              "document_title": "공공감사기준",
+              "source_path": "공공감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제16조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사인",
+              "raw_predicate": "수립하여야 한다",
+              "raw_object": "감사계획",
+              "context_text": "##### 제16조 ((감사위험과 중요성))\n제16조 제2항",
+              "unit_text": "감사인은 감사위험이 감사결과에 미칠 영향력의 크기와 민감도(이하 \"중요성\"이라 한다)를 사전에 합리적으로 설정하고 이를 감안하여 감사계획을 수립하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "b10a3ff3-8b91-5db5-9e2c-39b86bf03845",
+      "end_name": "감사활동의 독립성 보장에 필요한 사항",
+      "hops": 2,
+      "score": 1.45545674,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "b10a3ff3-8b91-5db5-9e2c-39b86bf03845"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사활동의 독립성 보장에 필요한 사항"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "28fc92dc-97d0-50e7-b3f0-27a6da535c3b",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "c008479c-5682-526d-84e3-d6e9cb6d772a",
+          "relation_type_name": "준수하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "b10a3ff3-8b91-5db5-9e2c-39b86bf03845",
+          "target_name": "감사활동의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "916e934a-b929-516b-9d0b-ea52bc827ec1",
+              "relation_id": "28fc92dc-97d0-50e7-b3f0-27a6da535c3b",
+              "semantic_unit_id": "3a3455a4-51d4-53a9-b53e-72c913f7d75d",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "4"
+                ],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "준수하여야 한다",
+              "raw_object": "감사활동의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제2항\n감사기구의 장은 감사활동의 독립성이 보장되도록 다음 각 호의 사항을 준수하여야 한다.",
+              "unit_text": "그 밖에 감사활동의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "f60bbb6e-95b9-5587-9ca4-f648b93b7cb6",
+      "end_name": "감사결과보고서",
+      "hops": 2,
+      "score": 1.37289011,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "f60bbb6e-95b9-5587-9ca4-f648b93b7cb6"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사결과보고서"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "9a3404cc-26aa-5fe5-a955-4b360f71fd4f",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "8f7bd35b-f079-5532-9deb-6b746e9250a4",
+          "relation_type_name": "작성하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "f60bbb6e-95b9-5587-9ca4-f648b93b7cb6",
+          "target_name": "감사결과보고서",
+          "evidence_count": 9,
+          "evidences": [
+            {
+              "relation_mention_id": "8cdc0eb8-9577-5e49-921e-6f3b945af2a5",
+              "relation_id": "9a3404cc-26aa-5fe5-a955-4b360f71fd4f",
+              "semantic_unit_id": "aeccde61-7b21-5340-9341-3d805009d55b",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제26조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "작성하여",
+              "raw_object": "감사결과보고서",
+              "context_text": "##### 제26조 (감사결과보고서의 작성 및 보고)\n제26조 제1항\n감사기구의 장은 감사가 종료된 후 다음 각 호의 사항을 포함한 감사결과보고서를 작성하여 소속기관의 장에게 보고하여야 한다.",
+              "unit_text": "감사목적 및 범위, 감사기간 등 감사실시개요",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "476a122f-72d3-5478-9b67-9ebddba28f0f",
+      "end_name": "소속기관의 장",
+      "hops": 2,
+      "score": 1.36917475,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "476a122f-72d3-5478-9b67-9ebddba28f0f"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "소속기관의 장"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "bb7a9f48-fcf0-559c-a136-965aca99713d",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "8256519e-3c6f-50fb-9d0d-f369f69ba73a",
+          "relation_type_name": "보고하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "476a122f-72d3-5478-9b67-9ebddba28f0f",
+          "target_name": "소속기관의 장",
+          "evidence_count": 6,
+          "evidences": [
+            {
+              "relation_mention_id": "80833a00-2f38-5f39-8247-0a3ce6450390",
+              "relation_id": "bb7a9f48-fcf0-559c-a136-965aca99713d",
+              "semantic_unit_id": "93b4bd8f-271b-5bc9-add0-8e2b22c38c2e",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제21조",
+                "item_path": [],
+                "paragraph": 4
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "보고하여야 한다",
+              "raw_object": "소속기관의 장",
+              "context_text": "##### 제21조 (일상감사의 처리)\n제21조 제4항",
+              "unit_text": "감사기구의 장은 영 제13조제4항에 따라 통보받은 조치결과가 적정하지 않다고 판단되는 때에는 집행부서의 장에게 그 내용을 통보하고, 소속기관의 장에게 이를 보고하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "ca3f3d30-58dc-53ae-9219-09ed76d12b56",
+      "end_name": "교육",
+      "hops": 2,
+      "score": 1.36917475,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "ca3f3d30-58dc-53ae-9219-09ed76d12b56"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "교육"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "ea5816ac-898c-5897-bcd8-257238f4d4fd",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "ca3f3d30-58dc-53ae-9219-09ed76d12b56",
+          "target_name": "교육",
+          "evidence_count": 6,
+          "evidences": [
+            {
+              "relation_mention_id": "e6b0abd8-3541-52d8-80a2-2123c2fa542e",
+              "relation_id": "ea5816ac-898c-5897-bcd8-257238f4d4fd",
+              "semantic_unit_id": "326dd696-9dee-58a9-8941-3b70ed2ed635",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제13조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 4
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "실시하여야 한다",
+              "raw_object": "교육",
+              "context_text": "##### 제13조 (감사계획의 수립 등)\n제13조 제4항\n감사기구의 장은 감사단에 포함된 감사담당자를 대상으로 다음 각 호의 사항에 관한 교육을 실시하여야 한다.",
+              "unit_text": "제1항에 따른 감사계획",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "a5ff116e-1571-542b-be50-2c3a7f05dbb5",
+      "end_name": "감사결과",
+      "hops": 2,
+      "score": 1.36566983,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "a5ff116e-1571-542b-be50-2c3a7f05dbb5"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사결과"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "b395321e-a5e0-5e33-95df-63cb150bd2b6",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "a5ff116e-1571-542b-be50-2c3a7f05dbb5",
+          "target_name": "감사결과",
+          "evidence_count": 4,
+          "evidences": [
+            {
+              "relation_mention_id": "bcbc4fa2-fa44-5db5-8735-4698c78603a1",
+              "relation_id": "b395321e-a5e0-5e33-95df-63cb150bd2b6",
+              "semantic_unit_id": "bc75a4c2-460d-5c7d-9bde-67021a2887c4",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제25조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "처리하여야 한다",
+              "raw_object": "감사결과",
+              "context_text": "##### 제25조 (감사결과의 처리기준 등)\n제25조 제1항\n감사기구의 장은 제24조에 따라 도출된 감사결과를 다음 각 호의 기준에 따라 처리하여야 한다.",
+              "unit_text": "개선요구 : 감사 결과 법령상ㆍ제도상 또는 행정상 모순이 있거나 그 밖에 개선할 사항이 있다\n고 인정되는 경우",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "e897e2d7-598f-5a9b-b163-65b3a81f5cdf",
+      "end_name": "소속 기관의 장",
+      "hops": 2,
+      "score": 1.36566983,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "e897e2d7-598f-5a9b-b163-65b3a81f5cdf"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "소속 기관의 장"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "f9f40623-ea45-5228-ab2b-b71254404372",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "8256519e-3c6f-50fb-9d0d-f369f69ba73a",
+          "relation_type_name": "보고하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "e897e2d7-598f-5a9b-b163-65b3a81f5cdf",
+          "target_name": "소속 기관의 장",
+          "evidence_count": 4,
+          "evidences": [
+            {
+              "relation_mention_id": "05f1fc41-e13b-5a0a-9f8e-973c9cbaf7a6",
+              "relation_id": "f9f40623-ea45-5228-ab2b-b71254404372",
+              "semantic_unit_id": "1ef4c45d-f4bd-5981-9f9c-52498031669e",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제15조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "보고하여야 하며",
+              "raw_object": "소속 기관의 장",
+              "context_text": "##### 제15조 (자료제출요구 등의 방법)\n제15조 제2항\n감사기구의 장은 법 제20조제4항에 따라 자체감사 대상기관이 아닌 중앙행정기관등에 자료 또는 정보를 제출하도록 요청할 때에는 다음 각 호의 사항이 포함된 요청서로 하여야 한다. 이 경우 요청 전에 해당 요청 내용을 소속 기관의 장에게 보고하여야 하며, 특히 긴급한 필요가 있는 경우에는 사후에 보고할 수 있다.",
+              "unit_text": "자료 또는 정보가 필요한 자체감사의 명칭",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "90cab5a1-9e84-54c5-962e-76e7d19a9fc3",
+      "end_name": "집행부서의 장",
+      "hops": 2,
+      "score": 1.36334542,
+      "document_ids": [
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "90cab5a1-9e84-54c5-962e-76e7d19a9fc3"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "집행부서의 장"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "e4524cb8-41f3-5163-8575-71cfe3029e3d",
+          "source_entity_id": "90cab5a1-9e84-54c5-962e-76e7d19a9fc3",
+          "source_name": "집행부서의 장",
+          "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+          "relation_type_name": "요구하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "target_name": "감사기구의 장",
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "relation_mention_id": "d69919b1-d166-5e66-aaaa-df443b564885",
+              "relation_id": "e4524cb8-41f3-5163-8575-71cfe3029e3d",
+              "semantic_unit_id": "55667023-12d0-5ca0-a13d-f11452b45b59",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제13조",
+                "item_path": [
+                  "2"
+                ],
+                "paragraph": 2
+              },
+              "raw_subject": "집행부서의 장",
+              "raw_predicate": "의뢰하여야 한다",
+              "raw_object": "감사기구의 장",
+              "context_text": "##### 제13조 (일상감사)\n제13조 제2항\n자체감사기구가 소속된 기관의 주요 정책 등을 집행하는 부서의 장(이하 \"집행부서의 장\"이라 한다)은 다음 각 호에 따른 업무의 수행에 앞서 감사기구의 장에게 일상감사를 의뢰하여야 한다.",
+              "unit_text": "계약업무",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "343e9fed-c377-5d34-87f3-6b14a405a63b",
+      "end_name": "감사단장",
+      "hops": 2,
+      "score": 1.36334542,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "343e9fed-c377-5d34-87f3-6b14a405a63b"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사단장"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "ca1c39d7-c0ce-5892-85c4-1c7d137203b7",
+          "source_entity_id": "343e9fed-c377-5d34-87f3-6b14a405a63b",
+          "source_name": "감사단장",
+          "relation_type_id": "8256519e-3c6f-50fb-9d0d-f369f69ba73a",
+          "relation_type_name": "보고하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "target_name": "감사기구의 장",
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "relation_mention_id": "b01697e3-52d5-55b6-a6bc-5b05393656f3",
+              "relation_id": "ca1c39d7-c0ce-5892-85c4-1c7d137203b7",
+              "semantic_unit_id": "3bf3a7bb-3c7f-54f8-b20a-796ef9ac5dec",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제17조",
+                "item_path": [],
+                "paragraph": 3
+              },
+              "raw_subject": "감사단장",
+              "raw_predicate": "보고한다",
+              "raw_object": "감사기구의 장",
+              "context_text": "##### 제17조 (실지감사의 지휘와 책임 등)\n제17조 제3항",
+              "unit_text": "감사단장은 실지감사의 목적을 달성하기 위하여 제13조에 따른 감사계획을 변경할 필요가 있거나, 감사계획에 포함되지 않은 기관 또는 사항을 감사할 필요가 있는 경우에는 감사기구의 장에게 보고하고 그 지시에 따라야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "f60bbb6e-95b9-5587-9ca4-f648b93b7cb6",
+      "end_name": "감사결과보고서",
+      "hops": 2,
+      "score": 1.36334542,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "f60bbb6e-95b9-5587-9ca4-f648b93b7cb6"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사결과보고서"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "cd0412c0-170d-52b4-adf8-e2b27aa64b01",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "8256519e-3c6f-50fb-9d0d-f369f69ba73a",
+          "relation_type_name": "보고하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "f60bbb6e-95b9-5587-9ca4-f648b93b7cb6",
+          "target_name": "감사결과보고서",
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "relation_mention_id": "f361ac4f-7858-5489-98d8-d02a0a847a92",
+              "relation_id": "cd0412c0-170d-52b4-adf8-e2b27aa64b01",
+              "semantic_unit_id": "5bd8e84d-d9e1-5115-9033-ce1a685d6822",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제26조",
+                "item_path": [
+                  "3"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "보고하여야 한다",
+              "raw_object": "감사결과보고서",
+              "context_text": "##### 제26조 (감사결과보고서의 작성 및 보고)\n제26조 제1항\n감사기구의 장은 감사가 종료된 후 다음 각 호의 사항을 포함한 감사결과보고서를 작성하여 소속기관의 장에게 보고하여야 한다.",
+              "unit_text": "감사대상기관이 아닌 기관의 장의 권한에 속하는 사항으로서 법 제23조제4항에 따라 해당 기관에 통보할 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "e28ba858-5ace-5395-95ac-15abe6ed98ee",
+      "end_name": "시행문",
+      "hops": 2,
+      "score": 1.36334542,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "e28ba858-5ace-5395-95ac-15abe6ed98ee"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "시행문"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "d846fd2c-cdd3-5f4c-aa08-bce6a0d7fab4",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "8f7bd35b-f079-5532-9deb-6b746e9250a4",
+          "relation_type_name": "작성하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "e28ba858-5ace-5395-95ac-15abe6ed98ee",
+          "target_name": "시행문",
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "relation_mention_id": "742ee228-bb9e-5096-81b0-46e4323b6079",
+              "relation_id": "d846fd2c-cdd3-5f4c-aa08-bce6a0d7fab4",
+              "semantic_unit_id": "26d13ba1-dacb-56e1-80c3-546b64aa715e",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제28조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "작성하여야 한다",
+              "raw_object": "시행문",
+              "context_text": "##### 제28조 (감사결과의 통보 등)\n제28조 제1항\n감사기구의 장은 법 제23조 제1항에 따라 자체감사 대상기관에 감사결과를 통보할 때에는 다음 각 호의 사항을 포함한 시행문을 작성하여야 한다.",
+              "unit_text": "제26조제1항제2호에 따른 감사결과 처분요구 및 조치사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "406247c2-8104-5eed-a0bc-467ad3e30d7a",
+      "end_name": "세부 사항",
+      "hops": 2,
+      "score": 1.36034873,
+      "document_ids": [
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "406247c2-8104-5eed-a0bc-467ad3e30d7a"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "세부 사항"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "07512932-9f87-58eb-8a5a-11b4ce73fea6",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "de70d722-1d5e-5f38-b3e0-b26eb8dacb09",
+          "relation_type_name": "규정하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "406247c2-8104-5eed-a0bc-467ad3e30d7a",
+          "target_name": "세부 사항",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "beb3d71e-ddc9-57b2-b1ba-214293a4eef4",
+              "relation_id": "07512932-9f87-58eb-8a5a-11b4ce73fea6",
+              "semantic_unit_id": "1de4bce3-1dac-5f68-8b89-c6a1819d9a7c",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제13조의4",
+                "item_path": [],
+                "paragraph": 6
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "정한다",
+              "raw_object": "세부사항",
+              "context_text": "##### 제13조의4 (적극행정에 대한 면책의 운영절차)\n제13조의4 제6항",
+              "unit_text": "제1항부터 제5항까지에서 규정한 사항 외에 적극행정에 대한 면책의 운영절차 및 결과의 처리 등에 관한 세부사항은 중앙행정기관등의 장이 감사기구의 장의 의견을 들어 정한다. 다만, 감사기구의 장이 해당 기관의 집행기관과 독립하여 설치되어 있는 공공기관의 경우에는 감사기구의 장이 정한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "86048d0e-58c8-5570-aae2-1568a620ce78",
+      "end_name": "자체감사 대상기관의 장",
+      "hops": 2,
+      "score": 1.36034873,
+      "document_ids": [
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "86048d0e-58c8-5570-aae2-1568a620ce78"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "자체감사 대상기관의 장"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "8054b51a-5155-563b-ad24-6a0810bd18f0",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "63ecb1c6-60fb-533b-a451-f38811f1e390",
+          "relation_type_name": "통지하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "86048d0e-58c8-5570-aae2-1568a620ce78",
+          "target_name": "자체감사 대상기관의 장",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "9ba84a6a-b121-5b86-a37c-729fbaf34264",
+              "relation_id": "8054b51a-5155-563b-ad24-6a0810bd18f0",
+              "semantic_unit_id": "cd2482a0-e3cc-5246-ad84-3f494cfc8000",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제12조",
+                "item_path": [],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "통보한다",
+              "raw_object": "자체감사 대상기관의 장",
+              "context_text": "##### 제12조 (감사 대상기관 등에 대한 감사계획의 통보)\n제12조 제2항",
+              "unit_text": "감사기구의 장이 제1항에 따라 감사계획을 자체감사 대상기관의 장에게 통보한 이후 감사계획을 변경하였을 때에는 그 내용을 자체감사 대상기관의 장에게 지체 없이 통보하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "49e0fda4-3b3d-5ec5-b520-8cf69f6b70c8",
+      "end_name": "감사대상기관",
+      "hops": 2,
+      "score": 1.36034873,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "49e0fda4-3b3d-5ec5-b520-8cf69f6b70c8"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사대상기관"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "3796493f-35c5-528e-8428-3272332447c2",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "437bb2c1-62bf-5891-a421-f9fb85015fc9",
+          "relation_type_name": "심사하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "49e0fda4-3b3d-5ec5-b520-8cf69f6b70c8",
+          "target_name": "감사대상기관",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "42c254c1-0ba0-54a3-88d7-9b81df9234ca",
+              "relation_id": "3796493f-35c5-528e-8428-3272332447c2",
+              "semantic_unit_id": "1c6812c4-37ca-5d6b-bb4e-b1b61bf70f98",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [
+                  "4"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "고려하여야 한다",
+              "raw_object": "감사대상기관",
+              "context_text": "##### 제11조 (연간 감사계획수립 방법)\n제11조 제1항\n감사기구의 장은 영 제11조제1항에 따른 연간 감사계획을 수립할 때에는 다음 각 호의 사항을 고려하여야 한다.",
+              "unit_text": "감사원 감사 등을 포함한 감사대상기관 또는 부서에 대한 감사빈도 및 주기",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "a7dcdfb3-42a7-54de-8d8f-49dbf42c63a3",
+      "end_name": "감사 회계전문기관의 감사",
+      "hops": 2,
+      "score": 1.36034873,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "a7dcdfb3-42a7-54de-8d8f-49dbf42c63a3"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사 회계전문기관의 감사"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "4a748e18-5302-5c13-a37c-bc156a2749c5",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "a7dcdfb3-42a7-54de-8d8f-49dbf42c63a3",
+          "target_name": "감사 회계전문기관의 감사",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "2faf0416-1c19-536f-953b-0ea042269d6b",
+              "relation_id": "4a748e18-5302-5c13-a37c-bc156a2749c5",
+              "semantic_unit_id": "a5fc0638-c5f8-57da-87c0-0465727e0cc6",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제7조",
+                "item_path": [],
+                "paragraph": 3
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "이수하도록 하거나",
+              "raw_object": "감사 회계전문기관의 감사",
+              "context_text": "##### 제7조 (전문성)\n제7조 제3항",
+              "unit_text": "감사기구의 장은 감사담당자의 전문성을 높이기 위하여 감사원 감사 등에의 참여를 권장하고, 감사 회계전문기관의 감사ㆍ회계교육을 이수하도록 하거나 필요한 경우 자체적으로 실시하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "2fd70436-c0f6-5d2d-8ba1-604474e75879",
+      "end_name": "요청서",
+      "hops": 2,
+      "score": 1.36034873,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "2fd70436-c0f6-5d2d-8ba1-604474e75879"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "요청서"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "b5241860-f1d4-5069-97e4-3b0eb492c972",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "f7f19f52-8928-5425-bca5-abb17522b837",
+          "relation_type_name": "요구하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "2fd70436-c0f6-5d2d-8ba1-604474e75879",
+          "target_name": "요청서",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "e63fa9ab-0b35-5088-93af-810a30564abb",
+              "relation_id": "b5241860-f1d4-5069-97e4-3b0eb492c972",
+              "semantic_unit_id": "1ef4c45d-f4bd-5981-9f9c-52498031669e",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제15조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 2
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "요청할 때에는",
+              "raw_object": "요청서",
+              "context_text": "##### 제15조 (자료제출요구 등의 방법)\n제15조 제2항\n감사기구의 장은 법 제20조제4항에 따라 자체감사 대상기관이 아닌 중앙행정기관등에 자료 또는 정보를 제출하도록 요청할 때에는 다음 각 호의 사항이 포함된 요청서로 하여야 한다. 이 경우 요청 전에 해당 요청 내용을 소속 기관의 장에게 보고하여야 하며, 특히 긴급한 필요가 있는 경우에는 사후에 보고할 수 있다.",
+              "unit_text": "자료 또는 정보가 필요한 자체감사의 명칭",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "483023ad-63d6-52d6-b6f1-3bf74022a41e",
+      "end_name": "회계교육",
+      "hops": 2,
+      "score": 1.36034873,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "483023ad-63d6-52d6-b6f1-3bf74022a41e"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "회계교육"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "bf5c0c1a-5d0b-5fcf-8ecc-8c87f859f763",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "483023ad-63d6-52d6-b6f1-3bf74022a41e",
+          "target_name": "회계교육",
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "relation_mention_id": "28a1d9c2-25a9-5b3e-9f38-0c8d06214548",
+              "relation_id": "bf5c0c1a-5d0b-5fcf-8ecc-8c87f859f763",
+              "semantic_unit_id": "a5fc0638-c5f8-57da-87c0-0465727e0cc6",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제7조",
+                "item_path": [],
+                "paragraph": 3
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "실시하여야 한다",
+              "raw_object": "회계교육",
+              "context_text": "##### 제7조 (전문성)\n제7조 제3항",
+              "unit_text": "감사기구의 장은 감사담당자의 전문성을 높이기 위하여 감사원 감사 등에의 참여를 권장하고, 감사 회계전문기관의 감사ㆍ회계교육을 이수하도록 하거나 필요한 경우 자체적으로 실시하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7",
+      "end_name": "감사원",
+      "hops": 2,
+      "score": 1.35612514,
+      "document_ids": [
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "감사원"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "11a9a81f-b16e-520e-bcf6-a900ce87d814",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "63ecb1c6-60fb-533b-a451-f38811f1e390",
+          "relation_type_name": "통지하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "fac980c8-b1d6-5e19-a8cb-df7486dbd4b7",
+          "target_name": "감사원",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "28fe8165-6117-5f00-891f-5029bb83f8bf",
+              "relation_id": "11a9a81f-b16e-520e-bcf6-a900ce87d814",
+              "semantic_unit_id": "5d4dbcf4-b7f4-5402-942f-ccad58323cdc",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제13조의4",
+                "item_path": [],
+                "paragraph": 5
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "알려야 한다",
+              "raw_object": "감사원",
+              "context_text": "##### 제13조의4 (적극행정에 대한 면책의 운영절차)\n제13조의4 제5항",
+              "unit_text": "감사기구의 장은 제2항 또는 제3항에 따라 면책결정을 한 때에는 매 분기 종료 후 10일 내에 이를 감사원에 알려야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "4624ccaf-1d1b-55e4-ab4c-4ad2df88318e",
+      "end_name": "사람",
+      "hops": 2,
+      "score": 1.35612514,
+      "document_ids": [
+        "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "공공감사에 관한 법률 시행령",
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "4624ccaf-1d1b-55e4-ab4c-4ad2df88318e"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "사람"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "13ed0956-f811-53c8-82be-907846cfacdb",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "28d9e5f5-b315-5880-98ea-eb4f9ed5760f",
+          "relation_type_name": "확인하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "4624ccaf-1d1b-55e4-ab4c-4ad2df88318e",
+          "target_name": "사람",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "e06545ad-4d67-5f4a-a3d5-49d8a19185bc",
+              "relation_id": "13ed0956-f811-53c8-82be-907846cfacdb",
+              "semantic_unit_id": "6ecccca3-4eb7-5aa1-9e60-abc70589fae0",
+              "document_id": "da7850b1-3a38-566d-ad3b-596e7eebd66b",
+              "document_title": "공공감사에 관한 법률 시행령",
+              "source_path": "공공감사에관한법률/시행령.md",
+              "source_ref": {
+                "article": "제9조",
+                "item_path": [
+                  "3"
+                ],
+                "paragraph": null
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "인정하는",
+              "raw_object": "사람",
+              "context_text": "##### 제9조 (감사담당자의 자격)\n법 제16조제1항에 따라 중앙행정기관 및 지방자치단체의 장은 감사담당자로 임용하려는 해당 기관에서 2년 이상 근속하였거나 다른 국가기관, 지방자치단체 또는 공공기관에서 2년 이상 감사 관련 업무를 담당한 사람으로서 다음 각 호의 어느 하나에 해당하는 자격요건을 갖춘 사람을 감사담당자로 임용하여야 한다. <개정 2011.8.3, 2013.1.16>",
+              "unit_text": "그 밖에 감사기구의 장이 감사업무 수행에 필요한 전문성, 자질, 적성을 갖추었다고 인정하는 사람",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "4b6cd44c-1504-520c-9d3d-9255f35281a9",
+      "end_name": "보고사실",
+      "hops": 2,
+      "score": 1.35612514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "4b6cd44c-1504-520c-9d3d-9255f35281a9"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "보고사실"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "00161e07-cd8e-560e-8c17-89ad6d4f1b77",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "88c630d2-6ad7-5107-b91f-22ec20baacbe",
+          "relation_type_name": "조사하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "4b6cd44c-1504-520c-9d3d-9255f35281a9",
+          "target_name": "보고사실",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "1358d514-7f39-5ed2-ae92-eaa0b79bb6ce",
+              "relation_id": "00161e07-cd8e-560e-8c17-89ad6d4f1b77",
+              "semantic_unit_id": "610c4381-6e5b-5a39-93a4-f692122ac74d",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제9조",
+                "item_path": [],
+                "paragraph": 3
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "조사하여 적정한 조치를 하여야 한다",
+              "raw_object": "보고사실",
+              "context_text": "##### 제9조 (청렴의무 등)\n제9조 제3항",
+              "unit_text": "제2항에 따른 보고를 받은 소속기관의 장 또는 감사기구의 장은 보고사실을 조사하여 적정한 조치를 하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "aeb13f21-7b84-5e45-8ff3-7c3476a02964",
+      "end_name": "협의",
+      "hops": 2,
+      "score": 1.35612514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "aeb13f21-7b84-5e45-8ff3-7c3476a02964"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "협의"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "02a399ea-40ac-52d1-a67e-345f99a7d50d",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "437bb2c1-62bf-5891-a421-f9fb85015fc9",
+          "relation_type_name": "심사하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "aeb13f21-7b84-5e45-8ff3-7c3476a02964",
+          "target_name": "협의",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "a6af9339-469c-546d-848b-9f8c099fa1f0",
+              "relation_id": "02a399ea-40ac-52d1-a67e-345f99a7d50d",
+              "semantic_unit_id": "45755fb7-88d8-52cb-ac0a-3e22cfa5ef15",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [
+                  "1"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "고려하여야 한다",
+              "raw_object": "협의",
+              "context_text": "##### 제11조 (연간 감사계획수립 방법)\n제11조 제1항\n감사기구의 장은 영 제11조제1항에 따른 연간 감사계획을 수립할 때에는 다음 각 호의 사항을 고려하여야 한다.",
+              "unit_text": "법 제31조에 따른 감사활동조정협의회의 협의ㆍ조정 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "787ebbbd-7446-5d17-9265-f7eeae0f62fc",
+      "end_name": "문책요구",
+      "hops": 2,
+      "score": 1.35612514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "787ebbbd-7446-5d17-9265-f7eeae0f62fc"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "문책요구"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "0e0d0146-ec54-55f3-add9-8ecbc6046756",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "787ebbbd-7446-5d17-9265-f7eeae0f62fc",
+          "target_name": "문책요구",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "3faad4a0-b09b-5e8f-a5cc-d90043cd1a2e",
+              "relation_id": "0e0d0146-ec54-55f3-add9-8ecbc6046756",
+              "semantic_unit_id": "34b275c4-6631-5f76-9e7a-6ab64c5ac269",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제25조",
+                "item_path": [
+                  "2"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "처리하여야 한다",
+              "raw_object": "문책요구",
+              "context_text": "##### 제25조 (감사결과의 처리기준 등)\n제25조 제1항\n감사기구의 장은 제24조에 따라 도출된 감사결과를 다음 각 호의 기준에 따라 처리하여야 한다.",
+              "unit_text": "징계 또는 문책요구 : 「국가공무원법」과 그 밖의 법령에 규정된 징계 또는 문책 사유에 해당하거나 정당한 사유 없이 자체감사를 거부하거나 자료의 제출을 게을리한 경우",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "61e525c6-5850-5200-a64a-1eeb8a181054",
+      "end_name": "일상감사처리대장",
+      "hops": 2,
+      "score": 1.35612514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "61e525c6-5850-5200-a64a-1eeb8a181054"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "일상감사처리대장"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "0f92a51f-f0eb-56f4-b721-e9f2b1c36329",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "4f7e57c0-ff77-51d0-b46c-03937a29a539",
+          "relation_type_name": "보관하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "61e525c6-5850-5200-a64a-1eeb8a181054",
+          "target_name": "일상감사처리대장",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "b28ebd80-af67-5f4b-b626-be38d72e0ae7",
+              "relation_id": "0f92a51f-f0eb-56f4-b721-e9f2b1c36329",
+              "semantic_unit_id": "ae5a2a2c-f13a-5118-8bbc-0f473d96281f",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제21조",
+                "item_path": [],
+                "paragraph": 5
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "비치한다",
+              "raw_object": "일상감사처리대장",
+              "context_text": "##### 제21조 (일상감사의 처리)\n제21조 제5항",
+              "unit_text": "감사기구의 장은 일상감사의 접수ㆍ처리상황을 관리하기 위하여 일상감사처리대장을 작성ㆍ비치하여야 한다.",
+              "unit_kind": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "e6281bec-e1ab-5b32-9232-492f89675beb",
+      "end_name": "부당한 업무처리나 복무규정 위반 등이 우려되어 감사의 필요성이 있다고 인정되는 사항",
+      "hops": 2,
+      "score": 1.35612514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "e6281bec-e1ab-5b32-9232-492f89675beb"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "부당한 업무처리나 복무규정 위반 등이 우려되어 감사의 필요성이 있다고 인정되는 사항"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "10844c8c-2088-5390-8210-0894a19a52f6",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "437bb2c1-62bf-5891-a421-f9fb85015fc9",
+          "relation_type_name": "심사하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "e6281bec-e1ab-5b32-9232-492f89675beb",
+          "target_name": "부당한 업무처리나 복무규정 위반 등이 우려되어 감사의 필요성이 있다고 인정되는 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "5b0b7bf8-4f57-5fd5-b99e-4af83b83eaef",
+              "relation_id": "10844c8c-2088-5390-8210-0894a19a52f6",
+              "semantic_unit_id": "59d009a4-98bf-5ac1-ac77-8cb9a5d05a50",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [
+                  "7"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "고려하여야 한다",
+              "raw_object": "부당한 업무처리나 복무규정 위반 등이 우려되어 감사의 필요성이 있다고 인정되는 사항",
+              "context_text": "##### 제11조 (연간 감사계획수립 방법)\n제11조 제1항\n감사기구의 장은 영 제11조제1항에 따른 연간 감사계획을 수립할 때에는 다음 각 호의 사항을 고려하여야 한다.",
+              "unit_text": "그 밖에 감사대상기관 또는 부서 및 그 소속 직원 등의 위법 또는 부당한 업무처리나 복무규정 위반 등이 우려되어 감사의 필요성이 있다고 인정되는 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+      "start_name": "감사기구의 독립성 보장에 필요한 사항",
+      "end_entity_id": "06852e28-4481-5811-984e-200213e96c89",
+      "end_name": "부서에 대한 감사빈도",
+      "hops": 2,
+      "score": 1.35612514,
+      "document_ids": [
+        "e2364457-6b87-56dd-ba15-29cf1edcef82"
+      ],
+      "document_titles": [
+        "중앙행정기관 및 지방자치단체 자체감사기준"
+      ],
+      "traversed_entity_ids": [
+        "17f85385-8ded-5a75-abc2-d06583a1d361",
+        "19a65a92-ab12-5215-85a4-81b187aabda7",
+        "06852e28-4481-5811-984e-200213e96c89"
+      ],
+      "traversed_entity_names": [
+        "감사기구의 독립성 보장에 필요한 사항",
+        "감사기구의 장",
+        "부서에 대한 감사빈도"
+      ],
+      "edges": [
+        {
+          "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "dbe93e45-cb5e-5517-9855-408740910228",
+          "relation_type_name": "수행하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "17f85385-8ded-5a75-abc2-d06583a1d361",
+          "target_name": "감사기구의 독립성 보장에 필요한 사항",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "9410852b-1e6d-5d61-ae69-70dfa373c4e7",
+              "relation_id": "ca7282bb-7bbc-5581-a2f3-f66811f7ba16",
+              "semantic_unit_id": "58312cb4-4ae0-5ce9-b804-a71c81e24331",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제5조",
+                "item_path": [
+                  "5"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "노력을 하여야 한다",
+              "raw_object": "감사기구의 독립성 보장에 필요한 사항",
+              "context_text": "##### 제5조 (독립성)\n제5조 제1항\n감사기구의 장은 감사기구의 독립성이 보장되도록 다음 각 호의 노력을 하여야 한다.",
+              "unit_text": "그 밖에 감사기구의 독립성 보장에 필요한 사항",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        },
+        {
+          "relation_id": "12cf7d27-219e-5623-b18e-30c0339d4607",
+          "source_entity_id": "19a65a92-ab12-5215-85a4-81b187aabda7",
+          "source_name": "감사기구의 장",
+          "relation_type_id": "437bb2c1-62bf-5891-a421-f9fb85015fc9",
+          "relation_type_name": "심사하다",
+          "polarity": "POSITIVE",
+          "target_entity_id": "06852e28-4481-5811-984e-200213e96c89",
+          "target_name": "부서에 대한 감사빈도",
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "relation_mention_id": "bcdd3e53-d063-58c2-983d-35fb53c1e132",
+              "relation_id": "12cf7d27-219e-5623-b18e-30c0339d4607",
+              "semantic_unit_id": "1c6812c4-37ca-5d6b-bb4e-b1b61bf70f98",
+              "document_id": "e2364457-6b87-56dd-ba15-29cf1edcef82",
+              "document_title": "중앙행정기관 및 지방자치단체 자체감사기준",
+              "source_path": "중앙행정기관및지방자치단체자체감사기준/감사원규칙.md",
+              "source_ref": {
+                "article": "제11조",
+                "item_path": [
+                  "4"
+                ],
+                "paragraph": 1
+              },
+              "raw_subject": "감사기구의 장",
+              "raw_predicate": "고려하여야 한다",
+              "raw_object": "부서에 대한 감사빈도",
+              "context_text": "##### 제11조 (연간 감사계획수립 방법)\n제11조 제1항\n감사기구의 장은 영 제11조제1항에 따른 연간 감사계획을 수립할 때에는 다음 각 호의 사항을 고려하여야 한다.",
+              "unit_text": "감사원 감사 등을 포함한 감사대상기관 또는 부서에 대한 감사빈도 및 주기",
+              "unit_kind": "terminal_item"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

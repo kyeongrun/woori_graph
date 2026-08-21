@@ -1,0 +1,1161 @@
+{
+  "query": "‘금융위원회’와 ‘금융감독원장’는 ‘자료의 제출’를 거쳐 어떻게 연결되며, 각 연결의 근거 법령은 무엇인가?",
+  "nodes": [
+    {
+      "id": "a930d826-ffc1-58d5-9f3c-42b00699d783",
+      "name": "금융감독원장",
+      "type": "OTHER",
+      "seed": true,
+      "candidate_score": 0.03109932,
+      "level": 0
+    },
+    {
+      "id": "45ce1896-d923-5033-884a-31c011281683",
+      "name": "금융위원회",
+      "type": "OTHER",
+      "seed": true,
+      "candidate_score": 0.03021354,
+      "level": 0
+    },
+    {
+      "id": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "name": "자료",
+      "type": "OTHER",
+      "seed": true,
+      "candidate_score": 0.01587302,
+      "level": 0
+    },
+    {
+      "id": "989d4200-f1db-54cd-8921-127d096f5ac3",
+      "name": "자료의 제출",
+      "type": "OTHER",
+      "seed": false,
+      "candidate_score": 0.0,
+      "level": 0
+    },
+    {
+      "id": "9d6ff107-ef60-5f90-baee-46791d21674d",
+      "name": "감독",
+      "type": "OTHER",
+      "seed": false,
+      "candidate_score": 0.0,
+      "level": 3
+    },
+    {
+      "id": "0cb919e9-9ca5-54a6-b3c6-7bb99567a11b",
+      "name": "금융감독원",
+      "type": "OTHER",
+      "seed": false,
+      "candidate_score": 0.0,
+      "level": 3
+    },
+    {
+      "id": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "name": "위원회",
+      "type": "OTHER",
+      "seed": false,
+      "candidate_score": 0.0,
+      "level": 3
+    },
+    {
+      "id": "cc25b9aa-03be-5e1f-8b42-29b72e3895bf",
+      "name": "인가",
+      "type": "OTHER",
+      "seed": false,
+      "candidate_score": 0.0,
+      "level": 3
+    }
+  ],
+  "edges": [
+    {
+      "id": "06d9b733-64e4-5b0d-81e0-46da2f5dbfbd",
+      "source": "a930d826-ffc1-58d5-9f3c-42b00699d783",
+      "source_name": "금융감독원장",
+      "target": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "target_name": "자료",
+      "relation": "요구하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 5,
+      "documents": [
+        "보험업법",
+        "상호저축은행법",
+        "은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "084f4428-ce1f-5c16-8b43-be60c84c9dab",
+          "relation_id": "06d9b733-64e4-5b0d-81e0-46da2f5dbfbd",
+          "semantic_unit_id": "fcf13649-a5e6-582c-9eb0-1333c8609037",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제48조",
+            "item_path": [],
+            "paragraph": 3
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "요구할 수 있다",
+          "raw_object": "자료"
+        },
+        {
+          "relation_mention_id": "4a00408a-431d-5e61-bdcf-8487b60b9cb0",
+          "relation_id": "06d9b733-64e4-5b0d-81e0-46da2f5dbfbd",
+          "semantic_unit_id": "991a4958-0bf2-51a1-901e-34c36e603d1d",
+          "document_id": "d0e95f75-270b-5f97-b116-5bfd6f4c356e",
+          "document_title": "보험업법",
+          "source_path": "보험업법/법률.md",
+          "source_ref": {
+            "article": "제133조",
+            "item_path": [],
+            "paragraph": 6
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "요구할 수 있다",
+          "raw_object": "자료"
+        },
+        {
+          "relation_mention_id": "f5a4bd5d-dd83-5e27-9020-34f59ee74c06",
+          "relation_id": "06d9b733-64e4-5b0d-81e0-46da2f5dbfbd",
+          "semantic_unit_id": "86773ff6-c3fe-5fc7-8a13-91bdcc060419",
+          "document_id": "f2d85f3b-a3ba-5236-9a94-ef58195cf0b1",
+          "document_title": "상호저축은행법",
+          "source_path": "상호저축은행법/법률.md",
+          "source_ref": {
+            "article": "제23조",
+            "item_path": [],
+            "paragraph": 4
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "요구할 수 있다",
+          "raw_object": "자료"
+        }
+      ]
+    },
+    {
+      "id": "0bda229e-3b16-5e05-8f69-bd4ac5bf1add",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "989d4200-f1db-54cd-8921-127d096f5ac3",
+      "target_name": "자료의 제출",
+      "relation": "요구하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 17,
+      "documents": [
+        "금융지주회사법",
+        "보험업법",
+        "은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "6d6728ca-2ada-53ae-897d-b98e2ce4a36b",
+          "relation_id": "0bda229e-3b16-5e05-8f69-bd4ac5bf1add",
+          "semantic_unit_id": "dddc249f-8e23-54dd-8cea-6b10cecb196a",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제15조",
+            "item_path": [],
+            "paragraph": 8
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "요구할 수 있다",
+          "raw_object": "자료의 제출"
+        },
+        {
+          "relation_mention_id": "272f89a9-0fa2-5458-9f7d-f9c299b43054",
+          "relation_id": "0bda229e-3b16-5e05-8f69-bd4ac5bf1add",
+          "semantic_unit_id": "77e8890d-ea0a-570d-8b22-7cbf307c8328",
+          "document_id": "d0e95f75-270b-5f97-b116-5bfd6f4c356e",
+          "document_title": "보험업법",
+          "source_path": "보험업법/법률.md",
+          "source_ref": {
+            "article": "제112조",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "요구할 수 있다",
+          "raw_object": "자료의 제출"
+        },
+        {
+          "relation_mention_id": "3cd41bc6-38ac-5cee-8590-eb0a87b50cbf",
+          "relation_id": "0bda229e-3b16-5e05-8f69-bd4ac5bf1add",
+          "semantic_unit_id": "1c34bae1-6a05-5632-aca3-251782313d2d",
+          "document_id": "adda80ee-63b3-5e3a-af96-8e0765774c3d",
+          "document_title": "금융지주회사법",
+          "source_path": "금융지주회사법/법률.md",
+          "source_ref": {
+            "article": "제34조",
+            "item_path": [],
+            "paragraph": 11
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "요구할 수 있다",
+          "raw_object": "자료의 제출"
+        }
+      ]
+    },
+    {
+      "id": "1274a240-0a77-51ae-9983-7b30e550279b",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "cc25b9aa-03be-5e1f-8b42-29b72e3895bf",
+      "target_name": "인가",
+      "relation": "공개하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "상호저축은행법",
+        "은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "f0a3156d-f9ae-5f15-baec-cbe0c35a1207",
+          "relation_id": "1274a240-0a77-51ae-9983-7b30e550279b",
+          "semantic_unit_id": "ae87794c-14cc-5ad7-a4b4-a81acc3fba5c",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제12조",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "공고하고",
+          "raw_object": "인가"
+        },
+        {
+          "relation_mention_id": "8310b761-4d05-551c-8eb1-ea0b8a5ad5a3",
+          "relation_id": "1274a240-0a77-51ae-9983-7b30e550279b",
+          "semantic_unit_id": "04c1f5f8-0e67-519b-ae8b-d67f4e8e8d4e",
+          "document_id": "f2d85f3b-a3ba-5236-9a94-ef58195cf0b1",
+          "document_title": "상호저축은행법",
+          "source_path": "상호저축은행법/법률.md",
+          "source_ref": {
+            "article": "제6조의3",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "공고하고",
+          "raw_object": "인가"
+        }
+      ]
+    },
+    {
+      "id": "25187e38-ee63-5339-bcb6-e7ac513517b3",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "0cb919e9-9ca5-54a6-b3c6-7bb99567a11b",
+      "target_name": "금융감독원",
+      "relation": "통지하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "상호저축은행법 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "49f3feb2-03d6-506b-b16d-f9ebc09332b2",
+          "relation_id": "25187e38-ee63-5339-bcb6-e7ac513517b3",
+          "semantic_unit_id": "f83bd38b-a2dc-535c-a2f9-7706e99ff339",
+          "document_id": "0e4f2094-9c63-53c6-9541-80063e43793a",
+          "document_title": "상호저축은행법 시행령",
+          "source_path": "상호저축은행법/시행령.md",
+          "source_ref": {
+            "article": "제25조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "정하여 통지하여야 한다",
+          "raw_object": "금융감독원"
+        }
+      ]
+    },
+    {
+      "id": "32b6273d-1511-5d25-97d6-a6870b123a07",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "989d4200-f1db-54cd-8921-127d096f5ac3",
+      "target_name": "자료의 제출",
+      "relation": "명령하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 9,
+      "documents": [
+        "자본시장과 금융투자업에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "775dbcb4-7e3e-5fb4-b946-5851e34be1fc",
+          "relation_id": "32b6273d-1511-5d25-97d6-a6870b123a07",
+          "semantic_unit_id": "aa1db5a6-f33b-5e62-913f-234babafb276",
+          "document_id": "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+          "document_title": "자본시장과 금융투자업에 관한 법률",
+          "source_path": "자본시장과금융투자업에관한법률/법률.md",
+          "source_ref": {
+            "article": "제146조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "명하거나",
+          "raw_object": "자료의 제출"
+        }
+      ]
+    },
+    {
+      "id": "33dd5e9e-093e-54b7-9d60-7de0cf54c80c",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "target_name": "자료",
+      "relation": "공개하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "보험업법",
+        "자본시장과 금융투자업에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "9df3a8e2-e377-5c1b-b316-e15b572fe486",
+          "relation_id": "33dd5e9e-093e-54b7-9d60-7de0cf54c80c",
+          "semantic_unit_id": "0170c38c-126f-5bb7-9698-bb27ee0ec5c9",
+          "document_id": "d0e95f75-270b-5f97-b116-5bfd6f4c356e",
+          "document_title": "보험업법",
+          "source_path": "보험업법/법률.md",
+          "source_ref": {
+            "article": "제164조",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "공표할 수 있다",
+          "raw_object": "자료"
+        },
+        {
+          "relation_mention_id": "3bfe8e04-c9cb-5450-8490-8d83c64b1983",
+          "relation_id": "33dd5e9e-093e-54b7-9d60-7de0cf54c80c",
+          "semantic_unit_id": "dd212191-b6e8-53eb-9294-d3db293cf6e9",
+          "document_id": "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+          "document_title": "자본시장과 금융투자업에 관한 법률",
+          "source_path": "자본시장과금융투자업에관한법률/법률.md",
+          "source_ref": {
+            "article": "제426조",
+            "item_path": [],
+            "paragraph": 8
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "공표할 수 있다",
+          "raw_object": "자료"
+        }
+      ]
+    },
+    {
+      "id": "3870c1d3-269c-511d-9a16-5594ac14a241",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "9d6ff107-ef60-5f90-baee-46791d21674d",
+      "target_name": "감독",
+      "relation": "명령하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "금융소비자 보호에 관한 법률",
+        "자본시장과 금융투자업에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "a4cbc9fc-d984-5506-96c3-d1b85535c2a7",
+          "relation_id": "3870c1d3-269c-511d-9a16-5594ac14a241",
+          "semantic_unit_id": "b7438ffb-585f-5028-90e8-15b477edaa82",
+          "document_id": "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+          "document_title": "자본시장과 금융투자업에 관한 법률",
+          "source_path": "자본시장과금융투자업에관한법률/법률.md",
+          "source_ref": {
+            "article": "제440조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "명할 수 있다",
+          "raw_object": "감독"
+        },
+        {
+          "relation_mention_id": "cb86be16-c9c1-597b-a502-9655dce280e3",
+          "relation_id": "3870c1d3-269c-511d-9a16-5594ac14a241",
+          "semantic_unit_id": "1d639e3e-3708-532c-bbd7-1632568b98e4",
+          "document_id": "86d66c12-8458-54b2-b3bc-7d53b869a015",
+          "document_title": "금융소비자 보호에 관한 법률",
+          "source_path": "금융소비자보호에관한법률/법률.md",
+          "source_ref": {
+            "article": "제66조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "명할 수 있다",
+          "raw_object": "감독"
+        }
+      ]
+    },
+    {
+      "id": "4b1ef58a-43b6-5d1f-91ed-a230fa3f31c6",
+      "source": "a930d826-ffc1-58d5-9f3c-42b00699d783",
+      "source_name": "금융감독원장",
+      "target": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "target_name": "자료",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 44,
+      "documents": [
+        "금융지주회사법 시행령",
+        "상호저축은행법 시행령",
+        "자본시장과 금융투자업에 관한 법률 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "62b8f2bd-d314-5255-9c2b-674a3612d73e",
+          "relation_id": "4b1ef58a-43b6-5d1f-91ed-a230fa3f31c6",
+          "semantic_unit_id": "87f6a6fc-a4f5-58a4-a966-dac6e65cf62c",
+          "document_id": "181ee1f0-996f-5c2e-9e7e-fc5dd97829b1",
+          "document_title": "금융지주회사법 시행령",
+          "source_path": "금융지주회사법/시행령.md",
+          "source_ref": {
+            "article": "제33조의4",
+            "item_path": [
+              "24"
+            ],
+            "paragraph": null
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "처리할 수 있다",
+          "raw_object": "자료"
+        },
+        {
+          "relation_mention_id": "301a2c37-b489-5e7a-a36d-eb223bcf25b0",
+          "relation_id": "4b1ef58a-43b6-5d1f-91ed-a230fa3f31c6",
+          "semantic_unit_id": "27774164-7494-544a-a42e-5007019b7d68",
+          "document_id": "0e4f2094-9c63-53c6-9541-80063e43793a",
+          "document_title": "상호저축은행법 시행령",
+          "source_path": "상호저축은행법/시행령.md",
+          "source_ref": {
+            "article": "제26조의2",
+            "item_path": [
+              "11"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "처리할 수 있다",
+          "raw_object": "자료"
+        },
+        {
+          "relation_mention_id": "b02687bf-e6cd-5cf3-998f-8adae874809f",
+          "relation_id": "4b1ef58a-43b6-5d1f-91ed-a230fa3f31c6",
+          "semantic_unit_id": "0bec8f39-be21-59dd-b969-c196cb5974a7",
+          "document_id": "6ddc5902-1a95-5ae2-b7cf-f36391cf0cca",
+          "document_title": "자본시장과 금융투자업에 관한 법률 시행령",
+          "source_path": "자본시장과금융투자업에관한법률/시행령.md",
+          "source_ref": {
+            "article": "제387조의2",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 2
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "처리할 수 있다",
+          "raw_object": "자료"
+        }
+      ]
+    },
+    {
+      "id": "4f23d391-97b1-541b-a917-fe6b31d989bd",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "cc25b9aa-03be-5e1f-8b42-29b72e3895bf",
+      "target_name": "인가",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "금융지주회사법 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "656572a8-628f-5c45-81b1-6d6c2b6be960",
+          "relation_id": "4f23d391-97b1-541b-a917-fe6b31d989bd",
+          "semantic_unit_id": "f2be309a-2102-5403-8801-f3f51158b579",
+          "document_id": "181ee1f0-996f-5c2e-9e7e-fc5dd97829b1",
+          "document_title": "금융지주회사법 시행령",
+          "source_path": "금융지주회사법/시행령.md",
+          "source_ref": {
+            "article": "제33조의4",
+            "item_path": [
+              "15"
+            ],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "처리할 수 있다",
+          "raw_object": "인가 등에 관한 사무"
+        }
+      ]
+    },
+    {
+      "id": "62c67296-7f0b-557a-9314-856173570d0b",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "989d4200-f1db-54cd-8921-127d096f5ac3",
+      "target_name": "자료의 제출",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 3,
+      "documents": [
+        "개인금융채권의 관리 및 개인금융채무자의 보호에 관한 법률",
+        "개인금융채권의 관리 및 개인금융채무자의 보호에 관한 법률 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "e65cd25c-95b6-5f11-ac03-8fd1976e3692",
+          "relation_id": "62c67296-7f0b-557a-9314-856173570d0b",
+          "semantic_unit_id": "1dcff78c-1006-56ae-97a2-aceddb768a34",
+          "document_id": "3b52a6cb-5b44-5dda-bbce-03c5d2a7101b",
+          "document_title": "개인금융채권의 관리 및 개인금융채무자의 보호에 관한 법률",
+          "source_path": "개인금융채권의관리및개인금융채무자의보호에관한법률/법률.md",
+          "source_ref": {
+            "article": "제41조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "할 수 있다",
+          "raw_object": "자료의 제출"
+        },
+        {
+          "relation_mention_id": "53823d57-5fb1-5564-ae11-7d12e424ec28",
+          "relation_id": "62c67296-7f0b-557a-9314-856173570d0b",
+          "semantic_unit_id": "bdbcb033-78d5-5b20-953c-fee7d9ef4f88",
+          "document_id": "fdbad150-c094-56ee-89ea-23290603c0ee",
+          "document_title": "개인금융채권의 관리 및 개인금융채무자의 보호에 관한 법률 시행령",
+          "source_path": "개인금융채권의관리및개인금융채무자의보호에관한법률/시행령.md",
+          "source_ref": {
+            "article": "제37조",
+            "item_path": [
+              "3"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "위탁한다",
+          "raw_object": "자료의 제출"
+        }
+      ]
+    },
+    {
+      "id": "6a2b4ef9-e7dd-5499-ae59-731e3a45cd8a",
+      "source": "a930d826-ffc1-58d5-9f3c-42b00699d783",
+      "source_name": "금융감독원장",
+      "target": "45ce1896-d923-5033-884a-31c011281683",
+      "target_name": "금융위원회",
+      "relation": "제출하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 3,
+      "documents": [
+        "금융복합기업집단의 감독에 관한 법률",
+        "금융지주회사법",
+        "자본시장과 금융투자업에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "d259556c-d811-5644-93ad-42a482d5b98a",
+          "relation_id": "6a2b4ef9-e7dd-5499-ae59-731e3a45cd8a",
+          "semantic_unit_id": "72f1692b-97bf-5946-ab10-04b8fb3b8852",
+          "document_id": "adda80ee-63b3-5e3a-af96-8e0765774c3d",
+          "document_title": "금융지주회사법",
+          "source_path": "금융지주회사법/법률.md",
+          "source_ref": {
+            "article": "제51조",
+            "item_path": [],
+            "paragraph": 5
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "제출하여야 한다",
+          "raw_object": "금융위원회"
+        },
+        {
+          "relation_mention_id": "28e0d444-c8fe-5163-bd49-7282a25a10ca",
+          "relation_id": "6a2b4ef9-e7dd-5499-ae59-731e3a45cd8a",
+          "semantic_unit_id": "4a30237e-5eb9-5f38-80d8-482b60495ee4",
+          "document_id": "f2504102-525b-5092-b607-73beba3b3ad6",
+          "document_title": "금융복합기업집단의 감독에 관한 법률",
+          "source_path": "금융복합기업집단의감독에관한법률/법률.md",
+          "source_ref": {
+            "article": "제18조",
+            "item_path": [],
+            "paragraph": 4
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "제출하여야 한다",
+          "raw_object": "금융위원회"
+        },
+        {
+          "relation_mention_id": "89375333-ea01-515f-bf35-549eef9f2631",
+          "relation_id": "6a2b4ef9-e7dd-5499-ae59-731e3a45cd8a",
+          "semantic_unit_id": "c8846561-8df9-5562-95f5-032c918de077",
+          "document_id": "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+          "document_title": "자본시장과 금융투자업에 관한 법률",
+          "source_path": "자본시장과금융투자업에관한법률/법률.md",
+          "source_ref": {
+            "article": "제419조",
+            "item_path": [],
+            "paragraph": 7
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "제출하여야 한다",
+          "raw_object": "금융위원회"
+        }
+      ]
+    },
+    {
+      "id": "70e86a3c-eb24-514e-87c4-05b6a368043e",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "target_name": "자료",
+      "relation": "제출하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 1,
+      "documents": [
+        "자본시장과 금융투자업에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "bc56447c-6679-5e07-8631-3daca837aad1",
+          "relation_id": "70e86a3c-eb24-514e-87c4-05b6a368043e",
+          "semantic_unit_id": "70a372e8-e757-5742-bdec-75faa1d6d37b",
+          "document_id": "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+          "document_title": "자본시장과 금융투자업에 관한 법률",
+          "source_path": "자본시장과금융투자업에관한법률/법률.md",
+          "source_ref": {
+            "article": "제436조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "제출하는 경우",
+          "raw_object": "자료"
+        }
+      ]
+    },
+    {
+      "id": "88b5d296-664f-55c6-8608-c93043bde6dd",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "0cb919e9-9ca5-54a6-b3c6-7bb99567a11b",
+      "target_name": "금융감독원",
+      "relation": "임명하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 3,
+      "documents": [
+        "상호저축은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "a119e25f-85dd-5971-8b38-2e82cf36da0e",
+          "relation_id": "88b5d296-664f-55c6-8608-c93043bde6dd",
+          "semantic_unit_id": "9db78720-aaf0-559d-9637-e2822a80aecd",
+          "document_id": "f2d85f3b-a3ba-5236-9a94-ef58195cf0b1",
+          "document_title": "상호저축은행법",
+          "source_path": "상호저축은행법/법률.md",
+          "source_ref": {
+            "article": "제24조의2",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "파견하여 상주하면서 공동으로 경영지도를 하게 할 수 있다",
+          "raw_object": "금융감독원"
+        }
+      ]
+    },
+    {
+      "id": "aef1f58a-bf6b-599d-9512-810e4f153c3e",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "target_name": "자료",
+      "relation": "규정하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "금융소비자 보호에 관한 법률 시행령",
+        "자본시장과 금융투자업에 관한 법률 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "89f9a019-c2a8-552c-a40a-badcafcf7386",
+          "relation_id": "aef1f58a-bf6b-599d-9512-810e4f153c3e",
+          "semantic_unit_id": "25fbbcc5-598a-5114-b1cf-559279e8a8e2",
+          "document_id": "6ddc5902-1a95-5ae2-b7cf-f36391cf0cca",
+          "document_title": "자본시장과 금융투자업에 관한 법률 시행령",
+          "source_path": "자본시장과금융투자업에관한법률/시행령.md",
+          "source_ref": {
+            "article": "제118조의20",
+            "item_path": [
+              "9"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "정하여 고시한다",
+          "raw_object": "자료"
+        },
+        {
+          "relation_mention_id": "e47a8938-0e58-50e2-8bcf-5a8d1d156f46",
+          "relation_id": "aef1f58a-bf6b-599d-9512-810e4f153c3e",
+          "semantic_unit_id": "ad152bb9-9c1c-5062-a280-e9b818a99b4c",
+          "document_id": "d8b1a65a-e7e8-5819-8691-bfc2aead9311",
+          "document_title": "금융소비자 보호에 관한 법률 시행령",
+          "source_path": "금융소비자보호에관한법률/시행령.md",
+          "source_ref": {
+            "article": "제26조",
+            "item_path": [
+              "7"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "정하여 고시한다",
+          "raw_object": "자료"
+        }
+      ]
+    },
+    {
+      "id": "ceede92a-757c-5b17-8ef2-c93605c52a05",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "target_name": "자료",
+      "relation": "요구하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 6,
+      "documents": [
+        "금융복합기업집단의 감독에 관한 법률",
+        "상호저축은행법",
+        "한국은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "5a1e27da-1b54-51c1-8793-a5c5dfb3cd41",
+          "relation_id": "ceede92a-757c-5b17-8ef2-c93605c52a05",
+          "semantic_unit_id": "2d029ac8-546e-51ef-81a9-a1413898fbfa",
+          "document_id": "ce48b361-d58e-57a6-8f6e-7e95b4633a31",
+          "document_title": "한국은행법",
+          "source_path": "한국은행법/법률.md",
+          "source_ref": {
+            "article": "제94조",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "요청할 수 있다",
+          "raw_object": "자료"
+        },
+        {
+          "relation_mention_id": "6edf3be8-1cd7-5404-a139-29f21b3368e7",
+          "relation_id": "ceede92a-757c-5b17-8ef2-c93605c52a05",
+          "semantic_unit_id": "bd682253-f44a-5130-a9c6-3ed6909645bb",
+          "document_id": "f2d85f3b-a3ba-5236-9a94-ef58195cf0b1",
+          "document_title": "상호저축은행법",
+          "source_path": "상호저축은행법/법률.md",
+          "source_ref": {
+            "article": "제10조의6",
+            "item_path": [],
+            "paragraph": 3
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "요구할 수 있다",
+          "raw_object": "자료"
+        },
+        {
+          "relation_mention_id": "0f7e5b13-eb0d-5b19-ba46-48ad8b631eab",
+          "relation_id": "ceede92a-757c-5b17-8ef2-c93605c52a05",
+          "semantic_unit_id": "1a97ccfc-36aa-5a05-95bc-cd5924ac8d7f",
+          "document_id": "f2504102-525b-5092-b607-73beba3b3ad6",
+          "document_title": "금융복합기업집단의 감독에 관한 법률",
+          "source_path": "금융복합기업집단의감독에관한법률/법률.md",
+          "source_ref": {
+            "article": "제5조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "요청할 수 있다",
+          "raw_object": "자료"
+        }
+      ]
+    },
+    {
+      "id": "df6da1ee-56f9-547f-849d-df1724ba018c",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "d1758567-055c-5b5b-9e03-7da44c434416",
+      "target_name": "위원회",
+      "relation": "임명하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 3,
+      "documents": [
+        "보험업법 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "b669c0f6-53cf-5c2d-807b-05b7c40b81c5",
+          "relation_id": "df6da1ee-56f9-547f-849d-df1724ba018c",
+          "semantic_unit_id": "77132008-3424-585f-8ae4-22f8aa56f1d1",
+          "document_id": "03d30d88-c93c-547c-bf15-0cfee47fe50a",
+          "document_title": "보험업법 시행령",
+          "source_path": "보험업법/시행령.md",
+          "source_ref": {
+            "article": "제76조의2",
+            "item_path": [
+              "3"
+            ],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "해임 또는 해촉할 수 있다",
+          "raw_object": "위원회"
+        }
+      ]
+    },
+    {
+      "id": "e64f7de9-0767-5bb0-aea9-8d72518c2736",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "cc25b9aa-03be-5e1f-8b42-29b72e3895bf",
+      "target_name": "인가",
+      "relation": "취소하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 46,
+      "documents": [
+        "금융지주회사법",
+        "은행법",
+        "자본시장과 금융투자업에 관한 법률"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "a57d849d-15c2-5875-a501-e514eab98749",
+          "relation_id": "e64f7de9-0767-5bb0-aea9-8d72518c2736",
+          "semantic_unit_id": "4f33b436-7666-5baf-8b7f-345764881189",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제60조",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "취소할 수 있다",
+          "raw_object": "인가"
+        },
+        {
+          "relation_mention_id": "6e96eccb-14c0-5fd5-9728-71cd62dd140c",
+          "relation_id": "e64f7de9-0767-5bb0-aea9-8d72518c2736",
+          "semantic_unit_id": "bc01abe6-6776-5ecf-bf89-2e373d8cb530",
+          "document_id": "adda80ee-63b3-5e3a-af96-8e0765774c3d",
+          "document_title": "금융지주회사법",
+          "source_path": "금융지주회사법/법률.md",
+          "source_ref": {
+            "article": "제57조",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 2
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "취소할 수 있다",
+          "raw_object": "인가"
+        },
+        {
+          "relation_mention_id": "504626be-aec1-5378-8bef-0f37372daf65",
+          "relation_id": "e64f7de9-0767-5bb0-aea9-8d72518c2736",
+          "semantic_unit_id": "75690a46-19f0-5dc6-ad6e-aad4c2f07433",
+          "document_id": "5d01c0e8-40c8-5c4a-8740-0ba61d89ff3c",
+          "document_title": "자본시장과 금융투자업에 관한 법률",
+          "source_path": "자본시장과금융투자업에관한법률/법률.md",
+          "source_ref": {
+            "article": "제323조의20",
+            "item_path": [
+              "1"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "취소할 수 있다",
+          "raw_object": "인가"
+        }
+      ]
+    },
+    {
+      "id": "e73bc394-2b6e-552c-88cd-7afe300e25ba",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "cc25b9aa-03be-5e1f-8b42-29b72e3895bf",
+      "target_name": "인가",
+      "relation": "통지하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 2,
+      "documents": [
+        "상호저축은행법",
+        "은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "d7798fd5-bb22-502f-a345-6b0912b91db6",
+          "relation_id": "e73bc394-2b6e-552c-88cd-7afe300e25ba",
+          "semantic_unit_id": "ae87794c-14cc-5ad7-a4b4-a81acc3fba5c",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제12조",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "알려야 한다",
+          "raw_object": "인가"
+        },
+        {
+          "relation_mention_id": "23261e87-e9dc-5ec3-a909-d6c9173bd95c",
+          "relation_id": "e73bc394-2b6e-552c-88cd-7afe300e25ba",
+          "semantic_unit_id": "04c1f5f8-0e67-519b-ae8b-d67f4e8e8d4e",
+          "document_id": "f2d85f3b-a3ba-5236-9a94-ef58195cf0b1",
+          "document_title": "상호저축은행법",
+          "source_path": "상호저축은행법/법률.md",
+          "source_ref": {
+            "article": "제6조의3",
+            "item_path": [],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "알려야 한다",
+          "raw_object": "인가"
+        }
+      ]
+    },
+    {
+      "id": "f041a4e3-9798-5221-a0ea-e2bdf47226c0",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "66f93fdd-1b93-54c0-a71b-084830e55f3d",
+      "target_name": "자료",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 74,
+      "documents": [
+        "금융복합기업집단의 감독에 관한 법률 시행령",
+        "금융지주회사법 시행령",
+        "상호저축은행법 시행령"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "2cf51caf-9468-550a-b686-c2f850bc9a69",
+          "relation_id": "f041a4e3-9798-5221-a0ea-e2bdf47226c0",
+          "semantic_unit_id": "c5fdcae9-f2c0-535c-8bc8-4e9af9fb2ff2",
+          "document_id": "dbb94599-4784-5a7f-bff1-824bf94a372f",
+          "document_title": "금융복합기업집단의 감독에 관한 법률 시행령",
+          "source_path": "금융복합기업집단의감독에관한법률/시행령.md",
+          "source_ref": {
+            "article": "제23조",
+            "item_path": [
+              "8",
+              "다"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "위탁한다",
+          "raw_object": "자료"
+        },
+        {
+          "relation_mention_id": "69c45804-a685-5d78-9110-02a76bdd4e9c",
+          "relation_id": "f041a4e3-9798-5221-a0ea-e2bdf47226c0",
+          "semantic_unit_id": "87f6a6fc-a4f5-58a4-a966-dac6e65cf62c",
+          "document_id": "181ee1f0-996f-5c2e-9e7e-fc5dd97829b1",
+          "document_title": "금융지주회사법 시행령",
+          "source_path": "금융지주회사법/시행령.md",
+          "source_ref": {
+            "article": "제33조의4",
+            "item_path": [
+              "24"
+            ],
+            "paragraph": null
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "처리할 수 있다",
+          "raw_object": "자료"
+        },
+        {
+          "relation_mention_id": "77b65b12-e289-5a18-9175-628ccc449936",
+          "relation_id": "f041a4e3-9798-5221-a0ea-e2bdf47226c0",
+          "semantic_unit_id": "27774164-7494-544a-a42e-5007019b7d68",
+          "document_id": "0e4f2094-9c63-53c6-9541-80063e43793a",
+          "document_title": "상호저축은행법 시행령",
+          "source_path": "상호저축은행법/시행령.md",
+          "source_ref": {
+            "article": "제26조의2",
+            "item_path": [
+              "11"
+            ],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "처리할 수 있다",
+          "raw_object": "자료"
+        }
+      ]
+    },
+    {
+      "id": "f1d89034-60f3-5873-a2ec-fef66bd8378d",
+      "source": "45ce1896-d923-5033-884a-31c011281683",
+      "source_name": "금융위원회",
+      "target": "9d6ff107-ef60-5f90-baee-46791d21674d",
+      "target_name": "감독",
+      "relation": "수행하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 7,
+      "documents": [
+        "중소기업은행법",
+        "한국산업은행법",
+        "한국수출입은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "2bc662ec-7986-5ce9-bbc3-bc1f345b205b",
+          "relation_id": "f1d89034-60f3-5873-a2ec-fef66bd8378d",
+          "semantic_unit_id": "ecb88464-75fa-5c05-8e8d-586cf4918aa8",
+          "document_id": "84c31ade-ed6a-5d37-8a01-6482add8dfeb",
+          "document_title": "중소기업은행법",
+          "source_path": "중소기업은행법/법률.md",
+          "source_ref": {
+            "article": "제46조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "하고",
+          "raw_object": "감독"
+        },
+        {
+          "relation_mention_id": "b7097a52-2b87-5d72-bd4a-19e202588191",
+          "relation_id": "f1d89034-60f3-5873-a2ec-fef66bd8378d",
+          "semantic_unit_id": "7bb2d53e-b526-50bb-b41b-58f58dd51a8c",
+          "document_id": "2d7b1fa0-7fd7-516d-a80e-fcc25a3a3857",
+          "document_title": "한국산업은행법",
+          "source_path": "한국산업은행법/법률.md",
+          "source_ref": {
+            "article": "제34조",
+            "item_path": [],
+            "paragraph": 1
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "수행하고",
+          "raw_object": "감독"
+        },
+        {
+          "relation_mention_id": "55e9c641-dc5c-5e01-8779-e28953bb93e9",
+          "relation_id": "f1d89034-60f3-5873-a2ec-fef66bd8378d",
+          "semantic_unit_id": "d578ba39-a29c-5932-8259-ccb2f04d8259",
+          "document_id": "7c3ac933-2e5c-5d68-b6e9-58cb9de07d94",
+          "document_title": "한국수출입은행법",
+          "source_path": "한국수출입은행법/법률.md",
+          "source_ref": {
+            "article": "제39조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "금융위원회",
+          "raw_predicate": "수행하며",
+          "raw_object": "감독"
+        }
+      ]
+    },
+    {
+      "id": "fa58272f-a312-5717-a69b-fcec676a0058",
+      "source": "a930d826-ffc1-58d5-9f3c-42b00699d783",
+      "source_name": "금융감독원장",
+      "target": "989d4200-f1db-54cd-8921-127d096f5ac3",
+      "target_name": "자료의 제출",
+      "relation": "요구하다",
+      "polarity": "POSITIVE",
+      "evidence_count": 11,
+      "documents": [
+        "금융지주회사법",
+        "상호저축은행법",
+        "은행법"
+      ],
+      "evidence": [
+        {
+          "relation_mention_id": "184f2603-cfa2-58ec-b705-db2cf07ae097",
+          "relation_id": "fa58272f-a312-5717-a69b-fcec676a0058",
+          "semantic_unit_id": "b00fb546-a93d-5212-8a2b-b4aa83882115",
+          "document_id": "d4243c50-40f8-5847-bb29-f0dc940432c0",
+          "document_title": "은행법",
+          "source_path": "은행법/법률.md",
+          "source_ref": {
+            "article": "제48조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "요구할 수 있다",
+          "raw_object": "자료의 제출"
+        },
+        {
+          "relation_mention_id": "b8b64a7a-6fe1-5e28-8716-e5a750dd047d",
+          "relation_id": "fa58272f-a312-5717-a69b-fcec676a0058",
+          "semantic_unit_id": "a7132554-3d22-5660-ab38-94fee714887a",
+          "document_id": "adda80ee-63b3-5e3a-af96-8e0765774c3d",
+          "document_title": "금융지주회사법",
+          "source_path": "금융지주회사법/법률.md",
+          "source_ref": {
+            "article": "제51조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "요구할 수 있다",
+          "raw_object": "자료의 제출"
+        },
+        {
+          "relation_mention_id": "4450d144-17bb-55bd-9bf5-2973f832fb5a",
+          "relation_id": "fa58272f-a312-5717-a69b-fcec676a0058",
+          "semantic_unit_id": "d9408734-b401-5653-9c7a-8b0e19e9ad7b",
+          "document_id": "f2d85f3b-a3ba-5236-9a94-ef58195cf0b1",
+          "document_title": "상호저축은행법",
+          "source_path": "상호저축은행법/법률.md",
+          "source_ref": {
+            "article": "제23조",
+            "item_path": [],
+            "paragraph": 2
+          },
+          "raw_subject": "금융감독원장",
+          "raw_predicate": "요구할 수 있다",
+          "raw_object": "자료의 제출"
+        }
+      ]
+    }
+  ]
+}
