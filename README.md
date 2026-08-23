@@ -1,5 +1,7 @@
 # woori_graph
 
+다른 PC에서 저장소를 clone/pull하여 현재 문맥 완결형 semantic unit 산출물을 검토하려면 [다른 PC 검토 안내](docs/review-context-release-from-another-pc.ko.md)를 따른다. 별도 패키지 설치 없이 `scripts/verify_context_release.py`로 커밋된 JSONL의 해시·구조·레코드 수·감사 상태를 확인할 수 있다.
+
 ## 신규 문서 재사용 실행
 
 동일한 소스를 내부 API 프로젝트로 옮긴 뒤에도 `document-ingest` 진입점을 그대로 호출할 수 있다. API 라우터는 포함하지 않으며, 설정 파일의 상대경로는 실행 위치가 아니라 설정 파일이 있는 디렉터리를 기준으로 해석한다.
