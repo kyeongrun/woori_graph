@@ -10,9 +10,9 @@ raw_svo_prompt = "../prompts/raw_svo_extract_context_complete.ko.md"
 env_file = "../.env"
 
 [execution]
-# 각 semantic unit은 독립 요청이며 동시에 최대 32개 요청을 처리한다.
-context_workers = 32
-svo_workers = 32
+# 각 semantic unit은 독립 요청이며 동시에 최대 48개 요청을 처리한다.
+context_workers = 48
+svo_workers = 48
 batch_size = 200
 
 [relations]

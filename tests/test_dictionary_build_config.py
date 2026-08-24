@@ -9,8 +9,8 @@ def test_context_complete_config_resolves_paths_and_fixed_storage_names() -> Non
     )
 
     assert config.source.name == "raw"
-    assert config.context_workers == 32
-    assert config.svo_workers == 32
+    assert config.context_workers == 48
+    assert config.svo_workers == 48
     assert config.relation_max_types == 100
     assert config.relation_polarity_strategy == "separate_canonical_types"
     assert config.postgres_schema == "graph_v2"
