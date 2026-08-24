@@ -201,6 +201,15 @@ def build_parser() -> argparse.ArgumentParser:
     merge.add_argument("--dedupe-key", help="optional top-level field used to remove duplicate records")
     merge.add_argument("--overwrite", action="store_true")
 
+    align_svo = subparsers.add_parser(
+        "align-svo",
+        help="merge raw-SVO files, require exact semantic-unit coverage, and restore source order",
+    )
+    align_svo.add_argument("--units", type=Path, required=True)
+    align_svo.add_argument("--inputs", type=Path, nargs="+", required=True)
+    align_svo.add_argument("--output", type=Path, required=True)
+    align_svo.add_argument("--overwrite", action="store_true")
+
     audit_svo = subparsers.add_parser("audit-svo", help="verify a standalone semantic-unit/raw-SVO run")
     audit_svo.add_argument("--units", type=Path, required=True)
     audit_svo.add_argument("--raw-svo", type=Path, required=True)
@@ -811,6 +820,21 @@ def main(argv: Sequence[str] | None = None) -> int:
             records = align_raw_svo_records(unit_ids, records)
         count = write_jsonl(args.output, records, overwrite=args.overwrite)
         print(f"Wrote {count} sanitized raw SVO records to {args.output}")
+        return 0
+
+    if args.command == "align-svo":
+        unit_ids = [record["semantic_unit_id"] for record in read_jsonl(args.units)]
+        records = [
+            record
+            for input_path in args.inputs
+            for record in read_jsonl(input_path)
+        ]
+        aligned = align_raw_svo_records(unit_ids, records)
+        count = write_jsonl(args.output, aligned, overwrite=args.overwrite)
+        print(
+            f"Aligned {count} raw SVO records from {len(args.inputs)} files "
+            f"to {args.output}"
+        )
         return 0
 
     if args.command == "seed-entity-map":

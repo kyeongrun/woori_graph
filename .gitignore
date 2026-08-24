@@ -13,6 +13,7 @@ __pycache__/
 data/company_raw/
 runs/
 runtime/
+artifacts/**/work/logs/
 tests/_generated_storage_test/
 tests/_generated_document_ingest_test/
 .test-search-*/

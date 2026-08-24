@@ -31,6 +31,13 @@ segment
 
 `extract-svo`는 `resolved_text`를 주 입력으로 사용하고 `unit_text`, `governing_text`, `context_text`를 근거 확인에 사용한다. raw SVO endpoint는 LLM 출력을 그대로 보존한다.
 
+## 단계별 진행 상태
+
+- `segment -> resolve-context`: 23,123개 semantic unit 완료, 감사 통과
+- `extract-svo`: 23,123개 레코드와 29,818개 raw 관계 완료, 감사 통과
+
+raw SVO 본 실행은 동시성 48, 체크포인트 200개 단위로 수행했다. 최초 JSON 형식 실패 1건은 같은 semantic unit을 출력 한도 4,096토큰으로 재요청해 복구했다. `align-svo` 명령으로 복구 파일을 원본 semantic unit 순서에 맞춰 병합했으며 endpoint sanitizer는 적용하지 않았다. 따라서 수치 조건, 긴 수식어, 일반명사 endpoint와 모델이 판단한 관계 방향을 raw noise로 그대로 보존한다.
+
 ## 표준 산출물
 
 ```text

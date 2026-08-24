@@ -1,0 +1,45 @@
+{
+  "stage": "extract-raw-svo",
+  "status": "completed",
+  "generated_at": "2026-08-24T01:06:34.093161+00:00",
+  "program": {
+    "git_parent_commit": "6a3a1f7165169a4a85f8e23b1022a72c4db04e93"
+  },
+  "execution": {
+    "workers": 48,
+    "batch_size": 200,
+    "preserve_llm_output": true,
+    "endpoint_scope": "user_approved_private_non_loopback",
+    "endpoint_url_recorded": false,
+    "initial_failures": 1,
+    "recovered_failures": 1,
+    "recovery_note": "One long response was retried with max_tokens=4096"
+  },
+  "prompt": {
+    "path": "prompts/raw_svo_extract_context_complete.ko.md",
+    "sha256": "244648c271367846532aeb43fb1f523264f95e050b2cb79a32c3ba0c34632055"
+  },
+  "config": {
+    "path": "config/dictionary_build.context_complete.toml",
+    "sha256": "1208e2fde9c30707a00f713b7626777875800fe8361099ebc6180c2b19eb103f"
+  },
+  "artifacts": {
+    "semantic_units": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/01_semantic_units.jsonl",
+      "sha256": "006459237617e5a50019522dd8f8dc24c5607a9060e80cd30aa753d6b9a78617",
+      "record_count": 23123
+    },
+    "raw_svo": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/02_raw_svo.jsonl",
+      "sha256": "c192d0edb16d4e5b81067da14fdfb743a1f7a46e58627aadeed06e21868d2f00",
+      "record_count": 23123,
+      "relation_count": 29818,
+      "empty_record_count": 1109
+    },
+    "audit": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/audits/02_raw_svo_audit.json",
+      "sha256": "eadda0ada631c6b26091ddb1d9f18fdac4f5ef977def01ba8fbe342877421f2b",
+      "passed": true
+    }
+  }
+}
