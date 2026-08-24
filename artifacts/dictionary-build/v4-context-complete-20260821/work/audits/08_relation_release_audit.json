@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "counts": {
+    "raw_relation_candidates": 6220,
+    "source_relation_types": 1335,
+    "taxonomy_families": 50,
+    "closed_relation_types": 100,
+    "direct_aliases": 6220,
+    "polarities": {
+      "NEGATIVE": 50,
+      "POSITIVE": 50
+    }
+  },
+  "checks": {
+    "candidate_names_unique": true,
+    "surface_map_covers_all_raw_predicates": true,
+    "surface_map_has_no_fallback": true,
+    "closed_audit_passed": true,
+    "closed_map_covers_source_types": true,
+    "relation_type_limit_met": true,
+    "relation_type_ids_unique": true,
+    "polarities_valid": true,
+    "direct_aliases_unique": true,
+    "raw_alias_coverage_exact": true,
+    "alias_relation_references_valid": true,
+    "mentions_preserved": true
+  }
+}

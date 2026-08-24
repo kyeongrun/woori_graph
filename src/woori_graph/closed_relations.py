@@ -86,7 +86,7 @@ def propose_relation_taxonomy(
         key=lambda item: (-int(item.get("mention_count", 0)), item["canonical_name"]),
     )
     if len(ordered) <= inventory_batch_size:
-        return _request_taxonomy(
+        return _request_taxonomy_with_retries(
             ordered,
             client,
             maximum_families=target_families,
@@ -96,11 +96,15 @@ def propose_relation_taxonomy(
         ordered[start : start + inventory_batch_size]
         for start in range(0, len(ordered), inventory_batch_size)
     ]
-    local_limit = min(25, target_families)
+    # Partial inventories are candidates for a later consolidation pass. Give
+    # them slightly more room than the older 25-family cap so one extra useful
+    # candidate does not abort the entire taxonomy run; the final target limit
+    # remains strictly enforced by the consolidation request below.
+    local_limit = min(30, target_families)
     local_taxonomies: list[list[dict[str, str]] | None] = [None] * len(batches)
 
     def summarize(batch_index: int, batch: list[dict[str, Any]]):
-        return batch_index, _request_taxonomy(
+        return batch_index, _request_taxonomy_with_retries(
             batch,
             client,
             maximum_families=local_limit,
@@ -137,12 +141,38 @@ def propose_relation_taxonomy(
         }
         for item in candidates
     ]
-    return _request_taxonomy(
+    return _request_taxonomy_with_retries(
         candidate_inventory,
         client,
         maximum_families=target_families,
         consolidation=True,
     )
+
+
+def _request_taxonomy_with_retries(
+    relation_records: Sequence[dict[str, Any]],
+    client: CompletionClient,
+    *,
+    maximum_families: int,
+    consolidation: bool = False,
+    attempts: int = 3,
+) -> list[dict[str, str]]:
+    """Retry malformed or slightly non-compliant taxonomy JSON responses."""
+
+    last_error: Exception | None = None
+    for _ in range(attempts):
+        try:
+            return _request_taxonomy(
+                relation_records,
+                client,
+                maximum_families=maximum_families,
+                consolidation=consolidation,
+            )
+        except (json.JSONDecodeError, ValueError) as exc:
+            last_error = exc
+    raise RuntimeError(
+        f"taxonomy response remained invalid after {attempts} attempts"
+    ) from last_error
 
 
 def _request_taxonomy(
@@ -399,6 +429,33 @@ def build_closed_relation_dictionary(
         output.append(bucket)
     output.sort(key=lambda item: (item["canonical_name"], item["polarity"]))
     return output
+
+
+def build_direct_relation_alias_map(
+    relation_dictionary: Sequence[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Flatten the closed dictionary into one unambiguous row per alias."""
+
+    rows: dict[str, dict[str, Any]] = {}
+    for relation_type in relation_dictionary:
+        for alias in relation_type.get("aliases", []):
+            name = str(alias.get("name", "")).strip()
+            mention_count = int(alias.get("mention_count", 0))
+            if not name or mention_count <= 0:
+                continue
+            row = {
+                "alias": name,
+                "canonical_name": relation_type["canonical_name"],
+                "relation_type_id": relation_type["relation_type_id"],
+                "polarity": relation_type["polarity"],
+                "mention_count": mention_count,
+                "sample_source_refs": alias.get("sample_source_refs", []),
+            }
+            existing = rows.get(name)
+            if existing is not None and existing["relation_type_id"] != row["relation_type_id"]:
+                raise ValueError(f"relation alias maps to multiple final types: {name!r}")
+            rows[name] = row
+    return [rows[name] for name in sorted(rows)]
 
 
 def audit_closed_relation_dictionary(

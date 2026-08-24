@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "counts": {
+    "source_relation_types": 1335,
+    "mapped_source_relation_types": 1335,
+    "output_relation_types": 100,
+    "source_mentions": 29818,
+    "output_mentions": 29818
+  },
+  "checks": {
+    "all_source_types_mapped": true,
+    "mapping_is_one_to_one_per_source_type": true,
+    "relation_type_limit_met": true,
+    "mention_count_preserved": true,
+    "output_relation_type_ids_unique": true,
+    "all_outputs_have_canonical_alias": true
+  },
+  "unmapped_source_types": []
+}

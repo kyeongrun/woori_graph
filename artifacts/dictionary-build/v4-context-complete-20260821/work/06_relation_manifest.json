@@ -1,0 +1,60 @@
+{
+  "stage": "build-relation-map-and-dictionary",
+  "status": "completed",
+  "generated_at": "2026-08-24T02:33:17.291312+00:00",
+  "program": {
+    "git_parent_commit": "07be6f580a7773b79a64f47813aab8c335af5560"
+  },
+  "strategy": {
+    "surface_normalization": "llm_positive_negative",
+    "taxonomy": "fixed_50_family_seed_from_same_60_document_corpus",
+    "maximum_relation_types": 100,
+    "modality_types_created": false
+  },
+  "artifacts": {
+    "candidates": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/04_relation_candidates.jsonl",
+      "sha256": "bcca271993a23364d784735ac48ac0aa86bcbda2f6e1f6feee007a5a03569b5e"
+    },
+    "surface_map": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/06_relation_surface_map.jsonl",
+      "sha256": "3a21fb2b5c1f48edec9ab97d59cc7569db1ff15cc04db68f01a01172130ca5dd"
+    },
+    "surface_dictionary": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/06_relation_surface_dictionary.jsonl",
+      "sha256": "1a974c67f7b52bb360b7034f4a7d83e52657eb35c8a5d240d4fc7e188079ad9a"
+    },
+    "taxonomy": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/06_relation_taxonomy.jsonl",
+      "sha256": "679d5ccb0215fa509758c4328f02580a27142d70b5bc35c12433e0815d9ce363"
+    },
+    "closed_map": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/06_relation_closed_map.jsonl",
+      "sha256": "fe8263cb99d2503e3e139d7ef8f756cd6e7fe46c134c4ab2040a91fc82e9556c"
+    },
+    "relations": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/06_relation_dictionary.jsonl",
+      "sha256": "d5fa7e3ad85ad9934ba746bec17c55422d61050c6b8e4ca9ac043e3542d98b18"
+    },
+    "alias_map": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/06_relation_alias_map.jsonl",
+      "sha256": "8cda112b09c3909dc655e20bbfa79d050564f093f3af1d4487cf1a024eb4135d"
+    },
+    "closed_audit": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/audits/07_relation_dictionary_audit.json",
+      "sha256": "f882266b7646e5060d6bbde8c8df19cc10e8f77dc2e76697537835a7ae2ed4c6"
+    }
+  },
+  "counts": {
+    "raw_relation_candidates": 6220,
+    "source_relation_types": 1335,
+    "taxonomy_families": 50,
+    "closed_relation_types": 100,
+    "direct_aliases": 6220,
+    "polarities": {
+      "NEGATIVE": 50,
+      "POSITIVE": 50
+    }
+  },
+  "audit_passed": true
+}

@@ -1,6 +1,7 @@
 import json
 
 from woori_graph.closed_relations import (
+    build_direct_relation_alias_map,
     audit_closed_relation_dictionary,
     build_closed_relation_dictionary,
     propose_closed_relation_mapping,
@@ -151,3 +152,23 @@ def test_closed_relation_semantic_guard_does_not_rewrite_compound_action():
 
     assert mapping[0]["target_family_id"] == "R039"
     assert mapping[0]["target_canonical_name"] == "등록하다"
+
+
+def test_closed_dictionary_flattens_to_direct_relation_alias_map():
+    dictionary = [
+        {
+            "relation_type_id": "relation-1",
+            "canonical_name": "제출하다",
+            "polarity": "POSITIVE",
+            "aliases": [
+                {"name": "제출하다", "mention_count": 1, "sample_source_refs": []},
+                {"name": "제출하여야 한다", "mention_count": 2, "sample_source_refs": []},
+            ],
+        }
+    ]
+
+    rows = build_direct_relation_alias_map(dictionary)
+
+    assert [row["alias"] for row in rows] == ["제출하다", "제출하여야 한다"]
+    assert {row["relation_type_id"] for row in rows} == {"relation-1"}
+    assert all(row["polarity"] == "POSITIVE" for row in rows)

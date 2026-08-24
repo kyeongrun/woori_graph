@@ -18,6 +18,7 @@ from .candidates import (
 from .closed_relations import (
     audit_closed_relation_dictionary,
     build_closed_relation_dictionary,
+    build_direct_relation_alias_map,
     propose_closed_relation_mapping,
     propose_relation_taxonomy,
     sanitize_closed_relation_mapping,
@@ -185,6 +186,23 @@ def build_parser() -> argparse.ArgumentParser:
     audit_candidates.add_argument("--output", type=Path, required=True)
     audit_candidates.add_argument("--overwrite", action="store_true")
 
+    normalize_relations = subparsers.add_parser(
+        "normalize-relation-surfaces",
+        help="normalize raw predicates into broad positive/negative source relation types",
+    )
+    normalize_relations.add_argument("--raw-svo", type=Path, required=True)
+    normalize_relations.add_argument("--dictionary-output", type=Path, required=True)
+    normalize_relations.add_argument("--map-output", type=Path, required=True)
+    normalize_relations.add_argument("--map-input", type=Path)
+    normalize_relations.add_argument("--retry-fallback", action="store_true")
+    normalize_relations.add_argument("--errors-output", type=Path, required=True)
+    normalize_relations.add_argument("--env-file", type=Path)
+    normalize_relations.add_argument("--allow-remote-llm", action="store_true")
+    normalize_relations.add_argument("--batch-size", type=int, default=40)
+    normalize_relations.add_argument("--workers", type=int, default=4)
+    normalize_relations.add_argument("--max-tokens", type=int, default=4096)
+    normalize_relations.add_argument("--overwrite", action="store_true")
+
     normalize = subparsers.add_parser("normalize", help="build conservative first-pass dictionaries and edges")
     normalize.add_argument("--raw-svo", type=Path, required=True)
     normalize.add_argument("--entities-output", type=Path, required=True)
@@ -335,6 +353,14 @@ def build_parser() -> argparse.ArgumentParser:
     compress_relations.add_argument("--env-file", type=Path)
     compress_relations.add_argument("--allow-remote-llm", action="store_true")
     compress_relations.add_argument("--overwrite", action="store_true")
+
+    build_relation_map = subparsers.add_parser(
+        "build-relation-map",
+        help="flatten a closed relation dictionary into one row per raw alias",
+    )
+    build_relation_map.add_argument("--relations", type=Path, required=True)
+    build_relation_map.add_argument("--output", type=Path, required=True)
+    build_relation_map.add_argument("--overwrite", action="store_true")
 
     renormalize_entities = subparsers.add_parser(
         "renormalize-entities",
@@ -1339,6 +1365,12 @@ def main(argv: Sequence[str] | None = None) -> int:
         )
         return 0 if audit["passed"] and not errors else 1
 
+    if args.command == "build-relation-map":
+        rows = build_direct_relation_alias_map(list(read_jsonl(args.relations)))
+        count = write_jsonl(args.output, rows, overwrite=args.overwrite)
+        print(f"Wrote {count} direct relation alias mappings to {args.output}")
+        return 0
+
     if args.command == "classify-entity-types":
         entity_records = list(read_jsonl(args.entities_input))
         errors = []
@@ -1553,6 +1585,77 @@ def main(argv: Sequence[str] | None = None) -> int:
             handle.write("\n")
         print(f"Wrote candidate audit to {args.output}; passed={report['passed']}")
         return 0 if report["passed"] else 1
+
+    if args.command == "normalize-relation-surfaces":
+        raw_records = list(read_jsonl(args.raw_svo))
+        errors = []
+        if args.map_input:
+            mapping = relation_mapping_from_records(read_jsonl(args.map_input))
+            if args.retry_fallback:
+                fallback_aliases = {
+                    alias
+                    for alias, item in mapping.items()
+                    if item["normalization_status"].startswith("fallback")
+                }
+                retry_records = []
+                for record in raw_records:
+                    retry_relations = [
+                        relation
+                        for relation in record.get("relations", [])
+                        if relation["predicate"] in fallback_aliases
+                    ]
+                    if retry_relations:
+                        retry_record = dict(record)
+                        retry_record["relations"] = retry_relations
+                        retry_records.append(retry_record)
+                if args.env_file:
+                    _load_env_file(args.env_file)
+                config = OpenAICompatConfig.from_env()
+                if args.allow_remote_llm:
+                    config = replace(config, local_only=False)
+                client = OpenAICompatClient(replace(config, max_tokens=args.max_tokens))
+                try:
+                    retried, errors = propose_relation_mapping(
+                        retry_records, client, batch_size=args.batch_size, workers=args.workers
+                    )
+                finally:
+                    client.close()
+                mapping.update(retried)
+        else:
+            if args.env_file:
+                _load_env_file(args.env_file)
+            config = OpenAICompatConfig.from_env()
+            if args.allow_remote_llm:
+                config = replace(config, local_only=False)
+            client = OpenAICompatClient(replace(config, max_tokens=args.max_tokens))
+            try:
+                mapping, errors = propose_relation_mapping(
+                    raw_records, client, batch_size=args.batch_size, workers=args.workers
+                )
+            finally:
+                client.close()
+        _, relation_dictionary, _ = build_first_pass_normalization(raw_records, mapping)
+        write_jsonl(
+            args.map_output,
+            relation_mapping_records(mapping),
+            overwrite=args.overwrite,
+        )
+        write_jsonl(
+            args.dictionary_output,
+            relation_dictionary,
+            overwrite=args.overwrite,
+            leading_keys=("canonical_name", "aliases"),
+        )
+        write_jsonl(args.errors_output, errors, overwrite=args.overwrite)
+        fallback_count = sum(
+            item["normalization_status"].startswith("fallback")
+            for item in mapping.values()
+        )
+        print(
+            f"Normalized {len(mapping)} raw predicates into {len(relation_dictionary)} "
+            f"source relation types; fallback={fallback_count}; batch_errors={len(errors)}"
+        )
+        return 0
     if args.command == "normalize":
         raw_records = list(read_jsonl(args.raw_svo))
         if args.relation_map_input:
