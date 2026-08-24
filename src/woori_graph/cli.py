@@ -10,7 +10,11 @@ from dataclasses import replace
 from pathlib import Path
 from typing import Sequence
 
-from .candidates import build_candidate_dictionaries, build_simple_surface_lists
+from .candidates import (
+    audit_simple_surface_lists,
+    build_candidate_dictionaries,
+    build_simple_surface_lists,
+)
 from .closed_relations import (
     audit_closed_relation_dictionary,
     build_closed_relation_dictionary,
@@ -170,6 +174,15 @@ def build_parser() -> argparse.ArgumentParser:
         help="write one exact-surface row with its first unit_text source and mention count",
     )
     candidates.add_argument("--overwrite", action="store_true")
+
+    audit_candidates = subparsers.add_parser(
+        "audit-candidates", help="verify exact coverage and source evidence of candidate lists"
+    )
+    audit_candidates.add_argument("--raw-svo", type=Path, required=True)
+    audit_candidates.add_argument("--entities", type=Path, required=True)
+    audit_candidates.add_argument("--relations", type=Path, required=True)
+    audit_candidates.add_argument("--output", type=Path, required=True)
+    audit_candidates.add_argument("--overwrite", action="store_true")
 
     normalize = subparsers.add_parser("normalize", help="build conservative first-pass dictionaries and edges")
     normalize.add_argument("--raw-svo", type=Path, required=True)
@@ -1503,6 +1516,20 @@ def main(argv: Sequence[str] | None = None) -> int:
             f"{len(relation_candidates)} relation candidates to {args.relations_output}"
         )
         return 0
+
+    if args.command == "audit-candidates":
+        report = audit_simple_surface_lists(
+            read_jsonl(args.raw_svo),
+            list(read_jsonl(args.entities)),
+            list(read_jsonl(args.relations)),
+        )
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        mode = "w" if args.overwrite else "x"
+        with args.output.open(mode, encoding="utf-8", newline="\n") as handle:
+            json.dump(report, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
+        print(f"Wrote candidate audit to {args.output}; passed={report['passed']}")
+        return 0 if report["passed"] else 1
     if args.command == "normalize":
         raw_records = list(read_jsonl(args.raw_svo))
         if args.relation_map_input:

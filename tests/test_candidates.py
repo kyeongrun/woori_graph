@@ -1,4 +1,5 @@
 from woori_graph.candidates import (
+    audit_simple_surface_lists,
     build_candidate_dictionaries,
     build_simple_surface_lists,
 )
@@ -30,6 +31,9 @@ def test_simple_surface_lists_include_source_text_and_merge_exact_duplicates() -
         {
             "semantic_unit_id": "unit-1",
             "unit_text": "위원회는 보고서를 제출한다.",
+            "resolved_text": "이 법에 따른 위원회는 보고서를 제출한다.",
+            "document_title": "테스트법",
+            "source_ref": {"article": "제1조", "paragraph": 1, "item_path": []},
             "relations": [
                 {"subject": "위원회", "predicate": "제출한다", "object": "보고서"},
                 {"subject": "보고서", "predicate": "제출한다", "object": "위원회"},
@@ -42,15 +46,19 @@ def test_simple_surface_lists_include_source_text_and_merge_exact_duplicates() -
     assert entities == [
         {
             "name": "보고서",
-            "source_text": "위원회는 보고서를 제출한다.",
+            "source_text": "이 법에 따른 위원회는 보고서를 제출한다.",
             "semantic_unit_id": "unit-1",
+            "document_title": "테스트법",
+            "source_ref": {"article": "제1조", "paragraph": 1, "item_path": []},
             "roles": ["object", "subject"],
             "mention_count": 2,
         },
         {
             "name": "위원회",
-            "source_text": "위원회는 보고서를 제출한다.",
+            "source_text": "이 법에 따른 위원회는 보고서를 제출한다.",
             "semantic_unit_id": "unit-1",
+            "document_title": "테스트법",
+            "source_ref": {"article": "제1조", "paragraph": 1, "item_path": []},
             "roles": ["subject", "object"],
             "mention_count": 2,
         },
@@ -58,8 +66,14 @@ def test_simple_surface_lists_include_source_text_and_merge_exact_duplicates() -
     assert relations == [
         {
             "name": "제출한다",
-            "source_text": "위원회는 보고서를 제출한다.",
+            "source_text": "이 법에 따른 위원회는 보고서를 제출한다.",
             "semantic_unit_id": "unit-1",
+            "document_title": "테스트법",
+            "source_ref": {"article": "제1조", "paragraph": 1, "item_path": []},
             "mention_count": 2,
         }
     ]
+
+    audit = audit_simple_surface_lists(records, entities, relations)
+    assert audit["passed"] is True
+    assert audit["counts"]["entity_candidates"] == 2

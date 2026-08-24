@@ -35,8 +35,11 @@ segment
 
 - `segment -> resolve-context`: 23,123개 semantic unit 완료, 감사 통과
 - `extract-svo`: 23,123개 레코드와 29,818개 raw 관계 완료, 감사 통과
+- `build-candidates`: 출처 포함 exact surface 엔티티 25,307개와 관계 6,220개 완료, 감사 통과
 
 raw SVO 본 실행은 동시성 48, 체크포인트 200개 단위로 수행했다. 최초 JSON 형식 실패 1건은 같은 semantic unit을 출력 한도 4,096토큰으로 재요청해 복구했다. `align-svo` 명령으로 복구 파일을 원본 semantic unit 순서에 맞춰 병합했으며 endpoint sanitizer는 적용하지 않았다. 따라서 수치 조건, 긴 수식어, 일반명사 endpoint와 모델이 판단한 관계 방향을 raw noise로 그대로 보존한다.
+
+후보 목록의 `source_text`는 실제 추출 입력인 `resolved_text`를 우선 사용하고, 문맥 완결문이 없을 때만 `unit_text`를 사용한다. 각 행에는 `semantic_unit_id`, `document_title`, `source_ref`, 최초 원문 근거와 전체 출현 빈도가 함께 저장된다. 이 단계에서는 문자열 완전 일치만 묶고 의미 군집화는 적용하지 않는다.
 
 ## 표준 산출물
 

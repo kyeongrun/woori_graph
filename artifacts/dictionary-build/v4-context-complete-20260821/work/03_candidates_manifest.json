@@ -1,0 +1,34 @@
+{
+  "stage": "build-source-bearing-candidates",
+  "status": "completed",
+  "generated_at": "2026-08-24T01:10:15.003794+00:00",
+  "program": {
+    "git_parent_commit": "74b34f0a5f02a79f1088d9ef94cd904802793193"
+  },
+  "strategy": {
+    "grouping": "exact_surface",
+    "source_text": "resolved_text_or_unit_text",
+    "semantic_clustering_applied": false
+  },
+  "artifacts": {
+    "raw_svo": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/02_raw_svo.jsonl",
+      "sha256": "c192d0edb16d4e5b81067da14fdfb743a1f7a46e58627aadeed06e21868d2f00"
+    },
+    "entity_candidates": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/03_entity_candidates.jsonl",
+      "sha256": "12507365ccb2e250a6b400d63e3b7e440858a58e9839bd1e1f186eaa69922b26",
+      "record_count": 25307
+    },
+    "relation_candidates": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/04_relation_candidates.jsonl",
+      "sha256": "bcca271993a23364d784735ac48ac0aa86bcbda2f6e1f6feee007a5a03569b5e",
+      "record_count": 6220
+    },
+    "audit": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/audits/03_candidates_audit.json",
+      "sha256": "b6e35c7e09cec7ae9a5a5e30ac540e316debf205fc414f9d90ddac5ca505028d",
+      "passed": true
+    }
+  }
+}

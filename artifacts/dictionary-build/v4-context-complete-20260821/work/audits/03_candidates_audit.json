@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "counts": {
+    "raw_records": 23123,
+    "entity_candidates": 25307,
+    "relation_candidates": 6220
+  },
+  "checks": {
+    "entity_names_unique": true,
+    "relation_names_unique": true,
+    "entity_coverage_exact": true,
+    "relation_coverage_exact": true,
+    "entity_mention_counts_match": true,
+    "relation_mention_counts_match": true,
+    "entity_evidence_matches": true,
+    "relation_evidence_matches": true
+  },
+  "details": {
+    "entity_duplicate_names": [],
+    "relation_duplicate_names": [],
+    "entity_count_mismatches": [],
+    "relation_count_mismatches": [],
+    "entity_evidence_mismatches": [],
+    "relation_evidence_mismatches": []
+  }
+}
