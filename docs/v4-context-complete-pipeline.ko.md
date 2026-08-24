@@ -36,10 +36,15 @@ segment
 - `segment -> resolve-context`: 23,123개 semantic unit 완료, 감사 통과
 - `extract-svo`: 23,123개 레코드와 29,818개 raw 관계 완료, 감사 통과
 - `build-candidates`: 출처 포함 exact surface 엔티티 25,307개와 관계 6,220개 완료, 감사 통과
+- `build-entity-map`: 2단계 이름 정규화와 다섯 타입 분류 완료, 감사 통과
 
 raw SVO 본 실행은 동시성 48, 체크포인트 200개 단위로 수행했다. 최초 JSON 형식 실패 1건은 같은 semantic unit을 출력 한도 4,096토큰으로 재요청해 복구했다. `align-svo` 명령으로 복구 파일을 원본 semantic unit 순서에 맞춰 병합했으며 endpoint sanitizer는 적용하지 않았다. 따라서 수치 조건, 긴 수식어, 일반명사 endpoint와 모델이 판단한 관계 방향을 raw noise로 그대로 보존한다.
 
 후보 목록의 `source_text`는 실제 추출 입력인 `resolved_text`를 우선 사용하고, 문맥 완결문이 없을 때만 `unit_text`를 사용한다. 각 행에는 `semantic_unit_id`, `document_title`, `source_ref`, 최초 원문 근거와 전체 출현 빈도가 함께 저장된다. 이 단계에서는 문자열 완전 일치만 묶고 의미 군집화는 적용하지 않는다.
+
+엔티티 이름은 과거 수동 override 없이 LLM으로 두 번 정규화했다. 1차는 25,307개 raw 표면형을 이름 중심으로 19,231개에 군집화했고, 2차는 aliases와 실제 원문 근거를 함께 보아 18,038개 canonical entity로 군집화했다. 2차는 모든 source entity가 LLM mapping을 가져야 하는 엄격 모드로 실행했다. 최종 typed dictionary에서 raw alias와 중간 canonical alias 37,851개를 최종 entity ID로 직접 연결했다.
+
+엔티티 타입도 규칙 선분류 없이 LLM이 전수 판정했다. 사용 값은 `ORGANIZATION`, `PERSON`, `LEGAL_INSTRUMENT`, `CONCEPT`, `OTHER`뿐이다. 최종 분포는 `CONCEPT` 13,057개, `PERSON` 2,246개, `ORGANIZATION` 1,250개, `LEGAL_INSTRUMENT` 931개, `OTHER` 554개다. 엔티티 release 감사에서 raw 후보 전수 포함, alias 단일 귀속, UUID 참조, 타입 폐쇄성, mention 59,636개 보존을 확인했다.
 
 ## 표준 산출물
 

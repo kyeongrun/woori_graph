@@ -54,7 +54,7 @@ def propose_entity_mapping(
 ) -> tuple[dict[str, dict[str, str]], list[dict[str, Any]]]:
     """Map global entity surface forms to broad canonical names through the LLM."""
 
-    records_by_name = {record["canonical_name"]: record for record in entity_records}
+    records_by_name = {_entity_record_name(record): record for record in entity_records}
     names = sorted(records_by_name, key=lambda name: (-records_by_name[name].get("mention_count", 0), name))
     mapping: dict[str, dict[str, str]] = {}
     errors: list[dict[str, Any]] = []
@@ -136,7 +136,7 @@ def build_clustered_entity_dictionary(
     )
     buckets: dict[str, dict[str, Any]] = {}
     for record in entity_records:
-        source_name = record["canonical_name"]
+        source_name = _entity_record_name(record)
         proposal = mapping.get(source_name, {})
         if source_name in overrides:
             canonical_name = _clean_name(overrides[source_name])
@@ -159,7 +159,8 @@ def build_clustered_entity_dictionary(
         bucket["mention_count"] += int(record.get("mention_count", 0))
         if method not in bucket["normalization_methods"]:
             bucket["normalization_methods"].append(method)
-        _extend_samples(bucket["sample_source_refs"], record.get("sample_source_refs", []), sample_limit)
+        source_samples = record.get("sample_source_refs") or _source_bearing_samples(record)
+        _extend_samples(bucket["sample_source_refs"], source_samples, sample_limit)
         source_alias_count = sum(
             int(alias.get("mention_count", 0)) for alias in record.get("aliases", [])
         )
@@ -168,7 +169,7 @@ def build_clustered_entity_dictionary(
             (
                 source_name,
                 direct_source_count,
-                record.get("sample_source_refs", []),
+                source_samples,
             )
         ]
         for alias in record.get("aliases", []):
@@ -242,6 +243,53 @@ def build_clustered_entity_dictionary(
 
 def entity_mapping_records(mapping: Mapping[str, Mapping[str, str]]) -> list[dict[str, str]]:
     return [{"alias": alias, **dict(value)} for alias, value in sorted(mapping.items())]
+
+
+def build_direct_entity_alias_map(
+    entity_dictionary: Sequence[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Flatten a final dictionary into one unambiguous row per raw alias."""
+
+    rows: dict[str, dict[str, Any]] = {}
+    for entity in entity_dictionary:
+        for alias in entity.get("aliases", []):
+            name = str(alias.get("name", "")).strip()
+            if not name:
+                continue
+            row = {
+                "alias": name,
+                "canonical_name": entity["canonical_name"],
+                "entity_id": entity["entity_id"],
+                "entity_type": entity["entity_type"],
+                "mention_count": int(alias.get("mention_count", 0)),
+                "sample_source_refs": alias.get("sample_source_refs", []),
+            }
+            existing = rows.get(name)
+            if existing is not None and existing["entity_id"] != row["entity_id"]:
+                raise ValueError(f"entity alias maps to multiple final entities: {name!r}")
+            rows[name] = row
+    return [rows[name] for name in sorted(rows)]
+
+
+def _entity_record_name(record: Mapping[str, Any]) -> str:
+    value = record.get("canonical_name") or record.get("name")
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError("entity candidate must contain canonical_name or name")
+    return value.strip()
+
+
+def _source_bearing_samples(record: Mapping[str, Any]) -> list[dict[str, Any]]:
+    semantic_unit_id = record.get("semantic_unit_id")
+    if not semantic_unit_id:
+        return []
+    return [
+        {
+            "semantic_unit_id": semantic_unit_id,
+            "document_title": record.get("document_title", ""),
+            "source_ref": record.get("source_ref", {}),
+            "source_text": record.get("source_text", ""),
+        }
+    ]
 
 
 def entity_mapping_from_records(

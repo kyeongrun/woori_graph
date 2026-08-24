@@ -3,6 +3,7 @@ from woori_graph.candidates import (
     build_candidate_dictionaries,
     build_simple_surface_lists,
 )
+from woori_graph.entity_clustering import build_clustered_entity_dictionary
 
 
 def test_candidates_group_only_exact_surface_forms() -> None:
@@ -77,3 +78,13 @@ def test_simple_surface_lists_include_source_text_and_merge_exact_duplicates() -
     audit = audit_simple_surface_lists(records, entities, relations)
     assert audit["passed"] is True
     assert audit["counts"]["entity_candidates"] == 2
+
+    mapping = {
+        "보고서": {"canonical_name": "보고서", "normalization_status": "llm_proposed"},
+        "위원회": {"canonical_name": "위원회", "normalization_status": "llm_proposed"},
+    }
+    dictionary = build_clustered_entity_dictionary(
+        entities, mapping, canonical_overrides={}
+    )
+    assert {item["canonical_name"] for item in dictionary} == {"보고서", "위원회"}
+    assert dictionary[0]["sample_source_refs"][0]["source_text"]

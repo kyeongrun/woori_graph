@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "counts": {
+    "raw_entity_candidates": 25307,
+    "first_pass_mappings": 25307,
+    "contextual_mappings": 19231,
+    "final_entities": 18038,
+    "direct_aliases": 37851,
+    "entity_types": {
+      "CONCEPT": 13057,
+      "LEGAL_INSTRUMENT": 931,
+      "ORGANIZATION": 1250,
+      "OTHER": 554,
+      "PERSON": 2246
+    }
+  },
+  "checks": {
+    "candidate_names_unique": true,
+    "first_pass_maps_all_candidates": true,
+    "contextual_map_covers_first_pass_entities": true,
+    "contextual_audit_passed": true,
+    "type_audit_passed": true,
+    "entity_ids_unique": true,
+    "entity_types_closed": true,
+    "alias_names_unique": true,
+    "raw_alias_coverage_exact": true,
+    "alias_entity_references_valid": true,
+    "alias_types_match_entities": true,
+    "mentions_preserved": true
+  }
+}

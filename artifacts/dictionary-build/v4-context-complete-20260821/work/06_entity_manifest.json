@@ -1,0 +1,65 @@
+{
+  "stage": "build-entity-map-and-dictionary",
+  "status": "completed",
+  "generated_at": "2026-08-24T02:00:34.318435+00:00",
+  "program": {
+    "git_parent_commit": "4e785e33d166d945483bdb3bbfb5d27efa84f618"
+  },
+  "strategy": {
+    "first_pass": "llm_name_normalization",
+    "second_pass": "llm_contextual_normalization_all_strict",
+    "entity_types": [
+      "CONCEPT",
+      "LEGAL_INSTRUMENT",
+      "ORGANIZATION",
+      "OTHER",
+      "PERSON"
+    ],
+    "legacy_overrides_applied": false
+  },
+  "artifacts": {
+    "candidates": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/03_entity_candidates.jsonl",
+      "sha256": "12507365ccb2e250a6b400d63e3b7e440858a58e9839bd1e1f186eaa69922b26"
+    },
+    "name_map": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/05_entity_name_map.jsonl",
+      "sha256": "e04498d6987605cd0fd45b106dd47c0adb8088286511c7859aec8644d5e832c8"
+    },
+    "contextual_map": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/05_entity_contextual_map.jsonl",
+      "sha256": "8f54ce5e3a980a0ac98dd124d658de159fffc96a0d9dab1565e2b0623dd00676"
+    },
+    "entities": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/06_typed_entity_dictionary.jsonl",
+      "sha256": "37c49878b6c379704aa84639014ed04d873f4c10966df56a412ddd268a97b2cb"
+    },
+    "alias_map": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/05_entity_alias_map.jsonl",
+      "sha256": "7a9eb0725dd1318b643383104ea821d9952196456ffbdacaa5c4191f4c995ffb"
+    },
+    "context_audit": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/audits/04_entity_contextual_audit.json",
+      "sha256": "846f251732e131e146b84720253f12c0ffbd40816853a4f6de184250737d0be9"
+    },
+    "type_audit": {
+      "path": "artifacts/dictionary-build/v4-context-complete-20260821/work/audits/05_entity_type_audit.json",
+      "sha256": "615f15acff0b32c67485293c930748e43f746da73aea3fc8b0de2c4be7b35dca"
+    }
+  },
+  "counts": {
+    "raw_entity_candidates": 25307,
+    "first_pass_mappings": 25307,
+    "contextual_mappings": 19231,
+    "final_entities": 18038,
+    "direct_aliases": 37851,
+    "entity_types": {
+      "CONCEPT": 13057,
+      "LEGAL_INSTRUMENT": 931,
+      "ORGANIZATION": 1250,
+      "OTHER": 554,
+      "PERSON": 2246
+    }
+  },
+  "audit_passed": true
+}

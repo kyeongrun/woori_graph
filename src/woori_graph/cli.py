@@ -49,6 +49,7 @@ from .dictionary_build import (
 )
 from .entity_clustering import (
     build_clustered_entity_dictionary,
+    build_direct_entity_alias_map,
     entity_mapping_from_records,
     entity_mapping_records,
     propose_entity_mapping,
@@ -298,7 +299,20 @@ def build_parser() -> argparse.ArgumentParser:
     cluster_entities.add_argument("--offset", type=int, default=0)
     cluster_entities.add_argument("--limit", type=int)
     cluster_entities.add_argument("--sample-limit", type=int, default=5)
+    cluster_entities.add_argument(
+        "--no-default-overrides",
+        action="store_true",
+        help="do not let legacy deterministic overrides replace LLM canonical names",
+    )
     cluster_entities.add_argument("--overwrite", action="store_true")
+
+    build_entity_map = subparsers.add_parser(
+        "build-entity-map",
+        help="flatten a final typed entity dictionary into one row per raw alias",
+    )
+    build_entity_map.add_argument("--entities", type=Path, required=True)
+    build_entity_map.add_argument("--output", type=Path, required=True)
+    build_entity_map.add_argument("--overwrite", action="store_true")
 
     compress_relations = subparsers.add_parser(
         "compress-relations",
@@ -963,7 +977,9 @@ def main(argv: Sequence[str] | None = None) -> int:
                     if value["normalization_status"].startswith("fallback")
                 }
                 retry_records = [
-                    record for record in entity_records if record["canonical_name"] in fallback_names
+                    record
+                    for record in entity_records
+                    if (record.get("canonical_name") or record.get("name")) in fallback_names
                 ]
                 if args.env_file:
                     _load_env_file(args.env_file)
@@ -1001,6 +1017,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             entity_records,
             mapping,
             sample_limit=args.sample_limit,
+            canonical_overrides={} if args.no_default_overrides else None,
         )
         write_jsonl(args.map_output, entity_mapping_records(mapping), overwrite=args.overwrite)
         write_jsonl(
@@ -1014,6 +1031,12 @@ def main(argv: Sequence[str] | None = None) -> int:
             f"Wrote {len(dictionary)} clustered entities and {len(mapping)} alias mappings; "
             f"{len(errors)} batch failures"
         )
+        return 0
+
+    if args.command == "build-entity-map":
+        rows = build_direct_entity_alias_map(list(read_jsonl(args.entities)))
+        count = write_jsonl(args.output, rows, overwrite=args.overwrite)
+        print(f"Wrote {count} direct entity alias mappings to {args.output}")
         return 0
 
     if args.command == "compress-relations":

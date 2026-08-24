@@ -1,6 +1,7 @@
 import json
 
 from woori_graph.entity_clustering import (
+    build_direct_entity_alias_map,
     build_clustered_entity_dictionary,
     propose_entity_mapping,
 )
@@ -109,3 +110,23 @@ def test_explicit_override_injects_curated_alias_not_observed_in_corpus() -> Non
         "감사의 목적",
         "감사의 목적, 필요성",
     ]
+
+
+def test_final_dictionary_flattens_to_direct_alias_map() -> None:
+    dictionary = [
+        {
+            "entity_id": "entity-1",
+            "canonical_name": "금융감독원",
+            "entity_type": "ORGANIZATION",
+            "aliases": [
+                {"name": "금융감독원", "mention_count": 2, "sample_source_refs": []},
+                {"name": "금감원", "mention_count": 1, "sample_source_refs": []},
+            ],
+        }
+    ]
+
+    rows = build_direct_entity_alias_map(dictionary)
+
+    assert [row["alias"] for row in rows] == ["금감원", "금융감독원"]
+    assert {row["entity_id"] for row in rows} == {"entity-1"}
+    assert all(row["entity_type"] == "ORGANIZATION" for row in rows)
